@@ -1,0 +1,486 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{multirow}
+
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols}
+
+%% https://texblog.org/2011/02/26/generating-dummy-textblindtext-with-latex-for-testing/
+%% https://fr.sharelatex.com/learn/Multiple_columns
+%% \usepackage{blindtext}
+%% \usepackage{lipsum}
+\usepackage{wrapfig}
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{57pt}{3pt}
+
+\usepackage{lscape} % changement orientation page
+\usepackage{pdflscape}
+% --- style de page (pour les en-tete) ---
+% \pagestyle{headings}
+\pagestyle{empty}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+
+% http://www.trustonme.net/didactels/250.html
+
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% % \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+% \fancyhf{}
+% \fancyhead[LE,RO]{\bfseries\thepage}
+% \fancyhead[LO]{\bfseries\rightmark}
+% \fancyhead[RE]{\bfseries\leftmark}
+% \fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+	% TITLE
+% \hfill \includegraphics[width=0.5cm]{img/logo_glider.png} }
+% \fancyfoot[RO]{\includegraphics[width=0.5cm]{img/logo_glider.png} \hfill
+	% TITLE
+% \hfill \thepage /\pageref{LastPage}}
+% \renewcommand{\headrulewidth}{0.5pt}
+% \renewcommand{\footrulewidth}{0.5pt}
+% \addtolength{\headheight}{0.5pt}
+% \fancypagestyle{plain}{
+	% \fancyhead{}
+	% \renewcommand{\headrulewidth}{0pt}
+% }
+
+%--- Definitions de nouvelles commandes ---
+\newcommand{\N}{\mathbb{N}} % les entiers naturels
+
+%============================= Corps =================================
+\begin{document}
+\begin{landscape}
+
+% \setcounter{page}{0}
+% \thispagestyle{empty}
+
+\begin{multicols}{2}
+	\section*{Memento Java General}
+	
+	\begin{itemize}
+		\item ACID : Atomicity, Consistency, Isolation, Durability // Atomicit{\'e}, Coh{\'e}rence, Isolation et Durabilit{\'e}
+		\item CRUD : Create, read, update and delete
+		\item DAP : Domain Application Protocol 
+		\item[] 
+		\item SOLID
+		\begin{itemize}
+			\item[] Facilitent la conception g{\'e}n{\'e}rale de syst{\`e}mes faciles {\`a} mainteniret {\`a} {\'e}tendre (code fiable et robuste)
+			\item[] Principes SOLID : identifi{\'e}s par Robert Martin (<<Uncle Bob>>)
+			\begin{itemize}
+				\item S (Single responsability) : un objet fait une seule chose et est le seule {\`a} le faire
+				\item O (Open-Close) : classe ouverte aux extensions et ferm{\'e}es aux modifications
+				\item L (Liskov substitution) : classe fille doit pouvoir {\^e}tre utilis{\'e}e {\`a} la place de sa m{\`e}re (par une autre classe) en toute transparence
+				\item I (Interface Segregation) : plusieurs petites interfaces plut{\^o}t qu'une grosse
+				\item D (Dependency Inversion) : d{\'e}pendre d'abstractions et pas d'implantations $\rightarrow$ essentiel pour permettre le test unitaire
+			\end{itemize}
+			\item[] Robert Martin. « Design Principles and Design Patterns ». objectmentor.com
+		\end{itemize}
+		\item[] 
+		\item "Java8+"
+			\begin{itemize}
+				\item 5 : types g{\'e}n{\'e}riques, metadata / annotations ; autoboxing entre types primitifs ; {\'e}num{\'e}rations, varargs (Object... / tableaux) ; "foreach"
+				\item 6 : correctifs...
+				\item 7 : notation binaire, formatage num{\'e}rique, switch string, inf{\'e}rence types g{\'e}n{\'e}riques {\`a} la cr{\'e}ation, multicatch exceptions, java.nio (Files, Path...), autoboxing des primitifs...
+				\item 8 : lambda, stream, interfaces fonctionnelles
+				\item 9 : jigsaw (modularisation) ; kulla (JShell) ; JSON natif et http2
+				\item 10 : inf{\'e}rence types "var", Graal / JIT plus rapide
+				\item 11 : am{\'e}liorations lambda, surpression CORBA
+		\end{itemize}
+		\item[]
+		\item Open Web Application Security Project (OWASP) : s{\'e}curit{\'e} des applications Web
+	\end{itemize} %% ~\\
+	
+	\vfill
+	
+	\columnbreak
+	
+	\section*{Java 8}
+	\begin{itemize}
+		\item Lambda
+		\begin{itemize}
+			\item[] Programmation Fonctionnelle, se passer (au moins partiellement) de l'aspect "machine  {\'e}tats" de la POO
+			\item[] Syntaxe : \emph{(parametres) -> {Corps de la fonction }}
+			\begin{itemize}
+				\item[] cas particuliers de implicite (types inf{\'e}rables), pas inner class => pas nouveau scope ni r{\'e}f{\'e}rence mutable...
+				\item[] cr{\'e}e m{\'e}thode static dans classe o{\`u} d{\'e}fini
+				\item[] raccourci pour impl{\'e}mentation interface fonctionnelle (cas g{\'e}n{\'e}riques d{\'e}j{\`a} cr{\'e}{\'e}s : java.util.function)
+				\begin{itemize}
+					\footnotesize
+					\item[] Supplier<T> // Consumer<T> // Function<T, R> // Predicate<T>
+				\end{itemize}
+				\item[] Raccourcis syntaxiques, 4 cas possibles : 
+				\begin{itemize}
+					\item[] m{\'e}thodes statiques
+					\item[] constructeur
+					\item[] m{\'e}thode d'instance
+					\item[] m{\'e}thode objet arbitraire (type particulier)
+				\end{itemize}
+				\begin{verbatim}
+				qualificateur::methode (type ou variable :: methode)
+				\end{verbatim}
+			\end{itemize}
+		\end{itemize}
+		\item Optional => \textsc{Pas en Param{\`e}tre} ! \emph{\footnotesize ajout{\'e} dans JavaDoc entre Java8 et Java9}
+		\item Stream ({\footnotesize i.e. Pipeline / Workflow de traitement de donn{\'e}es})
+		\begin{itemize}
+			\item[] D{\'e}claratif et non purement proc{\'e}dural (id{\'e}e du "Builder de Pipeline")
+			\item[] Op{\'e}rations interm{\'e}diaires / Op{\'e}rations terminales ; Op{\'e}rations <stateful / stateless> (m{\'e}morisation valeurs ou pas)
+			\item[] Op{\'e}rations interm{\'e}diaires : transformations (en sortie), collection d'origine ne doit pas {\^e}tre modifif{\'e}e
+			\begin{itemize}
+				\item[] limit / skip / distinct
+				\item[] peek / filter / sort
+				\item[] map / flatMap (transformation)
+			\end{itemize}
+			\item[] Op{\'e}rations terminales : lance traitement et ne permet plus r{\'e}utilisation du Stream
+			\begin{itemize}
+				\item[] *Match (noneMatch, anyMatch, allMatch)
+				\item[] find* (findAny, findFirst)
+				\item[] min, max, count
+				\item[] reduce / forEach
+				\item[] collect / toArray
+			\end{itemize}
+			\item[] Spliterator : \emph{utile pour parall{\'e}liser (plusieurs it{\'e}rateurs de traitement)}
+			\item[] Collectors
+			\begin{itemize}
+				\item[] supplier // accumulator // combiner // finisher
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+	
+	\vfill
+	
+	\columnbreak
+	
+	\section*{MAVEN}
+	\begin{itemize}
+		\item Structuration des r{\'e}pertoires
+		\begin{itemize}
+			\item[] src
+			\begin{itemize}
+				\item[] main
+				\begin{itemize}
+					\item[] java
+					\item[] resources
+				\end{itemize}
+				\item[] test
+				\begin{itemize}
+					\item[] java
+					\item[] resources
+				\end{itemize}
+			\end{itemize}
+			\item[] target
+		\end{itemize}
+		\item[] 
+		\item pom.xml : l{\`a} o{\`u} est d{\'e}crit le projet maven
+		\item <build> : d{\'e}crit les fonctions relatives {\`a} la construction d'1 projet (classpath, version de java...)
+		\item <profiles>: profils de construction, pour personnaliser la totalit{\'e} du pom selon des identifiants de profil
+		\item <dependencies>: liste les d{\'e}pendances selon 1 format « qualifi{\'e} »
+		\begin{itemize}
+			\item groupId : nom d'un groupe (en g{\'e}n{\'e}ral : pr{\'e}fixe du package principal)
+			\item artifactId : nom de la d{\'e}pendance (en g{\'e}n{\'e}ral : nom du projet)
+			\item version : version du projet–type : format (jar, pom...)
+			\item scope (p{\'e}rim{\`e}tre/port{\'e}e de la d{\'e}pendance) : 
+			\begin{itemize}
+				\item[$\circ$] {\`a} la compilation (compile), uniquement {\`a} l'ex{\'e}cution (runtime), 
+				\item[$\circ$] pendant la compilation et l'ex{\'e}cution des tests (test), 
+			\end{itemize}
+		\end{itemize}
+		\item[] 
+		\item Phases du cycle de vie du projet / Utilitaire en ligne de commande, {\`a} lancer depuis l'emplacement du fichier pom.xml : 
+		\item mvn [goal]avec [goal] = (invoque les plugins n{\'e}cessaire pour faire le travail)
+		\begin{itemize}
+			\item[generate-sources] g{\'e}n{\`e}re le code source suppl{\'e}mentaire n{\'e}cessit{\'e} par l'appli (accompli par les plugins appropri{\'e}s)
+			\item[clean] supprimer les {\'e}l{\'e}ments pr{\'e}c{\'e}demment construits
+			\item[compile] compile le code source du projet
+			\item[test-compile] compile les tests unitaires du projet
+			\item[test] lancer/ex{\'e}cuter les tests unitaires (avec Junit)
+			\item[package] packager le code compil{\'e} (un WAR, un JAR)
+			\item[install] installer le JAR sur le d{\'e}p{\^o}t local
+			\item[deploy] d{\'e}ployer l'application sur le serveur cible (pour {\^e}tre partag{\'e} avec d'autres d{\'e}veloppeurs
+		\end{itemize}
+	\end{itemize}
+	
+	\vfill
+	
+	\columnbreak
+
+	\section*{REST (Representational state transfer)}
+	\begin{itemize}
+		\item Orient{\'e} \textsc{ressources} ; différent de SOAP (services)
+		\item Contraintes architecturales
+		\begin{itemize}
+			\item Client–serveur
+			\item Sans {\'e}tat
+			\item Avec mise en cache
+			\item En couches
+			\item Avec code {\`a} la demande (facultative)
+			\item Interface uniforme
+		\end{itemize}
+		
+		\item Following four HTTP methods are commonly used in REST based architecture.
+		\begin{itemize}
+			\item[] GET -- Provides a read only access to a resource.
+			\item[] POST -- Used to create a new resource.
+			\item[] PUT -- Used to update a existing resource or create a new resource.
+			\item[] DELETE -- Used to remove a resource.
+			\item[] {\footnotesize {\'e}quivalents SQL : SELECT / INSERT / UPDATE / DELETE}
+		\end{itemize}
+	\end{itemize}
+	\begin{itemize}
+	\footnotesize
+		\item[GET] C'est la m{\'e}thode la plus courante pour demander une ressource. Une requ{\^e}te GET est sans effet sur la ressource, il doit {\^e}tre possible de r{\'e}p{\'e}ter la requ{\^e}te sans effet.
+		\item[HEAD] Cette m{\'e}thode ne demande que des informations sur la ressource, sans demander la ressource elle-m{\^e}me.
+		\item[POST] Cette m{\'e}thode est utilis{\'e}e pour transmettre des donn{\'e}es en vue d'un traitement {\`a} une ressource (le plus souvent depuis un formulaire HTML). L'URI fourni est l'URI d'une ressource {\`a} laquelle s'appliqueront les donn{\'e}es envoy{\'e}es. Le r{\'e}sultat peut {\^e}tre la cr{\'e}ation de nouvelles ressources ou la modification de ressources existantes. {\`A} cause de la mauvaise impl{\'e}mentation des m{\'e}thodes HTTP (pour Ajax) par certains navigateurs (et la norme HTML qui ne supporte que les m{\'e}thodes GET et POST pour les formulaires), cette m{\'e}thode est souvent utilis{\'e}e en remplacement de la requ{\^e}te PUT, qui devrait {\^e}tre utilis{\'e}e pour la mise {\`a} jour de ressources.
+		\item[OPTIONS] Cette m{\'e}thode permet d'obtenir les options de communication d'une ressource ou du serveur en g{\'e}n{\'e}ral.
+		\item[CONNECT] Cette m{\'e}thode permet d'utiliser un proxy comme un tunnel de communication.
+		\item[TRACE] Cette m{\'e}thode demande au serveur de retourner ce qu'il a re\c{c}u, dans le but de tester et effectuer un diagnostic sur la connexion.
+		\item[PUT] Cette m{\'e}thode permet de remplacer ou d'ajouter une ressource sur le serveur. L'URI fourni est celui de la ressource en question.
+		\item[PATCH] Cette m{\'e}thode permet, contrairement {\`a} PUT, de faire une modification partielle d'une ressource.
+		\item[DELETE] Cette m{\'e}thode permet de supprimer une ressource du serveur.
+	\end{itemize}
+	
+	\vfill
+	
+	\columnbreak
+	
+	\section*{Memento MAVEN}
+	
+	\begin{itemize}
+		\item \textbf{POM} : Project Object Model (descripteur de projet maven)
+		\item \textbf{Artefact} : fichier résultat du build d'un projet
+		\item \textbf{Groupe} : Espace de nom permettant le regroupement d'artefacts
+		\item \textbf{Version} : identification d'une version d'un artefact
+		\item \textbf{Repository} : référentiel (dépôt) d'artefacts
+		\item \textbf{Plugin} : composant enfichable dans le processus de build
+		\item \textbf{Archétype} : modèle (prototype) de projet
+		\item \textbf{Goal} : objectif du build, réalisé par un plugin
+		%% \item[]
+		\item \underline{\textbf{Phases : étapes clés de la construction du projet}}
+		\begin{enumerate}
+			\item \textsf{validate} : validation du projet, voir s'il est correct
+			\item \textsf{compile} : compilation du projet
+			\item \textsf{test} : compiler les tests unitaires et les passer
+			\item \textsf{package} : mettre en forme le livrable. Souvent : faire un jar/un war
+			\item \textsf{integration-test} : Tests qui doivent passer sur un environnement
+			\item \textsf{verify} : Vérifier la qualité du livrable suivant une série de critères
+			\item \textsf{install} : Déposer le package livrable sur le Repository Local
+			\item \textsf{deploy} : Publier le package final sur un environnement partagé
+		\end{enumerate}
+%% validate
+%% generate-sources
+%% process-sources
+%% generate-resources
+%% process-resources
+%% compile
+%% process-test-sources
+%% process-test-resources
+%% test-compile
+%% test
+%% package
+%% install
+%% deploy
+		\item hors cycle de vie : \textsf{clean}, \textsf{site}, \textsf{assembly:assembly}, \textsf{site-deploy}...
+		%% \item[]
+		\item \underline{\textbf{Convention plutôt que configuration}}
+		\begin{itemize}
+			\item \textsf{/src} : les sources du projet
+			\item \textsf{/src/main} : code source et fichiers source principaux
+			\item \textsf{/src/main/java} : code source
+			\item \textsf{/src/main/resources} : fichiers de ressources (images, annexes...)
+			\item \textsf{/src/main/webapp} : webapp du projet
+			\item \textsf{/src/test} : fichiers de test
+			\item \textsf{/src/test/java} : code source de test
+			\item \textsf{/src/test/resources} : fichiers de ressources de test
+			\item \textsf{/src/site} : informations sur le projet et/ou les rapports générés suite aux traitements effectués
+			\item \textsf{/target} : fichiers résultat, les binaires (du code et des tests), les packages générés et les résultats des tests
+		\end{itemize}
+		\item[]
+		\item \textbf{pom.xml} \texttt{http://maven.apache.org/maven-model/maven.html}
+	\end{itemize}
+	
+	~\\
+	
+	\columnbreak
+	
+	\footnotesize
+	\begin{verbatim}
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                        http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.example.package</groupId>
+    <artifactId>ApplicationName</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    
+    <name>Project Name</name>
+    <url>http://www.example.org/</url>
+    
+    <dependencies>
+        <!-- ... -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- ... -->
+    </dependencies>
+    
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <build.name>BuildName</build.name>
+        <!-- ... -->
+    </properties>
+    
+    <build>
+        <finalName>${build.name}</finalName>
+        <plugins>
+            <!-- ... -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+            <!-- ... -->
+        </plugins>
+    </build>
+</project>
+	\end{verbatim}
+	\normalsize
+	
+	\vfill
+	\columnbreak
+	
+	\section*{Memento REST}
+	
+	\begin{itemize}
+		\item Services Web
+		\begin{itemize}
+			\item Protocoles standardis{\'e}s / ouverts (en g{\'e}n{\'e}ral HTTP)
+			\item Deux familles : SOAP (orient{\'e} services) et REST (orient{\'e} ressources)
+			\item REpresentational State Transfer, chapitre 5 th{\`e}se de Roy Fielding (2000), syst{\`e}mes distribu{\'e}s, \texttt{http://opikanoba.org/tr/fielding/rest}
+			\item Architecture, ensemble de contraintes... 
+			\item Client / serveur ; Stateless ; interface uniforme (identification, repr{\'e}sentation, auto-descriptif, HATEOAS / Hypermedia) ; couches ; code {\`a} la demande (optionnel)
+		\end{itemize}
+		\item Client / serveur : s{\'e}pare IHM et stockage ({\'e}volution s{\'e}par{\'e}e, meilleure portabilit{\'e} et possibilit{\'e}s mont{\'e}e en charge...)
+		\item Stateless : requ{\^e}te auto-portante ; pas de contexte sur le serveur (c{\^o}t{\'e} client) ; am{\'e}liore visibilit{\'e}
+		\item Donn{\'e}es r{\'e}ponses marqu{\'e}es pour la mise en cache
+		\item Interfaces uniformes (standardis{\'e}) : cf. SQL / SGBDR (schema.table.colonne) : SELECT, INSERT, UPDATE et DELETE
+		\item Contraintes d'interface : identification uniforme (URI : Uniform Resource Identifier)...
+		\item Repr{\'e}sentations (seule la repr{\'e}sentation de l'{\'e}tat transite)
+		\item Hyperm{\'e}dia comme moteur de l'{\'e}tat de l'application (HATEOAS : Hypertext As The Engine Of Application State) : facilit{\'e}, guidage utilisateur, agent utilisateur stocke l'information, pas de contraintes pr{\'e}-d{\'e}finies...
+		\item ...
+		\item HTTP / URI = Uniform Resource Identifier (RFC 3986) \texttt{https://tools.ietf.org/html/rfc3986 }
+		\begin{itemize}
+			\item URL : Uniform Resource Locator (identifie une ressource r{\'e}seau)
+			\item URN : Uniform Resource Name (identifie un nom de ressource)
+			\item Schema + Chemin d'acc{\`e}s
+		\end{itemize}
+		
+		\item Requ{\^e}te : Structure textuelle normalis{\'e}e
+		\begin{itemize}
+			\item Ligne de requ{\^e}te : <m{\'e}thode> <URI> <version-HTTP> CRLF
+			\item Lignes d'en-t{\^e}te : *(<champs>: <valeur> CRLF)
+			\item Ligne vide : CRLF
+			\item Corps (optionnel) : [*OCTET]
+		\end{itemize}
+		\item R{\'e}ponse : Structure assez similaire {\`a} la requ{\^e}te
+		\begin{itemize}
+			\item Ligne de statut : <version-HTTP> <statut> <message> CRLF
+			\item Lignes d'en-t{\^e}te : *(<champs>: <valeur> CRLF)
+			\item Ligne vide : CRLF
+			\item Corps (optionnel) : [*OCTET]
+		\end{itemize}
+	\end{itemize}
+	
+	\columnbreak
+	
+	\begin{itemize}
+		\item De nombreux champs d'en-t{\^e}te sont pr{\'e}d{\'e}finis
+		\begin{itemize}
+			\item General header : les champs communs (Cache-Control, Date, ...)
+			\item Request header : les champs sp{\'e}cifiques de requ{\^e}te (Host, Accept, ...)
+			\item Response header : les champs sp{\'e}cifiques de r{\'e}ponse (Age, ETag, ...)
+			\item Entity header : les champs sp{\'e}cifiques des entit{\'e}s (Content-Encoding, ...)
+		\end{itemize}
+		\item Sp{\'e}cifications : http://www.w3.org/Protocols/
+		\begin{itemize}
+			\item HTTP 1.1 : https://tools.ietf.org/html/rfc2616
+			\item HTTP 1.1bis : reformulation dans plusieurs documents (RFC7230, …, RFC7237)
+			\item HTTP 2 : RFC7540 publi{\'e}e en mai 2015
+		\end{itemize}
+		\item 8 m{\'e}thodes de base
+		\begin{itemize}
+			\item GET : obtenir une repr{\'e}sentation d'une ressource
+			\item HEAD : demander des informations sur une ressource
+			\item POST : transmettre des donn{\'e}es {\`a} une ressource pour traitement
+			\item PUT : remplacer ou cr{\'e}er une ressource (dont on conna{\^i}t l'URI)
+			\item DELETE : supprimer une ressource
+			\item CONNECT : pour utiliser un Proxy comme un tunnel de communication
+			\item OPTIONS : demander les options de communications (ressource ou serveur)
+			\item TRACE : demander au serveur de retourner ce qu'il a re\c{c}u (echo pour diagnostic)
+		\end{itemize}
+		\item Codes de r{\'e}ponse HTTP : 
+		\begin{itemize}
+			\item[1xx -- Information] messages d'information (non utilis{\'e})
+			\item[2xx -- Succ{\`e}s] la requ{\^e}te s'est d{\'e}roul{\'e}e correctement
+			\item[3xx -- Redirection] indique une redirection
+			\item[4xx -- Erreur client] {\`a} l'origine du client
+			\item[5xx -- Erreur serveur] {\`a} l'origine du serveur
+		\end{itemize}
+	\end{itemize}
+	
+	\vfill
+	
+	\columnbreak
+	
+	\tableofcontents
+	
+	\vfill
+	
+	\columnbreak
+	
+	% \vfill
+	
+	...
+	
+	some data... 
+\end{multicols}
+
+\clearpage
+
+\end{landscape}
+\end{document}
