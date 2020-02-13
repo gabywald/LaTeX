@@ -1,0 +1,258 @@
+
+Juste pour info (plus pour la suite/ l'avenir : le code source est aussi fait pour être relu par des êtres humains)
+	Eclipse facilite les choses (coloration des mots spéciaux, re-indentation automatisée, mais un autre éditeur / environnement  peut être utilisé)
+	Un exemple de "correction" avec le code que tu m'as fournis (pas forcément complet ni très pertinent)...
+
+
+"Consignes" applicables précisément à Java (légères variantes pour les autres langages comme C / C++, PHP, Perl...)
+	Nommage des packages : suffixe + nom entreprise / institution + nom projet + nom(s) sous-partie (séparation par des points) : correspond à la hiérarchie des répertoires contenant les sources (classes '.java')
+	Nommage des classes : première lettre en majuscule, puis 'CamelCase' si nom composé
+	Nommage des attributs d'instances de classe // d'objet : minuscules ('CamelCase' pour le reste si vraiment long, mais pas conseillé que ce soit long)
+		++ utilisation du type <nomInstanceDeClasse>.<attribut> // ne pas négliger l'utilisation de 'this' en interne dans une méthode !!
+	Nommage des attributs statiques de classe : Majuscules complètement, séparation composition par '_' (seul cas !!) ; utiliser le moins possible, [cas particulier des Design-Pattern ou de certaines propriétés couramment utilisées]
+		++ utilisation du type <NomDeLaClasse>.<ATTRIBUT_STATIC>
+	Nommage des méthodes : comme les attributs d'instance de classe // d'objet 
+
+	Commentaires ==>> Eclipse aide beaucoup (Java-Style : '/**'+<Enter> et compléter à partir de la ligne suivante, TOUT le commentaire (y compris parties générées)...
+		Descriptions pour javadoc (ou équivalent dans d'autres langages) : packages, classes, attributs, constructeurs et méthodes...
+		Descriptions en interne (si pas évident à une relecture : parties d'une méthodes ou cas particuliers, explications pertinentes à un endroit précis). 
+
+	Ne pas hésiter à espacer, indenter, utiliser les accolades (toujours même si un seul élément dans le 'if' / 'else' / 'while' / 'for'... 
+		=> PENDANT l'écriture du code (notamment les boucles 'for', les espaces autour des opérateurs, les attributions de valeurs aux variables, passages à la lignes pour des opérations longues à lire / appréhender, passer à la ligne et indenter si beaucoup d'arguments dans une fonction / méthode (voire regrouper dans la liste par type)...
+		=>  par exemple [for (int i = 0 ; i < limit ; i++) { ; } ] plutôt que [for(int i=0;i<limit;i++){;}]
+		=> si plusieurs variables atrribuées à la suite : "équilibrer" au niveau du '=' ; par exemple : 
+			int val		= 0;
+			double var	= 0.0;
+			Object toto	= new Object();
+	
+Quelques liens...
+
+http://cyberzoide.developpez.com/java/javastyle/ -- 
+
+http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html -- 
+
+http://blog.lecacheur.com/2005/01/19/analyse-de-la-qualite-du-code-source-java/ --
+
+http://case.oncle-tom.net/2008/conventions-de-programmation-necessaire-maturite/ Convention(s) de programmation : nécessaire maturité
+	http://fr.wikipedia.org/wiki/Notation_hongroise  Notation hongroise (Wikipedia FR) : utilisée notamment en C
+	http://pear.php.net/manual/fr/standards.php Convention PEAR
+
+Ce qu'il faut retenir d'une convention c'est qu'elle explicite des règles de développement :
+
+    sur le nommage des éléments
+    sur l'indentation des éléments
+    sur les structures de contrôle (if, else, tout ça quoi)
+    sur la syntaxe des commentaires
+    sur la syntaxe de la documentation (le code auto-documenté c'est bon !)
+    sur l'organisation des fichiers, éventuellement
+
+http://hugo.developpez.com/tutoriels/genie-logiciel/utilite-normes-codage/ utilité des normes de codage
+	=> liste références en bas de page (c / c++, java, maven...)
+
+http://cyberzoide.developpez.com/java/javastyle/ JavaStyle
+
+http://blog.lecacheur.com/2005/01/19/analyse-de-la-qualite-du-code-source-java/ analyse de la qualité du code source Java
+Critères de qualité -- Voici une liste non-exhaustive de critères de qualité d'un code source :
+    lisibilité
+    uniformisation des conventions de codage
+        nommage
+        indentation
+        organisation
+        documentation
+    couplage minimum (module indépendants)
+    complexité cyclomatique minimum
+    commentaires JavaDoc maximum
+
+=> http://java.sun.com/docs/books/jls/second_edition/html/j.title.doc.html Java Language Specification
+
+=> http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html How to Write Doc Comments for the Javadoc Tool
+
+http://www.dng-consulting.com/blogs/index.php/2010/01/30/plugin-eclipse-pour-la-revue-de-code?blog=1 Plug-in Eclipse pour conventions de code
+
+http://fr.wikipedia.org/wiki/Apache_Maven Apache Maven (Wikipedia FR), outil de gestion de projets et production (avec entre autres chioses une analyse de la qualité du code : commentaires, cyclicité...)
+
+
+http://www.commentcamarche.net/forum/affich-2607701-c-convention-de-codage-linux C++ et Linux
+	Pour moi la seule chose importante que ce soit codé proprement (indenté, avec des vrais noms de variables, des lignes pas trop longue (si possible < 80 caractères)), que ça compile, et si possible sans warning. => gcc -W -Wall -o plop.exe plop.c
+Alors quelques petites remarques.
+
+- Le pedantic c'est bien mais il me semble qu'il fait la tête si tu fais des commentaires avec '//'. Personnellement je n'utilise pas cette option.
+
+- Pour les conventions de nommage, en général on écrit tout en minuscule en utilisant des '_' (contrairement au java ou les noms de classes commencent par une majuscule) :
+ex : c++ : ma_classe, ma_fonction
+ex : java : MaClasse, maFonction
+On remarquera que QT suit pourtant le second type de notation donc en fait c'est une convention discutable.
+
+- Personnellement quand je déclare une structure une classe ou sune structure je termine toujours son nom par _t.
+ex : ma_classe_t
+
+- Quand je fais une boucle avec un iterator, je renomme toujours l'objet itéré avec une const référence, sauf si la boucle est très simple pour que ce soit plus lisible (sauf quand la boucle est vraiment très simple) :
+
+int main(){
+  std::map<std::string,int> m;
+  m["janvier"] = 1;
+  m["fevrier"] = 2;
+  //...
+  std::map<std::string,int>::const_iterator
+    mit (m.begin()),
+    mend(m.end());
+  for(;mit!=mend;++mit){
+    const std::string & mois = mit->first;
+    const int & numero = mit->second;
+    std::cout << mois << ' ' << numero << std::endl;
+  }
+  return 0;
+}
+
+- De manière générale utiliser le moins possible les using namespace pour plus de lisibilité. Ca alourdit un peu les types mais au moins on sait de quoi on parle et il n'y a pas d'ambiguité. En particulier, ne jamais utiliser un using namespace dans un header (.hpp, .h)
+
+- Après plus sur le style de codage, en C++ on n'a pas besoin de malloc et free (il y a new et delete), de cast (il y a les static_cast, les dynamic_cast...).
+
+- Utiliser le moins possible les new, les delete, les pointeur car la plupart du temps on peut se débrouiller juste avec le constructeur et les références, un peu comme le java. De même par le jeu des héritages le cast peut être très souvent éviter (et devrait l'être autant que possible).
+
+- Ne passer à une fonction un pointeur que si c'est bien le pointeur qui est manipulé. Si c'est juste pour éviter d'empiler un gros objet en paramètre, ou pour que celui-ci soit modifiable par la fonction, utiliser une référence.
+
+- Verrouiller le code au maximum. Bien mettre en private portected ce qui doit l'être, mettre les const pour les invariants etc...
+
+http://prendreuncafe.com/blog/post/2008/07/23/Mes-conventions-de-codage Un exemple pour PHP
+
+
+=========================================================================================================================================
+
+Rendu / forme des documents ?
+
+Facilité d'utilisation ?
+
+Gestion du contenu ?
+
+Gestion des modèles / templates ? (++ problématique de la forme et des modifications du document)
+
+Rédaction et suivit des modifications : 
+	- http://forum.judgehype.com/judgehype/Discussionsgenerales/latex-suivi-modifications-sujet_244139_1.htm Dans Word, mais aussi dans TeX et LyX !!
+	- http://forum.hardware.fr/hfr/WindowsSoftware/Tutoriels/topic-unique-latex-sujet_152676_94.htm Même problématique ici...
+	- http://www.projet-plume.org/fiche/lyx LyX : éditeur WYSIWYG (La)TeX avec suivit des modifications
+	- http://forum.ubuntu-fr.org/viewtopic.php?id=403960 Suivit des révisions avec LaTeX
+	- http://fr.w3support.net/index.php?db=so&id=888347 -- Sinon SVN ++ LaTeX est une bonne option (sûrement meilleure, place sur le serveur mais gain au final dans le document)
+	- http://yann.morere.free.fr/IMG/pdf/svn_for_latex.pdf Utilisation de SVN pour LaTeX
+
+	- http://www.siteduzero.com/tutoriel-3-258578-qu-est-ce-que-latex.html#ss_part_2 Comparatif Word / LaTeX
+		=> avantage de LaTeX : on peut taper son texte au kilomètre sans être gêné par le soucis permanent de mise en forme (et parfois les bugs)
+		=> limitation : forme lors compilation (pas de soucis dans la plupart des cas, sauf cas tordus...) ; LyX pour éditer visuellement...
+
+Accessoirement, coût des licences M$ Office (quoique OpenOffice / LibreOffice soient aussi gratuits que LaTeX, apprentissage minimum toujours quelque soit l'éditeur utilisé...)
+
+
+=========================================================================================================================================
+
+Développement logiciels
+
+Besoins : 
+	- CATIA + Visual Studio + Outlook...
+		Windows exclusive (au moins pour compilations et tests...)
+		Consultation courrier électronique / agendas... 
+	- sinon alternatives...
+		Linux et "suites logicielles" (idem Mac OS X)
+		Eclipse et ses plug-in...
+		Courrier : Evolution / Thunderbird avec lien sur Serveur Outlook / Microsoft Exchange (evolution-mapi par exemple...)
+
+Outils de manipulation SVN (à utiliser ensembles si compatibles) : 
+	- // subversion eclipse + windows [http://www.jmdoudoux.fr/java/dejae/chap015.htm ]
+	- subversive eclipse [  https://www.eclipse.org/subversive/ ]
+	- subclipse [ http://subclipse.tigris.org/ ] intégré à Eclipse : icônes++
+	- tortoisesvn [http://tortoisesvn.tigris.org/ ] intégré à l'explorateur de fichier (surtout pour windows ??)
+
+=========================================================================================================================================
+
+
+=========================================================================================================================================
+
+20110214++
+Quelques idées trouvées ce week-end, pour les projets / prototypes / spécifications, (on ne sait jamais, si on fait un "brainstorming" ou si on inclue ça dans les rêgles et converges des pratiques
+
+Pour la partie IHM, quelques inspirations possibles (à développer) : 
+
+http://benfry.com/genetics/ Ben Fry genetics Visualisation (ergonomie OHM pour le bio...) http://www.genotyp.com/ Un bel exemple sur de la "génétique de polices de caractères". 
+
+++informations sur l'ergonomie des IHM
+	http://www.info.univ-tours.fr/~antoine/documents_enseignement/IHM_CM_chapII.pdf -- 
+	http://www.enib.fr/~nedelec/docs/poly/ihm_ergo.pdf -- 
+	http://deptinfo.cnam.fr/Enseignement/CycleSpecialisation/IHM/annee56/Ergonomie.pdf Il y a des normes !!
+AFNOR ‘Ergonomie et conception du dialogue homme-ordinateurs -- Z67-110 Afnor PARIS, Janvier 1988 AFNOR ‘Définition des critères ergonomiques de conception et d'évaluation des produits logiciels' -- Z67-133-1 Afnor PARIS, Décembre 1991
+
+"En bref, du bon sens"
+- prendre en compte distance et angle de vision (ISO1988) – exprimer les différences par des couleurs très contrastées et similitudes par des couleurs de faible contraste (ISO 1988) – formes différentes , couleurs différentes (ISO1988) – prendre en compte le confort visuel (éviter les couleurs très éloignées dans le spectre ) – utiliser des couleurs saturées avec luminosité pour mettre en évidence et inversement – discrimination pour les items : en fonction de la distance et de l'éloignement dans le spectre – le rouge : plus proche, le bleu plus éloigné, couleurs chaudes : objets apparaissant plus grands – la couleur : satisfait l'utilisateur
+
+
+
+Pour la partie "représentation de données" / Sémiologie Graphique, des points de départ à partir desquels on peut définir quelques règles...
+https://secure.wikimedia.org/wikipedia/fr/wiki/Semiologie_graphique Sémiologie Graphique (Wikipedia FR)
+https://secure.wikimedia.org/wikipedia/fr/wiki/Jacques_Bertin_(cartographe) Jacques Bertin (Wikipedia FR) https://secure.wikimedia.org/wikipedia/fr/wiki/Design_de_l'information Design de l'information (Wikipedia FR)
+	Et tous les articles connexes de ces pages...
+++Bibliographie
+    * Bertin Jacques, Sémiologie graphique, Paris, Mouton/Gauthier-Villars, 1967.
+    * Bertin Jacques, La Graphique et le traitement graphique de l'information, Paris, Flammarion, 1975.
+    * Bertin Jacques, Sémiologie graphique. Les diagrammes, les réseaux, les cartes, Paris, École Des Hautes Études En Sciences Sociales, 1999.
+    * Béguin Michelle, Pumain Denise, La représentation des données géographiques, Statistique et cartographie, Paris, Armand Colin, 2003.
+    * Gilles Palsky et Marie-Claire Robic, « Aux sources de la sémiologie graphique », Cybergeo : European Journal of Geography, Colloque "3O ans de sémiologie graphique", article 147, 2000
+
+20110818++
+http://www.rankspirit.com/design-site-web.php Design site Web, mais de façon générale : contrastes pour la lisibilité
+http://linkmultimedia.over-blog.com/pages/ERGONOMIE_au_bureau-585435.html Ergonomie au Bureau
+http://www.mon-design-web.com/standards.php 10 rêgles simples d'ergonomie du web (mais applicable ailleurs !!).
+Évitez les textes soulignés : sur le Web, un mot ou une expression soulignée signalent généralement l'existence d'un lien. N'utilisez jamais le soulignement pour d'autres raisons. Utilisez la couleur, la taille ou le style (gras et italique), mais ne soulignez pas une portion de texte pour en signaler l'importance.
+
+largeur de colonne
+	Évitez les colonnes trop larges : les colonnes larges obligent l'oeil à parcourir de longues distances de gauche à droite. On risque alors de "perdre la ligne" ce qui lassera rapidement vos lecteurs. Dans l'idéal, la largeur de vos colonnes doit être calculée pour contenir 10 à 15 mots maximum. Cette règle est évidemment bousculée par les design "fluides" (largeur de page variable en fonction de la taille de la fenêtre). Lire à ce sujet "Design fluide ou design fixe ?".
+
+Nous vous conseillons de faire un choix entre un design fixe de 800 pixels de large (pour rester compatible avec la majorité des écrans) et un design "semi-fluide" qui empêche (d'une façon ou d'une autre) vos colonnes de s'étendre sur une trop grande largeur (à l'aide d'un script javascript, par exemple).
+
+contraste et lisibilité
+	Faites en sorte que vos textes soient lisibles : ça vous semble évident ? Tant mieux ! De nombreux sites proposent du texte jaune sur fond gris, du vert sur du rouge ou du rouge sur du vert, des teintes claires sur un fond clair ou foncées sur un fond foncé. Autant d'associations qui rendre la lecture très difficile. Le texte blanc sur fond noir doit être absolument évité pour les sites proposant des articles longs. Le texte le plus lisible et le moins fatigant est le texte noir sur fond blanc. Vous pouvez vous éloigner légèrement de ce grand classique à condition de toujours garder un bon contraste entre le fond et le texte.
+
+inutilité des gadgets
+	Évitez les gadgets : Compteurs, animations flash et autres gadgets n'apportent rien à votre site, mais distraient les visiteurs de votre véritable contenu. Notre page sur le contraste vous rappelle qu'un élément attirant l'attention doit toujours être au service du contenu de la page.
+
+sous-titre
+	Une taille de texte suffisante : vous avez 20 ans et une vue parfaite ? Tant mieux pour vous ! Ce n'est malheureusement pas le cas de la plupart des d'internautes. Les sites utilisant des caractères microscopiques sont fatigants, notamment pour les internautes ayant plus de 40 ans. Vous aussi, vous serez sans doute presbyte, à cet âge là !
+
+leger et rapide
+	Des pages "légères" : les visiteurs sont pressés et impatientents. Dans l'idéal, vos pages ne devraient pas peser plus de 30 à 50 Ko (tout compris avec les images et les animations). Ce point est absolument essentiel, mais Vincent Bernard le nuance de façon intéressante dans son article sur le sujet.
+
+structure du texte
+	Des titres de page clairs et informatifs : Où suis-je ? D'où vins-je ? Où vais-je ? Évitez à vos visiteurs de se perdre dans ces questions metaphysiques ! Offrez leur des repères et des invitations !
+
+sous-titre
+	Des sous-titres, une mise en page structurée et aérée : Découpez votre contenu en chapitres clairement identifiés. Soupoudrez généreusement de sous-titres qui serviront de repères. Vos visiteurs doivent pouvoir choisir ce qu'ils veulent lire ou sauter.
+
+Simplicité
+	Des menus simples : vos visiteurs ne passeront pas plus de quelques secondes à essayer de comprendre l'architecture de votre site. Le système de menu le plus répandu consiste à placer :
+- Le menu principal sous la forme d'une barre située en haut de la page
+- Les sous menus à gauche de la page
+- Les renvois, les publicités, à droite de la page
+- Les références (bibliographie) en bas de la page
+
+En respectant ces habitudes, vous faciliterez la navigation sur votre site. Si vous souhaitez en changer, assurez-vous que le résultat est immédiatement compréhensible pour un internante découvrant votre site pour la première fois.
+
+pas de gadgets
+	Des caractères standards : pour être sûr que vos visiteurs pourront voir vos pages de la même façon que vous les voyez, vous devez impérativement rester dans les grands "standards" de caractères : arial, times, verdana,.... Si vous souhaitez absolument utiliser d'autres polices pour vos titres, affichez-les en tant qu'images, mais n'oubliez-pas de doter ces images dun texte alternatif (balise "alt").
+
+=========================================================================================================================================
+
+http://technet.microsoft.com/fr-fr/sysinternals/ Quelques outils utiles pour FenetreS / Windows...
+
+https://www.teamviewer.com/ TeamViewer (accès à distance : Windows, Mac OS X, Linux... (client sous Android également). 
+
+=========================================================================================================================================
+
+Veille information
+	Articles scientifiques PubMed => terlmes MeSH (thesaurus / ontologie) ++ recherche "full-text"
+
+	Outils automatiques
+		Base(s) PubMed
+		Recherches régulières automatisées
+	Régularité recherche (termes) : fréquence !!
+
+	==>> idées de développement : 
+		Représenter avec graphe (visuellement) les liens de citations (à partir d'un bibTex notamment... généré par JabRef par exemple...)
+
+
