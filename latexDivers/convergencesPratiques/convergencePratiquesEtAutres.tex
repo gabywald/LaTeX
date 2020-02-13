@@ -1,0 +1,1285 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+% \usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+% \usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{multirow}
+
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols} 
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{60pt}{25pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{headings}
+
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{
+	\put(0,0){
+		\parbox[b][\paperheight]{\paperwidth}{%
+		% \vfill
+		\begin{center}
+			\includegraphics[width=0.5\paperwidth,height=0.5\paperheight, keepaspectratio]{img/brouillonDraft.png}%
+		\end{center}
+		% \vfill
+}}}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+
+% http://www.trustonme.net/didactels/250.html
+
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+	Propositions pour la convergence des pratiques d{\'e}veloppeurs -- \emph{Confidentiel ???}
+\hfill \includegraphics[width=0.5cm]{img/logo_glider.png} }
+\fancyfoot[RO]{\includegraphics[width=0.5cm]{img/logo_glider.png} \hfill
+	\emph{Confidentiel ???} -- Propositions pour la convergence des pratiques d{\'e}veloppeurs
+\hfill \thepage /\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+
+%--- Definitions de nouvelles commandes ---
+\newcommand{\N}{\mathbb{N}} % les entiers naturels
+
+%--- Definitions de nouvelles couleurs ---
+\definecolor{verylightgrey}{rgb}{0.8,0.8,0.8}
+\definecolor{verylightgray}{gray}{0.80}
+\definecolor{lightgrey}{rgb}{0.6,0.6,0.6}
+\definecolor{lightgray}{gray}{0.6}
+
+
+%--- Pour le titre ---
+\def\maketitle{%
+	\begin{center}
+		
+		~\\[\baselineskip]
+		~\\[\baselineskip]
+		
+		\begin{tabular}[c]{c}
+			%% \textsc{\textbf{INTERNE}}~\\[\baselineskip]~\\[\baselineskip]
+			%% \includegraphics[width=3cm]{img/logo_glider.png}~\\[\baselineskip]
+			\emph{\textbf{ 12 juillet 2012 }}~\\[\baselineskip]~\\[\baselineskip]
+			%% \emph{\textbf{ \today }}~\\[\baselineskip]~\\[\baselineskip]
+			\emph{\textbf{ \emph{Convergence des pratiques} }}~\\[\baselineskip]~\\[\baselineskip]
+			\textsc{D{\'e}veloppeurs}~\\[\baselineskip]~\\[\baselineskip]
+			\\ 
+		\end{tabular}
+		% \\ \hline
+		 	% % if more than one logo
+			% \includegraphics[width=5cm]{img/logo_glider.png}
+			% \includegraphics[width=5cm]{img/logo_wifi.png}
+		% \\ \hline
+		% \end{tabular}
+			~\\[\baselineskip]~\\[\baselineskip]
+			\Huge{Convergence des pratiques D{\'e}veloppeurs}~\\[\baselineskip]
+			\Large{Propositions}~\\[\baselineskip]
+		
+		~\\[\baselineskip]
+		~\\[\baselineskip]
+	\large{
+		% \textsc{\textbf{Institution d'accueil et jury}}
+		% ~\\[\baselineskip]
+		<<Auteur principal>> : \texttt{Gabriel CHANDESRIS}~\\[\baselineskip]
+		% <<titre personne>> : \texttt{Jocelyn CONNU}~\\[\baselineskip]
+		% ~\\[\baselineskip]
+		% \textit{Pr{\'e}cisions du contexte de r{\'e}daction...}
+	}
+
+	\end{center}
+
+}%
+
+
+
+%--- Pour le glossaire --- a defaut de \makeglossary ou d'utilisation d'index latex
+
+\definecolor{verylightgray}{rgb}{0.8,0.8,0.8}
+\def\makeglossaire{%
+	\begin{center}
+
+	\begin{tabular}{|>{\columncolor{verylightgray}} p{0.2\textwidth}|p{0.8\textwidth}|}
+
+		\hline
+
+		\textbf{BLAST} & 
+
+			\begin{tabular}{p{0.8\textwidth}}
+
+			Basic Local Alignment Search Tool \\
+
+			\textit{algorithmes et logiciels pour l'alignement de s{\'e}quences et la recherche de similarit{\'e}s locales}
+
+			\end{tabular} \\
+
+		\hline
+
+		\textbf{BNDB} & Biochemical NetWork DataBase \textit{(entrep{\^o}t de donn{\'e}es)} \\
+
+		\hline
+
+	\end{tabular}
+
+\end{center}
+
+}%
+
+%============================= Corps =================================
+\begin{document}
+
+	\AddToShipoutPicture{\BackgroundPic}
+
+%ecrire le titre...
+\maketitle
+\setcounter{page}{0}
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{0}
+\thispagestyle{empty}
+
+~\\
+
+\clearpage
+\setcounter{page}{0}
+\thispagestyle{empty}
+% ecrire la table des mati{\'e}res...
+\tableofcontents
+
+% \clearpage
+
+% \setcounter{page}{0}
+% \thispagestyle{empty}
+
+% ecrire la table des figures et celle des tableaux
+
+\setcounter{page}{0}
+\thispagestyle{empty}
+~\\ \rule{10cm}{1mm}~\\
+\listoffigures
+~\\ \rule{10cm}{1mm}~\\
+\listoftables
+\clearpage
+
+
+\setcounter{page}{1}
+
+\section*{Introduction\markboth{Introduction}{Introduction}}
+\addcontentsline{toc}{section}{Introduction}
+
+[...]~\\
+
+L'objectif de ce document est de fournir des \textbf{\emph{propositions}} pour des pratiques communes aux d{\'e}veloppeurs chez \emph{INTERNE}, tir{\'e} de l'expr{\'e}ience de chacun(e).~\\ 
+
+Ceci dans l'id{\'e}e d'en discuter et de d{\'e}finir des pratiques communes (conventions de codages, outils de d{\'e}veloppement, documentation...) et de donner des exemples pour chacune.~\\ 
+
+Un ensemble de reources est list{\'e} dans ce document (bien s{\^u}r amen{\'e} {\`a} {\'e}voluer !!).~\\
+
+[...]~\\
+
+\rule{10cm}{0.5mm}~\\
+
+\section*{Auteurs de ce document\markboth{Auteurs de ce document}{Auteurs de ce document}}
+\addcontentsline{toc}{section}{Auteurs de ce document}
+
+\begin{itemize}
+	\item[] Gabriel Chandesris (GCH)
+	\item[] ...
+\end{itemize}
+
+\section*{Historique de ce document\markboth{Historique de ce document}{Historique de ce document}}
+\addcontentsline{toc}{section}{Historique de ce document}
+
+\begin{table}[h]
+	\begin{center}
+	\begin{tabular}{|p{0.15\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}|p{0.2\textwidth}|p{0.2\textwidth}|}
+		\hline
+		\rowcolor{lightgrey} Date & Version & Status & Modifications & Auteur(s) \\
+		\hline
+		05/09/2011 & 0.1	& En cours & Premi{\`e}re version & GCH \\
+		\hline
+		29/09/2011 & 0.1.1	& En cours & Corrections et commentaires de GCH et Autre \\
+		\hline
+		27/01/2012 & 0.2	& En cours & Reprise de ce projet, pr{\'e}cisions... & GCH et Autre \\
+		\hline
+	\end{tabular}
+	\end{center}
+	\caption{Historique et versions de ce document}
+	\label{tab:documentVersionning}
+\end{table}~\\
+
+\rule{10cm}{0.5mm}~\\
+
+
+\clearpage
+
+\section{Conventions de codage}
+
+\textit{Autre : Ok bien s{\^u}r pour les conventions "standards" de chaque langage (java != C++) Ne pas oublier que CAA nous impose d{\'e}j{\`a} de s{\'e}v{\`e}res conventions de codage. }
+
+\subsection{G{\'e}n{\'e}ralit{\'e}s Java (et autres...)}
+
+Juste pour info (plus pour la suite/ l'avenir : le code source est aussi fait pour {\^e}tre relu par des {\^e}tres humains). \emph{Eclipse} facilite les choses (coloration des mots sp{\'e}ciaux, re-indentation automatis{\'e}e, mais un autre {\'e}diteur / environnement  peut {\^e}tre utilis{\'e}).~\\
+
+<<Consignes>> applicables pr{\'e}cis{\'e}ment {\`a} Java (qui dispose d'une exp{\'e}rience acquise sur d'autres langages ; pour leqwuels il y a quelques variantes il y a {\'e}galement de l{\'e}g{\`e}res variantes C / C++, PHP, Perl, Pyhton, Ruby...)
+\begin{itemize}
+	\item[] Nommage des packages : suffixe + nom entreprise / institution + nom projet + nom(s) sous-partie (s{\'e}paration par des points) : correspond {\`a} la hi{\'e}rarchie des r{\'e}pertoires contenant les sources (classes '.java'), puis les {\'e}l{\'e}m{\'e}nets compil{\'e}s pour les bianires. 
+	\item[] Nommage des classes : premi{\`e}re lettre en majuscule, puis 'CamelCase' si nom compos{\'e}
+	\item[] Nommage des attributs d'instances de classe // d'objet : minuscules ('CamelCase' pour le reste si vraiment long, mais pas conseill{\'e} que ce soit long)~\\
+		++ utilisation du type $<nomInstanceDeClasse>.<attribut>$~\\
+		\emph{// ne pas n{\'e}gliger l'utilisation de 'this' en interne dans une m{\'e}thode !!}~\\
+	\item[] Nommage des attributs statiques de classe : Majuscules compl{\`e}tement, s{\'e}paration composition par '\_' (seul cas !!) ; utiliser le moins possible, [cas particulier des Design-Pattern ou de certaines propri{\'e}t{\'e}s couramment utilis{\'e}es]~\\
+		++ utilisation du type $<NomDeLaClasse>.<ATTRIBUT$\_$STATIC>$
+	\item[] Nommage des m{\'e}thodes : comme les attributs d'instance de classe // d'objet 
+\end{itemize}~\\
+
+Commentaires $\Longrightarrow$ Eclipse aide beaucoup (Java-Style : $'/**'+<Enter>$ et compl{\'e}ter {\`a} partir de la ligne suivante, TOUT le commentaire (y compris parties g{\'e}n{\'e}r{\'e}es)...
+\begin{itemize}
+	\item[] Descriptions pour javadoc (ou {\'e}quivalent dans d'autres langages) : packages, classes, attributs, constructeurs et m{\'e}thodes...
+	\item[] Descriptions en interne (si pas {\'e}vident {\`a} une relecture : parties d'une m{\'e}thodes ou cas particuliers, explications pertinentes {\`a} un endroit pr{\'e}cis). 
+\end{itemize}~\\
+
+Ne pas h{\'e}siter {\`a} espacer, indenter, utiliser les accolades (toujours m{\^e}me si un seul {\'e}l{\'e}ment dans le 'if' / 'else' / 'while' / 'for'... 
+\begin{itemize}
+	\item[$\Rightarrow$] \textsc{Pendant} l'{\'e}criture du code (notamment les boucles 'for', les espaces autour des op{\'e}rateurs, les attributions de valeurs aux variables, passages {\`a} la lignes pour des op{\'e}rations longues {\`a} lire / appr{\'e}hender, passer {\`a} la ligne et indenter si beaucoup d'arguments dans une fonction / m{\'e}thode (voire regrouper dans la liste par type)...
+	\item[$\Rightarrow$] par exemple 
+		\begin{verbatim}
+            for (int i = 0 ; i < limit ; i++) { ; }
+		\end{verbatim}
+		plut{\^o}t que
+		\begin{verbatim}
+            for(int i=0;i<limit;i++){;}
+		\end{verbatim}
+	\item[$\Rightarrow$] si plusieurs variables atrribu{\'e}es {\`a} la suite : "{\'e}quilibrer" au niveau du '=' ; par exemple : 
+	%% http://en.wikibooks.org/wiki/LaTeX/Algorithms_and_Pseudocode
+	%% https://texblog.wordpress.com/2007/07/11/formatting-code-in-latex-tabbing-verbatim/
+	\begin{verbatim}
+            int val     = 0;
+            double var  = 0.0;
+            Object toto = new Object();
+	\end{verbatim}
+\end{itemize}~\\
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+	
+\subsection{Quelques liens...}
+
+\begin{itemize}
+	\item[] \texttt{http://cyberzoide.developpez.com/java/javastyle/} JavaStyle 
+	\item[] \texttt{http://java.sun.com/docs/books/jls/second\_edition/html/j.title.doc.html} Java Language Specification
+	\item[] \texttt{http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html} How to Write Doc Comments for the Javadoc Tool 
+	\item[] \texttt{http://blog.lecacheur.com/2005/01/19/analyse-de-la-qualite-du-code-source-java/} Analyse de la qualit{\'e} du code source Java
+	\item[] \texttt{http://case.oncle-tom.net/2008/conventions-de-programmation-necessaire-maturite/} Convention(s) de programmation : n{\'e}cessaire maturit{\'e}
+	\begin{itemize}
+		\item[] \texttt{http://fr.wikipedia.org/wiki/Notation\_hongroise} Notation hongroise (Wikipedia FR) : utilis{\'e}e notamment en C
+		\item[] \texttt{http://pear.php.net/manual/fr/standards.php} Convention PEAR
+	\end{itemize}
+	\item[] \texttt{http://hugo.developpez.com/tutoriels/genie-logiciel/utilite-normes-codage/} Utilit{\'e} des normes de codage (voir les r{\'e}f{\'e}rences en bas de page). 
+	\item[] \texttt{http://www.dng-consulting.com/blogs/index.php/2010/01/30/plugin-eclipse-pour-la-revue-de-code} Plug-in Eclipse pour conventions de code
+	\item[] \texttt{http://fr.wikipedia.org/wiki/Apache\_Maven} Apache \textbf{Maven} (Wikipedia FR), outil de gestion de projets et production (avec entre autres choses une analyse de la qualit{\'e} du code : commentaires, cyclicit{\'e}...)
+	\item[] \texttt{http://prendreuncafe.com/blog/post/2008/07/23/Mes-conventions-de-codage} Un exemple pour PHP
+\end{itemize}~\\
+
+Ce qu'il faut retenir d'une convention c'est qu'elle explicite des r{\`e}gles de d{\'e}veloppement :
+\begin{itemize}
+	\item[] sur le nommage des {\'e}l{\'e}ments
+    \item[] sur l'indentation des {\'e}l{\'e}ments
+    \item[] sur les structures de contr{\^o}le (if, else, tout \c{c}a quoi)
+    \item[] sur la syntaxe des commentaires
+    \item[] sur la syntaxe de la documentation (le code auto-document{\'e} c'est bon !)
+    \item[] sur l'organisation des fichiers, {\'e}ventuellement
+\end{itemize}~\\
+
+Crit{\`e}res de qualit{\'e} -- Voici une liste non-exhaustive de crit{\`e}res de qualit{\'e} d'un code source :
+\begin{itemize}
+	\item[] lisibilit{\'e}
+    \item[] uniformisation des conventions de codage
+	\begin{itemize}
+		\item[] nommage
+		\item[] indentation
+    	\item[] organisation
+    	\item[] documentation
+	\end{itemize}~\\
+    \item[] couplage minimum (module ind{\'e}pendants)
+    \item[] complexit{\'e} cyclomatique minimum
+    \item[] commentaires JavaDoc maximum
+\end{itemize}~\\
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+
+\subsection{Orientation C / C++}
+
+\texttt{http://www.commentcamarche.net/forum/affich-2607701-c-convention-de-codage-linux} \emph{\textbf{C++ et Linux}}~\\
+	Pour moi la seule chose importante que ce soit cod{\'e} proprement (indent{\'e}, avec des vrais noms de variables, des lignes pas trop longue (si possible < 80 caract{\`e}res)), que \c{c}a compile, et \emph{si possible sans warning. }~\\
+	
+	$\Rightarrow$ \texttt{gcc -W -Wall -o plop.exe plop.c}~\\
+	
+Alors quelques petites remarques.
+	\begin{itemize}
+		\item Le pedantic c'est bien mais il me semble qu'il fait la t{\^e}te si tu fais des commentaires avec '//'. Personnellement je n'utilise pas cette option.
+		\item Pour les conventions de nommage, en g{\'e}n{\'e}ral on {\'e}crit tout en minuscule en utilisant des '\_' (contrairement au java ou les noms de classes commencent par une majuscule) :~\\
+ex : c++ : ma\_classe, ma\_fonction~\\
+ex : java : MaClasse, maFonction~\\
+On remarquera que QT suit pourtant le second type de notation donc en fait c'est une convention discutable.
+		\item Personnellement quand je d{\'e}clare une structure une classe ou une structure je termine toujours son nom par \_t.
+ex : ma\_classe\_t
+		\item Quand je fais une boucle avec un iterator, je renomme toujours l'objet it{\'e}r{\'e} avec une const r{\'e}f{\'e}rence, sauf si la boucle est tr{\`e}s simple pour que ce soit plus lisible (sauf quand la boucle est vraiment tr{\`e}s simple) :~\\
+		\begin{verbatim}
+            int main() {
+                std::map<std::string,int> m;
+                m["janvier"] = 1;
+                m["fevrier"] = 2;
+                //...
+                std::map<std::string,int>::const_iterator
+                mit(m.begin()),
+                mend(m.end());
+                for( ; mit != mend ; ++mit ) {
+                    const std::string & mois = mit->first;
+                    const int & numero = mit->second;
+                    std::cout << mois << ' ' << numero << std::endl;
+                }
+                return 0;
+            }
+		\end{verbatim}~\\
+
+	\item De mani{\`e}re g{\'e}n{\'e}rale utiliser le moins possible les using namespace pour plus de lisibilit{\'e}. Ca alourdit un peu les types mais au moins on sait de quoi on parle et il n'y a pas d'ambiguit{\'e}. En particulier, ne jamais utiliser un using namespace dans un header (.hpp, .h)
+	\item Apr{\`e}s plus sur le style de codage, en C++ on n'a pas besoin de malloc et free (il y a new et delete), de cast (il y a les static\_cast, les dynamic\_cast...).
+	\item Utiliser le moins possible les new, les delete, les pointeur car la plupart du temps on peut se d{\'e}brouiller juste avec le constructeur et les r{\'e}f{\'e}rences, un peu comme le java. De m{\^e}me par le jeu des h{\'e}ritages le cast peut {\^e}tre tr{\`e}s souvent {\'e}viter (et devrait l'{\^e}tre autant que possible).
+	\item Ne passer {\`a} une fonction un pointeur que si c'est bien le pointeur qui est manipul{\'e}. Si c'est juste pour {\'e}viter d'empiler un gros objet en param{\`e}tre, ou pour que celui-ci soit modifiable par la fonction, utiliser une r{\'e}f{\'e}rence.
+	\item Verrouiller le code au maximum. 
+	\item Bien mettre en \emph{private} // \emph{protected} ce qui doit l'{\^e}tre, mettre les const pour les invariants etc...
+\end{itemize}~\\
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+
+\section{Documents, mod{\`e}les / templates, forme et rendu ?}
+
+\subsection{G{\'e}n{\'e}ralit{\'e}s}
+
+Quelques questions et probl{\'e}matiques : 
+	\begin{itemize}
+		\item[] Rendu / forme des documents ?
+		\item[] Facilit{\'e} d'utilisation ?
+		\item[] Gestion du contenu ?
+		\item[] Gestion des mod{\`e}les / templates ? (++ probl{\'e}matique de la forme et des modifications du document)
+	\end{itemize}~\\
+
+R{\'e}daction et suivit des modifications : 
+\begin{itemize}
+	\item[] \texttt{http://forum.judgehype.com/judgehype/Discussionsgenerales/} --- 
+	\begin{itemize}
+		\item \texttt{latex-suivi-modifications-sujet\_244139\_1.htm} Dans Word, mais aussi dans TeX et LyX !!
+	\end{itemize}
+	\item[] \texttt{http://forum.hardware.fr/hfr/WindowsSoftware/Tutoriels/} --- 
+	\begin{itemize}
+		\item \texttt{topic-unique-latex-sujet\_152676\_94.htm} M{\^e}me probl{\'e}matique ici...
+	\end{itemize}
+	\item[] \texttt{http://www.projet-plume.org/fiche/lyx} LyX : {\'e}diteur WYSIWYG (La)TeX avec suivit des modifications
+	\item[] \texttt{http://forum.ubuntu-fr.org/viewtopic.php?id=403960} Suivit des r{\'e}visions avec \LaTeX
+	\item[] \texttt{http://fr.w3support.net/index.php?db=so\&id=888347} -- Sinon SVN ++ \LaTeX est une bonne option (s{\^u}rement meilleure, place sur le serveur mais gain au final dans le document)
+	\item \texttt{http://yann.morere.free.fr/IMG/pdf/svn\_for\_latex.pdf} Utilisation de SVN pour LaTeX
+	~\\
+	\item[] \texttt{http://www.siteduzero.com/tutoriel-3-258578-qu-est-ce-que-latex.html\#ss\_part\_2} Comparatif Word / \LaTeX
+	\begin{itemize}
+		\item[$\Rightarrow$] avantage de \LaTeX : on peut taper son texte au kilom{\`e}tre sans {\^e}tre g{\^e}n{\'e} par le soucis permanent de mise en forme (et parfois les bugs)
+		\item[$\Rightarrow$] limitation : forme lors compilation (pas de soucis dans la plupart des cas, sauf cas tordus...) ; LyX pour {\'e}diter visuellement...
+	\end{itemize}
+\end{itemize}~\\
+
+Accessoirement, il y a le co{\^u}t des licences M\$ Office (quoique OpenOffice / LibreOffice soient aussi gratuits que \LaTeX, l'apprentissage minimum est toujours pr{\'e}sent quelque soit l'{\'e}diteur ou la suite bureautique utilis{\'e}... Il faut penser {\'e}galement au maintien de la documentation dans le temps !). 
+
+	$\Rightarrow$ Orientation compatibilit{\'e} avec partenaires / autres correspondants
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+
+\subsection{M{\'e}thodes de travail de r{\'e}daction / bureautique}
+
+L'id{\'e}e g{\'e}n{\'e}rale ici est de faciliter tant l'{\'e}criture des documents que leur historique (\emph{versioning})... Sachant que la m{\'e}thodologie g{\'e}n{\'e}rale d{\'e}crite ici est applicable partout...
+
+\emph{{\`A} pr{\'e}ciser selon recommandations <<officielles>>. }Quelques id{\'e}es dans la cat{\'e}gorie \emph{<<fa\c{c}ons de faire>>} / m{\'e}thodologie, dans l'ordre :
+\begin{enumerate}
+	\item Taper le texte \textit{au kilom{\`e}tre}, en indiquant les titres / sous-titres / ..., images (et positions) sans se soucier de la forme. 
+	\item Ins{\'e}rer les images (avec l{\'e}gendes), r{\'e}f{\'e}rences bibliographiques. 
+	\item G{\'e}rer le format du document (formes des titres, sous-titres...) et appliquer. 
+	\item Ins{\'e}rer les tables (tables des mati{\`e}res / figures / tableaux...). 
+\end{enumerate}~\\
+
+Certains modes d'{\'e}ditions n'{\'e}tant pas forc{\'e}ment ais{\'e} pour tout un chacun (Word et ses r{\'e}visions, {\'e}quivalent dans OpenOffice et assimil{\'e}s, \LaTeX...), il est parfois bien utile de repartir du <<texte brut>>, puis de repartir dans la suite, une fa\c{c}on de faire pourrait {\^e}tre de : 
+\begin{enumerate}
+	\item Utiliser un r{\'e}pertoire / dossier de travail pour un document, appel{\'e} {\`a} contenir un fichier texte, un r{\'e}pertoire d'images, le document final...
+	\item Enregistrer le contenu textuel dans un fichier texte (?? document Word ??, utiliser Notepad, Notepad++, Jedit, Geany...). 
+	\item R{\'e}cup{\'e}rer les images dans un r{\'e}pertoire associ{\'e}. 
+	\item Modifier le texte et les images {\`a} volont{\'e}. 
+	\item Recomposer le document final en suivant la proc{\'e}dre pr{\'e}c{\'e}dente. 
+\end{enumerate}~\\
+
+Cette m{\'e}thode est quelque peu contraingnante mais largement automatisable (inspir{\'e}e de celle de \LaTeX), sachant que l'on peut g{\'e}n{\'e}rer des \emph{proto-document Word} avec \LaTeX ... L'objectif {\'e}tant multiple et recouvre notamment l'id{\'e}e de pouvoir reprendre facilement les documents dans un autre format ou version de logiciel (dans les suites bureautiques par exemple), sachant que c'est ce format qui fera foi de fa\c{c}on g{\'e}n{\'e}rale (en esp{\'e}rant que l'on puisse r{\'e}cup{\'e}rer les donn{\'e}es depuis ce format...).~\\
+
+\textsc{\textbf{NOTE Word 2010 / fichiers [.docx]}} : les documents g{\'e}n{\'e}r{\'e}s sont en fait des fichiers compress{\'e}s au format ZIP [.zip] contenant un fichier XML avec du texte et {\'e}galement un r{\'e}pertoire d'images (en g{\'e}n{\'e}ral au format Bitmap [.bmp], voire JPEG [.jpeg|.jpg] ou PNG [.png] facilement r{\'e}-utilisables. Pour acc{\'e}der {\`a} ces donn{\'e}es en-dehors de Word, il suffit de remplacer l'extension [.docx] du document par [.zip] pour acc{\'e}der {\`a} tout cela...
+
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+
+\section{Projets et D{\'e}veloppement logiciels}
+
+\subsection{Gestion de projet}
+
+\subsubsection{D{\'e}finition des besoins ??}
+
+\begin{itemize}
+	\item D{\'e}finir des t{\^a}ches / sous-t{\^a}ches...
+	\item Wiki ?
+	\item Forum
+	\item R{\^o}les / Utilisateurs
+	\item Liens avec projet(s)
+	\item ...
+\end{itemize}
+
+\subsubsection{Solutions ??}
+\begin{itemize}
+	\item[] \textbf{Redmine}
+	\begin{itemize}
+		\item[] \texttt{http://www.redmine.org/} Site officiel
+		\item[] \texttt{https://fr.wikipedia.org/wiki/RedMine} sur Wikipedia FR (voir cat{\'e}gories / listes)
+		\item[] \texttt{https://en.wikipedia.org/wiki/Redmine} sur Wikipedia EN (voir cat{\'e}gories / listes)
+	\end{itemize}
+	\item[] ...
+\end{itemize}
+
+\subsection{Prototypage}
+
+\begin{itemize}
+	\item[] \textbf{?? Un <<framework>> interne ??}
+	\begin{itemize}
+		\item[] <<\textit{Propriétaire-like}>>
+		\item[] Facile {\`a} construire / utiliser
+	\end{itemize}
+	\item[] \textbf{Balsamiq Mockup ??}
+	\begin{itemize}
+		\item[] \texttt{http://www.balsamiq.com/products/mockups} Site officiel
+	\end{itemize}
+	\item[] ...
+\end{itemize}
+
+\clearpage
+
+\subsection{Quelques outils g{\'e}n{\'e}riques...}
+
+\begin{itemize}
+	\item[] \texttt{http://technet.microsoft.com/fr-fr/sysinternals/} Quelques outils utiles pour FenetreS / Windows...
+	\item[] \texttt{https://www.teamviewer.com/} TeamViewer (acc{\`e}s {\`a} distance : Windows, Mac OS X, Linux... (client sous Android {\'e}galement). 
+	\item[] \texttt{https://www.eclipse.org/} \textsc{Eclipse}, d{\'e}veloppement (sous tous syst{\`e}mes d'exploitation...). 
+	\item[] \texttt{http://www.cygwin.com/} CygWin \emph{Si on veut compiler pour Unix / Linux en {\'e}tant sous Windows}
+	\begin{itemize}
+		\item a collection of tools which provide a Linux look and feel environment for Windows.
+		\item a DLL (cygwin1.dll) which acts as a Linux API layer providing substantial Linux API functionality. 
+	\end{itemize}
+	\item[] \texttt{http://www.mingw.org/} MinGW (Minimalist GNU for Windows) \emph{{\`a} associer avec CygWin ou Eclipse pour une compilation en C / C++}
+	\begin{itemize}
+		\item \textbf{MinGW}, a contraction of "Minimalist GNU for Windows", is a minimalist development environment for native Microsoft Windows applications.
+		\item \textbf{MinGW} provides a complete Open Source programming tool set which is suitable for the development of native MS-Windows applications, and which do not depend on any 3rd-party C-Runtime DLLs. (It does depend on a number of DLLs provided by Microsoft themselves, as components of the operating system; most notable among these is MSVCRT.DLL, the Microsoft C runtime library. Additionally, threaded applications must ship with a freely distributable thread support DLL, provided as part of \textbf{MinGW} itself).
+		\item \textbf{MinGW} compilers provide access to the functionality of the Microsoft C runtime and some language-specific runtimes. \textbf{MinGW}, being Minimalist, \textbf{does not, and never will, attempt to provide a POSIX runtime environment for POSIX application deployment on MS-Windows}. If you want POSIX application deployment on this platform, please consider Cygwin [\texttt{http://www.cygwin.com/}] instead.
+		\item Primarily intended for use by developers working on the native MS-Windows platform, but also available for cross-hosted use, (see note below -- you may need to follow the "read more" [\texttt{http://www.mingw.org/Welcome\_to\_MinGW\_org}] link to see it), \textbf{MinGW} includes:
+		\begin{itemize}
+			\item A port of the GNU Compiler Collection (GCC), including C, C++, ADA and Fortran compilers;
+			\item GNU Binutils for Windows (assembler, linker, archive manager)
+			\item A graphical and a command-line installer for \textbf{MinGW} and \textbf{MSYS} deployment on MS-Windows
+		\end{itemize}
+		\item \textbf{MSYS}, a contraction of "Minimal SYStem", is a Bourne Shell command line interpreter system. Offered as an alternative to Microsoft's cmd.exe, this provides a general purpose command line environment, which is particularly suited to use with \textbf{MinGW}, for porting of many Open Source applications to the MS-Windows platform; a light-weight fork of Cygwin-1.3, it includes a small selection of Unix tools, chosen to facilitate that objective, and using it is a necessary prerequisite for building \textbf{MinGW}PORTs.
+		\item \textbf{mingwPORT} are user contributed additions to the \textbf{MinGW} software collection. Rather than providing these "add-ons" as precompiled binary packages, they are supplied in the form of interactive Bourne shell scripts, which guide the end user through the process of automatically downloading and patching original source code, then building and installing it. Users who wish to build any application from a \textbf{MinGWPORT} must first install both \textbf{MinGW} \emph{and} \textbf{MSYS}.
+		\item ...
+		\item \textbf{strawberry}...
+	\end{itemize}
+\end{itemize}
+
+\clearpage
+
+\subsection{Besoins et solutions {\'e}ventuelles}
+
+\begin{itemize}
+	\item OUTIL + Visual Studio + Outlook...
+	\begin{itemize}
+		\item Windows exclusive (au moins pour compilations et tests...)
+		\item Consultation courrier {\'e}lectronique / agendas...
+		\item Visual and Enovia Studio. 
+	\end{itemize}
+	\item sinon alternatives pour la plupart des autres outils, facilit{\'e} d'usage...
+	\begin{itemize}
+		\item Linux et <<suites logicielles>> (idem Mac OS X)
+		\item Eclipse et ses plug-in...
+		\item Courrier : Evolution / Thunderbird avec lien sur Serveur Outlook / Microsoft Exchange (package \emph{evolution-mapi} par exemple...)
+	\end{itemize}
+\end{itemize}
+
+\subsection{Outils de manipulation SVN}
+
+{\`A} utiliser ensembles si compatibles) : 
+\begin{itemize}
+	\item subversion eclipse + windows [http://www.jmdoudoux.fr/java/dejae/chap015.htm ]
+	\item subversive eclipse [  https://www.eclipse.org/subversive/ ]
+	\item subclipse [ http://subclipse.tigris.org/ ] int{\'e}gr{\'e} {\`a} Eclipse : ic{\^o}nes++
+	\item tortoisesvn [http://tortoisesvn.tigris.org/ ] int{\'e}gr{\'e} {\`a} l'explorateur de fichier (surtout pour windows ??)
+\end{itemize}
+
+
+\clearpage
+
+\subsection{Petit {\'e}ventail des outils de construction (<<builder>>) libres}
+
+\textbf{Ligne de commande Petit {\'e}ventail des outils de construction (<<builder>>) libres}~\\
+\texttt{http://linuxfr.org/news/petit-eventail-des-outils-de-construction-builder-libres}~\\
+\textit{Post{\'e} par Barret Michel (page perso, jabber id) le 05/09/11 {\`a} 10:20. Mod{\'e}r{\'e} par patrick\_g. Licence CC by-sa -- 5-sept.-2011}~\\
+
+\begin{tabular}[c]{p{19cm}}
+	\texttt{Je vous propose dans cette d{\'e}p{\^e}che de revenir sur la panoplie d'outils de construction qui s'offre {\`a} nous (c'est {\`a} dire les outils permettant d'automatiser les {\'e}tapes de pr{\'e}processing, compilation, {\'e}ditions des liens, etc). Je ne cherche pas {\`a} faire un comparatif, mais juste {\`a} les d{\'e}crire pour en faire ressortir les avantages et inconv{\'e}nients ainsi que les cas d'utilisation. Cette d{\'e}p{\^e}che peut {\^e}tre vue comme un {\'e}tat de l'art all{\'e}g{\'e} des outils de construction libres. } \\
+
+	\texttt{Je tiens {\`a} remercier les contributeurs de cette d{\'e}p{\^e}che : }
+	\begin{itemize}
+		\item[] \texttt{GeneralZod ; tiennou ; NedFlanders ; claudex}
+	\end{itemize}\\
+
+	\texttt{Ce sont eux qui ont {\'e}crit la majeure partie de cette d{\'e}p{\^e}che et qui l'ont am{\'e}lior{\'e}e et compl{\'e}t{\'e}e gr{\^a}ce {\`a} leurs connaissances et au temps qu'ils y ont consacr{\'e}. Cette d{\'e}p{\^e}che a pour objectif de faire d{\'e}couvrir ou red{\'e}couvrir des outils de constructions. Si vous en connaissez d'autres n'h{\'e}sitez pas {\`a} en parler en commentaire. }
+	\begin{itemize}
+		\item[] \texttt{http://omake.metaprl.org/index.html} OMake
+		\item[] \texttt{http://www.scons.org/} SCons
+		\item[] \texttt{https://maven.apache.org/} Maven
+		\item[] \texttt{https://github.com/martine/ninja} Ninja sur github
+		\item[] \texttt{https://ant.apache.org/} Ant chez Apache
+		\item[] \texttt{http://www.cmake.org/} CMake
+		\item[] \texttt{http://buildr.apache.org/} buildr chez Apache
+		\item[] \texttt{http://ant.apache.org/ivy/} Apache Ivy
+		\item[] \texttt{http://www.gradle.org/} Gradle
+		\item[] \texttt{http://fr.wikipedia.org/wiki/GNU\_Make} GNU Make sur Wikip{\'e}dia
+	\end{itemize}
+\end{tabular}
+
+\subsubsection{Sommaire}
+\begin{itemize}
+	\item Un <<builder>> ?
+	\item Le v{\'e}n{\'e}rable Make
+	\item Le peu connu OMake
+	\item Un challenger scons
+	\item Celui de Google : Ninja
+	\item L'univers Java
+	\begin{itemize}
+		\item L'historique Apache Ant
+		\item L'usine {\`a} build Apache Maven
+		\item Les autres (buildr, gradle...)
+	\end{itemize}
+	\item Les surcouches
+	\begin{itemize}
+		\item CMake
+		\item Les autotools
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Un <<builder>> ?}
+
+Nous avons dans nos d{\'e}p{\^o}t un grands nombre d'outils qui ont chacun leur philosophie. Le reste de la d{\'e}p{\^e}che s'attelle {\`a} en d{\'e}crire un certains nombre parmi les plus connus.
+Un builder est un outil qui permet de construire un logiciel (et plus si affinit{\'e}) {\`a} partir des sources. Il doit {\^e}tre le chef d'orchestre de la cha{\^i}ne de fabrication du logiciel (le compilateur, l'{\'e}diteur de liens, etc).
+
+Les crit{\`e}res importants de ce genre d'outils sont la facilit{\'e} d'utilisation : pour le d{\'e}veloppeur et pour l'utilisateur. La performance : lorsqu'un projet est gros, le temps de cr{\'e}ation du logiciel peu devenir tr{\`e}s important et la vitesse du builder peut avoir un impact important. La flexibilit{\'e} : peut-on en faire ce que l'on veut avant et apr{\`e}s chaque {\'e}tape ? G{\`e}re-t-il n'importe quel langage ?
+
+\subsubsection{Le v{\'e}n{\'e}rable Make}
+
+make est l'outil de base pour beaucoup. C'est un outil tr{\`e}s vieux, mais encore beaucoup utilis{\'e}. Il est le seul outil de la liste de cette d{\'e}p{\^e}che {\`a} faire partie de POSIX. Sous nos distributions GNU/Linux, c'est g{\'e}n{\'e}ralement GNU Make qui est utilis{\'e}.
+
+Make est une sorte de langage Rule Based Programming [ \texttt{https://linuxfr.org/users/montaigne/journaux/des-paradigmes-alternatifs} ] quand lequel on sp{\'e}cifie des r{\`e}gles sous la forme :
+		\begin{verbatim}
+			cible: dependance
+					cmd
+		\end{verbatim}
+
+Avec :
+\begin{itemize}
+	\item \textbf{cible} : fichier ou pattern de fichier que l'on cherche construire
+	\item \textbf{d{\'e}pendance} : liste des fichiers n{\'e}cessaires pour construire la cible
+	\item \textbf{cmd} : commande pour produire la cible
+\end{itemize}~\\
+
+Les avantages de cette approche sont :
+\begin{itemize}
+	\item la \textbf{souplesse} : on utilise make pour tout et n'importe quoi aujourd'hui (cr{\'e}er un PDF, latex ou lout, compiler dans tout type de langage, etc.)
+	\item la \textbf{simplicit{\'e}} : si vous savez construire {\`a} partir de votre ligne de commande vous saurez le faire avec make
+	\item \textbf{rapidit{\'e}} : il construit un arbre de d{\'e}pendance et {\'e}xecute une parall{\`e}le ce qui peut l'{\^e}tre (aujourd'hui tout les builders le font)
+\end{itemize}~\\
+
+En revanche, il poss{\`e}de aussi un certain nombre d'inconv{\'e}nients :
+\begin{itemize}
+	\item \textbf{d{\'e}pendances} : on doit g{\'e}rer {\`a} la main les d{\'e}pendances entre les fichiers, plus le projet devient gros plus \c{c}a devient lourd {\`a} g{\'e}rer ;
+	\item \textbf{manque de portabilit{\'e}} : on utilise des commandes, g{\'e}n{\'e}ralement on ne se g{\`e}ne pas pour utiliser les options GNU de nos outils favoris, il faut aussi que ces outils soient install{\'e}s sur la machine, etc. ;
+	\item \textbf{manque de r{\'e}utilisabilit{\'e}} : quand on se met {\`a} beaucoup l'utiliser, on a tendance {\`a} recopier des blocs de Makefile car rien n'est mutualis{\'e}.
+\end{itemize}~\\
+
+Ce dernier point est tout de m{\^e}me {\`a} relativiser, GNU Make int{\`e}gre beaucoup de r{\`e}gles par d{\'e}faut qui simplifient son utilisation. Par exemple, si vous avez un simple fichier coucou.c que vous souhaitez compiler, il vous suffit de taper cette commande (sans avoir cr{\'e}{\'e} de Makefile au pr{\'e}alable) pour cr{\'e}er l'ex{\'e}cutable :
+
+		\begin{verbatim}
+\$ make coucou
+cc coucou.c -o coucou
+		\end{verbatim}~\\
+
+Si vous souhaitez passer des arguments au compilateur :
+
+		\begin{verbatim}
+\$ export CFLAGS='-g'
+\$ make coucou
+cc -g  coucou.c -o coucou
+		\end{verbatim}
+
+\subsubsection{Le peu connu OMake}
+
+Il utilise une syntaxe similaire {\`a} Make mais offre quelques fonctionnalit{\'e}s suppl{\'e}mentaire :
+\begin{itemize}
+	\item La gestion du projet dans plusieurs r{\'e}pertoires ou dans une hi{\'e}rarchie de r{\'e}pertoire ;
+	\item Une analyse automatique et rapide des d{\'e}pendances, bas{\'e}e sur MD5 ;
+	\item Lorsqu'une cible est sp{\'e}cifi{\'e}e dans la ligne de commande, elle est automatiquement consid{\'e}r{\'e}e comme obsol{\`e}te et reconstruite ;
+	\item Il est compl{\`e}tement scriptable et une biblioth{\`e}que est fournie pour les langages C, C++, OCaml, et LaTeX. Il est donc possible d'avoir une seule ligne pour le projet :
+			\begin{verbatim}
+.DEFAULT: \$(CProgram prog, foo bar baz)
+		\end{verbatim}~\\
+\end{itemize}~\\
+
+
+Cette ligne suffit pour construire la cible prog {\`a} partir des fichier foo.c, bar.c et baz.c. OMake va aussi chercher les d{\'e}pendances implicites comme les includes des fichiers C.
+\begin{itemize}
+	\item Les r{\`e}gles qui construisent plusieurs fichiers en une fois sont compl{\`e}tement prises en charge ;
+	\item Il fonctionne sur Linux, Windows, Cygwin et Mac OS ;
+	\item Des fonctions telles que grep, sed et awk sont directement incluses dans le programme, cela permet d'am{\'e}liorer la portabilit{\'e} sous Windows ;
+	\item Il est possible de surveiller le syst{\`e}me de fichier en continu pour relancer la construction d{\`e}s qu'un fichier est modifi{\'e} ;
+	\item Il dispose d'un interpr{\'e}teur de commande, osh, qui permet l'utilisation interactive.
+\end{itemize}~\\
+
+\subsubsection{Un challenger scons}
+
+Scons est {\'e}crit en python, et les scripts scons (fichiers SConstruct et SConscript) sont eux-m{\^e}me en python. Ceci lui procure une tr{\`e}s grande souplesse. La contrepartie de cette souplesse est une certaine complexit{\'e}, scons fait un peu moins "clef-en-main" que certains autres outils de construction.
+
+Avantages de scons :
+\begin{itemize}
+	\item \textbf{c'est du python} : c'est un vrai langage, pas un truc tout bancal, \c{c}a roxe
+	\item sait extraire out-of-the-box les \textbf{d{\'e}pendances} des sources de nombreux langages (C, C++, Java, Fortran, etc.)
+	\item garantie d'avoir toujours des \textbf{constructions correctes}, ce qui est assez confortable. Scons garde trace du hash du contenu de chaque fichier apparaissant dans l'arbre de d{\'e}pendances.
+	\item lance les compilations en \textbf{parall{\`e}le}
+	\item killer feature : scons \textbf{cache} le r{\'e}sultat chaque op{\'e}ration (compilation, liaison, etc.), un peu comme ccache, mais pour toutes les op{\'e}rations et tous les langages.
+	\item g{\`e}re de base les cha{\^i}nes de compilation sur les syst{\`e}mes d'exploitation majeurs (outils GNU sous Linux, Visual Studio sous Windows, XCode sous Mac OS X), tout ceci {\'e}tant bien entendu totalement param{\'e}trable.
+	\item range tous les produits de la compilation dans un "build directory", pratique pour s{\'e}parer les choux et les carottes.
+\end{itemize}~\\
+
+Inconvenients :
+\begin{itemize}
+	\item relativement \textbf{complexe} {\`a} prendre en main, et plut{\^o}t bas niveau
+	\item plut{\^o}t \textbf{lent} par rapport {\`a} la concurrence, en partie {\`a} cause de python, et en partie {\`a} cause de la gestion tr{\`e}s rigoureuse des d{\'e}pendances.
+\end{itemize}~\\
+
+Une comparaison avec les autres outils est disponible sur [ \texttt{http://www.scons.org/wiki/SconsVsOtherBuildTools} ]
+
+Un d{\'e}riv{\'e} de scons qui semble avoir le vent en poupe est waf [ \texttt{https://code.google.com/p/waf/} ]. Il comble les lacunes de scons (complexit{\'e} et lenteur) en proposant des am{\'e}liorations tel qu'une sortie en couleur et un meilleur support de la compilation parall{\`e}le.
+
+\subsubsection{Celui de Google : Ninja}
+
+Ninja est le moteur de production cr{\'e}{\'e} par l'{\'e}quipe de d{\'e}veloppement de Google Chrome. Ceux-ci utilisaient Make mais trouvaient que la g{\'e}n{\'e}ration de l'arbre des d{\'e}pendances {\'e}tait bien trop lent (le temps avant de commencer serait d'une minute).
+
+Ils ont choisi de d{\'e}velopper leur propre outil (pourquoi donc patcher le logiciel existant ?). Celui-ci est plus simpliste que Make car il ne poss{\`e}de aucune logique interne li{\'e}e aux langages (contrairement {\`a} make qui poss{\`e}de des r{\`e}gles pr{\'e}d{\'e}finies). N{\'e}anmoins, il a une syntaxe qui est un peu plus flexible.
+
+L'utilisation de ninja passe par la cr{\'e}ation d'un fichier build.ninja. En voici un exemple tir{\'e} de la documentation officielle :
+
+		\begin{verbatim}
+cflags = -Wall
+
+rule cc
+  command = gcc \$cflags -c \$in -o \$out
+
+build foo.o: cc foo.c
+		\end{verbatim}~\\
+
+
+Cet exemple, bien que simpliste permet de voir l'usage basique du logiciel. Voici une petite explication de la syntaxe :
+		\begin{verbatim}
+cflags = -Wall
+		\end{verbatim}~\\
+
+D{\'e}clare une variable cflags.
+		\begin{verbatim}
+rule cc
+  command = gcc \$cflags -c \$in -o \$out
+ 		\end{verbatim}~\\
+
+D{\'e}clare une r{\`e}gle cc :
+\begin{itemize}
+	\item \$in corresponde aux fichiers d'entr{\'e}e
+    \item \$out au fichier de sortie
+\end{itemize}~\\
+
+		\begin{verbatim}
+build foo.o: cc foo.c
+ 		\end{verbatim}~\\
+
+Ceci va invoquer la r{\`e}gle cc avec foo.c comme variable \$in et foo.o comme variable \$out.
+
+\subsubsection{L'univers Java}
+\textbf{L'historique Apache Ant}~\\
+
+Le premier moteur de production orient{\'e} Java d{\'e}velopp{\'e} par la fondation Apache. Il repose sur la notion de t{\^a}ches et a la particularit{\'e} d'utiliser un format XML pour son fichier de configuration. On peut {\'e}tendre les fonctionnalit{\'e}s d'Ant en {\'e}crivant des nouvelles t{\^a}ches.
+Bien qu'{\'e}crit en Java, il est utilisable avec d'autres langages.
+
+Avantages :
+\begin{itemize}
+	\item une riche collection d'extensions via antcontrib ;
+	\item portable ;
+	\item excellente int{\'e}gration aux outils Java existants (tests unitaires, qualit{\'e} de code etc...).
+\end{itemize}~\\
+
+Inconv{\'e}nients :
+\begin{itemize}
+	\item XML ?
+	\item Difficult{\'e} d'avoir un environnement standard (compilation, paquetages, etc) rapidement. On doit partir de z{\'e}ro pour les t{\^a}ches standards
+	\item Pas d'h{\'e}ritage sur les fichiers build.xml et la composition est fastidieuse.
+\end{itemize}~\\
+
+\textbf{L'usine {\`a} build Apache Maven}~\\
+
+Maven est une plateforme moderne de construction de projet, d{\'e}velopp{\'e} {\'e}galement par la fondation Apache.
+Attach{\'e} {\`a} la devise « Convention plut{\^o}t que configuration », Maven impose sa mani{\`e}re d'organiser les fichiers et un cycle de construction en plusieurs phases (les principales {\'e}tant clean, compile, test, package, install, deploy). L'int{\'e}r{\^e}t de maven est qu'il impose de la rigueur dans l'infrastructure du projet, apportant par la suite {\'e}norm{\'e}ment de confort puisqu'on est {\`a} peu pr{\`e}s s{\^u}r de pouvoir reconstruire le projet sur un nouvel environnement.
+
+La gestion des d{\'e}pendances est un point fort de maven. Chaque module est identifi{\'e} par (au minimun) le triplet (groupId, artifactId, version). L'ajout d'une d{\'e}pendance {\`a} un projet se fait donc juste en sp{\'e}cifiant le triplet correspondant. Maven se charge automatiquement de r{\'e}cup{\'e}rer les d{\'e}pendances sur les d{\'e}p{\^o}ts comme un gestionnaire de paquets le fait sur notre distribution GNU/Linux favorite.
+Maven est lui-m{\^e}me extr{\`e}mement modulaire et les nombreuses extensions disponibles seront r{\'e}solues au besoin au moment de leur utilisation.
+
+Un projet maven est d{\'e}crit dans un fichier pom.xml contenant l'identification du projet, des m{\'e}tadonn{\'e}es optionnelles mais int{\'e}ressantes (licence, page web, description...), la liste des d{\'e}pendances, des d{\'e}p{\^o}ts additionnels, la liste des extensions suppl{\'e}mentaires utilis{\'e}es.
+
+En r{\'e}sum{\'e}, les avantages :
+\begin{itemize}
+	\item description standardis{\'e}e d'un projet
+	\item richesse des extensions disponibles
+	\item plateforme modulaire et autonome, garantissant une utilisation rapide dans un nouvel environnement
+\end{itemize}~\\
+
+Les inconv{\'e}nients :
+\begin{itemize}
+	\item la r{\'e}solution des d{\'e}pendances peut s'av{\'e}rer un peu longue
+	\item une connexion au d{\'e}p{\^o}t de biblioth{\`e}ques est n{\'e}cessaire au moins pour la premi{\`e}re fois, sinon le projet est inutilisable
+	\item une description plus d{\'e}taill{\'e}es des inconv{\'e}nients se trouve sur le blog de Sonatype : We're Used to the Axe Grinding [\texttt{https://www.sonatype.com/people/2009/05/were-used-to-the-axe-grinding/} ]
+\end{itemize}~\\
+
+\textbf{Les autres (buildr, gradle...}~\\
+
+La communaut{\'e} Java - et plus particuli{\`e}rement la communaut{\'e} Apache - est tr{\`e}s productive ces derniers temps en terme de builder. En plus de Ant et Maven, Apache compte plusieurs projets int{\'e}ressants. Quelques-uns sont {\`a} souligner :
+\begin{itemize}
+	\item Apache Ivy [ \texttt{https://ant.apache.org/ivy/} ]  est un sous-projet d'Ant. Il vise {\`a} ajouter la gestion des d{\'e}pendances (compatibles Maven) dans des projet g{\'e}r{\'e}s par Ant. Cela permet de simplifier la gestion des d{\'e}pendances {\`a} un projet qui {\'e}tait d{\'e}j{\`a} g{\'e}r{\'e} par Ant.
+	\item Gradle [ \texttt{http://www.gradle.org/} ] celui-ci g{\`e}re les projet via un DSL {\`a} la place de fichier XML, il vise notamment {\`a} {\^e}tre plus ind{\'e}pendant du langage que Maven, ainsi il pourra plus facilement travailler sur des projet Groovy ou Scala. Il utilise, comme Maven, la convention plut{\^o}t que la configuration ce qui lui permet de simplifier son utilisation. % Voici pour exemple le fichier minimal pour un projet Java :~\\
+	\item Apache Buildr [ \texttt{https://buildr.apache.org/} ] est fait pour {\^e}tre le plus simple possible. Il est aussi pr{\'e}vu pour g{\'e}rer plus facilement Groovy et Scala. Voici un fichier montrant sa simplicit{\'e}, il permet de compiler un projet my-app et de cr{\'e}er un jar :~\\
+		\begin{verbatim}
+				define 'my-app' do
+				  project.version = '0.1.0'
+				  package :jar
+				end
+		 \end{verbatim}~\\
+\end{itemize}~\\
+
+\subsubsection{Les surcouches}
+\textbf{CMake}~\\
+
+Contrairement aux outils pr{\'e}sent{\'e}s auparavant, CMake est un g{\'e}n{\'e}rateur de "projets". Il g{\'e}n{\'e}re un ou des fichier(s) recette(s) qui seront manipul{\'e}s par un moteur de production bas-niveau (make, nmake, ...) ou pouvant {\^e}tre ouverts par un environnement de d{\'e}veloppement (eclipse, XCode, Visual Studio, KDevelop, ...). Depuis son adoption par KDE, il connait une grande popularit{\'e}.~\\
+
+CMake fournit un langage d{\'e}di{\'e} et un jeu de macros permettant de g{\'e}rer un projet complet. Il est ainsi capable de retrouver seul les biblioth{\`e}ques ou les utilitaires install{\'e}s sur le syst{\`e}me et ainsi s'abstraire de la platforme de compilation.~\\
+
+Plus g{\'e}n{\'e}ralement, CMake fait partie de la suite de processus logiciel qualit{\'e} Kitware qui comporte {\'e}galement :
+\begin{itemize}
+	\item CTest : un outil de tests qui {\'e}tend CMake. Il permet de r{\'e}cup{\'e}rer le code source {\`a} partir d'un gestionnaire de version, de compiler ces sources, et d'ex{\'e}cuter les tests unitaires (CMake supporte GoogleTest, CXXTest, SQuish et s'int{\'e}gre facilement aux autres syst{\`e}mes). Il permet {\'e}galement de r{\'e}cup{\'e}rer la couverture de code et d'ex{\'e}cuter les tests sous Valgrind. Il g{\'e}n{\`e}re des rapports XML qui pourront {\^e}tre trait{\'e}s par un serveur d'int{\'e}gration continue.
+	\item CDash : serveur web de tests, associ{\'e} {\`a} CTest, il fournit une plateforme d'int{\'e}gration continue flexible.
+	\item CPack : la boite {\`a} outils pour g{\'e}n{\'e}rer des paquets tr{\`e}s simplement. Il supporte les formats suivants : dpkg, rpm, tarballs, installeurs Mac (dmg, drag'n'drop, etc.), NSIS, Cygwin.
+\end{itemize}~\\
+
+Avantages :
+\begin{itemize}
+	\item multiplateforme
+	\item permet de g{\'e}n{\'e}rer des projets pouvant {\^e}tre ouverts par un IDE
+	\item robuste
+	\item prise en charge de la compilation parall{\`e}le
+	\item une collection de modules qui s'enrichit r{\'e}guli{\`e}rement
+\end{itemize}~\\
+
+Inconv{\'e}nients :
+\begin{itemize}
+	\item un langage de script relativement pauvre compar{\'e} {\`a} python ou lua
+	\item documentation {\'e}parse
+\end{itemize}~\\
+
+\textbf{Les autotools}~\\
+
+Derri{\`e}re la d{\'e}nomination autotools se cache toute une famille d'outils GNU constituant un moteur de production complet mais {\'e}galement complexe :
+\begin{itemize}
+	\item autoconf : un g{\'e}n{\'e}rateur de scripts shell {\`a} partir de macros m4 permettant de configurer les sources d'un projet (ex: tester la version d'une biblioth{\`e}que, la pr{\'e}sence ou non d'une fonction etc...). C'est lui qui est responsable de la g{\'e}n{\'e}ration du fameux "configure".
+	\item automake : g{\'e}n{\'e}rateur de makefile portables, il est {\'e}crit en perl.
+	\item libtool : abstrait la g{\'e}n{\'e}ration des biblioth{\`e}ques dynamiques.
+	\item gnu make : bien {\'e}videmment le moteur GNU make pour ex{\'e}cuter le makefile r{\'e}sultant.
+\end{itemize}~\\
+
+Avantages :
+\begin{itemize}
+	\item facilite l'{\'e}criture de programmes multi-plateformes.
+	\item simplifie le processus de compilation par l'utilisateur (le c{\'e}l{\'e}bre tryptique : \emph{"./configure \&\& make \&\& make install"})
+	\item syst{\`e}me de construction robuste et extr{\^e}mement modulaire.
+	\item la plus large collection d'extensions parmi tout les moteurs de production de haut niveau pr{\'e}sent{\'e}s.
+\end{itemize}~\\
+
+Inconv{\'e}nients :
+\begin{itemize}
+	\item complexe d'utilisation
+	\item d{\'e}pendance {\`a} la pr{\'e}sence d'un shell bourne (ou compatible), m4, et perl
+	\item relativement lent (m{\^e}me si il est possible d'am{\'e}liorer ce point en passant par une construction non r{\'e}cursive, c'est-{\`a}-dire en utilisant un unique Makefile.am {\`a} la racine du projet)
+	\item les diff{\'e}rentes versions d'automake sont incompatibles entre elles
+	\item re-g{\'e}n{\'e}rer le syst{\`e}me de construction est une t{\^a}che relativement complexe, souvent laiss{\'e} {\`a} la charge d'un script shell (autogen.sh)
+\end{itemize}~\\
+
+
+
+\subsection{Documentation}
+
+\subsubsection{Interne au code source -- commentaires}
+
+Les outils majeurs sont \textsc{JavaDoc} et quelques autres outils assimil{\'e}s, comme \textsc{Doxygen}... Ceci quelque soit le code source, l'objectif est pour le moins d'avoir une \emph{notation de commentaires normalis{\'e}e / formelle} !! La nomenclature entre les deux outils pr{\'e}c{\'e}demments est assez proche ; l'objectif est de g{\'e}n{\'e}rer ensuite une documentation lisible en-dehors du code source, dans un format standard (HTML, texte tabul{\'e}, wiki...). Le principe est l'utilisation d'un certain nombre de marqueurs de typages des donn{\'e}es (\emph{tags}) dans les commentaires de packages, classes, m{\'e}thodes, attributs... Ceci afin d'indiquer des {\'e}l{\'e}ments pr{\'e}-d{\'e}finis de documentation (polus sp{\'e}cifiques des commentaires g{\'e}n{\'e}raux)
+\begin{itemize}
+	\item[] \texttt{http://java.dzone.com/articles/javadoc-or-doxygen} JavaDoc or Doxygen ?
+	\item[] \texttt{http://gushieblog.blogspot.com/2006/06/doxygen-versus-javadoc.html} Doxygen versus JavaDoc
+	\item[] \texttt{http://fr.wikipedia.org/wiki/Doxygen} Doxygen (Wikipedia FR)
+\end{itemize}
+
+
+\subsubsection{Externe au code source}
+
+Voir pour cela les mod{\`e}les (et \emph{templates}) de documentation : cahiers des charges, sp{\'e}cifications, PER, soumission... La question du format d'{\'e}change et d'archivage des documents dans la dur{\'e}e se pose {\'e}galement (texte brut, \LaTeX, document Word, PDF ou [texte + images] {\`a} partir des pr{\'e}c{\'e}dents formats...). 
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+
+\section{Ergonomie des Interfaces Homme-Machine (IHM)}
+
+Quelques id{\'e}es trouv{\'e}es en f{\'e}vrier 2011, pour les projets / prototypes / sp{\'e}cifications, (on ne sait jamais, si on fait un \emph{brainstorming} ou si on inclut \c{c}a dans les r{\^e}gles et convergences des pratiques. Pour la partie IHM, quelques inspirations possibles ({\`a} d{\'e}velopper) :~\\
+
+\textit{Autre : des pointeurs int{\'e}ressants. }
+
+\begin{itemize}
+	\item[] \texttt{http://benfry.com/genetics/} Ben Fry genetics Visualisation (ergonomie IHM pour la bio...) 
+	\item[] \texttt{http://www.genotyp.com/} Un bel exemple sur de la <<g{\'e}n{\'e}tique de polices de caract{\`e}res>>. 
+\end{itemize}
+
+\subsection{Informations sur l'ergonomie des IHM}
+
+\begin{itemize}
+	\item[] \texttt{http://www.info.univ-tours.fr/~antoine/documents\_enseignement/IHM\_CM\_chapII.pdf} [pdf] -- 
+	\item[] \texttt{http://www.enib.fr/~nedelec/docs/poly/ihm\_ergo.pdf} [pdf] -- 
+	\item[] \texttt{http://deptinfo.cnam.fr/Enseignement/CycleSpecialisation/IHM/annee56/Ergonomie.pdf} [pdf] Il y a des normes !!
+	\begin{itemize}
+		\item AFNOR ‘Ergonomie et conception du dialogue homme-ordinateurs -- Z67-110 Afnor PARIS, Janvier 1988
+		\item AFNOR ‘D{\'e}finition des crit{\`e}res ergonomiques de conception et d'{\'e}valuation des produits logiciels' -- Z67-133-1 Afnor PARIS, D{\'e}cembre 1991
+	\end{itemize}
+\end{itemize}~\\
+ 
+<<En bref, du bon sens>>
+\begin{itemize}
+	\item prendre en compte distance et angle de vision (ISO1988)
+	\item exprimer les diff{\'e}rences par des couleurs tr{\`e}s contrast{\'e}es et similitudes par des couleurs de faible contraste (ISO 1988)
+	\item formes diff{\'e}rentes , couleurs diff{\'e}rentes (ISO1988)
+	\item prendre en compte le confort visuel ({\'e}viter les couleurs tr{\`e}s {\'e}loign{\'e}es dans le spectre )
+	\item utiliser des couleurs satur{\'e}es avec luminosit{\'e} pour mettre en {\'e}vidence et inversement
+	\item discrimination pour les items : en fonction de la distance et de l'{\'e}loignement dans le spectre
+	\item le rouge : plus proche, le bleu plus {\'e}loign{\'e}, couleurs chaudes : objets apparaissant plus grands
+	\item la couleur : satisfait l'utilisateur
+\end{itemize}~\\
+
+Pour la partie "repr{\'e}sentation de donn{\'e}es" / S{\'e}miologie Graphique, des points de d{\'e}part {\`a} partir desquels on peut d{\'e}finir quelques r{\`e}gles... Et aussi tous les articles connexes de ces pages...
+\begin{itemize}
+	\item[] \texttt{https://secure.wikimedia.org/wikipedia/fr/wiki/Semiologie\_graphique} S{\'e}miologie Graphique (Wikipedia FR)
+	\item[] \texttt{https://secure.wikimedia.org/wikipedia/fr/wiki/Jacques\_Bertin\_(cartographe)} Jacques Bertin (Wikipedia FR)
+	\item[] \texttt{https://secure.wikimedia.org/wikipedia/fr/wiki/Design\_de\_l'information} Design de l'information (Wikipedia FR)
+\end{itemize}~\\
+	
+Bibliographie~\cite{sourcesSemiologieGraphique,representationDonneesGeographiques,semiologieGraphique,traitementGraphiqueInformation,SemiologieGraphiqueMore}
+\begin{itemize}
+	\item[*] Bertin Jacques, S{\'e}miologie graphique, Paris, Mouton/Gauthier-Villars, 1967.
+    \item[*] Bertin Jacques, La Graphique et le traitement graphique de l'information, Paris, Flammarion, 1975.
+    \item[*] Bertin Jacques, S{\'e}miologie graphique. Les diagrammes, les r{\'e}seaux, les cartes, Paris, {\'E}cole Des Hautes {\'E}tudes En Sciences Sociales, 1999.
+    \item[*] B{\'e}guin Michelle, Pumain Denise, La repr{\'e}sentation des donn{\'e}es g{\'e}ographiques, Statistique et cartographie, Paris, Armand Colin, 2003.
+    \item[*] Gilles Palsky et Marie-Claire Robic, « Aux sources de la s{\'e}miologie graphique », Cybergeo : European Journal of Geography, Colloque "3O ans de s{\'e}miologie graphique", article 147, 2000
+\end{itemize}~\\
+
+\subsection{Quelques {\'e}l{\'e}ments compl{\'e}mentaires...}
+
+\begin{itemize}
+	\item[] \texttt{http://www.rankspirit.com/design-site-web.php} Design site Web, mais de fa\c{c}on g{\'e}n{\'e}rale : contrastes pour la lisibilit{\'e}
+	\item[] \texttt{http://linkmultimedia.over-blog.com/pages/ERGONOMIE\_au\_bureau-585435.html} Ergonomie au Bureau
+	\item[] \texttt{http://www.mon-design-web.com/standards.php} 10 r{\^e}gles simples d'ergonomie du web (mais applicable ailleurs !!).
+\end{itemize}~\\
+
+
+{\ttfamily%
+{\footnotesize%
+
+\begin{minipage}[t]{18cm} 
+
+{\'E}vitez les textes soulign{\'e}s : sur le Web, un mot ou une expression soulign{\'e}e signalent g{\'e}n{\'e}ralement l'existence d'un lien. N'utilisez jamais le soulignement pour d'autres raisons. Utilisez la couleur, la taille ou le style (gras et italique), mais ne soulignez pas une portion de texte pour en signaler l'importance.
+
+\begin{itemize}
+	\item[] \textbf{Largeur de colonne }~\\
+	{\'E}vitez les colonnes trop larges : les colonnes larges obligent l'oeil {\`a} parcourir de longues distances de gauche {\`a} droite. On risque alors de "perdre la ligne" ce qui lassera rapidement vos lecteurs. Dans l'id{\'e}al, la largeur de vos colonnes doit {\^e}tre calcul{\'e}e pour contenir 10 {\`a} 15 mots maximum. Cette r{\`e}gle est {\'e}videmment bouscul{\'e}e par les design "fluides" (largeur de page variable en fonction de la taille de la fen{\^e}tre). Lire {\`a} ce sujet "Design fluide ou design fixe ?".~\\
+	Nous vous conseillons de faire un choix entre un design fixe de 800 pixels de large (pour rester compatible avec la majorit{\'e} des {\'e}crans) et un design "semi-fluide" qui emp{\^e}che (d'une fa\c{c}on ou d'une autre) vos colonnes de s'{\'e}tendre sur une trop grande largeur ({\`a} l'aide d'un script javascript, par exemple).~\\~\\
+
+	\item[] \textbf{Contraste et lisibilit{\'e}}~\\
+	Faites en sorte que vos textes soient lisibles : \c{c}a vous semble {\'e}vident ? Tant mieux ! De nombreux sites proposent du texte jaune sur fond gris, du vert sur du rouge ou du rouge sur du vert, des teintes claires sur un fond clair ou fonc{\'e}es sur un fond fonc{\'e}. Autant d'associations qui rendre la lecture tr{\`e}s difficile. Le texte blanc sur fond noir doit {\^e}tre absolument {\'e}vit{\'e} pour les sites proposant des articles longs. Le texte le plus lisible et le moins fatigant est le texte noir sur fond blanc. Vous pouvez vous {\'e}loigner l{\'e}g{\`e}rement de ce grand classique {\`a} condition de toujours garder un bon contraste entre le fond et le texte.~\\~\\
+
+	\item[] \textbf{Inutilit{\'e} des gadgets}~\\
+	{\'E}vitez les gadgets : Compteurs, animations flash et autres gadgets n'apportent rien {\`a} votre site, mais distraient les visiteurs de votre v{\'e}ritable contenu. Notre page sur le contraste vous rappelle qu'un {\'e}l{\'e}ment attirant l'attention doit toujours {\^e}tre au service du contenu de la page.~\\~\\
+
+	\item[] \textbf{Sous-titre}~\\
+	Une taille de texte suffisante : vous avez 20 ans et une vue parfaite ? Tant mieux pour vous ! Ce n'est malheureusement pas le cas de la plupart des d'internautes. Les sites utilisant des caract{\`e}res microscopiques sont fatigants, notamment pour les internautes ayant plus de 40 ans. Vous aussi, vous serez sans doute presbyte, {\`a} cet {\^a}ge l{\`a} !~\\~\\
+
+	\item[] \textbf{L{\'e}ger et rapide}~\\
+	Des pages "l{\'e}g{\`e}res" : les visiteurs sont press{\'e}s et impatientents. Dans l'id{\'e}al, vos pages ne devraient pas peser plus de 30 {\`a} 50 Ko (tout compris avec les images et les animations). Ce point est absolument essentiel, mais Vincent Bernard le nuance de fa\c{c}on int{\'e}ressante dans son article sur le sujet.~\\~\\
+
+	\item[] \textbf{Structure du texte}~\\
+	Des titres de page clairs et informatifs : O{\`u} suis-je ? D'o{\`u} vins-je ? O{\`u} vais-je ? {\'E}vitez {\`a} vos visiteurs de se perdre dans ces questions metaphysiques ! Offrez leur des rep{\`e}res et des invitations !~\\~\\
+
+	\item[] \textbf{Sous-titre}~\\
+	Des sous-titres, une mise en page structur{\'e}e et a{\'e}r{\'e}e : D{\'e}coupez votre contenu en chapitres clairement identifi{\'e}s. Soupoudrez g{\'e}n{\'e}reusement de sous-titres qui serviront de rep{\`e}res. Vos visiteurs doivent pouvoir choisir ce qu'ils veulent lire ou sauter.~\\~\\
+	
+\end{itemize}
+\end{minipage}
+ } }% 
+ 
+% \clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+
+{\ttfamily%
+{\footnotesize%
+\begin{minipage}[t]{18cm} 
+\begin{itemize}
+
+	\item[] \textbf{Simplicit{\'e}}~\\
+	Des menus simples : vos visiteurs ne passeront pas plus de quelques secondes {\`a} essayer de comprendre l'architecture de votre site. Le syst{\`e}me de menu le plus r{\'e}pandu consiste {\`a} placer : 
+	\begin{itemize}
+		\item Le menu principal sous la forme d'une barre situ{\'e}e en haut de la page. 
+		\item Les sous menus {\`a} gauche de la page. 
+		\item Les renvois, les publicit{\'e}s, {\`a} droite de la page. 
+		\item Les r{\'e}f{\'e}rences (bibliographie) en bas de la page. 
+	\end{itemize}~\\
+	
+	En respectant ces habitudes, vous faciliterez la navigation sur votre site. Si vous souhaitez en changer, assurez-vous que le r{\'e}sultat est imm{\'e}diatement compr{\'e}hensible pour un internante d{\'e}couvrant votre site pour la premi{\`e}re fois.~\\~\\
+
+	\item[] \textbf{Pas de gadgets}~\\
+	Des caract{\`e}res standards : pour {\^e}tre s{\^u}r que vos visiteurs pourront voir vos pages de la m{\^e}me fa\c{c}on que vous les voyez, vous devez imp{\'e}rativement rester dans les grands "standards" de caract{\`e}res : arial, times, verdana,.... Si vous souhaitez absolument utiliser d'autres polices pour vos titres, affichez-les en tant qu'images, mais n'oubliez-pas de doter ces images dun texte alternatif (balise "alt").
+	
+\end{itemize}
+
+\end{minipage}
+ } }% 
+
+% \clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+
+\section{Veille information}
+
+\subsection{<<Zones de recherche>>}
+
+\subsubsection{Bases de Donn{\'e}es Biologiques : articles, termes m{\'e}dicaux...}
+	
+\begin{itemize}
+	\item Articles scientifiques PubMed => termes MeSH (thesaurus / ontologie) ++ recherche "full-text"
+\end{itemize}
+
+\subsubsection{Termes {\`a} utiliser}
+
+Types de publications dans PubMed (indiquer le terme +"[Publication Type]" dans le champs de recherche (les 'plus' int{\'e}ressants en gras) : voir le tableau~\ref{tab:TabPubMedPublicationTypes}, page~\pageref{tab:TabPubMedPublicationTypes}. 
+
+\begin{table}[ht]
+	\begin{center}
+		\begin{tabular}{|p{0.4\textwidth}|p{0.4\textwidth}|}
+		\hline
+		\begin{itemize}
+			\item Addresses
+			\item Autobiography
+			\item Bibliography
+			\item Biography
+			\item Case Reports
+			\item Classical Article
+			\item Clinical Conference
+			\item \textbf{Clinical Trial}
+			\item \textbf{Clinical Trial, Phase I}
+			\item \textbf{Clinical Trial, Phase II}
+			\item \textbf{Clinical Trial, Phase III}
+			\item \textbf{Clinical Trial, Phase IV}
+			\item Collected Works
+			\item Comment
+			\item \textbf{Comparative Study}
+			\item Congresses
+			\item Consensus Development Conference
+			\item Consensus Development Conference, NIH
+			\item Controlled Clinical Trial
+			\item Corrected and Republished Article
+			\item \textbf{Dictionary}
+			\item Directory
+			\item Duplicate Publication
+			\item Editorial
+			\item English Abstract
+			\item Evaluation Studies
+			\item Festschrift
+			\item Government Publications
+			\item Guideline
+			\item Historical Article
+			\item \textbf{In Vitro}
+			\item Interactive Tutorial
+			\item Interview
+			\item Introductory Journal Article
+			\item \textbf{Journal Article}
+		\end{itemize}	&
+		\begin{itemize}
+			\item Lectures
+			\item Legal Cases
+			\item \textbf{Legislation}
+			\item Letter
+			\item Meta-Analysis
+			\item Multicenter Study
+			\item News
+			\item Newspaper Article
+			\item Overall
+			\item Patient Education Handout
+			\item Periodical Index
+			\item Portraits
+			\item Practice Guideline
+			\item Publication Components
+			\item Publication Formats
+			\item Publication Type Category
+			\item Published Erratum
+			\item \textbf{Randomized Controlled Trial}
+			\item Research Support, American Recovery and Reinvestment Act
+			\item Research Support, N.I.H., Extramural
+			\item Research Support, N.I.H., Intramural
+			\item Research Support, Non-U.S. Gov't Research Support, U.S. Gov't, Non-P.H.S.
+			\item Research Support, U.S. Gov't, P.H.S.
+			\item Retracted Publication
+			\item Retraction of Publication
+			\item \textbf{Review}
+			\item Scientific Integrity Review
+			\item Study Characteristics
+			\item Support of Research
+			\item \textbf{Technical Report}
+			\item Twin Study
+			\item Validation Studies
+			\item Video-Audio Media
+			\item Webcasts
+		\end{itemize} \\
+		\hline
+		\end{tabular}
+	\end{center}
+	\caption{Termes [Publication Type] de PubMed}
+	\label{tab:TabPubMedPublicationTypes}
+\end{table}~\\
+
+\subsection{Outils automatiques}
+
+\begin{itemize}
+	\item Base PubMed et autres bases du NCBI et assimil{\'e}s...
+	\item Recherches r{\'e}guli{\`e}res automatis{\'e}es
+	\item R{\'e}gularit{\'e} recherche (termes) : fr{\'e}quence !!
+\end{itemize}
+
+\subsection{Id{\'e}es de d{\'e}veloppement (en interne)}
+
+\subsubsection{Repr{\'e}sentation donn{\'e}es r{\'e}colt{\'e}es}
+
+	Repr{\'e}senter avec graphe (visuellement) les liens de citations ({\`a} partir d'un bibTex notamment... g{\'e}n{\'e}r{\'e} par JabRef par exemple...)
+
+\subsubsection{Outil de r{\'e}colte d'information}
+
+\begin{itemize}
+	\item {\'A} la demande (inerrogation des bases distantes, consultation et sauvegarde en local). 
+	\item G{\'e}n{\'e}ralisable sur plusieurs bases de donn{\'e}es, plusieurs sources...
+	\item Configurable comme outil de veille techno / info / strat{\'e}gique (automatique). 
+\end{itemize}
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+
+
+
+\section{Id{\'e}es pour un FrameWork interne}
+
+Id{\'e}es FrameWork (hors fourniture spécifiques)
+	\begin{itemize}
+		\item Objectif(s) principal(aux) : avoir en interne un outil de d{\'e}veloppement rapide et propre pour faciliter le travail de fa\c{c}on g{\'e}n{\'e}ral
+	\end{itemize}
+	
+\subsection{Id{\'e}es g{\'e}n{\'e}rales}
+
+\subsubsection{<<Probl{\'e}matique(s)>>}
+	\begin{itemize}
+		\item "temps de latence" de la plate-forme pr{\'e}vue BioP
+		\item Temps de d{\'e}veloppement et contraintes associ{\'e}es
+		\item H{\'e}t{\'e}rog{\'e}n{\'e}it{\'e} potentielle (mod{\`e}les / impl{\'e}mentations / ...)
+	\end{itemize}
+
+\subsubsection{Reprise paradigme MSR}
+	\begin{itemize}
+		\item "data" : BDD / maquette connaissance / ontologies
+		\item Coordination de donn{\'e}es
+	\end{itemize}
+
+\subsubsection{Reprise RFLP}
+	\begin{itemize}
+		\item Notion de workflow, flux de donn{\'e}es, flux de traitement
+		\item Succession {\'e}l{\'e}ments logiques
+	\end{itemize}
+
+\subsubsection{Interfa\c{c}age graphique}
+	\begin{itemize}
+		\item Adaptation et possibilit{\'e}s (GWT / GXT, GEF... Java Swing ?? HTML ??)
+	\end{itemize}
+
+\subsubsection{El{\'e}ments client-serveur}
+	\begin{itemize}
+		\item WWWeb ?? (GWT / Tomcat...) => bof... (possibilit{\'e}s et contraintes JavaScript / HTML / CSS ; )
+		\item "Sockets maison" et autres services similaires
+	\end{itemize}
+
+\subsubsection{Librairies}
+	\begin{itemize}
+		\item H{\'e}t{\'e}rog{\'e}n{\'e}it{\'e} ?? (Java / C-C++...)
+		\item GUI (interface graphiques...)
+	\end{itemize}
+
+\subsubsection{Branchement des prototypes et autres tests, librairies}
+	\begin{itemize}
+		\item Travaux en cours et {\'e}changes avec partenaires (id{\'e}es, preuves de concepts...)
+	\end{itemize}
+	
+\subsection{Convergences et <<Mod{\`e}les-Patterns-Templates>>}
+
+\subsubsection{Conventions de codages et exemples de d{\'e}finitions de classes, attributs, m{\'e}thodes, fonctions...}
+
+\subsubsection{Design-Pattern et autres m{\'e}thodologies...}
+
+\subsubsection{D{\'e}finitions de m{\'e}thodologies de constructions de librairies (DLL par exemple)...}
+
+\subsubsection{D{\'e}finitions de tests unitaires et tests plus g{\'e}n{\'e}raux...}
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% *********************************************
+
+
+
+\section{Section}
+
+
+
+\subsection{Sous-section}
+
+
+
+\subsubsection{sous sous sous section}
+
+[...]~\\
+
+\subsubsection{sous sous sous section}
+
+
+\begin{table}[ht]
+
+	\begin{center}
+
+		\begin{tabular}{|p{0.1\textwidth}|p{0.8\textwidth}|}
+
+		\hline
+
+			\includegraphics[width=1cm]{img/logo_glider.png}
+			& 
+			\textbf{PART-LOGO} lorem ipsum dolor sit amet... \\
+
+		\hline
+
+		\end{tabular}
+
+	\end{center}
+
+	\caption{Un tableau r{\'e}f{\'e}renc{\'e}}
+
+	\label{tab:TabReference01}
+
+\end{table}~\\
+
+
+
+\clearpage
+
+\subsection{Encore une sous-section}
+
+
+\begin{figure}[H]
+	\centerline {\epsfig {file=img/logo_glider.png,width=15cm}}
+	\caption{Une belle image}
+	\label{fig:FigReference01}
+\end{figure}
+
+
+\clearpage
+
+\section*{Abbr{\'e}viations\markboth{Abbr{\'e}viations}{Abbr{\'e}viations}}
+
+\addcontentsline{toc}{section}{Abbr{\'e}viations}
+
+%% voir en haut : sous la definition du titre : glossaire
+
+\makeglossaire
+
+
+
+\clearpage
+
+\section*{Bibliographie\markboth{Bibliographie}{Bibliographie}}
+
+\addcontentsline{toc}{section}{Bibliographie}
+\nocite{*}
+%toutes references biblio : 6 lettres + 2 chiffres
+\bibliography{convergencePratiquesEtAutres}
+\bibliographystyle{frplain} % plain or frplain
+\end{document}

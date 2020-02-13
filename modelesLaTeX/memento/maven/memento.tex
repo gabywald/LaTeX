@@ -1,0 +1,233 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{multirow}
+
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols}
+
+%% https://texblog.org/2011/02/26/generating-dummy-textblindtext-with-latex-for-testing/
+%% https://fr.sharelatex.com/learn/Multiple_columns
+%% \usepackage{blindtext}
+%% \usepackage{lipsum}
+\usepackage{wrapfig}
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{57pt}{3pt}
+
+\usepackage{lscape} % changement orientation page
+\usepackage{pdflscape}
+% --- style de page (pour les en-tete) ---
+% \pagestyle{headings}
+\pagestyle{empty}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+
+% http://www.trustonme.net/didactels/250.html
+
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% % \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+% \fancyhf{}
+% \fancyhead[LE,RO]{\bfseries\thepage}
+% \fancyhead[LO]{\bfseries\rightmark}
+% \fancyhead[RE]{\bfseries\leftmark}
+% \fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+	% TITLE
+% \hfill \includegraphics[width=0.5cm]{img/logo_glider.png} }
+% \fancyfoot[RO]{\includegraphics[width=0.5cm]{img/logo_glider.png} \hfill
+	% TITLE
+% \hfill \thepage /\pageref{LastPage}}
+% \renewcommand{\headrulewidth}{0.5pt}
+% \renewcommand{\footrulewidth}{0.5pt}
+% \addtolength{\headheight}{0.5pt}
+% \fancypagestyle{plain}{
+	% \fancyhead{}
+	% \renewcommand{\headrulewidth}{0pt}
+% }
+
+%--- Definitions de nouvelles commandes ---
+\newcommand{\N}{\mathbb{N}} % les entiers naturels
+
+%============================= Corps =================================
+\begin{document}
+\begin{landscape}
+
+% \setcounter{page}{0}
+% \thispagestyle{empty}
+
+\begin{multicols}{2}
+	\section*{Memento MAVEN}
+	
+	\begin{itemize}
+		\item \textbf{POM} : Project Object Model (descripteur de projet maven)
+		\item \textbf{Artefact} : fichier résultat du build d'un projet
+		\item \textbf{Groupe} : Espace de nom permettant le regroupement d'artefacts
+		\item \textbf{Version} : identification d'une version d'un artefact
+		\item \textbf{Repository} : référentiel (dépôt) d'artefacts
+		\item \textbf{Plugin} : composant enfichable dans le processus de build
+		\item \textbf{Archétype} : modèle (prototype) de projet
+		\item \textbf{Goal} : objectif du build, réalisé par un plugin
+		%% \item[]
+		\item \underline{\textbf{Phases : étapes clés de la construction du projet}}
+		\begin{enumerate}
+			\item \textsf{validate} : validation du projet, voir s'il est correct
+			\item \textsf{compile} : compilation du projet
+			\item \textsf{test} : compiler les tests unitaires et les passer
+			\item \textsf{package} : mettre en forme le livrable. Souvent : faire un jar/un war
+			\item \textsf{integration-test} : Tests qui doivent passer sur un environnement
+			\item \textsf{verify} : Vérifier la qualité du livrable suivant une série de critères
+			\item \textsf{install} : Déposer le package livrable sur le Repository Local
+			\item \textsf{deploy} : Publier le package final sur un environnement partagé
+		\end{enumerate}
+%% validate
+%% generate-sources
+%% process-sources
+%% generate-resources
+%% process-resources
+%% compile
+%% process-test-sources
+%% process-test-resources
+%% test-compile
+%% test
+%% package
+%% install
+%% deploy
+		\item hors cycle de vie : \textsf{clean}, \textsf{site}, \textsf{assembly:assembly}, \textsf{site-deploy}...
+		%% \item[]
+		\item \underline{\textbf{Convention plutôt que configuration}}
+		\begin{itemize}
+			\item \textsf{/src} : les sources du projet
+			\item \textsf{/src/main} : code source et fichiers source principaux
+			\item \textsf{/src/main/java} : code source
+			\item \textsf{/src/main/resources} : fichiers de ressources (images, annexes...)
+			\item \textsf{/src/main/webapp} : webapp du projet
+			\item \textsf{/src/test} : fichiers de test
+			\item \textsf{/src/test/java} : code source de test
+			\item \textsf{/src/test/resources} : fichiers de ressources de test
+			\item \textsf{/src/site} : informations sur le projet et/ou les rapports générés suite aux traitements effectués
+			\item \textsf{/target} : fichiers résultat, les binaires (du code et des tests), les packages générés et les résultats des tests
+		\end{itemize}
+		\item[]
+		\item \textbf{pom.xml} \texttt{http://maven.apache.org/maven-model/maven.html}
+	\end{itemize}
+	
+	~\\
+	
+	\columnbreak
+	
+	\footnotesize
+	\begin{verbatim}
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                        http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.example.package</groupId>
+    <artifactId>ApplicationName</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    
+    <name>Project Name</name>
+    <url>http://www.example.org/</url>
+    
+    <dependencies>
+        <!-- ... -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- ... -->
+    </dependencies>
+    
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <build.name>BuildName</build.name>
+        <!-- ... -->
+    </properties>
+    
+    <build>
+        <finalName>${build.name}</finalName>
+        <plugins>
+            <!-- ... -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+            <!-- ... -->
+        </plugins>
+    </build>
+</project>
+	\end{verbatim}
+	\normalsize
+	
+	\vfill
+	\columnbreak
+
+	% \footnotesize
+	% \begin{verbatim}
+% <properties>
+    % <maven.compiler.source>1.7</maven.compiler.source>
+    % <maven.compiler.target>1.7</maven.compiler.target>
+
+    % <spring-framework.version>4.0.6.RELEASE</spring-framework.version>
+    % <slf4j.version>1.7.5</slf4j.version>
+
+    % <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    % project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+% </properties>
+
+% <dependencies>
+    
+    % <dependency>
+        % <groupId>org.slf4j</groupId>
+        % <artifactId>slf4j-api</artifactId>
+        % <version>${slf4j.version}</version>
+        % <scope>compile</scope>
+    % </dependency>
+    
+% </dependencies>
+	% \end{verbatim}
+	% \normalsize
+	
+	
+	...
+\end{multicols}
+
+\clearpage
+
+\end{landscape}
+\end{document}
