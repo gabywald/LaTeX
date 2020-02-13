@@ -1,0 +1,206 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en francais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lscape} % changement orientation page
+
+\usepackage{lastpage}
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.5cm}{1.5cm}{1.5cm}{1.5cm}{64pt}{1pt}{15pt}{1pt}
+
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{headings}
+
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{
+	\put(0,0){
+		\parbox[b][\paperheight]{\paperwidth}{%
+		% \vfill
+		\begin{center}
+			\includegraphics[width=0.5\paperwidth,height=0.5\paperheight, keepaspectratio]{img/brouillonDraft.png}%
+		\end{center}
+		% \vfill
+}}}
+
+%% \usepackage[all,center]{background}
+%% \SetBgContents{Confidential}
+%% \SetBgAngle{45}
+%% \SetBgScale{15}
+%% \SetBgOpacity{0.1}
+
+%% \usepackage[printwatermark=true,allpages=true,
+%% 	fontfamily=pag,color=gray!25,textmark=DRAFT,
+%% 	angle=45,scale=0.8,xcoord=0,ycoord=0]{xwatermark}
+
+\def\auteurGeneral{Gabriel Chandesris}
+\def\auteurGeneralAbbrev{G. Chandesris}
+\def\titreGeneral{Document Exemple}
+\def\dateCourante{\today}
+
+
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+
+% http://www.trustonme.net/didactels/250.html
+
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\usepackage{fancyhdr}
+\def\makestylefancyContent{%
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[LE,RO]{
+\includegraphics[width=0.5cm]{img/logo_glider.png} \hfill
+\titreGeneral \hfill
+\thepage /\pageref{LastPage}\\
+}
+\fancyhead[LE,RO]{
+	%
+	% \begin{tabular}[c]{l l c}
+	\rowcolors{1}{white}{white}
+		\begin{tabular}[c]{c}
+			\includegraphics[width=0.5cm]{img/logo_glider.png} \\
+		\end{tabular}
+		\hfill
+		% &
+		% \hfill
+		\begin{tabular}[c]{c}
+			\textbf{SI Prem -- } \\ 
+			\textbf{\titreGeneral} \\
+			\\
+		\end{tabular}
+		\hfill
+		% &
+		% \hfill
+		\begin{tabular}[c]{|l|l|}
+			\hline
+			Date :		& \dateCourante \\ \hline
+			Auteur : 	& \auteurGeneralAbbrev \\ \hline
+			Ref. :		& ????? \\ \hline
+		\end{tabular}
+		% \\
+	% \end{tabular}
+}
+% \fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+% Exploitation des donn{\'e}es sur les dirigeants
+% \hfill \includegraphics[width=0.5cm]{img/logo_glider.eps}
+% }
+
+\renewcommand{\headrulewidth}{0.25pt}
+\renewcommand{\footrulewidth}{0.5pt}
+%% \setlength{\headheight}{85pt}
+% \addtolength{\headheight}{0.5pt}
+% \fancypagestyle{plain}{
+% 	\fancyhead{}
+% 	\fancyfoot{}
+% 	\renewcommand{\headrulewidth}{0pt}
+% }
+}%
+\makestylefancyContent
+
+%--- Definitions de nouvelles commandes ---
+\newcommand{\N}{\mathbb{N}} % les entiers naturels
+
+%--- Definitions de nouvelles couleurs ---
+\definecolor{verylightgrey}{rgb}{0.8,0.8,0.8}
+\definecolor{verylightgray}{gray}{0.80}
+\definecolor{lightgrey}{rgb}{0.6,0.6,0.6}
+\definecolor{lightgray}{gray}{0.6}
+
+
+%--- Pour le glossaire --- a defaut de \makeglossary ou d'utilisation d'index latex
+
+\def\makeglossaire{%
+	\begin{center}
+
+	\begin{tabular}{|>{\columncolor{verylightgray}} p{0.2\textwidth}|p{0.8\textwidth}|}
+
+		\hline
+
+		\textbf{BLAST} & 
+			\begin{tabular}{p{0.8\textwidth}}
+			Basic Local Alignment Search Tool \\
+			\textit{algorithmes et logiciels pour l'alignement de s{\'e}quences et la recherche de similarit{\'e}s locales}
+			\end{tabular} \\
+		\hline
+
+		\textbf{EDD} & Européenne de données \\
+		\hline
+		
+
+	\end{tabular}
+
+\end{center}
+
+}%
+
+
+
+\author{\auteurGeneral}
+\title{\titreGeneral}
+% \date{}
+
+%============================= Corps =================================
+\begin{document}
+
+	\AddToShipoutPicture{\BackgroundPic}
+
+%ecrire le titre...
+%\maketitle
+%\setcounter{page}{0}
+%\clearpage
+
+		\maketitle
+		\thispagestyle{empty}
+		~\\
+		\begin{tabular}[c]{|l|l|l|l|}
+			\hline
+			Version & Date 		& Auteur 	& Commentaire 			\\
+			\hline
+			0.1	& \dateCourante	& \auteurGeneralAbbrev	& \titreGeneral 	\\
+			\hline
+		\end{tabular}
+		
+\tableofcontents
+
+\clearpage
+
+[...]~\\
+
+\clearpage
+
+
+\section{section}
+
+\subsection{sous-section}
+
+\subsubsection{sous-sous-section}
+
+% \begin{figure}[H]
+	% \centerline {\epsfig {file=img/logo_glider.png,width=6cm} }
+	% \caption{le logo EDD}
+	% \label{fig:logo_glider}
+% \end{figure}
+
+
+
+\end{document}
