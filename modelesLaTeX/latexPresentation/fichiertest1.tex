@@ -1,0 +1,586 @@
+\documentclass[slidetop,11pt]{beamer}
+%
+% Ces deux lignes à décommenter pour sortir 
+% le texte en classe article
+% \documentclass[class=article,11pt,a4paper]{beamer}
+% \usepackage{beamerbasearticle}
+
+% Packages pour les français
+%
+\usepackage[T1]{fontenc} 
+\usepackage[latin1]{inputenc}
+\usepackage[frenchb]{babel}
+% pour un pdf lisible à l'écran si on ne dispose pas 
+% des fontes cmsuper ou lmodern
+%\usepackage{lmodern}
+\usepackage{aeguill}
+
+% Pour afficher le pdf en plein ecran
+% (comment� pour imprimer les transparents et pour les tests)
+%\hypersetup{pdfpagemode=FullScreen}
+
+% ------------------------------------------------
+%-----------   styles pour beamer   --------------
+% ------------------------------------------------
+%
+% ------------- Choix des couleurs ---------------
+%\xdefinecolor{fondtitre}{rgb}{0.20,0.43,0.09}  % vert fonce
+% la même d'une autre manière
+\definecolor{fondtitre}{HTML}{336E17}
+
+%\xdefinecolor{coultitre}{rgb}{0.41,0.05,0.05}  % marron
+% la même d'une autre manière
+\definecolor{coultitre}{RGB}{105,13,13}
+
+\xdefinecolor{fondtexte}{rgb}{1,0.95,0.86}     % ivoire
+
+% Redéfinit la couleur de fond pour imprimer sur transparents
+%\xdefinecolor{fondtexte}{rgb}{1,1,1}     % blanc
+
+% commande differente pour les couleurs nommées - de base
+%\colorlet{coultexte}{black} 
+
+% -------------- Fioritures de style -------------
+% Fait afficher l'ensemble du frame 
+% en peu lisible (gris clair) dès l'ouverture
+\beamertemplatetransparentcovered
+
+% Supprimer les icones de navigation (pour les transparents)
+%\setbeamertemplate{navigation symbols}{}
+
+% Mettre les icones de navigation en mode vertical (pour projection)
+%\setbeamertemplate{navigation symbols}[vertical]
+
+% ------------ Choix des thèmes ------------------
+\usecolortheme{crane}
+
+%\useoutertheme{default}
+%\useinnertheme{default}
+%\useinnertheme[shadow=true]{rounded}
+
+% Définition de boites en couleur spécifiques
+% première méthode
+\setbeamercolor{bas}{fg=coultitre, bg=fondtitre!40}
+\setbeamercolor{haut}{fg=fondtitre!40, bg=coultitre}
+% deuxième méthode
+\beamerboxesdeclarecolorscheme{clair}{fondtitre!70}{coultitre!20}
+\beamerboxesdeclarecolorscheme{compar}{coultitre!70}{fondtitre!20}
+
+% insérer le nombre de pages
+%\logo{\insertframenumber/\inserttotalframenumber}
+
+%------------ fin style beamer -------------------
+
+% Faire appara�tre un sommaire avant chaque section
+% \AtBeginSection[]{
+%   \begin{frame}
+%   \frametitle{Plan}
+%   \medskip
+%   %%% affiche en début de chaque section, les noms de sections et
+%   %%% noms de sous-sections de la section en cours.
+%   \small \tableofcontents[currentsection, hideothersubsections]
+%   \end{frame} 
+% }
+
+% ----------- Contenu de la page de titre --------
+\title{Beamer - présentation avec Latex}
+\subtitle{Fichier test}
+\author{mcclinews}
+\institute{Université de Barrayar}
+\date{\oldstylenums{Octobre 2007}}
+% ------------------------------------------------
+% -------------   Début document   ---------------
+% ------------------------------------------------
+\begin{document}
+%--------- écriture de la page de titre ----------
+% avec la commande frame simplifiée
+\frame{\titlepage}
+%
+\part{Les pages} 
+%------------------ Sommaire ---------------
+\begin{frame}{Sommaire}
+  \small \tableofcontents[hideallsubsections]
+\end{frame} 
+%
+%***************************************
+%******     I Les pages          *******
+%***************************************
+\section[Mod�les]{Mod�les de pages}
+% Sommaire local. En deux colonnes
+\begin{frame}{Plan}
+  \begin{columns}[t]
+  \begin{column}{5cm}
+  \tableofcontents[sections={1-4},currentsection, hideothersubsections]
+  \end{column}
+  \begin{column}{5cm}
+  \tableofcontents[sections={5-8},currentsection,hideothersubsections]
+  \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection[Normal]{Mod�le normal}
+% avec l'environnement frame
+\begin{frame}[label=pagesimple]
+  \frametitle{Mod�le banal de page}
+  \framesubtitle{et rien d'autre}
+  Ici, du texte comme on veut, sans fioriture, 
+  
+  ou alors simplement en style \texttt{télétype} 
+  
+  ou en \textbf{gras}, 
+  
+  voire en \textit{italique} comme dans n'importe quel texte \LaTeX{}. 
+  
+  Beamer traduit plutôt tout ça en police sans serif.
+  
+  Ah, j'oubliais, on peut aussi en {\color{blue}couleur}.
+  
+  \bigskip
+  
+  Le titre ni le sous-titre ne sont obligatoires.
+\end{frame}
+% --------------------------------------------------
+\subsection[Verbatim]{Modèle verbatim}
+\begin{frame}[containsverbatim]
+  \frametitle{Modèle normal}
+  \framesubtitle{avec du verbatim}
+  Ceci est simplement obtenu par :
+  \begin{verbatim}
+\begin{frame}[containsverbatim]
+  \frametitle{Modèle normal}
+  \framesubtitle{avec du verbatim}
+  A noter que l'on ne peut pas donner un label 
+  au frame quand on déclare  
+  \verb+[containsverbatim]+  
+  ou quand on utilise l'option
+  \verb+[fragile]+
+\end{frame}
+  \end{verbatim}
+  \vfill
+ \begin{beamerboxesrounded}[scheme=clair]{}
+ % petite note dans boite de couleur simple
+  A noter que l'on ne peut pas donner un label au frame quand 
+  on déclare  \verb+[containsverbatim]+  ou quand on utilise l'option   \verb+[fragile]+
+ \end{beamerboxesrounded} 
+\end{frame} 
+% ---------------------------------------------
+\subsection[plein]{Page enti�re}
+\begin{frame}[plain]
+
+  \frametitle{Page sur tout l'écran}
+  
+  L'option \texttt{\textbf{frame[plain]}}
+  permet de supprimer les en-têtes,
+  pieds de page et barres de menu 
+  divers pour laisser toute la 
+  place de l'écran disponible...
+\end{frame}  
+% -------------------------------------------------
+\subsection[trop-plein]{Page trop pleine}
+\setbeamertemplate{frametitle continuation}{\insertcontinuationcountroman}
+\begin{frame}[allowframebreaks=0.85]
+  \frametitle{Page avec trop de texte}
+    \begin{beamerboxesrounded}[scheme=clair]{}
+    % petite note dans boite de couleur simple
+   Quand le texte déborde de l'écran, l'option \texttt{frame[allowframebreaks=0.xx]} permet à Beamer de créer plusieurs pages avec le même titre assorti d'un numéro en romain. La valeur de pourcentage indique le remplissage souhaité de la page.
+   \end{beamerboxesrounded}
+   \bigskip  
+
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus blandit dictum dui. Vivamus metus lorem, dignissim interdum, dignissim quis, mattis sit amet, turpis. Cras sapien ipsum, scelerisque a, volutpat nec, malesuada ac, nibh. Aenean rutrum. Nullam libero lacus, ullamcorper sit amet, ullamcorper non, lacinia quis, nunc. Aliquam volutpat leo et risus ultricies egestas. Aenean magna nisi, cursus in, imperdiet blandit, bibendum vel, nulla. Quisque mi. Duis aliquet mauris vel nibh. Cras libero. Praesent lacus. Phasellus molestie arcu in est. Mauris quis leo. Donec ut est.
+
+Nunc ante. Morbi rutrum dolor non lorem. Maecenas non urna eget velit pretium elementum. Aliquam hendrerit lacus in orci. Vestibulum sit amet felis. Sed condimentum euismod purus. Pellentesque ut tellus vitae justo accumsan molestie. Proin dignissim, est non posuere posuere, pede sem cursus tortor, id malesuada mi sapien non mauris. Curabitur aliquam lectus vel nunc. Nullam sed tortor vitae ligula posuere tincidunt. Curabitur in nunc. Vivamus sodales ipsum eget pede.
+
+Aliquam sed augue vel felis egestas commodo. Donec ac lectus ac erat blandit sollicitudin. Sed eleifend placerat nulla. Nulla facilisi. Praesent tortor nibh, facilisis vitae, congue sit amet, cursus sed, tortor. Morbi laoreet tellus. In posuere, libero ac feugiat tincidunt, turpis enim ultricies quam, sed ornare mauris massa sagittis dolor. Cras porta libero vel risus. Maecenas ultrices, felis condimentum porta pellentesque, lacus libero ullamcorper metus, ac congue sem mauris nec massa. Mauris volutpat est id ipsum. Suspendisse ac nisi nec ligula nonummy consequat. Nullam nec tortor. Suspendisse quis mauris. Sed elit lorem, porta eu, fringilla quis, sodales a, lorem. Suspendisse luctus. Maecenas sed ligula. Donec adipiscing. Suspendisse velit eros, auctor quis, posuere in, gravida non, sem. Nulla tincidunt tincidunt odio. 
+\end{frame}
+ 
+% ***************************************
+% ******     II Les blocs         *******
+% ***************************************
+\section{Les différents blocs}
+% petit sommaire local. Rien que la section en cours
+\begin{frame}{Plan}
+  \tableofcontents[sections=\thesection]
+\end{frame}
+
+\subsection{Les blocs de base}
+\begin{frame} 
+\frametitle{Les blocs}
+% Bloc standard (si le thème choisi ne le change pas)
+\setbeamertemplate{blocks}[default]  
+\begin{block}{Bloc standard}
+Un bloc tout simple, par défaut\\
+Un texte sur un fond de couleur qui
+dépend, bien sûr, du thème choisi.
+\end{block}
+
+% Bloc arrondi (si le thème choisi ne le fait pas d'office)
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\begin{block}{Bloc arrondi}
+Un bloc avec option rounded, sans shadow\\
+Il faut toujours arrondir les angles.
+\end{block}
+
+% Bloc arrondi et ombré (si le thème ...)
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\begin{block}{Bloc arrondi et ombré}
+Un bloc avec option rounded et shadow\\
+Un peu d'ombre en plus\dots
+\end{block}
+\end{frame}
+% --------------------------------------------
+\subsection{Les blocs prédéfinis}
+\begin{frame}
+\frametitle{Les blocs prédéfinis} 
+% Un bloc normal pour comparer
+\begin{block}{Un bloc normal}
+Texte du block normal
+\end{block}
+
+% Un bloc "alert"
+\begin{alertblock}{Un bloc alert}
+Texte du block alerte
+\end{alertblock}
+
+% Un bloc "example"
+\begin{exampleblock}{Un bloc example}
+Exemple de block example
+\end{exampleblock}
+\end{frame}
+% -------------------------------------------
+\subsection{Les boîtes arrondies}
+\begin{frame}
+\frametitle{Les boîtes arrondies personnalisées}
+% premi�re m�thode, on déclare les couleurs de titre (haut) 
+% et de fond de boite (bas) définies dans l'en-tête 
+\begin{beamerboxesrounded}[lower=bas, upper=haut, shadow=true]{Un bloc arrondi}
+Texte en bo�te arrondie titre clair sur foncé, contenu foncé sur clair
+
+de toutes les couleurs
+\end{beamerboxesrounded}
+\vfill
+\begin{beamerboxesrounded}[lower=haut, upper=bas, shadow=true]{Un bloc arrondi}
+Texte en bo�te arrondie titre foncé sur clair, contenu clair sur foncé
+
+de toutes les couleurs
+\end{beamerboxesrounded}
+\vfill
+% deuxième méthode, on utilise la définition de 
+% beamerboxesdeclarecolorscheme de l'en-tête
+\begin{beamerboxesrounded}[scheme=compar, shadow=true]{Un bloc arrondi}
+Texte en boîte arrondie
+
+de toutes les couleurs
+\end{beamerboxesrounded}
+\end{frame}
+% ------------------------------------------------
+\subsection[Encadrés]{Les environnements encadr�s}
+\begin{frame}
+\frametitle{Les environnements encadr�s}
+  \begin{definition}
+    environnement definition
+  \end{definition}
+  
+ \begin{example}
+   environnement example
+ \end{example}
+
+ \begin{proof}
+   environnement proof
+ \end{proof}  
+    
+\begin{theorem}
+environnement theorem
+\end{theorem}
+
+La traduction des titres laisse un peu � d�sirer.
+\end{frame}
+
+%***************************************
+%******     III Les textes       *******
+%***************************************
+\section{Les jeux de texte}
+ % Sommaire local. En deux colonnes
+\begin{frame}{Plan}
+  \begin{columns}[t]
+  \begin{column}{5cm}
+  \tableofcontents[sections={1-4},currentsection, hideothersubsections]
+  \end{column}
+  \begin{column}{5cm}
+  \tableofcontents[sections={5-8},currentsection,hideothersubsections]
+  \end{column}
+  \end{columns}
+\end{frame}
+\begin{frame}
+\frametitle{Styles de texte} 
+\begin{quotation}
+Début ligne - environnement quotation\\
+Début ligne - environnement quotation
+\end{quotation}
+ 
+\begin{quote}
+Début ligne - environnement quote\\
+Début ligne - environnement quote
+\end{quote} 
+ 
+\begin{semiverbatim}
+Début ligne - environnement semiverbatim
+\end{semiverbatim}
+
+ \begin{verse}
+Début ligne   environnement verse\\
+Début ligne   environnement verse\\
+ \end{verse}  
+\end{frame}
+%***************************************
+%*****   IV Les mises en valeur   ******
+%***************************************
+\section{Mises en valeur}
+% petit sommaire local. La section en cours en évidence
+\begin{frame}{Plan}
+  \small \tableofcontents[currentsection, hideothersubsections]
+\end{frame}
+
+\begin{frame}
+\frametitle{Les mises en valeur}
+
+Mettre une portion de 
+\structure{texte couleur structure} et  \alert{alerte} sur la même ligne.
+
+\bigskip
+% changer la couleur et taille du "alert"
+% définir son modèle 
+\setbeamercolor{monalerte}{fg=blue}
+\setbeamerfont{monalerte}{size=\huge}
+\setbeamerfont{monalerte}{shape=\itshape}
+
+\setbeamercolor{alerted text}{use=monalerte, fg=monalerte.fg}
+\setbeamerfont{alerted text}{parent=monalerte}
+ou une \alert{alerte} personnalisée.
+
+% revenir aux valeurs par défaut
+\setbeamercolor{alerted text}{fg=red} % comment faire autrement ?
+\setbeamerfont{alerted text}{parent=normal text}
+ou une \alert{alerte} non personnalisée.
+\end{frame}
+% --------------------------------------------------
+
+%***************************************
+%******      V Les listes        *******
+%***************************************
+\section{Les listes}
+% petit sommaire local. La section en cours en évidence
+\begin{frame}{Plan}
+  \small \tableofcontents[currentsection, hideothersubsections]
+\end{frame}
+
+\subsection{Itemize}
+% les listes - différents modèles de puces au choix - à essayer
+\setbeamertemplate{itemize item}[square]
+\setbeamertemplate{itemize subitem}[triangle]
+\begin{frame}
+\frametitle{Liste Itemize}
+
+\begin{itemize}
+    \item élément de liste numéro 1
+      \begin{itemize}
+      \item élément de liste numéro 1.1
+      \item élément de liste numéro 1.2
+      \end{itemize}
+    \item élément de liste numéro 2
+    \item élément de liste numéro 3 
+  \end{itemize}
+\end{frame}
+
+\subsection{Enumerate}
+% les listes - différents modèles de puces au choix - à essayer 
+\setbeamertemplate{enumerate item}[ball]
+\setbeamertemplate{enumerate subitem}[square]
+
+\begin{frame}
+\frametitle{Liste Enumerate}
+\begin{enumerate}
+    \item élément de liste numéro 1
+      \begin{enumerate}
+      \item élément de liste numéro 1.1
+      \item élément de liste numéro 1.2
+      \end{enumerate}
+    \item élément de liste numéro 2
+    \item élément de liste numéro 3 
+  \end{enumerate}
+\end{frame}
+% ----------------------------------------------------
+\subsection{Description}
+% les listes
+\begin{frame}
+\frametitle{Liste de description}
+  \begin{description}[Thème de présentation : ]
+    \item [Thème de présentation : ] ces thèmes sont en fait...
+    \item [Thème de couleur : ] gère tout ce qui est couleur (on s'en douterait)...
+    \item [Thème de police : ] s'occupe de tout ce qui est police, gras...
+    \item [Thème interne : ] s'occupe de l'apparence des éléments...
+    \item [Thème externe : ] gère les en-têtes et pieds de page...
+  \end{description}
+  \end{frame}
+
+%***************************************
+%******     VI Les colonnes      *******
+%***************************************
+\section{Les colonnes} 
+% petit sommaire local. La section en cours en évidence
+\begin{frame}{Plan}
+  \small \tableofcontents[currentsection, hideothersubsections]
+\end{frame}
+
+\begin{frame}
+\frametitle{Multi-colonnes}
+Du texte en plusieurs colonnes, plus visible avec des blocks.
+
+\bigskip
+  \begin{columns}[t]
+  \begin{column}{5cm}
+  \begin{alertblock}{Colonne 1}
+  alertblock et liste enumerate
+\begin{enumerate}
+    \item élément de liste numéro 1
+      \begin{enumerate}
+      \item élément de liste numéro 1.1
+      \item élément de liste numéro 1.2
+      \end{enumerate}
+    \item élément de liste numéro 2
+    \item élément de liste numéro 3 
+  \end{enumerate}
+  \end{alertblock} 
+  \end{column}
+  
+  \begin{column}{5cm}
+  \begin{exampleblock}{Colonne 2}
+  exampleblock et liste itemize
+\begin{itemize}
+    \item élément de liste numéro 1
+      \begin{itemize}
+      \item élément de liste numéro 1.1
+      \item élément de liste numéro 1.2
+      \end{itemize}
+    \item élément de liste numéro 2
+    \item élément de liste numéro 3 
+  \end{itemize}
+  \end{exampleblock}   
+  \end{column}
+  \end{columns}  
+\end{frame}
+
+%***************************************
+%*****    VII Les recouvrements   ******
+%***************************************
+\section{Les recouvrements}
+% petit sommaire local. La section en cours en évidence
+\begin{frame}{Plan}
+  \small \tableofcontents[currentsection, hideothersubsections]
+\end{frame}
+
+\subsection{altenv}
+\begin{frame}
+\frametitle{Les recouvrements}
+  Texte identique sur toutes les couches
+  \vfill
+  \begin{altenv}<2,4,6,8>{\texttt{***~}}{\texttt{~***}}{\texttt{~~~~}}{\texttt{~~~~}}
+   \textit{texte de l'environnement altenv}
+  \end{altenv}
+  \vfill  
+  En faisant d�filer assez vite, vous aurez l'impression du clignotement ! 
+\end{frame}
+% --------------------------------------------------
+
+\subsection{over}
+\begin{frame}
+\frametitle{Les recouvrements - suite}
+Texte avant la zone de recouvrement  
+  \begin{overlayarea}{8cm}{2.8ex}
+   \only<1>{}
+   \only<2>{\textbf{only deux overlayarea}}
+   \only<3>{\textbf{only trois overlayarea}}
+   \only<4>{\textbf{only 4}} 
+   \textit{texte commun à coté}
+  \end{overlayarea}
+  
+Texte après la zone de recouvrement
+  \vfill
+  \begin{example}
+  \begin{overlayarea}{10cm}{1cm}
+   \only<1>{}
+   \only<2>{\texttt{only 2 overlayarea dans un bloc}}
+   \only<3>{\texttt{only trois overlayarea}}
+   \only<4>{\texttt{only 4}} 
+   \textit{texte commun à coté}
+  \end{overlayarea}
+  \end{example}
+ \vfill
+ \begin{overprint}
+   \onslide<1> environnement overprint - 
+   \onslide<2> environnement overprint - {\color{blue}slide 2}
+   \onslide<3> environnement overprint - {\color{blue}slide 3}
+   \onslide<4> environnement overprint - {\color{blue}slide 4}
+ \end{overprint} 
+ \end{frame}
+ 
+%***************************************
+%******    VIII Le pas à pas     *******
+%***************************************
+
+\section{Affichage décomposé}
+% Sommaire local. En deux colonnes
+\begin{frame}{Plan}
+  \begin{columns}[t]
+  \begin{column}{5cm}
+  \tableofcontents[sections={1-4},currentsection, hideothersubsections]
+  \end{column}
+  \begin{column}{5cm}
+  \tableofcontents[sections={5-8},currentsection,hideothersubsections]
+  \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection{En liste}
+\setbeamertemplate{itemize item}[circle] 
+\begin{frame}
+ \frametitle{Encore des listes}
+ \framesubtitle{à affichage décomposé}
+% en tenant le compte de ses items  
+  \begin{itemize}
+    \item<1-> l'élément de liste apparaîtra depuis le slide numéro 1.
+    \item<2-> \textbf<2>{l'élément de liste apparaîtra en gras sur le slide 2 puis normalement.}
+    \item<3-> l'élément de liste apparaîtra depuis le slide numéro 3.  
+  \end{itemize}
+%\end{beamerboxesrounded}  
+% seulement sur le slide 4
+\only<4>{ ... ou encore, pour ne pas avoir à compter~:}
+% à partir du slide 5
+\onslide<5> blabla
+% Pause avant le slide 6 pour respirer
+\pause[6]
+
+% avec un compte automatique, on ne met plus les numéros de slide
+  \begin{itemize}[<+->]
+    \item l'élément de liste apparaîtra depuis ce slide.
+    \item \textbf<.>{l'élément de liste apparaîtra en gras sur le slide en cours puis normalement.}
+    \item l'élément de liste apparaîtra depuis ce slide.  
+  \end{itemize}
+\end{frame}
+% ---------------------------------------------------
+\subsection{En texte}  
+\begin{frame}
+ \frametitle{En pause}
+    \pause
+    % on affiche ceci après la première pause
+    Voici l'élément qui venait avant et que j'avais oublié, je répare l'oubli...
+    % on affiche sur le slide 1 et sur le slide 3 uniquement
+    \onslide<1,3>
+    
+    Voici le premier élément que j'affiche 
+    pour démarrer. (et que je réaffiche ensuite)
+    % pause avant le slide 4
+    \pause[4]
+    
+    Voici le troisième élément après réflexion.
+\end{frame}
+\end{document}
