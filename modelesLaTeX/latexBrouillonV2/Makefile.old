@@ -1,0 +1,42 @@
+
+all : visu
+
+pdf : pdfconvert
+
+ps : psconvert
+
+postscript : psconvert
+
+clean : exampleDocument.dvi mrproper
+	rm exampleDocument.log
+	rm exampleDocument.dvi
+
+mrproper : 
+	rm *~
+	rm exampleDocument.aux
+	rm exampleDocument.lot
+	rm exampleDocument.lof
+
+visu : exampleDocument.dvi
+	xdvi exampleDocument.dvi&
+
+psconvert : exampleDocument.dvi
+	@echo "PLEASE WAIT *******************"
+	dvips exampleDocument.dvi
+	@echo "************************ PostScript OK"
+
+pdfconvert : exampleDocument.dvi
+	@echo "PLEASE WAIT *******************"
+	dvips exampleDocument.dvi
+	ps2pdf exampleDocument.ps exampleDocument.pdf
+	@echo "************************ PDF OK"
+
+exampleDocument.dvi : exampleDocument.tex
+	latex exampleDocument.tex
+	latex exampleDocument.tex
+
+exampleDocument_old.dvi : exampleDocument.tex
+	latex exampleDocument_old.tex
+	latex exampleDocument_old.tex
+
+
