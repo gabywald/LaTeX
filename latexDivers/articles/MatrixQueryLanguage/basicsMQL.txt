@@ -1,0 +1,437 @@
+http://enoviaplmtutors.blogspot.fr/2012/11/query-languagemql-mql-command-editor.html -- 
+
+ Matrix Query Language
+What is MQL?
+
+MQL stands for Matrix Query Language it is just Similar to SQL, MQL which consists of a set of statements.Query, build, instantiate and maintaina a Matrix database which Perform any operation that can be executed in the Matrix, Business, or System Applications. MQL commands are entered as a free form list of words separated by one or more blanks, tabs, or newlines.Command lines end with a semicolon.Command names are not case sensitive.
+
+MQL Command Editor
+
+You can execute a single command which is also called interactive mode in general term or you can write a script of mql. Script is nothing but the collection of mql commands. Script is useful when you are performing many changes to the Matrix database. The interface reads the script, line byline,and processes the statements just as it would in the interactive mode.
+
+Examples-
+       Interactive: mql
+       Script: mql abc.mql
+
+Script can be executed by the command- RUN filename.mql;Please note the script extension should be .mql
+
+To access MQL, You can use MQL command editor or mql command prompt mode.
+For unix enter MQL command- mql [options] [-] [file...]
+
+Below is the screenshot of the MQL command editor-
+
+
+
+
+
+
+
+
+
+ 
+MQL Help
+
+Execute the below commands for help in MQL-
+
+help;
+       - displays general help information
+help all;
+       -displays entire content of the help file.
+
+help MQL category;
+
+      -Displays information about a MQL Category like Type, association, relationship, context, etc and a list of all the statements associated with the category along with the valid syntax.
+
+
+
+verbose [on/off]; 
+
+         -When set to ON, more message detail is provided. When set to OFF, only errors and
+                  important system messages are displayed.
+
+Context
+
+MQL commands require a person context to access business objects
+
+                set context user creator pass ***** vault abc;
+
+
+
+Quit
+
+Quit statement exits the Matrix command interface and returns control to the operating system. -quit;
+
+MQL Command Abbreviation
+
+Most keywords can be abbreviated to three characters or the least number that will make them unique
+help businessobject;
+help bus; 
+
+Comments
+
+Text appearing after a pound sign (#), up to and including the next newline, is ignored as a comment.
+
+#This is a comment line
+list bus; #list business objects 
+
+Name and Value Quotation
+
+Names and values must be quoted (“ or ‘) when they have embedded blanks, tabs, newlines, commas, 
+semicolons, or pound(#) signs.
+
+add type Hard Disk; # Invalid
+add type “Hard Disk”; # Valid
+add type Memory; # Valid
+
+
+Avoid single quotes, double quotes, or commas within names and values.
+
+
+quote [on/off];
+
+ Data strings with embedded spaces are automatically returned as quoted by Matrix. 
+
+
+TCL Mode
+
+To enter Tcl mode use the command:
+
+tcl;
+The command editor prompt will change to:
+%
+To exit Tcl mode enter the command:
+exit;
+
+
+Executing Script 
+
+
+•          Syntax: RUN filename;
+•          Scripts are created using an ASCII text editor and contain one or more MQL commands
+                                                        Example: RUN “c:/class files/myfile.mql”;
+
+ Identifying Business Object
+
+
+Business object have Type, name and revision. You can identify the business objects by its type, name, and revision or by its id . Business Object ID (OID) is a unique identifier for each object. It is defined internally by enovia at a time of object creation. ID of an object can be a substituted for Type, Name, Revision in most MQL commands. It is a unique number of an object across the vault. 
+
+Example: by TNR-->Part, S-001,A by id-->20432.14426.20439.1646
+
+
+ Extract Information of business objects
+
+Listing business object
+list businessobject [vault vaultname]
+
+Listing Admin Object object
+•         Syntax:
+            list admintype pattern
+            [select FIELDS]
+            [dump [SEPARATOR]]
+            [recordsep SEPARATOR]
+
+ Example: List part in vault_name; (where vault name is optional);
+list person;
+list group * select person;
+list policy Pr* select format dump;
+list role * select name assignment dump | recordsep @;
+
+Printing Business Object or Admin object
+
+Retrieve information about a single business or admin object
+For Admin Object: Print admin_object;
+Syntax:
+print adminitem NAME
+    [selected|select [FIELDs]]
+    [dump [SEPARATOR]]
+    [output FILENAME];
+
+
+
+For Business Object: print bus bus_type name revision; Where, bus_type name and revision is the type name and revision of the business object. You can substitute Type name and revision by id of the object.
+Syntax:
+  print businessobject BO_NAME
+    [selected|select [FIELDs]]
+    [dump [SEPARATOR]]
+    [output FILENAME];
+ 
+•Examples:
+print role Sales;
+print type “Hard Disk”;
+print format WORD;
+print context;
+print bus 5181.64006.31833.46098;
+print person Dave;
+print bus Monitor NEC A;
+
+ Select Clause
+ Used to retrieve specific information from Admin Objects, Business Objects, Sets and Connections.
+It can be used in-
+–Listing Admin Objects
+–Printing an Admin or Business Object
+–Printing a Connection
+–Printing a Set
+–Expanding a Business Object
+–Expanding a Set
+ Example:
+Specify the field name(s) to be selected
+print bus Keyboard “Acme 101” A select attribute;
+print bus Keyboard “Acme 101” A select attribute[Cost];
+print bus Monitor VisionQuest B select id;
+print role select person dump;
+print type Monitor select derived;
+print person select name phone;
+
+Selectable clause 
+
+Selectable is Use to determine fields to select. Object information is stored in named fields that can be accessed using the select clause with dot notation.
+To review the valid list of field names for an object use the selectable clause
+print bus selectable;
+print bus selectable policy;
+print attribute selectable;
+ 
+Understanding the selectable syntax
+Select clauses are defined using an object structure
+–A dot(.) separates each structure element
+–An (*) indicates the select clause can traverse deeper into the object structure
+–Brackets[] indicate a list of selectable items in the structure
+ 
+Print lists remain in effect until modified or replaced
+To retrieve the previous list use the selected clause
+print bus Keyboard “Acme 101” A selected;
+
+Dump Clause
+
+Dump clause supress output of field names. Only value(s) with optional separator returned from statement.
+
+ print bus Mouse jerry A select attribute[Cost] attribute[size]
+ dump |;
+print bus Monitor NEC A select owner dump; 
+
+
+Output clause 
+
+
+Output clause print the output to a file instead of printing on the console. ASCII text file is created with
+
+results of the command.
+
+
+ print bus Note 1000 1 output “c:/notes/1.txt”; 
+
+
+
+
+
+
+Expand
+•Used to view connected business objects from a starting object.
+•Lists the objects that lead to an object, from it, meet selected criteria, or are of a specific type.
+•Results can be placed into/onto a set or to a file.
+•Allows the select clause on connected business object or the relationship which links them.
+
+
+Syntax:
+expand businessobject BO_NAME
+    [to|from]
+    [relationship PATTERN]
+    [type PATTERN]
+    [recurse to [all|N]]
+    [select businessobject FIELDs]
+    [select relationship FIELDs]
+    [into|onto set SETNAME]
+    [dump [CHAR] [recordsep CHAR]]
+    [output FILENAME]
+    [terse]
+    [limit N];
+ 
+to|from
+–Specify direction to expand from or to starting object
+relationship, type
+–Filters returned list based on pattern
+recurse
+–Expands connected objects at deeper levels
+select businessobject
+–Selects fields from connected objects
+ 
+select relationship
+–Selects fields from connecting relationships
+into|onto set
+–Replaces are appends objects to a set
+dump
+–Removes field information only returning values with optional separator
+recordseparator
+–Replaces default end of record newline (\n) with optional chars
+
+output
+–Output objects to a file
+terse
+–Output object Ids instead of Type, Name, Revision
+limit
+–Limit output to number objects specified
+ 
+
+ Query 
+
+
+•A query is a search of the Matrix database for objects that meet specified criteria.
+•Queries are defined, named and saved to the database based on the current context
+•To produce results queries must be evaluated
+•Temporary queries are not saved to the database and are evaluated immediately
+•Using .finder to help build complex queries. 
+
+Add/evaluate query
+Syntax:
+add query QUERY-NAME
+[businessobject TYPE* NAME* REV*]
+[owner USER-NAME]
+[vault VAULT-NAME]
+[where QUERY-EXPR];
+evaluate query QUERY-NAME
+[over set NAME]
+[into|onto set NAME]
+[limit VALUE];
+
+ Example:
+
+add query “Find Monitors” bus Monitor * * where ‘current == “Planned”’;
+•New query is added to the database
+•To retrieve results:
+  evaluate query “Find Monitors”;
+Example:
+add query “Active NEC Components”
+  businessobject COMPONENT * *
+  where ‘current == “Active”
+  && attribute[Source] == “NEC”’;
+Results:
+–Find all the “Component” objects that are in the “Active” state of their policy and have a value of “NEC” for their “Source” attribute
+ 
+ Temp query
+
+Syntax:
+temporary query businessobject TYPE* NAME* REV*
+   [!expand]
+   [vault VAULT-NAME]
+   [owner USER-NAME]
+   [limit VALUE]
+   [where]
+   [select]
+   [dump [CHAR] [recordsep CHAR]]
+   [output FILENAME];
+ 
+Examples:
+temp query bus Keyboard * *
+ where ‘attribute[Cost] < 75’;
+temp query bus * * *
+ where ‘attribute[Weight] > 0’
+ select attribute[Weight]
+ attribute[Cost] dump |;
+temp query bus * * * limit 50;
+temp query bus Mouse * * select attribute[Cost] dump | recordsep &;
+.finder
+ The last query created in the Matrix application Find
+•Useful for creating complex where clauses
+•Examining .finder:
+print query .finder;
+ Evaluate expression
+
+Expressions can execute against a collection of business objects, a single business object or a single connection.
+evaluate expression EXPRESSION {EXPRESSION}…
+on {COLLECTION} {BUS OBJECT} {CONNECTION}
+[dump [CHAR]]
+[recordseparator SEPARATOR];
+ 
+Aggregate EXPRESSIONS:
+–count (argument)
+–sum (argument)
+–maximum (argument)
+–minimum (argument)
+–average (argument)
+–median (argument)
+–standarddeviation   (argument)
+–correlation (cor) (arguments)
+ 
+Conditional EXPRESSIONS:
+–if <TEST> then <RESULT> else <RESULT1>
+String expressions
+–substring start end text-field
+–Plus (+) text-field concatenator
+ 
+Date/Time EXPRESSIONS:
+–MX_CURRENT_TIME
+Evaluate expression -
+Valid Business Object COLLECTIONS:
+–set
+–query
+–expand
+Collections can be linked:
+–and: object is in both collections
+–or: object is in one of the collections
+–less: object in left hand collection only
+Examples:
+evaluate expression “count TRUE” on temp query bus “Mon*” * *;
+evaluate expression “count (attribute[Cost] > 0)” on set MySet;
+evaluate expression "sum attribute[Cost]" on expand  Micro Metro0001 A from;
+evaluate expression "count TRUE" on temp query bus * * * less temp query bus Mon* * *;
+evaluate expression "if (count TRUE > 500) then ‘Result too big' else 'OK'" on temp query bus * * *;
+evaluate expression “’Owner is:’ + owner” on bus Note Metro0001 A;
+eval expression "substring 1 5 Description" on bus Disk Acme A;
+eval expr “(MX_CURRENT_TIME - modified)/(3600 * 24)” on bus Note A 1;
+eval expr “(MX_CURRENT_TIME - originated)/(3600 * 24) on bus Keyboard Standard A;
+
+
+Add
+add object; Where object should be person,role etc. 
+Syntax:
+add businessobject TYPE NAME REVISION
+    [description DESCRIPTION]
+    policy POLICY
+    [vault VAULTNAME]
+    [ATTRIBUTENAME VALUE];
+Example:
+add bus Keyboard Qwerty A description “Std Keyboard” policy Production Cost 200 Weight .5;
+
+Copy Business Object 
+
+Syntax:
+  copy businessobject BO_NAME to NAME REVISION [ITEM {ITEM}];
+
+Example:
+  copy bus Keyboard Qwerty A to “101 Keys” A owner Ni;
+ 
+Delete Business Object
+
+Syntax:
+delete bus BO_NAME;
+Example:
+delete bus Keyboard Standard A;
+delete bus 45181.64006.45205.1092
+
+Modify Business Object
+
+Syntax:
+modify bus BO_NAME
+[MODIFY_ITEM value];
+Example:
+modify bus Mouse A123 A Cost 100 Weight .05;
+modify bus 20432.14426.20439.27960 owner Dave;
+
+ Connect Objects
+
+Syntax
+  connect bus BO_NAME relationship RELATIONSHIP_NAME
+ [to|from] BO_NAME [ATTRIBUTE_NAME VALUE...];  
+
+Example:
+connect bus “System Box” “Metro0001” C relationship Assembly to “Hard Disk” Maxtor 3 Quantity 1;
+
+Object Lifecycle Demote/Promote
+
+Syntax:
+  promote bus BO_NAME;
+Example:
+promote bus Order 23422 1;
+Syntax:
+  demote bus BO_NAME;
+Example:
+demote bus Order 23422 1;
