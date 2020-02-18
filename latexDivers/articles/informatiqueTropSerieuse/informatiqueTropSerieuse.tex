@@ -1,0 +1,120 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[english]{babel}
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{multirow}
+
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols} 
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{60pt}{25pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{empty}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+
+% http://www.trustonme.net/didactels/250.html
+
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+%% \usepackage{fancyhdr}
+%% \pagestyle{fancy}
+%% % \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+%% % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+%% \fancyhf{}
+%% \fancyhead[LE,RO]{\bfseries\thepage}
+%% \fancyhead[LO]{\bfseries\rightmark}
+%% \fancyhead[RE]{\bfseries\leftmark}
+%% \fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+%% 	L'informatique est une science bien trop s{\'e}rieuse pour {\^e}tre laiss{\'e}e aux informaticiens
+%% \hfill \includegraphics[width=0.5cm]{../../imgGraphics/logo_glider.png} }
+%% \fancyfoot[RO]{\includegraphics[width=0.5cm]{../../imgGraphics/logo_glider.png} \hfill
+%% 	L'informatique est une science bien trop s{\'e}rieuse pour {\^e}tre laiss{\'e}e aux informaticiens
+%% \hfill \thepage /\pageref{LastPage}}
+%% \renewcommand{\headrulewidth}{0.25pt}
+%% \renewcommand{\footrulewidth}{0.50pt}
+%% \addtolength{\headheight}{0.5pt}
+%% \fancypagestyle{plain}{
+%% 	\fancyhead{}
+%% 	\renewcommand{\headrulewidth}{0pt}
+%% }
+
+%--- Definitions de nouvelles commandes ---
+\newcommand{\N}{\mathbb{N}} % les entiers naturels
+
+
+%============================= Corps =================================
+\begin{document}
+
+\setlength\parindent{0pt}
+
+%% ~\\
+\vfill
+
+\begin{center}
+	\textbf{\Large L'informatique est une science bien trop s{\'e}rieuse pour {\^e}tre laiss{\'e}e aux informaticiens}~\\
+	~\\
+	\texttt{http://www.lemonde.fr/idees/article/2012/06/22/~\\ l-informatique-est-une-science-bien-trop-serieuse-pour-etre-laissee-aux-informaticiens~\\ \_1722939\_3232.html}
+\end{center}
+
+\vfill
+
+\begin{multicols}{2}
+	\footnotesize
+	
+	\emph{\small Le Monde.fr | 22.06.2012 {\`a} 09h40} %% ~\\
+
+	\emph{\small Par Serge Abiteboul, Colin de la Higuera et Gilles Dowek}~\\
+
+	Depuis le d{\'e}but de l'ann{\'e}e, deux des principaux quotidiens anglo-saxons, le Guardian et le New York Times, ont publi{\'e} des articles vantant les m{\'e}rites de l'enseignement de l'informatique pour tous. Le premier m{\`e}ne au Royaume-Uni une campagne tr{\`e}s active pour que les programmes scolaires permettent l'{\'e}tude de l'informatique en tant que science et plus exclusivement en tant qu'outil. Plus r{\'e}cemment, en France, Vincent Peillon d{\'e}clarait que "\emph{ceux qui le souhaitent auront donc la possibilit{\'e} d'acc{\'e}der {\`a} une initiation aux langages informatiques et {\`a} la programmation, au sein des options "sp{\'e}cialit{\'e} num{\'e}rique" que nous {\'e}tendrons {\`a} l'ensemble des s{\'e}ries des baccalaur{\'e}ats g{\'e}n{\'e}ral et technologique}".~\\
+	
+	Apr{\`e}s les errements d'une p{\'e}dagogie fond{\'e}e sur l'utilisation de quelques logiciels de bureautique et l'usage responsable de l'Internet, bien install{\'e}e dans les ann{\'e}es 1990 et 2000, la tendance semble s'inverser simultan{\'e}ment dans plusieurs pays et s'orienter vers un v{\'e}ritable enseignement de l'informatique. Comment expliquer cette prise de conscience ?~\\
+	
+	L'id{\'e}e dominante {\'e}tait nagu{\`e}re que l'informatique, {\`a} la diff{\'e}rence des math{\'e}matiques, de la physique, de la chimie, de la biologie, etc., {\'e}tait une science r{\'e}serv{\'e}e {\`a} un petit nombre de sp{\'e}cialistes qu'il convenait de former apr{\`e}s le baccalaur{\'e}at. Le commun des mortels, pouvait, quant {\`a} lui, se contenter d'une formation de base limit{\'e}e {\`a} l'utilisation de quelques logiciels commerciaux. Qu'est-ce qui conduit {\`a} proposer un enseignement de la science informatique ouvert {\`a} tous, et cela d{\`e}s un tr{\`e}s jeune {\^a}ge ?~\\
+	
+	La premi{\`e}re raison est que l'industrie, pour rester comp{\'e}titive, a besoin non seulement des ing{\'e}nieurs informaticiens, mais aussi que tous ses ing{\'e}nieurs, techniciens, commerciaux... soient form{\'e}s {\`a} l'informatique. Ce qui semble {\'e}vident, par exemple dans l'industrie des t{\'e}l{\'e}communications, est {\'e}galement vrai dans l'industrie des transports, de l'agroalimentaire, de la culture... L'informatique s'est impos{\'e}e comme incontournable dans tous les m{\'e}tiers tout autant pour les chauffeurs de taxi que pour les chirurgiens.~\\
+	
+	Une autre raison est que, se familiariser avec des outils informatiques particuliers, c'est se familiariser avec des outils qui seront tr{\`e}s vite d{\'e}pass{\'e}s. Il est indispensable au contraire de ma{\^i}triser un petit nombre de concepts comme les notions d'information, de langage, d'algorithme... car ces concepts constituent des cl{\'e}s essentielles pour comprendre le monde pr{\'e}sent. Comment comprendre les d{\'e}bats sur le vote {\'e}lectronique ou la protection de la vie priv{\'e}e, si on ne comprend pas les notions de chiffrement, de cl{\'e} publique et priv{\'e}e, ou d'authentification ? Comment comprendre que la d{\'e}mat{\'e}rialisation des oeuvres de l'esprit transforme la place des artistes dans nos soci{\'e}t{\'e}s, si on ne comprend pas qu'une propri{\'e}t{\'e} essentielle de l'information est d'{\^e}tre duplicable {\`a} co{\^u}t nul. Comment comprendre l'{\'e}mergence d'une industrie coop{\'e}rative du logiciel, si on ne comprend pas la diff{\'e}rence entre code source et code compil{\'e} d'un programme ? Comment comprendre les transformations de la science contemporaine par le "d{\'e}luge des donn{\'e}es", si on ne comprend pas ce qu'est un algorithme d'apprentissage ? Tout autant que les objets et les syst{\`e}mes, ces formes de raisonnement modifient en profondeur nos modes de pens{\'e}e et nos mani{\`e}res d'{\^e}tre. Le traitement des achats dans une entreprise ou la tra\c{c}abilit{\'e} dans l'industrie sont aujourd'hui des processus d{\'e}finis de mani{\`e}re algorithmique, qu'ils soient g{\'e}r{\'e}s par des outils num{\'e}riques ou non. L'informatique doit donc {\^e}tre enseign{\'e}e non seulement aux {\'e}l{\`e}ves de Terminale S, mais aussi {\`a} chaque {\'e}l{\`e}ve, si nous voulons construire une soci{\'e}t{\'e}, meilleure, plus humaine, plus d{\'e}mocratique, plus sociale.~\\
+	
+	Une troisi{\`e}me raison est que, demain, chacun pourra {\^e}tre amen{\'e} {\`a} devenir "cr{\'e}ateur" d'objets informatiques. Depuis la conception d'une cuisine, {\`a} celle d'un site Web, ou d'outils de vente directe, cette cr{\'e}ation est devenue la propri{\'e}t{\'e} de tous. Et on ne peut plus continuer {\`a} dire aux jeunes qui vivent cela, passe ton bac d'abord ; tu auras bien le temps plus tard de d{\'e}velopper l'application dont tu r{\^e}ves !~\\
+	
+	Les savoirs en informatique forment donc un continuum, depuis ceux de l'informaticien professionnel, en passant par ceux de l'ing{\'e}nieur ou du scientifique dont le travail d{\'e}pend de mani{\`e}re critique de ses comp{\'e}tences en informatique, jusqu'{\`a} ceux du citoyen dont la vie quotidienne est chaque jour plus impr{\'e}gn{\'e}e d'informatique.~\\
+	
+	Le but d'un enseignement l'informatique doit donc d'abord {\^e}tre de garantir {\`a} tous des comp{\'e}tences fondamentales : on pourrait parler d'"alphab{\'e}tisation" en informatique. Cette analyse et les exp{\'e}riences d'enseignement d{\'e}j{\`a} r{\'e}alis{\'e}es d{\'e}terminent les lieux o{\`u} cet enseignement devrait trouver sa place : {\`a} l'{\'e}cole primaire voire maternelle, au coll{\`e}ge, au lyc{\'e}e, bien {\'e}videmment dans toutes ses sections. Bien s{\^u}r, on n'apprend pas la m{\^e}me chose en Cours pr{\'e}paratoire et en Terminale ; on apprend diff{\'e}remment suivant les {\^a}ges. A l'{\'e}cole primaire, notamment, tout est {\`a} inventer en s'appuyant sur des exp{\'e}riences d{\'e}j{\`a} r{\'e}alis{\'e}es et sur l'exp{\'e}rience d'un enseignement fond{\'e} sur une d{\'e}marche d'investigation scientifique dans l'esprit de celle d{\'e}velopp{\'e}e dans la Main {\`a} la p{\^a}te. Au coll{\`e}ge, on se familiarise avec les concepts de base. Au lyc{\'e}e, on apprend {\`a} les ma{\^i}triser.~\\
+	
+	L'enseignement de l'informatique pour tous n{\'e}cessite, bien entendu, une r{\'e}forme de longue haleine, en particulier parce qu'il faut former les ma{\^i}tres. Il faut que le second degr{\'e} recrute des enseignants form{\'e}s {\`a} l'informatique et que l'informatique soit enseign{\'e}e de fa\c{c}on approfondie aux futurs enseignants des {\'e}coles, des coll{\`e}ges et des lyc{\'e}es. Les enjeux sont trop importants pour attendre plus longtemps.~\\
+	
+	L'informatique peut et doit {\^e}tre enseign{\'e}e {\`a} tous. Il ne faut pas laisser une partie de la population sur le bord de la route.~\\
+
+	\textbf{Serge Abiteboul} est professeur au Coll{\`e}ge de France ;~\\
+	
+	\textbf{Colin de la Higuera} est pr{\'e}sident de la Soci{\'e}t{\'e} informatique de France ;~\\
+	
+	\textbf{Gilles Dowek} est co-auteur du programme de la sp{\'e}cialit{\'e} informatique et science du num{\'e}rique en Terminale S.~\\
+	
+	\emph{Serge Abiteboul, Colin de la Higuera et Gilles Dowek}
+\end{multicols}
+
+\end{document}
