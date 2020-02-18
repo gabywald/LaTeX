@@ -1,0 +1,89 @@
+http://science.slashdot.org/story/13/10/23/2028203/pubmed-commons-opens-up-scientific-articles-to-user-comments -- 
+"In a new trial, PubMed Commons has been released. Until now, post-peer-publication results were restricted to letters to the editor of scientific journals; and even then some journals don't accept letters to the editor. With PubMed Commons, scientific peers can comment on PubMed-indexed articles without the interference of journal editors and peer reviewers. At the moment, eligible for participating are: 'Recipients of NIH (US) or Wellcome Trust (UK) grants can go to the NCBI website and register. You need a MyNCBI account, but they are available to the general public. If you are not a NIH or Wellcome Trust grant recipient, you are still eligible to participate if you are listed as an author on any publication listed in PubMed, even a letter to the editor. But you will need to be invited by somebody already signed up for participation in PubMed Commons. So, if you have a qualifying publication, you can simply get a colleague with the grant to sign up and then invite you.' However, reports are in that anyone with a PubMed / NCBI account can sign up on the PubMed home page."
+
+
+http://blogs.plos.org/mindthebrain/2013/10/22/join-pubmeds-revolution-in-post-publication-peer-review/ -- 
+Join PubMed’s Revolution in Post Publication Peer Review
+By James Coyne PhD
+Posted: October 22, 2013	
+-- This work, unless otherwise expressly stated, is licensed under a Creative Commons Attribution 3.0 Unported License. -- 
+
+At 11 AM on October 22, 2013, the embargo was lifted and so now it can be said: PubMed Commons has been implemented on a trial basis. It could change the process of peer assessment of scientific articles forever.
+
+PubMed Some researchers can now comment on any article indexed at PubMed and read the comments of others. It is a closed and closely watched pilot testing. Bugs may become apparent that will need to be fixed. And NIH could always pull the plug. But so many people have invested so much at this point and spent so much time thinking through all the pros and cons that this is hopefully unlikely.
+
+The implementation could prove truly revolutionary. PubMed Commons is effectively taking post-publication peer review out of the hands of editors and putting control firmly in the hands of the consumers of the scientific literature—where it belongs.
+
+PubMed Commons allows us to abandon a thoroughly antiquated and inadequate reliance on letters to the editor as a means of addressing the many shortcomings of pre-publication peer review.
+
+PubMed Commons is
+
+    A forum for open and constructive criticism and discussion of scientific issues.
+    That will thrive with high quality interchange from the scientific community.
+
+You can read more about the fascinating history of PubMed here.  PubMed is a free database of references and abstracts from life sciences and biomedical journals. It primarily draws on the MEDLINE database and is maintained by the US National of Library Medicine (NLM). For 16 years ending in 1997, MEDLINE had to be accessed primarily through institutional facilities like University libraries. That excluded many  who draw on PubMed today from using it.Medline287
+
+But then in 1997, in a revolutionary move similar to the launching of PubMed Commons, PubMed made its electronic bibliographic resources free to the public. Everyone was quite nervous at the time about being shut down. Lawyers of the for-profit publishers predictably descended on NIH to try to block the free access to abstracts, arguing, among a number of other things, copyright infringement that cut into their ability to make money. But fortunately NIH held its ground and Vice President Al Gore demonstrated PubMed’s capacity in a public ceremony.al gore pubmed
+
+So, in the first revolutionary move, the for-profit journals lost their control over access to abstracts. In the second move, they are losing control over post publication commentary on articles– unless they succeed in squashing PubMed Commons.
+
+Who can participate in PubMed Commons at this time?
+
+    Recipients of NIH (US) or Wellcome Trust (UK) grants can go to the NCBI website and register. You need a MyNCBI account, but they are available to the general public.
+    If you are not a NIH or Wellcome Trust grant recipient, you are still eligible to participate if you are listed as an author on any publication listed in PubMed, even a letter to the editor. But you will need to be invited by somebody already signed up for participation in PubMed Commons. So, if you have a qualifying publication, you can simply get a colleague with the grant to sign up and then invite you.
+
+Inadequacies of letters to the editor as post-publication commentary
+
+Up until now, the main option for post publication commentary has been in later reviews of the literature, although there was a misplaced confidence in the more immediate letters to the editor.
+
+letter-to-editor-scaled500I regret my blog post last year recommending writing conventional letters to the editor. Letters remain better than journal clubs for junior investigators eager to develop critical appraisal skills. But it could be a waste of time to send the letters off because letters are simply not effective contributions to post publication commentary. Letters never worked reliably well, and for a number reasons, they are now obsolete.
+
+In the not-so-good-old days of exclusively print journals, there was a rationale for these journals putting limits on letters to the editor.
+
+    With delays in availability due to the scheduling of print journals, letters to the editor were seldom available in a timely fashion. Readers usually would have long forgotten the article being critiqued when the letter finally came out.
+    With limits on the number of pages allowed for issue, letters to the editor consumed a scarce resource without contributing to the impact factor of the Journal. So, journals typically had strict restrictions on the length of letters (usually 400 to 800 words), and a tight deadline to submit a letter after publication of the print article, usually no more than three months or less.
+
+Editorial Review of letters to editor has seldom been fair.
+
+    There is a prejudice against accepting anything but the most vitally relevant commentary. Yet editors are adverse to accepting critical letters that reflect badly on their own review processes. Get past the significance criterion and then you still risk offending the editor’s sense of privilege.
+    While letters to the editor are subject to peer review, responses from authors generally are not. Authors are free to dismiss or distort any criticism of their work, sometimes with the most absurd of statements going unchallenged.
+    Electronic bibliographic resources have become the principal means of accessing articles, but no links are often provided between a letter to the editor and the target article. So, even if the credibility of the published article with thoroughly demolished in a letter to the editor, readers accessing that article through electronic bibliographic source are not informed.
+    Many journals allowed authors to veto publication of any criticism of their work,hammering3pg but the journals do not state this in their instructions to authors. You can submit a letter to the editor, only to have it rejected because the author objects to what you said. But you are told nothing except that you letter is rejected.
+    Many journals allow authors of the target articles the last word in responding to critical letters. Publishing a single letter and a response typically completes discussion of a target article. And the letter writer never gets to see the author’s response until after it is published. So, you can put incredible effort into carefully expressing your points within the limits of 400 to 800 words, only to be made to look ridiculous with mischaracterizations you can do nothing about.
+
+Letters to the editor are thus usually untimely, overly short, and inadequately referenced. And they elicit inadequate and even hostile responses from authors, but are generally ignored by everybody else.
+
+Letters to the editor are seldom cited and this is just one reflection of their failing to play a major role in moving the scientific discussion forward.
+
+The advent of web-based publishing made restrictions on letters to the editor less justifiable. Once a basic structure for processing and posting letters to the editor is set up, processing and posting cost little.
+
+Print journals can reduce costs by maintaining a separate web-based place for letters to the editor, but restrictions on length and time to response have nonetheless continued, even if their economic justification has been lost.
+
+bmj-logo-og BMJ Rapid Responses provides an exceptional model for post publication peer commentary. BMJ accepts electronic responses that can be accessed by readers within 72 hours, as long as the responses are not grossly irrelevant or libelous. Readers can register “likes” of Rapid Responses and threads of comments often develop. Then, a few comments are selected each week for editing and published in the print edition. Unfortunately, the rapid responses that remain only electronic are not indexed at PubMed and can only be found by going to the BMJ website, which is behind a pay wall for most articles.
+
+Other journals are scrambling to copy and improve upon the BMJ model, but it can take some serious modification of software and that takes time. “Like turning the Titanic around” an editor of one of the largest open access journals told me.
+
+Until such options become widely available, a reluctance to writing letters to the editor remains thoroughly justifiable. Few letters will be submitted and fewer will be published or result in a genuine scientific exchange. And the goal remains elusive of readily accessible, indexed, citable letters to the editor and comments for which writers can gain academic credit.
+eisen_630
+
+PLOS cofounder Michael Eisen Photo by Andy Reynolds from Mother Jones
+
+That is, unless PubMed Commons catches on.  It provides a potential of realizing PLOS Co-founder and disruptive innovator Michael Eisen’s goal of continuous peer assessment and reassessment, not stopping with two or three people making an unreliable, but largely irreversible judgment that something should have been published and should eternally be accepted as peer-reviewed.
+
+PubMed Commons is only a rung on the ladder towards overthrowing the now firm line between publication and peer assessment. It’s not a place to stop, but in important step. Please join in and help make it work. If you’ve ever publish an article listed in PubMed, find a way to get invited. If you not ready to post your own comments, lurk, offer others encouragement with “like’s”, and then when the spirit moves you, jump in!
+
+I expect that someday soon you’ll be a say to more junior colleagues, “I was active in the field when authors could prevent you from commenting on their work and editors could prevent you from embarrassing them with demonstration of the stupidity of some of their decisions.” And you junior colleagues can respond “wow, was that in the days before email? Just how did you participate in the dialogue that is at the heart of scientific communication back then? Did you have to get up and challenge speakers at conferences?”
+
+About James Coyne PhD
+
+James C. Coyne, Ph.D. is Professor of Psychology in the Department of Psychiatry, Director, Behavioral Oncology Research of the Abramson Cancer Center, and a Senior Fellow at the Leonard Davis Institute for Health Economics, all at the Perelman Medical School of University of Pennsylvania. Additionally, he is Professor of Health Psychology, University of Groningen Medical Center (UMCG), the Netherlands. Previously, he served on the faculties of University of California, Berkeley and University of Michigan School of Medicine. Dr. Coyne has been elected a Fellow of the American Psychological Association, Society of Behavioral Medicine, and Academy of Behavioral Medicine. His critical commentaries have challenged whether psychosocial intervention extends the survival of cancer patients, whether recommended and mandated depression programs improve patient outcomes, and whether meta analyses of behavioral medicine commissioned by professional organizations are valid and credible. A 2008 systematic review and meta-analysis in JAMA of screening for depression among cardiovascular patients was designated by BMJ as one of the eight top papers of the year. He is known for presenting and defending controversial positions and for promoting reform of the clinical and health psychology journals. He is the co-author or editor of a number of books including the 2009 Screening for Depression in Clinical Settings: An Evidence-Based Review (Oxford University Press) with Alex Mitchell.
+
+http://www.ncbi.nlm.nih.gov/pubmedcommons/join/ -- 
+
+How to Join PubMed Commons
+
+PubMed Commons is a system that enables researchers to share their opinions about scientific publications. Researchers can comment on any publication indexed by PubMed, and read the comments of others.
+
+For the current pilot testing phase there is a limited facility for joining that may work for you. Several organizations have provided lists of approved author e-mail addresses. If you are included on the list, you can request an invitation to join. Additional options for joining will be provided in future releases.
+
+In order to complete the process you will also need to have a My NCBI account. [...]
