@@ -3,6 +3,7 @@
 Quelques modèles / "templates" de documents LateX "prêt à l'emploi" et des documents prêts à lire et à modifications. 
 
 **Les répertoires finaux suivent le même schéma : **
+
     * base
         * img/ : pour les images
         * *.tex : file TeX de base
@@ -12,6 +13,7 @@ Quelques modèles / "templates" de documents LateX "prêt à l'emploi" et des do
 
 
 **Voici un listing exhaustif : **
+
     * modelesLaTeX
         * convertLaTeXChars.pl : script perl pour convertir les caractères accentués
         * latexArticleArticle
@@ -31,4 +33,14 @@ Quelques modèles / "templates" de documents LateX "prêt à l'emploi" et des do
             * template
     * latexDivers
         * convergencesPratiques
+        * presentationM2GBI : présentation de 2010 pour étudiants de l'Université d'Evry
+        * articles
+            * aboutPubMedCommons
+            * blockchain
+            * DNA through the Eyes of a Coder
+            * How Not to be a BioInformatician
+            * Informatique trop sérieuse ...
+            * Le logiciel dévore le monde
+            * PDFs : ...
+        
 	
