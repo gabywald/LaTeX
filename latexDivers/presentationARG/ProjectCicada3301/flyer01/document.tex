@@ -1,0 +1,276 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[english]{babel}
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+\usepackage{lastpage}
+\usepackage{multirow}
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols} 
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{0.25cm}{0.25cm}{0.25cm}{0.25cm}{15pt}{3pt}{15pt}{3pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{headings}
+
+\def\MainTitle{Main Title}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+
+% http://www.trustonme.net/didactels/250.html
+
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+%% \usepackage{fancyhdr}
+%% \pagestyle{fancy}
+%% % \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+%% % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+%% \fancyhf{}
+%% \fancyhead[LE,RO]{\bfseries\thepage}
+%% \fancyhead[LO]{\bfseries\rightmark}
+%% \fancyhead[RE]{\bfseries\leftmark}
+%% \fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+%% 	\MainTitle 
+%% \hfill \includegraphics[width=0.5cm]{img/logo_glider.png} }
+%% \fancyfoot[RO]{\includegraphics[width=0.5cm]{img/logo_glider.png} \hfill
+%% 	\MainTitle 
+%% \hfill \thepage /\pageref{LastPage}}
+%% \renewcommand{\headrulewidth}{0.25pt}
+%% \renewcommand{\footrulewidth}{0.50pt}
+%% \addtolength{\headheight}{0.5pt}
+%% \fancypagestyle{plain}{
+%% 	\fancyhead{}
+%% 	\renewcommand{\headrulewidth}{0pt}
+%% }
+
+\pagestyle{empty}
+
+%--- Definitions de nouvelles commandes ---
+\newcommand{\N}{\mathbb{N}} % les entiers naturels
+
+%--- Definitions de nouvelles couleurs ---
+\definecolor{verylightgrey}{rgb}{0.8,0.8,0.8}
+\definecolor{verylightgray}{gray}{0.80}
+\definecolor{lightgrey}{rgb}{0.6,0.6,0.6}
+\definecolor{lightgray}{gray}{0.6}
+
+%============================= Pour STAMP =================================
+
+\usepackage{xcolor,pgfplots}
+\usepackage{tikz}
+\usetikzlibrary{calc,patterns,fadings,positioning,decorations.pathmorphing,fit}
+\usetikzlibrary{decorations.text}
+\pgfplotsset{compat=1.7}
+%\pgfplotsset{compat=1.10} 
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{rotating}
+
+% STAMP CONFIGURABLE CONTENT
+
+\definecolor{stampink}{RGB}{005 005 005}		% Define color old stamp in RGB 
+
+\newcommand\textUpGlider{GLIDER : A HACKEREMBLEM}		% Top label
+\newcommand\textDownGlider{Open question}				% Bottom label
+\newcommand\textCapGlider{\texttt{\bfseries\today}}		% Center label
+% PDF (name and path) for best result with same RGB that stampink
+\newcommand\CoatOfArms{img/logo_glider.png}
+\newcommand\CoatOfArmsGlider{img/logo_glider.png}
+\newcommand\CoatOfArmsGliderLeft{img/logo-glider-left.png}
+\newcommand\CoatOfArmsGliderRight{img/logo-glider-right.png}
+\newcommand\CoatOfArmsCicada{img/Cicada_3301_logo.jpg}
+
+\newcommand\textUpCicada{Cicada 3301}					% Top label
+\newcommand\textDownCicada{Intelligence Seeking}		% Bottom label
+\newcommand\textCapCicada{\texttt{\textbf{EXPECT US}}}	% Center label
+
+% STAMP FIXED CODE 
+% free hand style of circles stolen from http://tex.stackexchange.com/a/49272/11604
+\pgfdeclaredecoration{free hand}{start}
+{
+	\state{start}[width = +1pt,
+				next state=step,
+				persistent precomputation = \pgfdecoratepathhascornersfalse]{}
+	\state{step}[auto end on length    = 3pt, % 3
+				auto corner on length = 3pt, % 3               
+				width=+1pt] % 1
+  {
+		\pgfpathlineto{
+			\pgfpointadd
+				{\pgfpoint{1pt}{1pt}}
+				{\pgfpoint{rand*.25pt}{rand*.2pt}} % good values .2pt aand .15pt
+		}
+	}
+	\state{final}
+	{}
+}
+	\tikzset{free hand/.style={
+		decorate,
+		decoration={free hand}
+		}
+} 
+\def\freedraw#1;{\draw[free hand] #1;} 
+
+
+% CENTRAL STAMP CONTENT
+\newcommand\textCenterGlider{
+\begin{minipage}{2.2cm}{}
+\vspace{-1em}
+\centering
+\includegraphics[width=1.8cm,height=1.8cm]{\CoatOfArms}\par
+\resizebox{2cm}{.205cm}{\textcolor{stampink}{\textCapGlider}}%
+\end{minipage}
+}
+
+
+% STAMPER MACRO
+\newcommand\StamperGlider{\resizebox{3cm}{3cm}{ % FINAL SIZE TAMP
+\begin{tikzpicture}[opacity=.6,transparency group]
+\normalsize\sffamily
+% EXTERIOR CIRCLE
+\freedraw[color=stampink,opacity=.3,line width=5pt,rotate=0] (0,0.02) circle (3.6cm);
+\freedraw[color=stampink,opacity=.5,line width=3pt,rotate=30] (0,0.01) circle (3.6cm);
+\freedraw[color=stampink,opacity=.7,very thick,rotate=20] (0,0) circle (3.6cm);
+% TOP CIRCULAR LABEL 
+\path [opacity=.2,postaction={decorate,decoration={raise=-1.3ex,text along path, 
+reverse path,text align=center,
+text={|\huge\bfseries\color{stampink}|\textUpGlider}}}] (-31:3.055cm) arc (-31:210:3.055cm);
+\path [opacity=.4,postaction={decorate,decoration={raise=-1.7ex,text along path, 
+reverse path,text align=center,
+text={|\huge\bfseries\color{stampink}|\textUpGlider}}}] (-30.7:3.055cm) arc (-30.7:210:3.055cm);
+\path [opacity=.8,postaction={decorate,decoration={raise=-1.5ex,text along path, 
+reverse path,text align=center,
+text={|\huge\bfseries\color{stampink}|\textUpGlider}}}] (-30:3.05cm) arc (-30:210:3.05cm);
+% BOTTOM CIRCULAR LABEL
+\path [opacity=.2,postaction={decorate,decoration={raise=-1.2ex,text along path, text align=center,
+text={|\huge\bfseries\color{stampink}|\textDownGlider}}}] (210:3.05cm) arc (210:330:3.05cm);
+\path [opacity=.4,postaction={decorate,decoration={raise=-.85ex,text along path, text align=center,
+text={|\huge\bfseries\color{stampink}|\textDownGlider}}}] (210:3.05cm) arc (210:330:3.05cm);
+\path [opacity=.8,postaction={decorate,decoration={raise=-1ex,text along path, text align=center,
+text={|\huge\bfseries\color{stampink}|\textDownGlider}}}] (210:3.05cm) arc (210:330:3.05cm);
+%INNER CIRCLE AND CENTRAL CONTENT
+\freedraw[color=stampink,opacity=.3,line width=4pt,rotate=0] (0.015,0.02) circle (2.5cm) node[scale=1.54] (m) {\textCenterGlider}; 
+\freedraw[color=stampink,opacity=.5,line width=3pt,rotate=30] (-0.025,-0.01) circle (2.5cm) node[scale=1.5] (m) {\textCenterGlider}; 
+\freedraw[color=stampink,opacity=.7,very thick,rotate=20] (0,0) circle (2.5cm) node[scale=1.52] (m) {\textCenterGlider}; 
+\draw[draw=none] 
+	[postaction={path fading=north,fill=white!99,opacity=0.6}]
+	(-5,-5) rectangle (5,5);%
+\end{tikzpicture}}}
+
+
+% CENTRAL STAMP CONTENT
+\newcommand\textCenterCicada{
+\begin{minipage}{2.2cm}{}
+\vspace{-1em}
+\centering
+\includegraphics[width=1.8cm,height=1.8cm]{\CoatOfArmsCicada}\par
+\resizebox{2cm}{.205cm}{\textcolor{stampink}{\textCapCicada}}%
+\end{minipage}
+}
+
+
+% STAMPER MACRO
+\newcommand\StamperCicada{\resizebox{3cm}{3cm}{ % FINAL SIZE TAMP
+\begin{tikzpicture}[opacity=.6,transparency group]
+\normalsize\sffamily
+% EXTERIOR CIRCLE
+\freedraw[color=stampink,opacity=.3,line width=5pt,rotate=0] (0,0.02) circle (3.6cm);
+\freedraw[color=stampink,opacity=.5,line width=3pt,rotate=30] (0,0.01) circle (3.6cm);
+\freedraw[color=stampink,opacity=.7,very thick,rotate=20] (0,0) circle (3.6cm);
+% TOP CIRCULAR LABEL 
+\path [opacity=.2,postaction={decorate,decoration={raise=-1.3ex,text along path, 
+reverse path,text align=center,
+text={|\huge\bfseries\color{stampink}|\textUpCicada}}}] (-31:3.055cm) arc (-31:210:3.055cm);
+\path [opacity=.4,postaction={decorate,decoration={raise=-1.7ex,text along path, 
+reverse path,text align=center,
+text={|\huge\bfseries\color{stampink}|\textUpCicada}}}] (-30.7:3.055cm) arc (-30.7:210:3.055cm);
+\path [opacity=.8,postaction={decorate,decoration={raise=-1.5ex,text along path, 
+reverse path,text align=center,
+text={|\huge\bfseries\color{stampink}|\textUpCicada}}}] (-30:3.05cm) arc (-30:210:3.05cm);
+% BOTTOM CIRCULAR LABEL
+\path [opacity=.2,postaction={decorate,decoration={raise=-1.2ex,text along path, text align=center,
+text={|\huge\bfseries\color{stampink}|\textDownCicada}}}] (210:3.05cm) arc (210:330:3.05cm);
+\path [opacity=.4,postaction={decorate,decoration={raise=-.85ex,text along path, text align=center,
+text={|\huge\bfseries\color{stampink}|\textDownCicada}}}] (210:3.05cm) arc (210:330:3.05cm);
+\path [opacity=.8,postaction={decorate,decoration={raise=-1ex,text along path, text align=center,
+text={|\huge\bfseries\color{stampink}|\textDownCicada}}}] (210:3.05cm) arc (210:330:3.05cm);
+%INNER CIRCLE AND CENTRAL CONTENT
+\freedraw[color=stampink,opacity=.3,line width=4pt,rotate=0] (0.015,0.02) circle (2.5cm) node[scale=1.54] (m) {\textCenterCicada}; 
+\freedraw[color=stampink,opacity=.5,line width=3pt,rotate=30] (-0.025,-0.01) circle (2.5cm) node[scale=1.5] (m) {\textCenterCicada}; 
+\freedraw[color=stampink,opacity=.7,very thick,rotate=20] (0,0) circle (2.5cm) node[scale=1.52] (m) {\textCenterCicada}; 
+\draw[draw=none] 
+	[postaction={path fading=north,fill=white!99,opacity=0.6}]
+	(-5,-5) rectangle (5,5);%
+\end{tikzpicture}}}
+
+
+\usepackage[pdftex,
+            pdfauthor={Project Cicada 3301 : cicada3301@caramail.com},
+            pdftitle={Project Cicada 3301, flyer 01},
+            pdfsubject={Project Cicada 3301, flyer 01},
+            pdfkeywords={Project Cicada 3301, flyer 01;flyer;project;cicada 3301;cicada;3301;ARG;Alternate Reality Game;GIWOL;Game Is a Way Of Life;TINAG;This Is Not A Game},
+            pdfproducer={Project Cicada 3301 -- LaTeX hyperref},
+            pdfcreator={Project Cicada 3301 -- pdflatex}]{hyperref}
+
+%============================= Corps =================================
+\begin{document}
+
+\setlength\parindent{0pt}
+
+%% \vspace{5.5cm}\hspace{8cm}\rotatebox[origin=c]{-30}{\StamperGlider}\vspace{-5.5cm}
+
+%% \vspace{5.5cm}\hspace{8cm}\rotatebox[origin=c]{030}{\StamperCicada}\vspace{-5.5cm}
+
+%% \vspace{5.5cm}\hspace{8cm}\rotatebox[origin=c]{000}{\StamperCicada}\vspace{-5.5cm}
+
+~\\
+
+{ \vspace{5.5cm}\hspace{0.40\textwidth}\rotatebox[origin=c]{000}{\StamperCicada}\vspace{-5.5cm} }
+
+~\\
+
+%% \begin{minipage}{0.17\textwidth}
+%% 	~\\
+%% \end{minipage} \hfill 
+\begin{center}
+	\begin{minipage}{0.66\textwidth}
+		Hello. We are looking for highly intelligent individuals. To find them, we have devised a test. Do it, and it will lead you on the road to finding us. We look forward to meeting the few that will make it all the way through. Good luck. ~\\
+
+		Expect Us~\\
+
+		\textbf{\emph{3301}}~\\
+	\end{minipage} 
+\end{center}
+%% \hfill \begin{minipage}{0.17\textwidth}
+%% 	~\\
+%% \end{minipage}~\\
+
+%% \vspace{10.0cm}\hspace{0.5\textwidth}\rotatebox[origin=c]{000}{\StamperCicada}\vspace{-10.0cm}
+
+% 405 * 246 pixels (from wikipedia EN), 96 dpi, bit depth : 24
+%%% identify img/Cicada_3301_logo.jpg
+%%% img/Cicada_3301_logo.jpg JPEG 405x246 405x246+0+0 8-bit sRGB 11.9KB 0.000u 0:00.007
+%% \begin{center}
+%% 	\includegraphics[width=405px,height=246px]{\CoatOfArmsCicada}
+%% \end{center}
+
+%% « Hello. We are looking for highly intelligent individuals. To find them, we have devised a test. There is a message hidden in this image. Find it, and it will lead you on the road to finding us. We look forward to meeting the few that will make it all the way through. Good luck. »
+%% --- 3301
+%% \texttt{https://en.wikipedia.org/wiki/Cicada\_3301}
+
+\end{document}
