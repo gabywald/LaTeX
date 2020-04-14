@@ -1,0 +1,27 @@
+L'éthique des hackers
+The Cyberpunk Project
+
+L'idée d'une éthique des hackers a été le mieux formulé par Steven Levy dans son livre Hackers: Heroes of the Computer Revolution publié en 1984. Levy propose six points :
+
+    L'accès aux ordinateurs, et à toute chose qui puisse apprendre quoique ce soit sur le fonctionnement du monde, devrait être illimité. Il faut toujours en revenir à l'impératif du Touche à Tout !
+    Toute information devrait être libre.
+    Méfiance envers l'autorité, promotion de la décentralisation.
+    Les hackers devraient être jugés sur leurs compétences, pas des critères fallacieux tels que l'âge, l'origine ethnique ou la classe sociale.
+    L'art et la beauté peuvent être créés sur ordinateur.
+    Les ordinateurs peuvent améliorer notre vie.
+
+
+L'e-zine Phrack, reconnu comme la newsletter "officielle" p/hacker, a développé son credo à travers un raisonnement qui se résume en trois principes. 1) Premièrement, les hackers refusent l'idée que les groupe commerciaux soient les seuls autorisés à accéder aux technologies modernes et à les utiliser. 2) Ensuite, le hacking est une arme majeure dans le combat qui envahit de plus en plus la technologie informatique. 3) Enfin, le coût élevé du matériel est au-delà des moyens de la plupart des hackers, rendant indispensable le hacking et le phreaking pour propager l'informatique vers les masses.
+
+    "Le hacking. Un loisir à temps complet : des heures entières à apprendre, à expérimenter, avant d'accomplir l'art de pénétrer des réseaux d'ordinateurs multi-utilisateurs. Pourquoi les hackers passent une grande partie de leur temps à pratiquer cet art ? Certains vous diraient que c'est pour satisfaire leur curiosité scientifique, d'autres répondraient pour la stimulation mentale. Mais les racines véritables des motivations des hackers sont bien plus profondes.
+    Dans ce fichier, je vais décrire les motivations sous jacentes des hackers, révéler les liens entre le hacking, le phreaking, le carding et l'Anarchie, et faire connaître la "révolution technologique", qui est la graine originelle dans l'esprit de chaque hacker... Si vous cherchez un tutoriel sur comment accomplir les méthodes que je viens de présenter, veuillez lire un fichier de Phrack les concernant.
+    Et quoique vous fassiez, continuez le combat. Que vous en soyez conscient ou non, si vous êtes un hacker, vous êtes un révolutionnaire. Ne vous inquiétez pas, vous êtes du bon coté." (Doctor Crash, 1986)
+
+Bien que les hackers reconnaissent d'eux même que leurs activités puissent parfois être illégales, une emphase considérable est mise sur la limitation de ces transgressions à seulement ceux qui veulent obtenir un accès et comprendre un système et ils font preuve d'hostilité envers ceux qui transgressent au delà de ces limites. La plupart des membres expérimentés de l'informatique underground se méfient des jeunes novices qui souvent sont excités par l'image romanesque qu'ils se font du hacking. Les hackers les plus chevronnés se plaignent sans cesse des novices qui risquent de se faire appréhender et qui peuvent compromettre les comptes à travers lesquels ils dissimulent leurs accès.
+
+En somme, le style du hacker reflète un but bien défini : les réseaux de communication, un code de valeurs, et un esprit de résistance à toute forme d'autorité. Parce que le hacking requiert un ensemble de connaissance plus grand que le phreaking, et parce que cette connaissance ne peut s'acquérir que par l'expérience, les hackers ont tendance à être plus vieux et plus savant que les phreakers. De plus, à quelques exceptions près, les buts de ces deux groupes sont assez éloignés. En résumé, chaque groupe constitue une catégorie d'analyse bien distincte.
+
+Ce qui suit provient de Richard Stallman, arrivé au laboratoire sur l'intelligence artificielle du MIT en 1971, vers la fin de l'explosion du hacking des années soixante. Il est connu notamment pour avoir écrit la matrice de tous les logiciels libres, l'éditeur de texte Emacs.
+
+    "Je ne sais pas s'il existe aujourd'hui une éthique du hacker en tant que telle, mais il existait bien une éthique au labo sur l'IA du MIT. On refusait que la bureaucratie nous empêche de faire des choses utiles. On ne se préoccupait pas des règles, on se préoccupait seulement des résultats. On ne respectait absolument pas les règlements, en matière de sécurité informatique, ou de serrures sur les portes. On était fier de la vitesse avec laquelle on balayait la moindre petite parcelle de bureaucratie qui s'ingérait, aussi négligeable la quantité de temps qu'elle vous faisait perdre pouvait être. N'importe qui osant boucler un terminal dans son bureau, disons un prof qui se sentait plus important que d'autres, la voyait grande ouverte le lendemain matin. Je n'avais qu'à grimper par dessus le plafond, ou me glisser sous le sol, sortir le terminal, ou laisser la porte ouverte avec un message disant quelle gêne cela pouvait être de devoir passer sous le sol, "donc veuillez ne plus gêner les usagers en fermant la porte, et laissez la ouverte". Aujourd'hui encore, au labo on trouve une énorme clé anglaise qu'on appelle "la clé principale du 7ème étage", à utiliser si quelqu'un à l'outrecuidance d'enfermer un de ces satanés terminaux."
+

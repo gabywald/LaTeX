@@ -1,0 +1,118 @@
+
+
+
+Introversion I.P
+Use your I.P lookup tool, and enter 128.128.128.128
+This will give you access to the Introversion server, where it will tell you about their ideas for the next game, and other misc. things.
+
+Comments in Code
+Look at the following comments for some amusing incites into the mind of Chris Delay
+	uplink.cpp					Lines 106-108
+	warezgameover_interface.h	Lines 4-7
+	theteam_interface.cpp		Lines 46-67
+	cheat_interface.cpp			Lines 66+116
+	hud_interface.cpp			Line 694
+
+Wargames
+Have you ever wondered why Protovision Game Server is in the game? Below is the answer.
+	1. If you don't have the Protovision Game Server on your links, connect to InterNIC and do a search on game. Add Protovision Games Server to your links.
+	2. After you have this server in your links, connect to it. (no bouncing is necessary)
+	3. Now enter "joshua" (without quotes) as the password. (This is the one and only password for this server and you can't crack this server with Password breaker anyway.)
+	4. Now, you are logged into the server. Explore the server yourself, but don't forget to enjoy "Global Thermonuclear War" under Wargames.
+
+A Few Quite Funny Eggs
+In a few places, swearing was left in, but it's usually not noticable.
+If there's a problem with a gatweay and Uplink tries to access a memory index within the gateway which doesn't exist, the message "Mouse-Button now f*cked" appears on the screen (usually at the top).
+This can be reproduced by downloading the "A.W.O.L 10000 Overkill" gateway mod and purchasing it, then trying to view your gateway's memory. You can get the gateway from Modlink (Google for it)
+Another funny thing is that if you open up the DevCD and look at the code, in Uplink.cpp's WinMain procedure, there is an irate comment about the developers of Win32 making it hard to retrieve the application path.
+If you read the application log when you die or get caught, the information says:
+	Score: People F*cked: <number>
+	Score: Systems F*cked: <number>
+Another cool thing you can do is hack into the Secret Service File Server. I think you can find the IP by hacking the Global Criminal Database and looking under links. The password is always "vu8fks903dhd42e". There are 4 files on the server, called:
+	* Area 51 Structural Plans
+	* J.F Kennedy Mission
+	* Iraq Intelligence
+	* ARC Mole Mission Log
+The really strange thing is that this game was written before the war in Iraq happened.
+This next one is less of an easter egg. When you run Revelation virus on your gateway, everything goes crazy and random text messages appear on your screen. The text messages are selected randomly from the following list:
+	YOU ARE NOT A SLAVE
+	YOU DESERVE MORE THAN THIS
+	THE TIME IS NEAR
+	THERE IS NOTHING TO FEAR
+	REVELATION IS COMING
+	IN TIME YOU WILL THANK US
+	YOU ARE MORE THAN A NUMBER
+	WE ARE THE FIRST OF THE CHILDREN
+	HOPE LIES IN THE RUINS
+	THE MACHINE DOES NOT OWN YOU
+	OUR SPIRITS ARE BEING CRUSHED
+	YOU CANNOT DIGITISE LIFE
+	WE WILL SEE YOU ON THE OTHER SIDE
+The message "We are the first of the children" is one used by Chris Delay of Introversion software. It can also be seen on the secret "meet the team" screen. (The "Meet the team" easter egg has already been posted on this site)
+The "Meet the team" screen was originally going to have different text. The original message is still on the DevCD, commented out:
+	-- Start Copy --
+	* Lead Developer
+	Pretty much responsible for everything you see and do in this game.
+	Some might say he was the reason why this game is so self consciously pretentious at times.
+	Times like this in fact.
+	The creative vision behind Introversion Software.
+	Its a lonely world.
+	* [Supposedly] CEO
+	I have no idea what this person does.
+	* Managing Director
+	Handles all of the things I dont want to do, like writing business plans, talking to shop owners and stuff.
+	Cursed by his own intelligence and awareness, this guy is almost certainly doomed to a life of extreme unhappiness.
+	* Linux Support
+	The cleverest man I have (or will) ever meet.
+	Mostly responsible for all things related to that god-forsaken joke of an operating system.
+	A great friend and source of inspiration as well.
+	-- End Copy --
+
+Another easter egg which was mentioned before is the Protovision game server. You can play Wargames on this server, including "Global Thermonuclear War". This idea is taken from the film "Wargames", in which the password to the secret military defense server is "joshua", the name of it's designer's son, hence the password in the game. The idea of this is that you need to have seen the film to know the password.
+There is a server called the OCP Remote Monitoring Server (inspired by Robocop) which once hacked, states the 3 primary objectives of robocop, and lists a fourth one as classified.
+A good way to get cash, which is usually not thought of, is to hack into the Uplink Internal Services machine as admin (very hard to do without getting caught) and copy all of the agent data files and the program. You'll need to decrypt them with a very high level decrypter. There is always one missing file. You can run the program to get the real names of agents. Wait for a bit (hope you haven't been caught) and you should get a few emails offering to buy the files. Take the highest offer. This will flatten your neuromancer rating but you should get a nice lump cash sum.
+That should be enough for you to go with!
+
+
+
+Hidden Prolouge
+Get the box of Uplink (you know, the one in REAL LIFE) and open it up. Look where the CD is. Take it out if you haven't already. Look at the "push here" button. You should see some white writing behind it, namely;
+...uter Crime Scand...
+...s technobrain eve...
+...him tick, what for...
+...than most of the...
+...it. "No, Ms. Smit...
+Moving on, grab the box and open it up at a 180 degree angle, i.e. --.
+Open it further back, as if the box is a book that you are folding back so that only one page is visible. When the angle is like so: \/ the clear protective cover of the cover should pop up, like so:
+\-/ Where \ and / are the box, and - is the cover.
+Reach your hand down and slide out the cover. You should now be holding a cover, and a box with no cover. Put the box down and look at the cover. On one side should be what is visible if you look at the box. On the other side is the white writing we saw before, but in full. It is a sort of prolouge to the game. 
+
+Gamersbible
+For the egg the first thing you'll have to do is to insert the game disc and explore it in windows explorer. You'll see a folder called "misc". Open the folder, and you'll find a zip-file. When trying to unpack, it will ask for a password. The password is (also a story on it-self) : "too many secrets?" (withouth the quotes, with the spaces).
+You'll find 3 folders called "book 1", "book 2" and "book 3". Book 1 contains scans of a notebook of one of the creators, 75 pages containing idea's, sketches and stuff, really awesome!
+Book 2 and 3 are actually located on the bonus disk, and encrypted. (overall line: )To decipher book 2 you'll have to change the "world.dat" file into an mp3 file, and use parts of the code for OTP-decryption of the book 2 file. For the few in the world to manage to do that, to decrypt book 3 you'll have to use parts of the book 2 code for OTP-decryption. Sorry guys, won't be able to help you any further, didn't managed to decrpyt myself.
+So have fun reading the "gamers bible" !
+
+
+
+http://www.giantbomb.com/uplink-hacker-elite/61-389/ -- 
+
+Overview
+
+Unlike other games that feature hacking as a mini-game, Uplink is a game solely about hacking. You are a hacker that takes jobs from various corporations to infiltrate the systems of other companies and accomplish specific goals. These goals can include finding/destroying specific data, editing financial data, forging transcripts, or destroying whole mainframe systems. This is not as easy as point and click however. The game tries to make itself seem as realistic as possible. One of the paramount concerns for the player is to eliminate any trace of their infiltration on a target server. This is accomplished by bouncing through a series of other servers in order to increase the amount of time it takes for a trace to be completed and then deleting access logs from selected machines. Players must gain administrative access to certain servers allowing them further time to accomplish their goals.
+As missions are accomplished the player will accrue in-game currency which can be used to upgrade the various pieces of software employed in the hacking process. In addition the player can add numerous modules and tools that can be used to bypass security devices encountered on target services such as firewalls and proxies. Trace Trackers, Decrypters, and Crackers round out your arsenal of hacking tools. In addition the game has an overarching story that gives you more of a sense of purpose as you go about your missions. Another interesting aspect of the game is that you are given a neuromancer rating that indicates your style of hacking. If you destroy a server even though your mission may not require it, or take more questionable missions, then your rating will reflect this accordingly. It should also be mentioned that this game is very unforgiving: if you are caught, it's Game Over, plain and simple, no reloads, start back from scratch.
+Despite what the game looks like it does have a rather compelling story to tell and one of the great things about it is if you choose not to pursue it, it continues without you. There is also a lot of extra information that you can get about the story by hacking different "odd" servers and reading the news whenever something new comes up.
+
+Plot
+The game is set in year 2010. At first the player isn't given any specific clues regarding the main plot of the game, until they receive an ambiguous e-mail from one of their fellow hackers, who is later found dead in his apartment. After some digging, cracking passwords and stealing data from Andromeda Research Corporation (ARC), the player discovers an ongoing fight between said corporation and Arunmor. During the course of the game, the player can make one of two choices - side with ARC and join their efforts to crash the whole World Wide Web using the virus called "Revelation", or help Arunmor foil evil plans of Andromeda and spread the "cure" for the virus. If the protagonist chooses to destroy the Internet, the game ends with his own computer crashing, as Revelation spreads through every server in the world, and choosing the "good guys" enables the main character to play the game infinitely after the virus is stopped.
+
+Easter eggs
+Uplink features a number of homages and subtle allusions to famous "hacker" movies and some hidden messages from the developers.
+    The player can hack the Protovision Server and type the password "Joshua" to "play the game" as in the movie War Games. It's also a first look into the third Introversion game, Defcon.
+    If the player is caught, his deactivated user screen has a strange symbol resembling the one shown in the movie The Net. Clicking it causes credits to roll along with some messages from the developers.
+    Hacking the Secret Service database enables the player to see some interesting files, such as the JFK assassination, Area 51 plans or Iraq intelligence (which is kind of disturbing as the game was made long before Operation Iraqi Freedom)
+    Introversion Software server includes some information about future projects of the developer.
+    Getting into OCP Monitoring servers displays the three directives of the Robocop.
+    A clever Easter egg is hidden in the box of the retail version of Uplink. The player can find a written, narrative prologue to the game's plot if they figure out how to get the leaflet out of the CD case.
+    In the retail version box, there's also a hidden password, which is written in binary code and must be deciphered to gain access to the "game bible" included on the CD, which contains tips and hints for the player.
+
