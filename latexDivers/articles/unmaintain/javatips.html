@@ -1,0 +1,386 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="Generator" content="Microsoft Word 97">
+<title>Tips for maintainable Java code</title>
+<meta name="Template" content="C:\Program Files\Microsoft Office\Office\html.dot">
+</head>
+<body bgcolor="#ffffff" link="#0000ff" vlink="#800080">
+
+<h1>Tips for maintainable Java code</h1>
+<i></i><p><i>There are two ways of constructing a software design. One 
+way is to make it so simple that there are obviously no deficiencies. 
+And the other way is to make it so complicated that there are no obvious
+ deficiencies.</i> -- C.A.R. Hoare</p>
+<p>Here's a random collection of personal observations (some well 
+established to the point of cliché, some deliberately controversial and 
+tongue in cheek) on things to watch out for while designing and 
+implementing large scale object oriented applications. While much is 
+applicable to other languages such as C++, these days I'm only 
+interested in Java, so that's what the examples refer to. </p>
+
+<h2>General</h2>
+
+<ul>
+<li>Programmers need to be precise. If you're sloppy and inconsistent 
+with spaces, indentation, names, or access modifiers, what confidence 
+will people have that your logic is any more accurate? </li>
+<li>A good framework can sometimes help developers by avoiding you 
+having to reinvent the wheel each time, but a bad framework is 
+infinitely worse than no framework at all. Designing good frameworks is 
+very, very hard. Consider this point carefully and draw your own 
+conclusions... </li>
+<li>Test your code, and keep testing it. Automated unit tests can be 
+very useful, particularly for modules that can be driven 
+programmatically or from a command line. Trying to automate GUI tests, 
+on the other hand, is a noble goal but usually doomed to failure. It 
+takes a vast amount of effort with very little payback. The tests 
+produced are very 'brittle' (they permanently fail, but nearly always 
+because of new development or changes in the test data, rather than bugs
+ in the code actually under test). </li>
+<li>Keep your code simple and comprehensible. Source code that nobody 
+understands is about as useful as a bug-ridden third party library with 
+no documentation, no source code, and no support, i.e. not very! </li>
+<li>Think about your reward structures. If the system rewards analysts 
+for the length of their documents, programmers for the number of lines 
+of code they write, consultants for the number of days they can invoice,
+ and managers for the size of the teams they hire, then collectively 
+this will do little to reduce the size or cost of your development! </li>
+<li>Don't optimise too soon. Unless you're doing I/O or performing the 
+same operation a million times or more, forget about optimising it until
+ you've run the program under a profiler. (On the other hand, if you 
+develop an exponential-time algorithm with test cases of half a dozen 
+elements, don't be too surprised if performance is less than 
+satisfactory on a real world data set of 10,000 rows!) </li>
+<li>Using common design patterns can be useful, but only when 
+appropriate: "It must be good design, look, I'm using the Visitor 
+pattern!" "Why, exactly?" "Err, well, I've just got to page 79 in the 
+book and haven't tried that one yet..." </li>
+<li>Never test for an error condition you don't know how to handle! If 
+you don't know how to handle exceptions properly then let them propagate
+ up to someone who does, as undeclared runtime exceptions if necessary. 
+(Don't make the mistake of catching an exception that contains precise 
+details of an error, simply because it's declared and you "have to" 
+catch it, and then silently return, neither reporting an error nor 
+completing the operation the method was called to perform!) </li>
+<li>Here's one for managers: learn to identify those developers with <i>negative</i>
+ productivity (and, boy, do they exist!) and don't be afraid to sack 
+them, or at least move them to a role such as testing or documentation 
+where they won't cause as much damage. (That isn't meant to imply that 
+testing isn't a valuable role - which it is - so much as the worst most 
+people are likely to achieve at it is zero productivity.) </li></ul>
+
+<h2>Documentation</h2>
+
+<ul>
+<li>Document your design <i>after</i> you code it (or while you code it), not <i>before</i>.
+ That way your documents stand at least some chance of corresponding 
+with reality and still being useful when someone has to come along later
+ and maintain your code. (Ok, <i>some</i> up front design is clearly a 
+good idea, but you should still leave a large chunk of your 
+documentation effort until after you've started coding). </li>
+<li>It should go without saying that you <i>must</i> comment your code, and keep those comments up to date! Code that isn't worth commenting probably isn't worth executing either. </li>
+<li>Any maintenance programmer who has had to work on code hacked about 
+over the years by a myriad of other people will tell you that the <i>only</i> documentation they trust (or in all likelihood even <i>look</i>
+ at) is the code itself. If a crucial piece of information is documented
+ elsewhere, or if two or more files need to be maintained in sync, then 
+say so in the code (in both places...). </li>
+<li>Remember that it's much more important to document <i>why</i> a method exists than what it does. </li>
+<li>If you find you need to use a debugger to understand the programming
+ logic in your own code, something, somewhere, has gone badly wrong! </li>
+<li>It sounds like a paradox but too much documentation is actually <i>worse</i>
+ than too little documentation. Nobody will read it, it will be 
+permanently out of date, and it lulls you into a false sense of 
+security. </li>
+<li>Avoid vacuous statements, e.g. commenting a method setList(List 
+list) to say "This methods sets the list.". They're insulting and a 
+waste of everybody's time. I might have guessed that it sets a list, but
+ what list? Why? When? What does the object do with the list? Can it be 
+null? etc. </li>
+<li>Make sure you use a version control system that maintains an edit 
+history, and try to enter a meaningful description of each change. 
+(Again, it's more important to record <i>why</i> you made a change than what the change is.) </li></ul>
+
+<h2>Java language</h2>
+
+<ul>
+<li>When you implement equals() or hashCode() <i>always</i> override 
+both or neither (you're liable to encounter some very nasty and subtle 
+bugs otherwise, once your objects start finding their way into 
+hashtables, which they often do). </li>
+<li>Consider overriding toString() to produce a useful description of 
+the object (eg. the type of the object and the value of any unique id it
+ contains). To avoid confusion, toString() on two objects should 
+normally be equal if and only if equals() is true. </li>
+<li>The result of calling equals() on an object of the wrong type is 
+'false', not a ClassCastException. (Knowing that the "instanceof" 
+operator doesn't throw a NullPointerException on a null argument but 
+returns 'false' often helps, by the way.) </li>
+<li>If your class is cloneable always call super.clone() rather than 
+using "new" to create the new object. This is implemented natively and 
+will create an object of the correct type even if your class is later 
+extended. </li>
+<li>Keys and other basic types should be <i>immutable</i>, ie. have no 
+setters, only take on values at time of construction, implement equals()
+ and hashCode(). For good measure, they could also have a string 
+constructor that works if you pass in the value returned by toString(). </li>
+<li>Immutable objects are the "first class citizens" of the object 
+world. Semantically they behave exactly the same way as basic types. You
+ can share instances without having to worry about anyone else modifying
+ the value (or having the overhead of creating copies). Declare them to 
+be final too and you have a self-contained, bullet-proof class, which 
+should be every developer's highest aspiration. </li>
+<li>Avoid duplicate representations of the same data that need to be 
+maintained in sync. Instead, have a single master copy and use an 
+adapter. </li>
+<li>Think symmetrically. Every object that's created, every link that's 
+made, every listener that's added, all need to be removed again, unless 
+you consciously intend them to last the entire life of the VM or can be <i>certain</i>
+ they will be garbage collected. Consider adding a dispose() method to 
+your objects to forcibly break any references they hold and make the 
+garbage collector's job easier. </li>
+<li>Don't overuse threads. Unless you're sure you know what you're doing
+ and sure you need some extra threads then you probably don't. </li>
+<li>Java is not C++. It's generally good practice <i>not</i> to check 
+for error conditions all over the place unless you expect the condition 
+to occur and plan to do something specific with that knowledge. Let the 
+VM take care of array bounds and null pointer checking while you 
+concentrate on your design (programming logic that is correct and code 
+that's clean and understandable). </li>
+<li>This is an important point so to reiterate: <i>too much</i> error 
+checking is a bad thing, especially if it's applied haphazardly. If I 
+come across an existing class and see that in some methods a particular 
+member variable is compared against null before it's used and in others 
+it's dereferenced without a check, what am I to assume regarding the 
+status of that variable?</li></ul>
+
+<h2>Modularity</h2>
+
+<ul>
+<li>A good modular, componentized design means minimizing the knowledge 
+and dependency one part of the system has to have about another. </li>
+<li>Dogma has no place in practical programming, especially when it's 
+driven by the latest trends in fashion, as often seems to be the case. 
+Who remembers the introduction of macro assemblers, high level 
+languages, procedural languages, structured programming, object oriented
+ programming, 4GLs, CASE tools, UML, client-server, COM, JavaBeans, 
+components, CORBA, frameworks, XML, J2EE, etc.? Each in their way 
+promised to be the panacea of programming, delivering standard reusable 
+components, and reducing the time to deliver applications to almost 
+nothing. But looking back, who can truthfully claim that it's <i>cheaper</i> to develop software now than it was 10 or 15 years ago?! </li>
+<li>The common theme of most of these methodologies is <i>modularity</i>.
+ To make sense of a large complex system it is necessary to break it 
+down into smaller parts somehow, with the minimum of interdependencies 
+between those parts. The difficulty of course is knowing <i>which</i> 
+parts. A good methodology may help you come up with a good design (in 
+other words: a good breakdown into independent components), but by no 
+means guarantees it. Nor does a good design necessarily depend on using 
+any particular methodology.</li>
+<li>If you view each component (method, class, file, package, 
+application, or whatever) as a box, the important thing is having a 
+clear mental picture that tells you which box a particular piece of 
+functionality ought to go in (and even more importantly, which boxes it 
+shouldn't). <i>Achieving that clear mental picture requires both skill and experience; there aren't any shortcuts! </i></li><i>
+</i><li>If you encounter an ugly or difficult to use API, wrap it up in 
+your own abstraction layer so that all the ugly code is in one place. 
+You can then convert it easily to use a different back end while keeping
+ the interface the same. Even if the API is clean and well established, 
+for example JDBC, there may still be valid reasons to abstract from it. 
+Does this mean you're likely to write your own database drivers? No. 
+However, you <i>might</i> want to log all database accesses, or perhaps 
+start persisting your objects via XML and HTTP rather than to a 
+relational database, and it's obviously easier to do this if all the 
+related code is in one place. </li>
+<li>Avoid designs with complex interdependencies, such as having to 
+write three new classes and change six others each time you add a new 
+field to an existing table.</li>
+<li>Having all your code in one big file may not be the epitome of good 
+OO design but it makes it a darn sight easier to find something if you 
+don't know where to look for it, and easier to modify too if the 
+alternative is a morass of interdependent files. Perhaps that's extreme,
+ but never underestimate the power of grep as a software development 
+tool - the best identifiers are the ones you can easily search for! </li>
+<li>Make sure you fully understand the concept of a <i>dependency</i>. 
+Decide which packages are allowed to refer to which other ones and which
+ aren't and strictly adhere to those rules (for example, you might have 
+GUI code that can refer to and invoke methods on your business objects, 
+but not vice versa). </li>
+<li>Complexity in the implementation is fine, but <i>keep the API simple!</i></li></ul><i>
+
+</i><h2>Just in time development and over-complexity</h2>
+
+<ul>
+<li>All code has a cost. Justify every class you write. Developers 
+should be rewarded for functionality rather than code; if anything they 
+should be <i>penalised</i> rather than rewarded for every new class or line of code they require to deliver that functionality. </li>
+<li>Programmers love to be creative and demonstrate how clever they are 
+at coming up with elegant and generalised designs. Don't let them - the 
+objective is to write maintainable code, not an elaborate monument to 
+one's own ego. </li>
+<li>Virtually everybody loves to generalise, yet virtually nobody is any
+ good at it. Until you've done something the hard way more than once 
+it's very difficult to spot the general pattern. </li>
+<li>Although the exact opposite has traditionally been ingrained in us, often it's actually better if we <i>do not</i>
+ worry about the big picture or future requirements until we have to. 
+When the future arrives you're going to have to change it anyway, and 
+it's a <i>lot</i> easier to change a simple design, that admits it 
+didn't try to anticipate all possible future requirements, than a 
+complex one that tried but got it wrong, as they invariably do. </li>
+<li>Take your pick as to which methodology name you pick to make the 
+process sound respectable: "Just in time" development, iterative 
+development cycles, RAD, timeboxed development, re-factoring, etc. The 
+message is the same. Design and build <i>only</i> what you and your users understand <i>now,</i> and be prepared to review and change it once you have more complete knowledge. Throwing away and rewriting code is a <i>good</i> thing. Get it right <i>next</i> time. </li>
+<li>Be very suspicious of generalised designs that are supposed to make 
+things easier in future, unless you have a pretty good understanding of 
+those requirements and what the payback will be <i>now</i>. </li>
+<li>If you're determined to ignore this advice (as I'm sure you will), at least make <i>some</i>
+ effort to quantify what long-term benefits you think your design will 
+bring. All too often a developer will spend a week developing, then two 
+weeks debugging a general solution where the specific solution will take
+ a day to develop, a day to debug, and then a further 10 minutes two 
+months later to adapt it to a new scenario. The developer will quite 
+happily justify his two weeks of debugging effort, to himself and his 
+manager, because it avoids the need for that one 10 minute change - and 
+don't think I made those numbers up! </li>
+<li>If a design is too complex and difficult to code correctly, the 
+correct solution is a simpler design, not automatic code generators. If 
+code is worth writing more than once, it's worth writing by hand each 
+time! </li>
+<li>Don't expose more methods in a class than you need (eg. gratuitous 
+'convenience' methods). Once published, they form part of the contract 
+of your class, and make it much more difficult to change in future. </li>
+<li>Building software is the <i>opposite</i> of building bridges. Ten 
+developers deliver twice as much code, four times as many bugs, and half
+ as much functionality as five developers. I didn't make those numbers 
+up either. (Of course, if managers are rewarded for the number of people
+ they hire and size of budget they control then it's only natural that 
+they'll build up as big a team is possible, regardless of whether that's
+ good for the project or not.) </li>
+<li>If it were possible to know all the requirements of a program in 
+advance why are we still writing software today - wouldn't it all 
+already have been written 20 years or more ago? (Arguably of course, 
+nearly all the software that anybody really needs <i>was</i> written 20 
+years ago, and everything developed since is fluff in the name of 
+buzzword compliance, either just 'eye candy' or driven by marketing 
+imperatives. Progress has its own inevitable inertia, and you need to be
+ seen to be using the latest technology, regardless of whether it 
+actually adds much tangible benefit to users!) </li>
+<li>Let's face it, you and I and everyone else are going to write crap 
+code anyway, so it may as well be cheap and simple crap code that you 
+understand and can afford to throw away rather than complicated and 
+expensive crap code. (The fact that 90% of the code written by 90% of 
+developers is crap is a corollary of Sturgeon's law that 90% of <i>everything</i> is crap.) </li>
+<li>Don't get me wrong, I'm not saying generalised designs or frameworks
+ are wrong in principle, far from it. The important thing is a good 
+design, though, framework or no, and a good design almost invariably 
+means a simple design.</li></ul>
+
+<h2>Objects and classes</h2>
+
+<ul>
+<li>Think about what an object <i>is</i>, not what the class <i>does</i>.
+ With relatively few exceptions (eg. some factories, or if you 
+specifically need to encapsulate an algorithm or process) classes whose 
+name is a verb (eg. something-"Manager") are <i>not</i> good OO design! </li>
+<li>An object or instance, as opposed to a class, is defined by its <i>state</i>.
+ Think about what its state is, and what the lifecycle of that object 
+is. Who creates it and when, who owns it, when or how does it get saved,
+ when or how does it get refreshed, when is it destroyed? etc. </li>
+<li>Remember, what we do is called <i>object</i>-oriented programming, not <i>class</i>-oriented
+ programming! (One reason, incidentally, why I'm not a huge fan of Rose 
+models. I'm more interested in how many of something there are and how 
+they're used than what they extend.) </li>
+<li>Think instances: if two related objects always exist in a one-to-one
+ relationship with each other, it's quite likely they're actually the 
+same thing and should be a single class. </li>
+<li>Complex switch statements, especially if they occur more than once 
+in a class, are usually a sign of poor OO design and call for use of 
+inheritance. Conversely, sometimes it <i>is</i> ok just to parametrize a
+ class and write a simple 'if' statement. As with everything, apply 
+common sense and "value your intelligence above the standard". </li>
+<li>Don't use random classes or interfaces you stumble upon for other 
+than their intended purpose, just because they happen to resemble the 
+structure of what you want. (An AWT Dimension measures pixels on a 
+screen, so don't use it to store the size of a football pitch in feet. A
+ Swing ListModel defines the specific requirements of a JList component,
+ not a general purpose collection interface.) </li>
+<li>If a utility method doesn't access any instance variables in a class then you should probably declare the method static. </li>
+<li>Don't use inheritance when aggregation is called for (think about 
+whether the relationship is an "is-a" or "has-a" relationship).</li></ul>
+
+<h2>Style</h2>
+
+<ul>
+<li>Be consistent with indendation style. Personally, I loathe and 
+detest K&amp;R style indentation. The only logic behind it seems to be 
+to avoid unecessary white space, which may have been useful once but 
+when is the last time <i>you</i> edited code on a line printer or dumb 
+VT100 terminal? Far more useful, surely, to clearly show how blocks line
+ up - and far easier to spot when a rogue brace is missing. On the other
+ hand, this is just my <i>personal</i> preference, and it's always more 
+important to be consistent. If you need to add code to someone else's 
+class make sure you respect the indentation style that's already in 
+force (or use a pretty print utility afterwards, such as <a href="http://www.squarebox.co.uk/download/jpp.pl">jpp</a>). </li>
+<li>There are some pretty strong conventions in Java that class names 
+start with UpperCase, that packages are all lower case, that method and 
+variable names start with lower case, that identifiers other than 
+constants are in mixedCase and that constants are ALL_CAPS. It's also 
+pretty much mandatory not just that the name of a source file matches 
+the class name it contains but also that the directory structure matches
+ the package name. </li>
+<li>Avoid Hungarian notation (prefixing identifiers with things like 'm'
+ and 'lpsz'), it's ugly and unnecessary. Trying to cram all the type and
+ scope information into the variable name is a hangover from the days of
+ C, when everything was stored in global variables. It suggests you 
+either don't understand or don't trust the language and compiler. 
+(Programmers need to keep track of the meaning of identifiers, so if you
+ had a naming scheme that told you who owns an object, or whether it's 
+the master or a temporary copy of some information, then that might 
+actually be useful, not one that tells you what's already known.) </li>
+<li>Many people put the private instance variables of a class at the 
+bottom of the file, reasoning that users of the class shouldn't be 
+concerned with the implementation. That's true, but missing the point 
+slightly. Having a picture of what <i>state</i> a class embodies is 
+essential to understanding the class as a whole and therefore one of the
+ first things you look at, irrespective of whether you plan to access 
+that state directly. </li>
+<li>Be consistent with your names. If variables in two different scopes 
+have the same meaning, or if methods in two classes do the same thing, 
+give them the same name. If you abbreviate a name, do so consistently.</li></ul>
+
+<h2>Pulling it all together</h2>
+<p>Or not: </p>
+
+<ul>
+<li>For a particularly bad example of how not to generalise a class, 
+take a look at the abomination that is GregorianCalendar. Vastly 
+overcomplicated and difficult to use, and full of concepts in the wrong 
+place, inappropriate abstractions and inconsistent names. Why does a 
+Calendar contain an instance in time rather than just embodying the 
+rules for doing date arithmetic? Why does a Date have set methods (a 
+more classic example of an object that ought to be immutable than a date
+ or timestamp is difficult to imagine)? Why deprecate methods that 
+create or display a Date as UTC/GMT (by definition a <i>universal</i> representation that <i>can</i>
+ be depended on without any further locale information) and yet leave in
+ a toString() method that defaults to Pacific Daylight Time?! Why expose
+ a complicated API that reveals internal implementation details and yet 
+hide a safe and useful method like getTimeInMillis(), another 
+unambiguous and universal representation? The designers thought they 
+were so clever and forward-looking in not assuming a year starts on 
+January 1, yet still have constants like MONDAY or PM. Above all, why is
+ it so big and slow? (The 1.1 date classes are wrong at so many levels 
+you're left wondering if the whole thing was just a sick joke, which 
+might even have been quite funny if they weren't part of the core 
+language and we were now stuck with the thing!) </li></ul>
+
+<p>By far the biggest cost in any project is fixing and maintaining the code, <i>not</i> developing it in the first place. So: </p>
+
+<ul>
+<li>Think about users of your class. </li>
+<li>Design for understandability and maintainability. </li>
+<li>Remember that <i>complexity</i> is the number one enemy of <i>maintainability</i>. </li>
+<li>Less is more! </li></ul>
+
+<p></p><hr><p></p>
+<p>Copyright © <a href="http://www.squarebox.co.uk/rolf/Guestbook/">Rolf Howarth</a> (March 2001) </p>
+
+</body></html>
