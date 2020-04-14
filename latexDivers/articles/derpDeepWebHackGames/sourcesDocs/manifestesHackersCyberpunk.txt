@@ -1,0 +1,329 @@
+
+
+    La conscience d'un Hacker
+    Loyd Blankenship
+    8 janvier 1986
+
+    La conscience d'un Hacker, également appelé le Manifeste du Hacker, a été écrit par Loyd Blankenship alias The Mentor peu après son arrestation.
+
+    Un autre s'est fait prendre aujourd'hui, c'est dans tous les journaux. "Un adolescent arrêté pour un scandaleux crime informatique", "Arrestation d'un hacker après des falsifications bancaires"...
+    Satanés gosses, tous les mêmes.
+
+    Mais avez vous, avec votre psychologie trois pièces et votre profil technocratique de 1950, jamais regardé derrière les yeux d'un hacker ? Ne vous êtes-vous jamais demandé ce qui l'avait fait agir, quelles forces lui ont donné forme, qu'est-ce qui a bien pu le modeler ainsi ?
+    Je suis un hacker, entrez dans mon monde...
+    Ce monde commence avec l'école... Je suis plus intelligent que la plupart des autres gamins et ces conneries que l'on nous enseigne m'ennuient...
+    Ces fichus élèves en situation d'échec, tous les mêmes.
+
+    Je suis au collège ou au lycée. J'ai écouté les enseignants expliquer pour la quinzième fois comment réduire une fraction. Je le comprends. "Non, mademoiselle Smith, je ne peux pas vous montrer mon travail, je l'ai fait dans ma tête..."
+    Satané gosse, il l'a sûrement copié. Ils sont tous pareils.
+
+    J'ai fait une découverte aujourd'hui, j'ai trouvé un ordinateur. Attendez une seconde, ce truc est cool. Il fait ce que je veux qu'il fasse. S'il fait une erreur, c'est parce que je me suis planté. Pas parce qu'il ne m'aime pas...
+    Ou qu'il se sent menacé par moi...
+    Ou qu'il pense que je suis un petit malin...
+    Ou qu'il n'aime pas enseigner et ne devrait pas être là...
+    Satané gosse, il passe son temps à jouer. Ils sont tous pareils.
+
+    Et c'est alors arrivé... une porte s'est ouverte sur le monde... Se précipitant à travers la ligne de téléphone telle l'héroïne à travers les veines d'un drogué, une impulsion électronique est émise, un refuge à l'incompétence quotidienne... une planche de salut.
+
+    "C'est là... c'est à ce monde que j'appartiens..."
+    Je connais tout le monde ici... même si je ne les ai jamais rencontré, ne leur ai jamais parlé et que je n'entendrais peut-être plus jamais parler d'eux... Je vous connais tous...
+    Satané gosse, encore en train d'encombrer la ligne téléphonique. Ils sont tous pareils.
+
+    Vous vous répétez que nous sommes tous pareils... On nous a nourri aux aliments pour bébé à l'école alors que nous réclamions un steak... les bouts de viande que vous laissiez échapper étaient prémâchés et sans saveur. Nous avons été dominés pas des sadiques, ou ignorés par des apathiques. Les rares qui avaient quelque chose à nous apprendre trouvaient en nous des élèves pleins de bonne volonté, mais ils étaient aussi nombreux que des gouttes d'eau au milieu du désert.
+
+    C'est notre monde maintenant... un monde de l'électron et du switch, de la beauté du baud. Nous utilisons des services sans payer ce qui devrait être à un prix ridiculement bas s'ils n'étaient pas administrés par des gloutons profiteurs, et vous nous appelez criminels. Nous explorons... et vous nous traitez de criminels. Nous recherchons la connaissance... et vous nous traitez de criminels. Nous existons sans couleur de peau, sans nationalité, sans tendance religieuse... et vous nous traitez de criminels. Vous construisez des bombes atomiques, vous financez des guerres, vous assassinez, trichez, nous mentez et essayez de nous faire croire que c'est pour notre bien, mais ce sont nous les criminels.
+
+    Oui, je suis un criminel. Mon crime est ma curiosité. Mon crime est de juger les gens pour ce qu'ils disent et pensent et non pas selon leur apparence. Mon crime est d'être plus futé que vous, ce que vous ne me pardonnerez jamais.
+
+    Je suis un hacker et ceci est mon manifeste. Vous avez pu arrêter cet individu-ci, mais vous ne pouvez nous arrêter tous... après tout, nous sommes tous les mêmes.
+
+    Manifeste Crypto-Anarchiste
+    Timothy C. May
+    Mi-1988
+
+    Un spectre hante le monde moderne, le spectre du crypto-anarchisme.
+
+    L'informatique est sur le point de fournir la capacité aux individus et aux groupes de communiquer et interagir entre eux d'une façon totalement anonyme. Deux personnes pourront échanger des messages, faire des affaires et négocier des contrats électroniques sans jamais connaître le Véritable Nom, ou l'identité légale, de l'autre. Les interactions à travers les réseaux seront intraçables, grâce au reroutage intensif de paquets encryptés et à l'utilisation de boîtiers hardwares inviolables implémentant des protocoles cryptographiques assurant une presque parfaite protection contre toute forme d'altération. La réputation sera d'une importance centrale, bien plus importante en affaire que les notations financière actuelles. Ces développements altéreront complètement la nature de la régulation gouvernementale, sa capacité à taxer, à contrôler les interactions économiques et à garder les informations secrètes et pourront peut-être même modifier les fondements de la confiance et de la réputation.
+
+    Les technologies pour cette révolution, qui sera sûrement à la fois sociale et économique, ont existé en théorie pendant la dernière décennie. Les méthodes sont basées sur de l'encryption par clef publique, des systèmes de preuves à divulgation nulle de connaissance (ZKIP) et une variété de protocoles pour l'interaction, l'authentification et la vérification. Le centre d'attention est pour l'instant porté sur des conférences académiques en Europe et aux USA, conférences surveillées de près par la National Security Agency. Mais c'est uniquement récemment que les réseaux informatiques et les ordinateurs personnels ont atteint une vitesse suffisante pour rendre ces idées réalisables. Et la prochaine décennie va apporter suffisamment de vitesse supplémentaire pour rendre ces idées économiquement réalisables et surtout instoppables. Les réseaux à haute vitesse, le RNIS, les boîtiers hardwares non altérables, les cartes à puce, les satellites, les émetteurs à bande Ku, les micro-ordinateurs à multi-processeurs de type MIPS et les puces à encryption qui sont actuellement en cours de développement seront une partie des technologies aidant à la réalisation de ces idées.
+
+    L'Etat va bien entendu essayer de ralentir ou d'arrêter la propagation de ces technologies, en invoquant la sécurité nationale, leur utilisation par des dealers et des fraudeurs et la peur d'une désintégration sociale. La plupart de ces inquiétudes sont légitimes; le crypto-anarchisme permettra la vente libre de secrets nationaux et de biens illicites ou volées. Un marché électronique anonyme pourrait même rendre possible de détestables foires aux assassinats et aux extorsions. Divers criminels et étrangers seront des utilisateurs actifs de CryptoNet. Mais cela n'interrompra pas la diffusion du crypto-anarchisme.
+
+    De la même manière que l'imprimerie a modifié et réduit le pouvoir des guildes moyenâgeuses et la structure du pouvoir social, les méthodes cryptographiques vont affecter fondamentalement la nature de l'influence des gouvernements et des corporations sur les transactions économiques. Combiné à l'émergence de bourses de l'information, le crypto-anarchisme va créer un marché liquide pour toutes les matières qui peuvent être mises en mots et en images. Et à l'instar de l'invention, en apparence mineure, des fils barbelés qui ont permis l'apparition de vastes ranchs et fermes, ce qui a modifié à jamais les concepts de terres et de droits de propriété aux frontières de l'Ouest, la découverte d'une branche obscures des mathématiques serra la pince qui coupera les barbelés autour de la propriété intellectuelle.
+
+    Levez-vous, vous n'avez rien à perdre à part vos propres barrières !
+
+    Déclaration d'Indépendance du Cyberespace
+    John Perry Barlow
+    8 février 1996
+
+    Gouvernements du monde industriel, géants fatigués de chair et d'acier, je viens du Cyberespace, nouvelle demeure de l'Esprit. Au nom de l'avenir, je vous demande, à vous qui êtes du passé, de nous laisser tranquilles. Vous n'êtes pas les bienvenus parmi nous. Vous n'avez aucun droit de souveraineté sur nos lieux de rencontre.
+
+    Nous n'avons pas de gouvernement élu et nous ne sommes pas près d'en avoir un, aussi je m'adresse à vous avec la seule autorité que donne la liberté elle-même lorsqu'elle s'exprime. Je déclare que l'espace social global que nous construisons est indépendant, par nature, de la tyrannie que vous cherchez à nous imposer. Vous n'avez pas le droit moral de nous donner des ordres et vous ne disposez d'aucun moyen de contrainte que nous ayons de vraies raisons de craindre.
+
+    Les gouvernements tirent leur pouvoir légitime du consentement des gouvernés. Vous ne nous l'avez pas demandé et nous ne vous l'avons pas donné. Vous n'avez pas été conviés. Vous ne nous connaissez pas et vous ignorez tout de notre monde. Le Cyberespace n'est pas borné par vos frontières. Ne croyez pas que vous puissiez le construire, comme s'il s'agissait d'un projet de construction publique. Vous ne le pouvez pas. C'est un acte de la nature et il se développe grâce à nos actions collectives.
+
+    Vous n'avez pas pris part à notre grande conversation, qui ne cesse de croître, et vous n'avez pas créé la richesse de nos marchés. Vous ne connaissez ni notre culture, ni notre éthique, ni les codes non écrits qui font déjà de notre société un monde plus ordonné que celui que vous pourriez obtenir en imposant toutes vos règles.
+
+    Vous prétendez que des problèmes se posent parmi nous et qu'il est nécessaire que vous les régliez. Vous utilisez ce prétexte pour envahir notre territoire. Nombre de ces problèmes n'ont aucune existence. Lorsque de véritables conflits se produiront, lorsque des erreurs seront commises, nous les identifierons et nous les réglerons par nos propres moyens. Nous établissons notre propre contrat social. L'autorité y sera définie selon les conditions de notre monde et non du vôtre. Notre monde est différent.
+
+    Le Cyberespace est constitué par des échanges, des relations, et par la pensée elle-même, déployée comme une vague qui s'élève dans le réseau de nos communications. Notre monde est à la fois partout et nulle part, mais il n'est pas là où vivent les corps.
+
+    Nous créons un monde où tous peuvent entrer, sans privilège ni préjugé dicté par la race, le pouvoir économique, la puissance militaire ou le lieu de naissance.
+
+    Nous créons un monde où chacun, où qu'il se trouve, peut exprimer ses idées, aussi singulières qu'elles puissent être, sans craindre d'être réduit au silence ou à une norme.
+
+    Vos notions juridiques de propriété, d'expression, d'identité, de mouvement et de contexte ne s'appliquent pas à nous. Elles se fondent sur la matière. Ici, il n'y a pas de matière.
+
+    Nos identités n'ont pas de corps; ainsi, contrairement à vous, nous ne pouvons obtenir l'ordre par la contrainte physique. Nous croyons que l'autorité naîtra parmi nous de l'éthique, de l'intérêt individuel éclairé et du bien public. Nos identités peuvent être réparties sur un grand nombre de vos juridictions. La seule loi que toutes les cultures qui nous constituent s'accordent à reconnaître de façon générale est la Règle d'Or. Nous espérons que nous serons capables d'élaborer nos solutions particulières sur cette base. Mais nous ne pouvons pas accepter les solutions que vous tentez de nous imposer.
+
+    Aux États-Unis, vous avez aujourd'hui créé une loi, la loi sur la réforme des télécommunications, qui viole votre propre Constitution et représente une insulte aux rêves de Jefferson, Washington, Mill, Madison, Tocqueville et Brandeis. Ces rêves doivent désormais renaître en nous.
+
+    Vous êtes terrifiés par vos propres enfants, parce qu'ils sont les habitants d'un monde où vous ne serez jamais que des étrangers. Parce que vous les craignez, vous confiez la responsabilité parentale, que vous êtes trop lâches pour prendre en charge vous-mêmes, à vos bureaucraties. Dans notre monde, tous les sentiments, toutes les expressions de l'humanité, des plus vils aux plus angéliques, font partie d'un ensemble homogène, la conversation globale informatique. Nous ne pouvons pas séparer l'air qui suffoque de l'air dans lequel battent les ailes.
+
+    En Chine, en Allemagne, en France, en Russie, à Singapour, en Italie et aux États-Unis, vous vous efforcez de repousser le virus de la liberté en érigeant des postes de garde aux frontières du Cyberespace. Ils peuvent vous préserver de la contagion pendant quelque temps, mais ils n'auront aucune efficacité dans un monde qui sera bientôt couvert de médias informatiques.
+
+    Vos industries de l'information toujours plus obsolètes voudraient se perpétuer en proposant des lois, en Amérique et ailleurs, qui prétendent définir des droits de propriété sur la parole elle-même dans le monde entier. Ces lois voudraient faire des idées un produit industriel quelconque, sans plus de noblesse qu'un morceau de fonte. Dans notre monde, tout ce que l'esprit humain est capable de créer peut être reproduit et diffusé à l'infini sans que cela ne coûte rien. La transmission globale de la pensée n'a plus besoin de vos usines pour s'accomplir.
+
+    Ces mesures toujours plus hostiles et colonialistes nous mettent dans une situation identique à celle qu'ont connue autrefois les amis de la liberté et de l'autodétermination, qui ont eu à rejeter l'autorité de pouvoirs distants et mal informés. Nous devons déclarer nos subjectivités virtuelles étrangères à votre souveraineté, même si nous continuons à consentir à ce que vous ayez le pouvoir sur nos corps. Nous nous répandrons sur la planète, si bien que personne ne pourra arrêter nos pensées.
+
+    Nous allons créer une civilisation de l'Esprit dans le Cyberespace. Puisse-t-elle être plus humaine et plus juste que le monde que vos gouvernements ont créé.
+
+    Un Manifeste Cyberpunk
+    Christian As. Kirtchev
+    14 février 1997
+
+    Nous sommes des esprits électroniques, un groupe de rebelles libres penseurs, des Cyberpunks. Nous vivons dans le Cyberespace, nous sommes partout, nous ne connaissons pas de frontières. Ceci est notre manifeste, le manifeste des Cyberpunks.
+    I. Cyberpunk
+
+    1/ Nous sommes l'être Différent. Rats technologiques, nageant dans l'océan de l'information.
+    2/ Nous sommes l'effacé, le petit garçon qui s'asseyait à la dernière table dans un coin de la classe.
+    3/ Nous sommes l'adolescent considéré comme bizarre par tout le monde.
+    4/ Nous sommes l'étudiant qui hacke des systèmes informatiques et en explore les tréfonds.
+    5/ Nous sommes l'adulte assit sur le banc d'un parc, le portable sur les genoux, programmant la dernière réalité virtuelle.
+    6/ Ce garage farci d'électronique est à nous. Le fer à souder au coin du bureau et la radio démontée à proximité sont également les nôtres. De même que cette cave remplie d'ordinateurs, des bourdonnements d'imprimantes et des bips de modems.
+    7/ Nous sommes ceux qui perçoivent la réalité de façon différente. Notre point de vue nous permet de voir au delà de ce que les gens ordinaires peuvent. Là où ils n'entrevoient que l'aspect extérieur, nous décelons ce qui est à l'intérieur. C'est ce que nous sommes, des réalistes avec des lunettes de rêveurs.
+    8/ Nous sommes ces êtres étranges, pratiquement inconnus du voisinage. Ces êtres accordés à leurs propres pensées, demeurant jour après jour devant leurs ordinateurs, fouillant le net à la recherche de quelque chose. Nous ne sortons pas souvent de chez nous, juste de temps en temps, et uniquement pour aller au plus proche magasin d'électronique, au bar habituel pour rencontrer le peu d'amis que nous avons, ou un client, ou un refourgueur... ou juste pour une petite promenade.
+    9/ Nous n'avons pas beaucoup d'amis, seul un petit nombre avec lesquels nous allons à des fêtes. Tous les autres, nous les connaissons grâce au net. Nos véritables amis sont là, de l'autre côté de la ligne. Nous les connaissons à travers nos channels IRC favoris, nos newsgroups, des systèmes autour desquels nous rôdons.
+    10/ Nous sommes ceux qui n'avons rien à foutre de ce que les gens pensent de nous, d'à quoi nous ressemblons ou de ce que peuvent baver les gens dans notre dos.
+    11/ La majorité d'entre nous préfère vivre terré, inconnus de tous excepté de ceux dont nous ne pouvons éviter le contact.
+    12/ Les autres préfèrent la publicité, ils aiment la célébrité. Ils sont tous connus du monde underground, leurs noms y sont souvent entendus. Mais nous, nous sommes tous unis par une chose, nous sommes Cyberpunks.
+    13/ La Société ne nous comprend pas, aux yeux des gens ordinaires qui vivent loin de l'information et des idées libres nous sommes des êtres "bizarres" et "insensés". La Société nie notre façon de penser, une société qui vie, pense et respire d'une et d'une seule manière, un cliché.
+    14/ Ils nous renient car nous pensons comme des hommes libre or la libre pensée est interdite.
+    15/ Le Cyberpunk n'a pas d'apparence extérieure, de signes particuliers. Les Cyberpunks sont des gens d'aspect ordinaire, connus de personne, de l'artiste technomaniaque, au musicien jouant de la musique électronique en passant par l'érudit superficiel.
+    16/ Le Cyberpunk n'est plus un genre littéraire, pas même une simple sous culture. Le Cyberpunk est une culture à part entière, la progéniture d'un nouvel âge. Une culture qui unit nos intérêts communs et nos points de vue. Nous sommes un groupe. Nous sommes Cyberpunks.
+    II. Société
+
+    1/ La Société qui nous entoure est entravée par sa volonté de ramener tout et tout le monde à elle, alors qu'elle s'enfonce lentement dans les sables du temps.
+    2/ Même si certains s'obstinent à ne pas le croire, il est évident que nous vivons dans une société malade. Les soi-disantes réformes dont nos gouvernements aiment tant se vanter, ne sont qu'un petit pas en avant, quand un saut définitif peut être fait.
+    3/ Les gens ont peur de la nouveauté et de l'inconnu, ils préfèrent l'ancien, le connu et les vérités vérifiées. Ils sont effrayés des apports du changement. Ils craignent de perdre ce qu'ils ont.
+    4/ Leur peur est si forte qu'ils ont déclaré les choses révolutionnaires des ennemis et les idées libres ses armes. C'est leur défaut.
+    5/ Les gens doivent abandonner cette peur derrière eux et aller de l'avant. Quel est l'intérêt de s'en tenir à peu quand vous pouvez avoir beaucoup plus demain. Tout ce qu'ils ont à faire est de tendre leurs mains et de ressentir le renouveau, d'accorder la liberté aux pensées, aux idées et aux mots.
+    6/ Voilà des siècles que chaque génération a été élevé selon le même schéma. Les idéaux sont suivis par tout le monde, l'individualité est ignorée. Les gens pensent de la même façon, conformément aux clichés qu'on leur a imprégnés dans leur jeunesse, la même éducation stéréotypée pour tous les enfants. Et lorsque quelqu'un ose défier l'autorité, il est puni et exhibé aux yeux de tous comme l'exemple à ne pas suivre. "Voilà ce qu'il arrive quand vous exprimez votre propre opinion et que vous contestez celle de votre professeur".
+    7/ Notre société est malade et a besoin d'être soignée. Le remède est un changement dans le système...
+    III. Le Sytème
+
+    1/ Le Sytème. Vieux de plusieurs siècles, existant sur des principes qui ne pèsent plus rien aujourd'hui. Un Système qui n'a pas changé depuis le jour de sa naissance.
+    2/ Le Sytème est aberrant.
+    3/ Le Sytème doit imposer sa vérité pour pouvoir régner. Les gouvernements ont besoin que nous les suivions aveuglement. Pour cette raison, nous vivons dans une éclipse informationnelle. Lorsque des gens acquirent des informations autres que celles venant du gouvernement, ils ne peuvent distinguer le vrai du faux. Et donc le mensonge devient une vérité, une véritéfondamentale pour tout le reste. Ainsi les puissants contrôlent avec des mensonges et les gens ordinaires n'ont aucune notion de ce qui est avéré et suivent le gouvernement aveuglement, ayant confiance en lui.
+    4/ Nous combattons pour la liberté de l'information. Nous combattons pour la liberté d'expression et de la presse. Pour la liberté d'émettre nos pensées ouvertement, sans être persécuté par le système.
+    5/ Même dans les pays les plus développés et "démocratiques", le système impose la désinformation. Même dans les pays qui ont la prétention d'être le berceau de la liberté d'expression. La désinformation est l'une des armes principale du système. Une arme dont ils sont passés maître.
+    6/ C'est le Net qui nous permet de propager l'information librement, sans limite de frontières.
+    7/ Les nôtre sont les vôtres. Les vôtres sont les nôtres.
+    8/ Tout le monde peut partager l'information, sans restrictions.
+    9/ L'encryption de l'information est notre arme. Ainsi, les mots de la révolution peuvent se propager sans interruption, et les gouvernements essayer seulement de deviner.
+    10/ Le Net est notre royaume, nous y sommes Rois.
+    11/ Les lois. Le monde change et les lois restent les mêmes. Le Système est immuable, seuls quelques détails sont rectifiés afin de repousser l'échéance, mais les concepts sont conservés à l'identique.
+    12/ Nous avons besoin de nouvelles lois. Des lois en adéquations avec l'époque et le monde dans lesquels nous vivons et non pas des lois édifiées sur les bases du passé. Des lois créées pour aujourd'hui et qui seront toujours valables demain.
+    13/ Ce sont uniquement ces lois qui nous retiennent, des lois qui ont grandement besoin de corrections.
+    IV. La vision
+
+    1/ Quelques uns ne se soucient guère de ce qui se passe au niveau global. Ils se soucient de ce qui se passe autour d'eux, dans leurs micro-univers.
+    2/ Ces personnes peuvent uniquement concevoir un sombre futur, car ils ne considèrent que la vie qu'ils vivent actuellement.
+    3/ Les autres montrent certains signes de préoccupation pour les affaires globales. Ils s'intéressent à tout, aux perspectives d'avenir, à ce qui va se dérouler au niveau global.
+    4/ Ils ont une vision plus optimiste. Pour eux le futur est plus propre et plus beau, car de ce qu'ils peuvent en voir, l'homme sera plus mature et le monde plus sage.
+    5/ Nous sommes au milieu. Nous nous intéressons à ce qu'il se produit maintenant autant qu'à ce qu'il va advenir demain.
+    6/ Nous observons le net et le net ne cesse de grossir et d'acquérir du savoir.
+    7/ Bientôt tout sera absorbé par la net, des systèmes militaires aux PC à la maison.
+    8/ Mais le net est le royaume de l'anarchie.
+    9/ Il ne peut être contrôlé et c'est là son pouvoir.
+    10/ Chaque être sera tributaire du net.
+    11/ L'intégralité de l'information y sera, enfermée dans un abysse de zéros et de uns.
+    12/ Celui qui contrôle le net, contrôle l'information.
+    13/ Nous vivrons dans un mélange de passé et de présent.
+    14/ Le mauvais vient de l'homme et le bon de la technologie.
+    15/ Le net contrôlera le petit homme et nous contrôlerons le net.
+    16/ Et ce que vous ne contrôlerez pas, vous contrôlera.
+    17/ L'Information est le POUVOIR !
+    V. Où en sommes-nous ?
+
+    1/ Nous vivons dans un monde malade, où la haine est une arme et la liberté, un rêve.
+    2/ Le monde grandit si lentement. Il est difficile pour un Cyberpunk de vivre dans un tel monde sous-développé, de regarder autour de lui, et de voir combien les gens progressent d'une mauvaise façon.
+    3/ Nous allons de l'avant, ils nous renvoient en arrière une nouvelle fois. La société nous oppresse, elle étouffe la liberté de pensée avec ces programmes scolaires et universitaires cruels. Elle inculque de force aux enfants sa vision des choses et toute tentative d'exprimer une opinion différente est opprimée et sanctionnée.
+    4/ Nous enfants grandissent instruits par ce système archaïque et immuable. Un système qui ne tolère aucune liberté de pensée et exige une stricte obéissance aux règles...
+    5/ Dans quel monde, si différent de celui-ci, pourrions nous vivre si les gens sautaient dans l'inconnu et non y allaient à reculons ?
+    6/ C'est tellement dur de vivre dans le monde actuel, Cyberpunk.
+    7/ C'est comme si le temps s'était arrêté.
+    8/ Nous vivons au bon endroit, mais pas à la bonne époque.
+    9/ Tout est tellement ordinaire, les gens et leurs actes sont tous identiques. Comme si la société avait un besoin urgent de vivre dans le passé.
+    10/ Certains en cherchant leur propre monde, le monde d'un Cyberpunk, et le trouvant, construisent leur propre monde. L'assemblant suivant leurs pensées en modifiant la réalité, ils vivent dans un monde virtuel. Le façonnage de leurs pensées basées sur la réalité.
+    11/ D'autres s'habituent simplement au monde tel qu'il est. Ils continuent d'y vivre même s'ils l'ont en aversion. Ils n'ont pas d'autre choix que de simplement espérer que le monde va sortir de son trou et aller de l'avant.
+    12/ Nous essayons de faire évoluer l'état des choses, d'ajuster le monde actuel à nos besoins et nos points de vue. D'utiliser au maximum ce qui s'accorde et d'ignorer le rebut. Quand nous ne le pouvons, nous nous contentons de vivre dans ce monde tel des Cyberpunks, quel qu'en soit le prix, et lorsque la société nous combat, nous contre-attaquons.
+    13/ Nous édifions nos mondes dans le Cyberespace.
+    14/ Parmi les zéros et les uns, parmi les bits d'information.
+    15/ Nous fondons notre communauté, la communauté des Cyberpunks.
+
+    Unissez-vous !
+    Battez-vous pour vos droits !
+
+    Un Manifeste Cyberpunk v2.0
+    Christian As. Kirtchev
+    28 janvier 2003
+
+    Nos âmes sont analogiques/numérisées, nous sommes des Cyberpunks. Ceci est supposé constituer une seconde manifestation.
+    I. Cyberpunk
+
+    Nous sommes les hommes nouveaux, une nouvelle espèce d'homo sapiens, qui devaient naître à cet âge. La façon dont nous ressentons le monde, en incorporant de façon innée le Cyberespace. Le premier souffle de notre naissance se composait d'un dense flux d'électricité parcourant les lignes, des bruits des machines nous enveloppant, de la vibration des données d'informations circulant à haute vitesse à travers l'air et les câbles. Notre manière d'absorber la technologie est équivalente à la façon dont d'autres mangent, boivent et respirent. Le data-space lui-même est un élément supplémentaire de notre environnement. Nous sommes cette mutation, qui ne se restreint pas uniquement à une meilleure compréhension des outils technologiques. Tout le monde peut apprendre à utiliser et comprendre la technologie et les nouvelles technologies, mais nous les assimilons naturellement. Notre point de vue nous permet de voir au delà de ce que les gens ordinaires peuvent. Là où ils n'entrevoient que l'aspect extérieur, nous décelons ce qui est à l'intérieur. C'est ce que nous sommes, des réalistes avec des lunettes de rêveurs. Notre façon de penser et de percevoir notre environnement, le sang qui coule dans nos veines, l'air qui file dans nos cerveaux, c'est cette mutation qui nous distingue des autres. Etre un gourou du net, un geek technologique, un nerd informatique n'est pas suffisant, c'est juste un signe. Nous sommes des hommes neufs et chaque parcelle de nouveauté est quelque chose que nous accueillons naturellement et familièrement. Nous connaissons l'histoire et nous savons que c'est une morte rampant après la vie. Le Cyberpunk est juste une étiquette, son contenu est à l'intérieur de nous, ces hommes et femmes différents, dont la plupart sont au delà de toute compréhension. Vous pouvez nous appeler fous, déments, cinglés ou bizarroïdes, ce sont juste les plus proches mots de votre dictionnaire qui effleurent ce que vous pouvez imaginer d'un phénomène qui ne s'est jamais manifesté auparavant. Le monde actuel est en plein changement. Certains coulent avec les ruines, d'autres vont de l'avant en laissant le passé où il est. La société, qui ne s'est toujours pas décidée à se renouveler, à trouver la stabilité de son existence dans l'ancienne acceptation de l'ordinaire et du connu. Mais nous n'appartenons à aucun d'entre eux, les Cyberpunks évoluent sans cesse. Et ceux qui prétendent que le Cyberpunk est mort ne peuvent voir sa renaissance dans la nouvelle vague de découvertes. Pouvez-vous réellement affirmer que l'évolution a été stoppée ? Le "Cyberpunk" fait parti de cette évolution. Le rebelle, qui lutte pour sa propre survie. Et nous croyons en notre force, car notre compréhension des phénomènes nouveaux, qui restent obscurs aux autres, fait parti de nous.
+    II. Société
+
+    Par le passé les gens avaient besoin d'un modèle à suivre, et ce modèle a facilement su tirer profit de cette forme de contrôle de la société et a commencé à diriger à l'aide de coups tordus, allant toujours plus loin, vu qu'il restait la seule autorité et le Système ainsi contrôlé est devenu invincible. La société demeure maintenant sous contrôle et certains l'apprécient ainsi.
+    La société dénie notre existence, car nous sommes bien plus dangereux pour son utopie, que ne le sont les gouvernements. Nous ne faisons pas partie de ces masses.
+    III. Le Système
+
+    Le Système. Vieux de plusieurs siècles, existant sur des principes qui ne pèsent plus rien aujourd'hui. Un Système qui n'a pas changé depuis le jour de sa naissance. Le système est ce qui vous contrôle. Ce sont les gouvernements, composés de personnes qui vivent à part de la masse. Ils n'ont pas changé depuis la naissance de la vie sociale à sein de l'humanité. D'autre part les corporations exercent une part toujours grandissante de ce contrôle et à l'heure actuelle on ne sait pas réellement qui en a les rênes. Est-ce les corporations qui contrôlent les gouvernements ou font-ils partie du même bureau ? Toutefois, le système nécessite de la nourriture et des moyens pour exister, et ce support est assuré par les masses de la société, qui sont comme hypnotisés pour en venir à faire confiance à quelqu'un qui exerce un tel contrôle sur leurs vies personnelles. Ce support subsiste grâce aux nombreux mensonges proférés par le système aux masses. Ces mensonges sont les vérités qu'ils veulent nous faire avaler. Le Système doit les imposer pour pouvoir régner. Les gouvernements ont besoin que nous les suivions aveuglement. Pas seulement eux mais également les corporations, qui dictent la mode, les choix alimentaires et le prix des médicaments. Et le tout forme le Système, un ensemble de règles propagées par les médias. Seul un aveugle et sourd accorderait le contrôle de sa vie à quelqu'un qui, sous couvert d'apporter une impression de Soins, de Soutien, de Sécurité et de Stabilité, ne recherche que l'argent et le pouvoir. Le système est effrayé par le chaos, mais le chaos est uniquement un chemin vers le libre arbitre. Lorsqu'ils seront décentralisés, les gens pourront faire de meilleurs choix.
+    IV. Les Médias
+
+    La télévision, la radio et la presse ne sont plus la seule source d'information pour l'homme qui en recherche ou celui en sommeil. Internet est le nouvel espace à média, un espace où l'information peut être propagée librement et par conséquent personne ne peut plus l'ignorer. Même lorsque les gouvernements et les entreprises tentent de restreindre et contrôler le flot de données, des voies détournées permettent de récupérer cette information, laquelle peut "résonner". Et l'information demeure toujours le pouvoir. Nous assistons à la croissance actuelle de notre race. Les entraves à l'information ne barrent plus les perspectives et les gens peuvent maintenant exiger plus de droits. Les scientifiques font des découvertes qui, une fois rendues publiques ne peuvent plus être si facilement bloquées par l'utilisation commerciale ou gouvernementale. Le plus triste arrive quand les gens sont obligés de se rabaisser pour demander ce qui leur est déjà accordé. Maintenant ce média peut éveiller le peuple, transformer la société. Toutefois, il a également prouvé qu'il pouvait se révéler faux ou mensonger, ce qui complique le filtre de la vérité et augmente le prix de l'Information.
+    V. Où en sommes-nous ?
+
+    Nous sommes ceux dont l'ADN a commencé à muter pour accueillir de nouveaux sens qui permettront aux générations futures d'appréhender le cyberespace et le data-space. Aucun matériel lourd ou dispositif implanté sera pleinement en mesure de remplacer ce que la nature nous offre. Les mutations se mettent en place. L'évolution nous dote de meilleurs outils pour interagir avec les changements de notre environnement. C'est ce qui fait de nous des Cyberpunks, des hommes nouveaux, des esprits électroniques. Nous savons que le Cyberespace est un miroir du monde, une augmentation, qui accueille toutes les créations passés et présentes de l'homme. Le cyberespace est un monde invisible où l'esprit et la pensée humaine fusionnent avec la matière et prennent une forme visible pour les sens, par le biais des machines. Il semble avoir toujours existé ici, là, partout, mais c'est seulement maintenant que nous sommes capables de nous y connecter, de l'explorer et nous commençons à changer. Nous les Cyberpunks sommes ceux qui vivons dans le cyberespace, et la technologie actuelle n'est que le moyen de nous emmener de l'autre côté.
+
+    Nous sommes la nouvelle race modifiée. Les Cyberpunks.
+    Ceci constitue une seconde manifestation.
+
+    Un Manifeste Cyberpunk v3.0
+    Rédigé par des Cyberpunks en 2007
+
+    Ceci est le brouillon d'un nouveau manifeste Cyberpunk afin de concorder avec la réalité de 2007.
+    I. Introduction
+
+    "Si vous aviez un ordinateur contrôlé par la pensée, entièrement personnalisable, ferait-il partie intégrante de votre conscience ?" Gloire au nerd ordinaire, qui ne parcourt pas souvent les rues, vivant continuellement connecté, occupé à phreaker, hacker, tweaker, etc. Être Cyberpunk, exister autrement qu'une personne lambda, percevoir ce que les gens normaux ne voient tout simplement pas. La vie numérique, au sens biologique du mainframe, définie le monde dans lequel nous vivons. Etiquetés comme nerds, cinglés, punks, aberrations de la nature... Des phénomènes technologiques, qui comprennent tous les systèmes, catalogués comme tarés par la société. Ayant plus de connaissances que la plupart des gens, hackant des systèmes par plaisir, saturant numériquement leur esprit avec de l'information de choix, etc. Les gens comme nous, épris de technologie, ayant plus d'amis en ligne que dans leur propre ville, examinant et maîtrisant des technologies pour les détourner de leur fonctionnement initial, recherchant d'autres voies de libération du système, luttant contre l'oppression et la censure des corporations, se battant dans des guerres de l'information...
+
+    Vive la révolution cybernétique, vive les techno-anarchistes, vive les hackers et les crackers.
+    II. Vision
+
+    Le monde qu'ils veulent nous céder n'est qu'une boule toxique remplie de maladies, un cadavre vivant ravagé par la pollution et la futilité malsaine. Le monde qu'ils nous allouent n'existe que pour les servir, pour les conserver au pouvoir eux et leurs plus proches amis, pour garder le bétail humain confiant et ignorant des alternatives, pour exploiter et détruire la planète et pour étouffer ceux qui voudraient améliorer le monde. Ils veulent que les masses restent dociles tels des moutons, et à cette fin les abreuvent de "divertissements" afin de leur laver le cerveau et les abrutir. Ils tenteront n'importe quoi pour rester au pouvoir et réprimeront toute menace, même au point de condamner à la "damnation éternelle" de la main de leur fantasme schizophrène appelé "Dieu" ceux qui oseraient être en désaccord.
+
+    Qui sont-ils ? Ils sont les entreprises, les pays et les individus qui cherchent la domination à travers la dépendance du bétail humain à certains concepts : le pétrole, la drogue, la religion, la "technologie" abrutissante et la "culture populaire". Ils possédaient autrefois de puissants monopoles, brisés pour avoir refusé de jouer juste, et tentent maintenant de ressusciter leur ancienne gloire corrompue en complotant avec Big Brother pour nous priver de liberté et de vie privée. Ils détiennent des compagnies tentaculaires basées sur Internet qui achètent chaque petite société sur le net afin de contrôler son contenu. Ils sont les médias décervelés vomissant sans cesse leurs crétineries appelées "divertissements" pour garder le bétail soumis, et utiliser ensuite les "droits d'auteur" pour enfoncer les entreprises Internet et étendre leur contrôle sur elles. Ils sont des acteurs, des musiciens, des artistes qui conspirent avec les sociétés de médias pour diffuser leur vomi, et se prostituer ensuite pour des causes politiques dégradantes. Ils sont des lunatiques et des pervers qui nous gavent de leur "théologie" et s'attendant à ce que nous ayons une fois aveugle en leur "Dieu" même si ce "Dieu" n'est qu'une illusion archaïque. Ils sont ces idiots incapables de marcher et de mâcher du chewing-gum en même temps, qui parviennent à devenir des dirigeants nationaux non par la volonté du peuple mais grâce à des circonstances et un climat politique favorables. Ils sont les causes de la décrépitude du monde et la raison de la contre-attaque des Cyberpunks.
+
+    Les Cyberpunks refusent d'être du bétail, de prendre le train en marche, de faire partie des spectateurs, ils discernent les artifices du monde moderne et les combattent. Les Cyberpunks sont ceux assez courageux pour délivrer leur message, debout devant la foule, le gouvernement, l'église et l'industrie et proclamer "Vous vous trompez !". Ils acceptent l'ostracisme, car ils ont déjà rejeté la façon dont la "société" espère une amélioration. C'est parfois une lutte solitaire, mais les Cyberpunks font pratiquement partie de toutes les sociétés, tous les pays, et quand ils se rassemblent, ils sont une force à laquelle ils doivent faire face.
+    III. Technologie
+    Les progrès technologiques nous gardent actifs et les technologies les plus récentes se rapprochent de plus en plus de celles décrites dans le vieux Cyberpunk (pré-2000) comme les implants biologiques, les guerres virtuelles et de l'information. Les batailles futures ne seront plus menées par des armées, mais avec des systèmes informatiques. Nous nous adoptons à ces avancées technologiques et nous pensons même (comme toujours) un peu au-delà. Se projeter de vingt ans dans le futur, créer de nouvelles choses avec la technologie actuelle, inventer d'autres moyens d'utiliser un appareil en détournant son fonctionnement, engendrer un nouveau système électronique à partir d'un autre, comme hacker un téléphone pour servir de télécommande infrarouge.
+    IV. Politique
+
+    La guerre contre les grosse multinationales comme Unilever, Shell, Microsoft, Google, Gillette et autres, fait toujours rage. L'oppression des corporations utilisant les gouvernements fantoches comme de simples outils, afin de garder le peuple stupide, n'est pas envisageable pour les Cyberpunks. Nous sommes des anarchistes/révolutionnaires anti-système. Nous pensons par nous même et n'avons besoin de quiconque pour nous dire quoi penser. Combattre les corporations en hackant leurs systèmes, répandre des virus, des mind-probes et organiser des attaques DDOS sont des moyens désormais courants en 2007. Les faits décrits dans des livres comme Neuromancer et autres romans Cyberpunk écrits dans les années 80/90, sont devenues réalité. Le 21e siècle se numérise rapidement et les gouvernements suivent le mouvement en créant des protocoles d'identifications afin de contrôler leurs peuples. Les Cyberpunks continuent de lutter contre ces protocoles en devenant anonymes, nerds aux cerveaux bien remplis, en hacker des trucs, etc.
+    V. Sociologie
+
+    Les Cyberpunks ont tendance à être des individus qui ne correspondent à aucun système ou groupe. Ils sont pour la plupart des gens très intelligents, qui voient au-delà de l'explicite. Ils rendent compte de l'absurdité de la culture, la parodie, l'écrase et la transforme. Ils utilisent les outils de la société pour témoigner contre elle, pour documenter et rapporter ses tendances auto-destructives ; en partageant leurs connaissances avec un groupe choisi bien souvent maudit et détesté par les gens du système. Ils ont plus d'amis sur les réseaux numériques que dans leur propre ville et échangent plus de savoirs à travers les autoroutes du net que par le biais d'interactions physiques. Dépenser plus de temps à obtenir davantage de connaissances et d'informations que de socialiser leur est familier.
+    VI. Histoire
+
+    Les Cyberpunks renouvellent leurs goûts, musiques, aspect avec le temps. Dans les années 80, ils étaient plus orientés vers la musique synthétique et les technologies démodées alors que maintenant nous avons Internet à haut débit, des téléphones portables/satellites, la réalité virtuelle, etc. Nous nous adaptons à la technologie, et elle s'adapte à nous. Nous sommes symbiotiques, à la fois d'un point de vue biologique et technologique. Notre mouvement Cyberpunk progresse au fil du temps. Nous apprenons et nous nous développons toujours plus loin. Nous sommes les soldats de la frontière technologique, non connu du système, mais toujours bien vivant. Le Cyberpunk, inventé par Bruce Bethke et réalisé par William Gibson, était autrefois de la Science-Fiction et devient maintenant réalité. Lorsque les fans du Cyberpunk mettront la main sur la technologie actuelle, leur nombre augmentera fortement et ils réaliseront que le Cyberpunk n'est pas seulement un conte de fées mais également un mouvement hi-tech qui est allé bien au delà de l'imagination des auteurs originels de romans Cyberpunk.
+    VII. Liberté
+
+    Les Cyberpunks encouragent la liberté absolue de pensée. Notre quête pour le libre accès à toute information ne connaît pas de frontières. Nous sommes ceux qui ont besoin de comprendre avant d'accepter quoi que ce soit du flux des médias. Nous sommes le bug dans le code source, la probabilité de (r)évolution qui menace les systèmes rigides. Personne ne peut nous contrôler, et c'est pour cela que nous sommes pourchassés. Nous n'appartenons pas à la Société qu'ils veulent créer. Programmeurs talentueux, rêveurs utopiques, artistes ou employés de bureau, nous sommes ceux qui résistent, qui vivent dans le datanet où il n'y a pas de loi applicable, en contournant toutes les frontières ; le cybermonde est l'endroit auquel nous appartenons. Nous sommes les enfants du cyberespace, nous pouvons faire tout ce que nous voulons, nous nous tournons vers l'avenir, en essayant de réfléchir aux nouvelles technologies, propageant nos idées à travers le vaste océan de l'information. Nous ne sommes pas de simples agrégateurs d'information, pour nous l'information n'est pas un flux immatériel de données, mais une partie de nous comme nous le sommes d'elle. Elle chemine à travers nos esprits, à l'instar du sang et de l'oxygène. La retenir ou l'utiliser pour nous opprimer est comme nous priver d'air pour respirer. Finalement, nous sommes d'ultimes chirurgiens du cerveau, capables d'éliminer toute les immondices qu'ils voudraient nous implanter.
+
+    A Biopunk Manifesto
+    Meredith L. Patterson
+    30 janvier 2010
+
+    Scientific literacy is necessary for a functioning society in the modern age. Scientific literacy is not science education. A person educated in science can understand science; a scientifically literate person can *do* science. Scientific literacy empowers everyone who possesses it to be active contributors to their own health care, the quality of their food, water, and air, their very interactions with their own bodies and the complex world around them.
+
+    Society has made dramatic progress in the last hundred years toward the promotion of education, but at the same time, the prevalence of citizen science has fallen. Who are the twentieth-century equivalents of Benjamin Franklin, Edward Jenner, Marie Curie or Thomas Edison ? Perhaps Steve Wozniak, Bill Hewlett, Dave Packard or Linus Torvalds - but the scope of their work is far narrower than that of the natural philosophers who preceded them. Citizen science has suffered from a troubling decline in diversity, and it is this diversity that biohackers seek to reclaim. We reject the popular perception that science is only done in million-dollar university, government, or corporate labs; we assert that the right of freedom of inquiry, to do research and pursue understanding under one's own direction, is as fundamental a right as that of free speech or freedom of religion. We have no quarrel with Big Science; we merely recall that Small Science has always been just as critical to the development of the body of human knowledge, and we refuse to see it extinguished.
+
+    Research requires tools, and free inquiry requires that access to tools be unfettered. As engineers, we are developing low-cost laboratory equipment and off-the-shelf protocols that are accessible to the average citizen. As political actors, we support open journals, open collaboration, and free access to publicly-funded research, and we oppose laws that would criminalize the possession of research equipment or the private pursuit of inquiry.
+
+    Perhaps it seems strange that scientists and engineers would seek to involve themselves in the political world - but biohackers have, by necessity, committed themselves to doing so. The lawmakers who wish to curtail individual freedom of inquiry do so out of ignorance and its evil twin, fear - the natural prey and the natural predator of scientific investigation, respectively. If we can prevail against the former, we will dispel the latter. As biohackers it is our responsibility to act as emissaries of science, creating new scientists out of everyone we meet. We must communicate not only the value of our research, but the value of our methodology and motivation, if we are to drive ignorance and fear back into the darkness once and for all.
+
+    We the biopunks are dedicated to putting the tools of scientific investigation into the hands of anyone who wants them. We are building an infrastructure of methodology, of communication, of automation, and of publicly available knowledge.
+
+    Biopunks experiment. We have questions, and we don't see the point in waiting around for someone else to answer them. Armed with curiosity and the scientific method, we formulate and test hypotheses in order to find answers to the questions that keep us awake at night. We publish our protocols and equipment designs, and share our bench experience, so that our fellow biopunks may learn from and expand on our methods, as well as reproducing one another's experiments to confirm validity. To paraphrase Eric Hughes, "our work is free for all to use, worldwide. We don't much care if you don't approve of our research topics". We are building on the work of the Cypherpunks who came before us to ensure that a widely dispersed research community cannot be shut down.
+
+    Biopunks deplore restrictions on independent research, for the right to arrive independently at an understanding of the world around oneself is a fundamental human right. Curiosity knows no ethnic, gender, age, or socioeconomic boundaries, but the opportunity to satisfy that curiosity all too often turns on economic opportunity, and we aim to break down that barrier. A thirteen-year-old kid in South Central Los Angeles has just as much of a right to investigate the world as does a university professor. If thermocyclers are too expensive to give one to every interested person, then we'll design cheaper ones and teach people how to build them.
+
+    Biopunks take responsibility for their research. We keep in mind that our subjects of interest are living organisms worthy of respect and good treatment, and we are acutely aware that our research has the potential to affect those around us. But we reject outright the admonishments of the precautionary principle, which is nothing more than a paternalistic attempt to silence researchers by inspiring fear of the unknown. When we work, it is with the betterment of the community in mind - and that includes our community, your community, and the communities of people that we may never meet. We welcome your questions, and we desire nothing more than to empower you to discover the answers to them yourselves.
+
+    The biopunks are actively engaged in making the world a place that everyone can understand. Come, let us research together.
+
+    Un Manifeste Cyberpunk
+    Transceiverfreq
+    20 août 2011
+
+        "L'information n'est que de l'information, pas de la matière ou de l'énergie."
+        -- Norbert Wiener
+
+    Le Motif de Kanizsa
+
+    Créé en 1976-79 par Gaetano Kaniza, psychologue et artiste italien, fondateur de l'Institut de Psychologie de Trieste. Une illusion d'optique comportant trois cercles noirs dont la pointe faisant face à un point central a été retirée et trois angles noirs sur un fond blanc. Les contours illusoires définis par ces formes créent un triangle blanc dans "l'espace négatif" liminal. Ceci est une métaphore pour le "cyberespace", défini par des frontières illusoires et intangible. L'idée du triangle existe, mais en fait, elle est définie par l'interaction des formes dans notre esprit et notre perception. C'est le symbole le plus simple que j'ai trouvé jusqu'à maintenant pour décrire le "cyberespace".
+	
+    À lire
+
+        Wikipedia - Cybernétique.
+        Cybernétique et société - Norbert Wiener, 1948.
+        Cybernetics: Or the Control and Communication in the Animal and the Machine - Norbert Wiener, 1950.
+        Does Technology Drive History? The Dilemma of Technological Determinism - Merritt Roe Smith, Leo Marx, 1994.
+        Human-Built World: How to Think about Technology and Culture - Thomas P. Hughes, 2004.
+        Cyberspace: First Steps - Michael Benedikt, 1991.
+        Neuromancien - William Gibson.
+        Fear of Knowledge: Against Relativism and Constructivism - Paul Boghossian, 2006.
+        Cyborg: Digital Destiny and Human Possibility in the Age of the Wearable Computer - Steve Mann, 2001.
+        Simulacres et simulation - Jean Baudrillard, 1981.
+
+    Nous affirmons :
+
+        L'information "veut être libre" et devrait l'être.
+        L'information améliore la qualité de vie.
+        L'information permet une meilleure autonomie.
+        Non seulement l'information "veut être libre", mais elle a une tendance naturelle et inévitable à devenir libre.
+        L'information maintient sa liberté propre par l'inaction ou l'action de libération par des forces externes.
+        Toutes les guerres du passé sont basées partiellement, voire entièrement, sur l'échange, la suppression ou la découverte de multiples formes d'information.
+        Les inventions découlent d'un besoin et le monde a un terrible besoin de changement.
+        Le réseau homme/machine est la victoire de l'information.
+        Internet n'appartient à aucune nation, il est sa propre nation.
+        Le cyberespace existe entre les noeuds du réseau. C'est le méta-espace défini par l'échange d'information entre ses utilisateurs.
+        Internet définit le cyberespace par ses propres frontières en expansion et mutation permanentes.
+        Les mouvements du cyberespace empiètent sur l'espace réel (meatspace). De cette façon, le net se déplace constamment dans le monde réel.
+        Le monde est dans un état de révolution constante.
+        Le web est le monde.
+
+    Nous :
+
+        Sommes natifs du net.
+        Sommes liés dans l'anonymat et ce choix est justifié quotidiennement.
+        Sommes le réseau lui-même. Il est défini par notre action et notre inaction.
+        Sommes nés sans allégeance nationale et libres en tant que tels.
+        Attendons mieux de notre génération que de celles qui nous précèdent.
+        Choisissons la liberté pour nationalité et la nodalité autonome comme langue maternelle.
+        Choisissons la vitesse pour méthode et le flux pour force motrice.
+        Rejetons les entités gouvernantes, nationales, religieuses et corporatives. Nous rejetons leur emprise sur l'esprit et la condition humaine.
+        Croyons que "la rue" définit ses propres usages pour la technologie.
+        Croyons qu'une surcharge d'information est un concept impossible.
+        Croyons que chacun devrait avoir accès au réseau et aux données.
+        Croyons que l'accès aux ordinateurs, et à tout ce qui peut nous apprendre quelque chose à propos de la façon dont le monde fonctionne, devrait être illimité.
+        Nous élevons contre les formes établies de hiérarchie et soutenons la décentralisation.
+        Promouvons le dépassement de nos limites, tant personnelles que partagées.
+        Sommes la technologie. Internet est fait de viande.
+        Ne sommes pas les adolescents rebelles et déprimés tels que décrits par nos ancêtres.
+        Ne nous définissons pas par la technologie que nous possédons, mais bien par l'utilisation que nous en faisons.
+        Croyons en la présence irrésistible du futur.
+
+    Conseils (ø) :
+
+        Quand ils l'appellent "paradoxe", ils cachent l'oxygène.
+        Une bonne traduction a des qualités que l'original ne saurait saisir.
+        Voyagez léger, restez sur vos gardes et mangez ce que vous tuez.
+        Regardez toujours en premier la face cachée des choses.
+        Quand vous trouvez la vérité, partagez-la avant qu'elle ne finisse enterrée sous des tonnes d'argent.
+        "La révolution" dévore ses petits.
+        Pour contacter un opérateur en chair et en os, faites le "0".
+
+
