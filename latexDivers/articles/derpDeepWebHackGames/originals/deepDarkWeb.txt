@@ -1,0 +1,306 @@
+
+https://freenetproject.org/ -- ??
+https://fr.wikipedia.org/wiki/Freenet -- ??
+
+	Objet: 	["Closed Shell System"]
+	Date: 	13 juillet 2012 14:39:59 GMT+02:00
+
+
+Vu sur IRC : [20120713] #Uplink on 'irc.uplinkcorp.com'
+=======================
+(13:46:32) Takeru [UplinkAgen@5456E726.1FD49CD0.2185FA0F.IP] a rejoint le salon.
+(13:46:42) Takeru: hi
+(13:46:53) Takeru: this place is awefully quiet , no?
+(13:47:45) AmaelAssour: hi
+(13:47:46) AmaelAssour: yes
+(13:47:55) Takeru: hi there!
+(13:48:14) AmaelAssour: someone !
+(13:48:15) Takeru: 4000c, sigh..
+(13:48:23) Takeru: yay!
+(13:48:24) Takeru: lol
+(13:48:35) Takeru: this hacker network is awfully quiet!
+(13:48:36) Flamebot: LANs are explained in detail on this page: http://guide.modlink.net/section3.php#3-1
+(13:48:50) AmaelAssour: mostly the bot asnwered !
+(13:49:45) ncv a quitte le salon (quit: Broken pipe)
+(13:49:53) Takeru: bots arent worth $4k!
+(13:49:54) Takeru: lol
+(13:50:21) Takeru: what level are you, my fellow haxxor?
+(13:50:33) AmaelAssour: 'TERMINAL'
+(13:50:35) AmaelAssour: the last one
+(13:50:44) Takeru: awesome! im 'novice'!
+(13:51:14) Takeru: hey, do u know anything about close shell ?
+(13:51:17) AmaelAssour: more training to do, you have, young padawan...
+(13:51:29) AmaelAssour: closing irc ?
+(13:51:45) Takeru: no.. something to do with the net
+(13:51:57) Takeru: it's level 4 or 5 of the internet, apparently
+(13:53:33) AmaelAssour: don't count on me to tell you anything about that..
+(13:55:42) Takeru: lol, aights.. it's interesting though
+(13:55:42) AmaelAssour: who tell you about that thing ?
+(13:55:56) Takeru: Closed Shell System.. go read about it :)
+(13:59:05) Takeru a quitte le salon (quit: Ping timeout)
+========================================
+
+http://deepweb.wikia.com/wiki/Levels_of_the_Deep_Web -- 
+'''PREPARE YOUR ANUS.'''
+
+Lots of pictures that represent the deep web levels exist on the internet. Here we will try to sum up everything we know on these "levels".
+
+(No personal hypothesis here, even if this page is likely to contain false content.)
+==What are the Levels?==
+There are, supposedly, 5 levels of the deep web (not counting Level 0). According to research this is where Team Competitive plan the strike quickly and accurlately. This is of course were the Bunnyhugger has been dropped troll occurred which resulted in mass ddos attackings on popular web pages within e-sports after bunny's fan revolted against the change. An epic battle resumed in level 7 on bunny's apparent closure of his team. This made twitter go crazy and the servers started re-directing to annonymous pages within the level 6. Thus resulting all codes written against ''Finch'' were made invalid.
+
+==The Levels==
+(Here will be listed the Levels as they are represented in the most famous of the DeepWeb images. Other representations exist, however.)
+===Level 0 - Common Web===
+This level is the one you browse everyday: YouTube, Facebook, Wikipedia and other famous or easily accessible websites can be found here.
+===Level 1 - Surface Web===
+This level is still accessible through normal means, but contains "darker" websites, such as 4chan or mydick. Batman can also be found at this stage
+
+===Levels 3&4 - Charter Web (This is where the "Deep Web" truly begins) ===
+This level is also divided in two parts. The first can be accessed through Tor. Things such as drug and human traficking, banned movies and books and black markets exist there. The second part can be accessed through a hardware modification: a "Closed Shell System". Here, shit becomes serious. This part of the Charter Web contains hardcore CP, experimental hardware information ("Gadolinium Gallium Garnet Quantum Electronic Processors"...), but also darker information, such as the "Law of 13", World War 2 experiments, and even the location of Atlantis. The further you go into Charter Web, be weary of unmarked surveillance vehicles in your area of residence. This level of the insics in order to achieve..
+
+SLY209. Theres always away around..
+
+Batm8 and Silvm8 are suppose to have planned there attacks on Silvm8's , Flatm8z here. Isreal government tracked this and silvm8 went offline on skype for a day. Bunny also stayed up till 2am the evening with night terrors. Usually he watches big brother then sleeps at 10pm UTC
+
+EVERYDAY I'M SHUFFLIN!!! BOOM!
+
+
+http://www.tomshardware.co.uk/forum/325334-10-closed-shell-system -- 
+
+Hello,
+Does anybody here know anything about "Closed Shell" hardware modification?
+Thanks.
+
+amuffin 01-31-2012 at 05:54:21 PM
+What do you mean by closed shell?? can you draw a picture? :)
+------------------------------ Intel Overclocking Club
+Intel Stock Cooler Installation Guide
+Thermal Paste Removal Guide
+
+silverliquicity 01-31-2012 at 06:07:41 PM
+
+closed and open shell as in electrons, neutrons, atoms and spacial partical wave length??
+
+or did you mean something else?
+
+
+Hack_0693 01-31-2012 at 06:09:13 PM
+
+I just dont know anything about it. I dont even know what it is. Thats why I made a thread over here.
+Sorry :(
+
+Hack_0693 01-31-2012 at 06:15:23 PM
+
+silverliquicity wrote :
+
+closed and open shell as in electrons, neutrons, atoms and spacial partical wave length??
+
+or did you mean something else?
+
+
+I am not talking about the shells in the atom.
+I only know that its a hardware modification.
+
+silverliquicity 01-31-2012 at 06:23:37 PM
+
+Well a shell in a computer is like a graphical user interface.
+
+But i don't know about any shell hardware modification, unless you mean kernel modification, iv never heard of it sorry.
+
+GlowBoxAdmin 03-12-2012 at 09:38:22 PM
+
+OP is making reference to the "second layer" of the "charter web", which is a bogus "secret" part of "the deep web".
+This dis-information about "the deep web" comes from a 4chan infographic that get's posted there every now and again when technologies such as TOR and I2P get "discovered" again by new users who have questions about these less-than-conventional networking technologies.
+The infographic claims that the first three "layers" of the deep web consist of anything from normal content, to unindexed web pages, and other hard to find pages (but omits actual "deep" content like dynamically generated pages)...but still all common HTTP traffic.
+The "charter web" is sub divided into two "layers"...TOR hidden services (which do often contain "dark" material, such as underaged pr0n and drug smuggling contacts) and the second layer which consists of "deeper, darker content that requires a closed shell system hardware modification to access"...
+
+90% of the infographic OP is referring to is disinformation, though, spread by either troll who want to make him look stupid, or by criminals who use TOR and need to generate extra network traffic as to make statistical analysis of that network more difficult by law enforcement types. Going even further, a firm grasp of the TCP/IP model will tell you that, yes, network protocols are "layered", but not in the sense that this infographic states...in reality, a TOR packet is layered like so:
+
+(Application layer data; i.e. HTTP, SSH, FTP, etc.)
+(TOR onion routing data...read more about it from the TOR project website)
+(TCP headers)
+(IP headers)
+(Netork-access layer frames; i.e. ethernet, wi-fi specific encoding, etc.)
+Message quoted 1 times
+
+Anders Willson 06-09-2012 at 03:49:04 AM
+
+GlowBoxAdmin wrote :
+
+OP is making reference to the "second layer" of the "charter web", which is a bogus "secret" part of "the deep web".
+This dis-information about "the deep web" comes from a 4chan infographic that get's posted there every now and again when technologies such as TOR and I2P get "discovered" again by new users who have questions about these less-than-conventional networking technologies.
+The infographic claims that the first three "layers" of the deep web consist of anything from normal content, to unindexed web pages, and other hard to find pages (but omits actual "deep" content like dynamically generated pages)...but still all common HTTP traffic.
+The "charter web" is sub divided into two "layers"...TOR hidden services (which do often contain "dark" material, such as underaged pr0n and drug smuggling contacts) and the second layer which consists of "deeper, darker content that requires a closed shell system hardware modification to access"...
+
+90% of the infographic OP is referring to is disinformation, though, spread by either troll who want to make him look stupid, or by criminals who use TOR and need to generate extra network traffic as to make statistical analysis of that network more difficult by law enforcement types. Going even further, a firm grasp of the TCP/IP model will tell you that, yes, network protocols are "layered", but not in the sense that this infographic states...in reality, a TOR packet is layered like so:
+
+(Application layer data; i.e. HTTP, SSH, FTP, etc.)
+(TOR onion routing data...read more about it from the TOR project website)
+(TCP headers)
+(IP headers)
+(Netork-access layer frames; i.e. ethernet, wi-fi specific encoding, etc.)
+
+http://deepweb.wikia.com/wiki/Levels_of_the_Deep_Web
+=======================================================================
+
+https://thebotnet.com/guides-and-tutorials/49828-how-to-access-the-hidden-wiki-13.html -- 
+
+
+http://www.abovetopsecret.com/forum/thread800149/pg1 -- 
+
+posted on 21-1-2012 @ 02:41 PM by UkRandom
+tor and privoxy wont save you from whats hidden
+if your unfamiliar with anonimity online stay away from the deep web as i guarantee it will come back and bite you in the ass
+
+you think tor and provixy dont have backdoors?
+
+also most users wont ever get past level3 on the deep web and if you dont know wtf im talking about stay away from tor as you will just end up another corpse on the digital burial ground
+
+deep web is not a game and WILL come back to haunt you
+depending on what level you reach
+
+enjoy your surfing!!!
+
+
+This level is the one you browse everyday: YouTube, Facebook, Wikipedia and other famous or easily accessible websites can be found here.
+
+Level 1 - Surface Web
+
+This level is still accessible through normal means, but contains "darker" websites, such as Reddit.
+
+Level 2 - Bergie Web
+
+This level is the last one normally accessible: all levels that follow this one have to be accessed with a proxy, Tor or by modifyig your hardware. In this level you can find some "underground" but still indexed websites, such as 4chan.
+
+Level 3 - Deep Web
+
+The first part of this level has to be accessed with a proxy. It contains CP, gore, hacking websites... Here begins the Deep Web. dicks an weiners are second part of this level is only accessible through Tor, and contains more sensible information.
+
+Level 4 - Charter Web
+
+This level is also divided in two parts. The first can be accessed through Tor. Things such as drug and human traficking, banned movies and books and black markets exist there. The second part can be accessed through a hardware modification: a "Closed Shell System". Here, things becomes serious. This part of the Charter Web contains hardcore CP, experimental hardware information ("Gadolinium Gallium Garnet Quantum Electronic Processors"...), but also darker information, such as the "Law of 13", World War 2 experiments
+
+Level 5 - Marianas Web
+you dont need to know what level 5 is because you will never find out and if you do..your allready dead
+
+posted on 21-1-2012 @ 02:45 PM by trollz
+reply to post by UkRandom
+
+
+Oh no guys, we have a badass over here.
+
+Seriously? You just took that information from a poorly-constructed mock-informational and pretended to be some kind of know-it-all. And yes, I've seen it. 
+
+
+
+ImageMagick : ?? 700x2100 ??
+convert -crop 700x1050+0+0 LevelsOfTheDeepWeb.png LevelsOfTheDeepWeb-part1.png
+convert -crop 700x1050+0+1050 LevelsOfTheDeepWeb.png LevelsOfTheDeepWeb-part2.png
+
+convert -crop 425x283+0+0 D898_4F1825E2-reduced.jpg D898_4F1825E2-reducedPart1.jpg
+convert -crop 425x283+0+425 D898_4F1825E2-reduced.jpg D898_4F1825E2-reducedPart2.jpg
+convert -crop 425x283+0+950 D898_4F1825E2-reduced.jpg D898_4F1825E2-reducedPart3.jpg
+
+	Objet: 	Rep :["Closed Shell System"]
+	Date: 	13 juillet 2012 14:57:52 GMT+02:00
+
+
+http://jjie.org/silk-road-deep-webs-darkest-corner/88570 -- Traveling The Silk Road to the Deep Web's Darkest Corner
+Written by: James Swift on Jun 27, 2012
+Via a popular online service, cocaine, prescription pills and heroin may just be a mouse click away from reaching your child
+
+There is a scene in Steven Soderbergh's 2000 film Traffic in which a teenage girl says something that has become, for the most part, a generally recognized truth about high school.
+
+"For someone my age," the character says, "it's a lot easier to get drugs than it is to get alcohol."
+
+Indeed, typing the term "easier to get drugs than alcohol" into a Google search box returns more than 12,000 pages, with thousands upon thousands of Internet users stating what many parents fear Ð that for their children, obtaining illegal drugs is anything but a challenge.
+
+What most parents are unaware of, however, is how the Internet is potentially making it even easier for youth to obtain drugs. In the 21st century, teens do not necessarily have to seek out dealers to procure marijuana or cocaine; in fact, scoring illicit substances these days could be as simple as turning on a monitor and making a few mouse clicks.
+
+At first glance, the Silk Road Ð a popular online marketplace Ð looks like any other website; just passing by, one likely wouldn't be able to distinguish the service from eBay, Craigslist or any of the myriad other electronic bazaars on the Internet.
+
+But a closer look at the site reveals that the Silk Road is anything but just another Amazon clone. Marijuana, cocaine, party drugs such as ecstasy, heroin and even some illegal weapons can all be traded, bought and sold on the site Ð which, fundamentally, can be accessed by anyone technologically savvy enough to find it.
+
+Dr. Monica Barratt of Australia's National Drug Research Institute said that Ð even for the ordinary Internet user Ð discovering how to locate the service isn't too difficult a task.
+
+"I think that anyone with average Internet and computer skills could work out how to access the site within half an hour or less," she said.
+
+"However, it is one technical hurdle to access the site and another entirely to work out how to purchase drugs, and importantly, how to purchase drugs in ways that do not leave behind a trail of evidence."
+
+The Silk Road, a service beloved by techies and loathed by federal officials, is every bit as enigmatic as it is controversial. As with the nameless, faceless constituency of Anonymous Ð the world famous cadre of hackers that frequently target government and corporate websites Ð even the FBI's most skilled trackers can have trouble fingering exactly who is operating the service, let alone where the physical location of the Silk Road's mainframe actually is.
+
+"I don't think that anyone except the owner/s know where Silk Road is being hosted," Dr. Barratt said. "Silk Road is a lucrative enterprise for the owner/s who take a commission from all sales, so I can only speculate that the owner/s would take great care to protect the site by continuing to mask the location of the hosting and any infrastructure involved."
+
+To many, the mystery of the Silk Road's ownership is irrelevant; what's important, they say, is that the site Ð somehow, someway Ð gets shut down.
+
+The service, once called the "Amazon.com of illegal drugs" by National Public Radio, was a major bull's eye in the crosshairs for legislators backing Ð and justifying- this year's failed Stop Online Piracy Act (SOPA), with New York Sen. Charles Schumer describing the site as the "most brazen attempt to peddle drugs online" he had ever encountered.
+
+The identity of who actually runs the service remains a mystery. Periodically, an administrator with the username "Silk Road" will post "official" statements on the Silk Road forums, and occasionally send what are essentially press releases to the media. According to the site's apparent "admin," what he or she (or potentially, they) provides is a relatively harmless service.
+
+"Over 99 percent of all transactions conducted within the escrow system are completed to the satisfaction of both buyer and seller, or a mutually agreed upon is found," the site's administrator has posted on the Silk Road forums. Even so, the operators of the service do seem to have their limits as to what can be sold or exchanged on the site.
+
+"Please do not list anything who's purpose is to harm or defraud, such as stolen credit cards, counterfeit currency, personal info, assassinations and weapons of mass destruction," one admin post reads.
+
+Attempts to shut down the Silk Road, however, have proven incredibly difficult for U.S. agencies. While officials shut down MegaUpload Ð a Hong Kong-quartered file-swapping service frequently accused of promoting online piracy Ð earlier this year, United States officials have had little luck in their efforts to yank the site down, or even in determining who is running the service.
+
+One reason it has been difficult to track down the physical source of the service is because, technically, the site isn't part of the World Wide Web most Internet users are familiar with. Instead of entering a URL into a search box, the only way users can access the Silk Road is through the use of an anonymity network. The most popular of these is called Tor. This network masks browsers' Internet Protocol (IP) addresses, which are specific numerical sequences that correspond to fixed geographical locations.
+
+Essentially, when users hook into an anonymity network, their actual locations are hidden from all but the most advanced analytic software, making third party tracking extremely difficult if not impossible.
+
+Andrew Lewman, executive director of the Tor Project, said that his company simply provides a service and the applications users find for IP maskers is something they have no control over.
+
+"Silk Road is just a website that happens to use Tor's hidden services," he said. "Tor's hidden services just give you an address, sort of like an IP address or a street address. What you do with the address is up to you."
+
+He said that the "deep web" Ð the portion of the Internet where sites such as The Silk Road are hidden Ð is a difficult concept to define.
+
+"People think of the deep web like an iceberg," Lewman explained. The average Internet user, he said, only sees the part above the water line, but the icebergÑthe whole of the InternetÑcontinues on deep under the surface of the water, hidden from view. "We generally call it the hidden web," he added.
+
+But Lewman is quick to point out that much of the deep webÑthe bulk of the iceberg under the waterÑis hidden for good reason.
+
+"Things like your bank account are included in the hidden web," Lewman said, "because you put a username and password in front of itÑprobably because you don't want Google" to add your bank account to its index of websites.
+
+Additionally, Lewman said that IP masking software has many security applications, especially for business data and journalists wishing to insure anonymity for sources.
+
+"The majority usage of Tor is by just normal people, looking to protect their privacy online," he said. "It's sort of unfortunate that the press and media seem to jump all over the negative uses far more than the positive uses."
+
+To insure optimal levels of user anonymity, the Silk Road service uses a transaction system that sounds like it was lifted from a science-fiction novel. Silk Road customers do not exchange physical money on the site, nor do they exchange goods via credit cards or other online banking services, such as PayPal. Rather, Silk Road users pay for items listed on the marketplace with a form of electronic currency called Bitcoins.
+
+"There are a number of ways that Bitcoins can be obtained and some of these ways differ between countries," Dr. Barratt said. While Bitcoins can be purchased online through credit cards and bank accounts, she said many users prefer to use throwaway credit-cards or gift cards to make their purchases more anonymous. After Silk Road users obtain Bitcoins, they deposit them into accounts, which are then filtered through a tumbling service built into the site. Although this makes transactions more difficult to trace, Dr. Barratt said that the process still isn't a completely anonymous one.
+
+"Bitcoins can be used relatively anonymously, like cash, but can potentially also be used in traceable ways," she said. "For example, if one bought Bitcoins with their credit card and then transferred the same amount into their Silk Road account to buy drugs, it may be possible to link these transactions through piecing together the amounts [and] the times of the transfers/transactions."
+
+While the computer know-how required to access the site and engage in commerce is most likely beyond the skill set of most juveniles, there is a possibility that more technologically adept youth could use the service to procure illegal goods. And even those lacking advanced technical knowledge don't have to search the Web for too long to find information on how to access the Silk Road, as a number of how-to tutorials are available and easy to find on video hosting sites such as YouTube.
+
+"I think that a teenager with modest technical skill would be able to access Silk Road, though it may be a bit more difficult for them to access Bitcoin in order to actually make a purchase," Dr. Barratt said. "There are no age restrictions on Silk Road, not that age restrictions ever stopped teenagers from accessing other websites with restricted content."
+
+Dr. Barratt said that although the packaging used for Silk Road deliveries are usually intended to fool mail delivery systems and law enforcement agencies, she believes that the ultimate safeguard against the service may be mom and dad themselves.
+
+"Of course, the drugs then need to be sent to an appropriate postal address," she said. "For teens living at home, it can be a little harder to control who opens your mail."
+
+
+http://jjie.org/drugs-child-pornography-hit-men-minutes-deep-web/16331 -- Drugs, Child Pornography and Hit Men: 10 Minutes in the "Deep Web"
+Written by: Noah Echols on Jun 8, 2011
+t 14 I stood chest-deep in a cold swimming pool with a scuba tank strapped to my back. The mask covering most of my face, I plunged my head below the surface in an effort to learn what it feels like to be able to breathe under water, step one in training for scuba diving certification. I looked around the pool, seeing only the legs of the instructor before I lunged upward for air. As I wiped the chlorine from my eyes the instructor asked, "what happened? Why didn't you just breathe?"
+
+I had grown up around water, learning to ski not long after learning to walk, but breathing under water just felt strange, unnatural.
+
+Yesterday, some 15 years later, I had a similar experience. A popular social networking site was abuzz about the "deep web," this seemingly mythical internet underworld supposedly filled with drug lords, pedophiles, hackers and hit men. I spent much of my evening reading blogs and forums that explained that the websites that are searchable by search engines such as Google make up just 1% of the content on the Internet. But just out of plain sight, accessible only through certain browsers, is an internet wasteland, an underbelly to the web where old websites go to die. Because this part of the web is difficult to access, it has become a hub of vile and illegal activity, the Internet's subconscious.
+
+Part of me wanted to believe that it was hyperbole. Surely there weren't actually child porn ads and forums for posting murder requests out in the open. But I, like most of society, was so very naive.
+
+I work in technology, so I had to find out if this place was real. After all, it was a digital adventure, and hopefully it would show that the web is a wonderful place. I downloaded software that makes my on-line activity nearly impossible to track, a necessary step for accessing these sites. I configured my computer according to the strict instructions I had found in these forums so that I would be protected against hacking attempts. And with all of this software strapped to my proverbial back, I plunged into the deep web.
+
+There is no way to find sites in the deep web, so everything is shared organically through forums. I accessed one such directory that was mentioned in one of the articles I had read. As I clicked just a couple links to see what this world contained, I had the same feeling I experienced underwater as a 14-year-old. I had been there too long, I couldn't breathe, and it just didn't feel right. With enough knowledge to prove that this world does indeed exist I closed my computer so I could compose myself.
+
+My hands shook as I realized just how disgusting this world really is. Like most middle class Americans my world is sheltered, walled off by a genuine desire to believe that there is order, that people, for the most part, are good. But what I learned is that, given the opportunity to remain completely anonymous, people will participate in horrific things.
+
+I believe in liberty as much as the next guy, but something has to be done. What are the governments of the world doing to regulate this massive underground market? Children are being abused because the images of that abuse are currency in the deep web, being traded for cash, drugs and services while the children suffer alone. Lives are being ruined, and no one is talking about it.
+
+You will find screen shots below of what can be found on these hidden websites, but I urge you to stay away. I have purposely avoided using the names of programs or websites so as not to tempt you to go looking. Not only is most of what you will find illegal, it will leave you shaken.
+
+Write to your Congress-person or a human rights organization and ask what is being done to combat this epidemic. As long as society pretends it doesn't exist, the more lives will be ruined.
+
+
+
+
