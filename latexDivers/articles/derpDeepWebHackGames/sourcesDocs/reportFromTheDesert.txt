@@ -1,0 +1,539 @@
+[ http://reportdesert.blogspot.fr/ ]
+
+
+==title Large==
+===title large===
+__italic/emph__
+___bold___
+____small____
+
+
+Thursday, December 02, 2004
+
+The first rule of the desert is: you don't know where the desert starts or finishes.
+
+the second rule is: you don't really know where you are when you are in the desert.
+
+posted by rd @ 5:56 AM
+
+Standed in this damp city makes my bones freeze beyond recognition. It's also hard to brathe normally, very much like the very hot weather of the desert.
+
+Take out the zire from the coat pocket and read a few pages of the book of the month just to kill a little time. I don't concentrate on what I'm reading, instead I think about the best way to get these local people to cooperate in my mission. It's not always like this, but today, this is how I feel; kind of lost in too many doubts and too much humidity.
+
+I wonder how long does the winter lasts around here... I Hope not too much. But anyway, I'm only here for a week or two...
+
+posted by rd @ 5:36 AM
+
+Sunday, October 24, 2004
+===Possibly to discard...===
+
+Algiers is quiet this time of the year. Meaning; not too many tourists.
+
+posted by rd @ 9:46 AM   0 comments
+Thursday, October 21, 2004
+
+===the story so far...===
+
+==report from the desert==
+
+===clark-nova or martinelli?===
+
+The first day began with a cloudless sky above my head. No wonder people can't fly planes on this day.
+The sun is just too bright and hot. The typewriter has the shield cover with an abnormal temperature.
+And there's nothing better on a hot day like today than hot typewriter's covers. White in color.
+
+But the main aspect about today is the arrival of a movie celebrity to this old forgotten city surrounded by the desert. And it should come as no surprise that the person in question tried to contact me early this morning. Or so the owner of the dirty motel I live in told me when I came down to have some food and a cup of coffee before going out.
+There's a newspaper in front of me but I'm not in the mood for bad or good news. And this heat is only making it worst for my brain.
+
+This KDE thing is a bit sluggish on this old typewriter. Slower than MacOSX... Actually, much, much slower...
+
+And the story goes on and on until the sun sets down on the horizon. One more thing: the trees that sometimes circle an oasis are not the tree from heaven as someone in last week's New York Times said...
+
+I wish I had some other appearance. I wish everything would be differrent.
+I wish I could be dead. I wish I could be someone different.
+
+And altough this KDE window manager is very slow, I'll still keep using it for as long as it takes. I do not know how long but I guess it will be one week or so.
+
+There's nothing more real than a Coca-Cola can or bottle in the hot summer time in Europe. It's a bit different here in the desert.
+
+I wonder if ___GhostInTheShell___ is known around these territories... I guess not. Maybe one or two persons know about it and Project 2501. I'll have to check it in the coming days and weeks. I was looking the other day, on the MatriX, for a wallpaper with a picture from GITS... No luck, no good pictures...
+
+Just inserted a Sepia version of "waiting for the CargoBoat" picture. It looks good here in this report. While listening to PlastikMan latest from 2001. The New York year.
+
+I'm watching The MatriX for the third [???] time. I wonder if I'll be able to watch MatriX Reloaded... I guess it will come out next year. I guess it won't be as good as the first one, just like almost any sequel done in Hollywood...
+
+Testing the GIMP here on KDE. It works quite well, as I expected, gotta make a shortcut...
+
+Have the XLoad app on the desktop right next to the XClock app. True UniX appearance... But it seems to crash KDE when I tried to launch with these two apps to start automaticly on startup.
+
+Just changed the colors of the appearance to BeOS yellow. It's brighter and happier.
+
+This is my original ___typewriter___. I have brought it to this desert along with the iBook. Just in case this shithole city runs out of electricity, this way I have an option to get the reports out.
+
+Well this is another day. And the sun is still shining hard in the sky. So the rain is still very far away from these lands...
+
+--bullet--  Everybody's talking about weblogs these days. Google just signed some contract with some company that publishes weblogs on the MatriX...
+
+--bullet--  I'm on 85% zoom. The MatriX wallpaper on the desktop. The fact is that I'm only using this KWord processor because of the LucidaTypewriter font which is beautifull. Good for writing professional reports. And "Professional" even with all this heat. The desert has it's own weapons. Intense heat during the day and extreme cold at night.
+
+--bullet--  Listening to The Sisters of Mercy live somewhere in Europe on my rotten stereo. It helps to pass the time until it's cool enough to go out and have a cup of tea or a coffee or whatever...
+
+--bullet--  The night is setting in. The cars are growing in number, and so is their noise. By the time we reach midnight there will be less car noise. Still listening to SOM... Temple of Love with the late Ofra Haza. On the street in front of me people are walking like it was the end of the world. It seems that people around here are very stressed.
+
+--bullet-- And here I am again with the afterstep window manager which is a lot lighter than KDE... And thank god for that. And it's based on modules... How original!!!
+
+Ah... This is much faster than KDE. And now I know how to configure things here. At least some things...
+
+I loged on to the MatriX to read some stuff at firstmondays.org. I'm reading an article on hyperlinks. Good stuff. And there's another one on CyberTerrorism... The terrorist from september11 didn't used encryption on their emails... Ping and Spray, two funny commands... I'm reading an article on the command Ping. How to smurf with Ping... They have no info about Windows2000... It's a shame...
+
+Back in NeXtLand. Black and white with a few spots of color. That's what I call this AfterStep interface. It's not pretty, but it's elegant and stable... And altough, this KWord isn't fast, the rest of the interface is quite responsive. Not as responsive as Aqua, of course...
+
+Some guys in USA took a picture of the space shuttle Columbia minutes before it broke apart with a cheap telescope and an 11 year old Macintosh... Old technology still has a lot to do. This AfterStep environment feels like 1991 or whereabouts. It's a relic from old times.
+
+And on this desert I now own a ___SGI portable___ computer. I traded my old ___iBook___ for this almost new SGI book. It's not faster than the iBook, it's even a little slower, but it has a larger hard disk. And that's what I want right now. I traded the iBook for this SGI in a downtown café near the main avenue. A man was with this portable SGI and he was talking to the waiter telling him that he wanted to sell this ___orange___ SGI ___laptop___. I overheared the conversation and asked him if he wanted to swap computers with me. He then looked at the iBook and got very interested on the operating system which is simply a mixture between elegance and sheer beauty. The OS of this SGI is IRIX 6.5 which is also a Unix based OS. He got interested and traded the SGI without a hint of remorse. An hour or so later, after a small trip to my room to connect to the MatriX to upload all the documents in the iBook, we closed the deal. And I must say that I like this SGI better than the iBook. I don't really miss the Aqua interface of OSX, better looking than this SGI one. But this portable feels more robust than the iBook. A feature that everybody needs badly when living in the middle of the desert. One has to be very carefull about the sand. It's thin and it gets to places one would not imagine in a normal world... Just remembered one strange fact about the deal with the portable computers: the guy that took my iBook gave me a french magazine titled SVM that covers such subjects as photography, computers, video, film and literature, among other various subjects... I didn't understand why, but the magazine is siting on top of the only table I have in this cheap room. I also own 4 new CD's with the SGI. It's the system software and applications. Checked the MatriX for instructions on how to install the IRIX OS from scratch. It's hard, confusing and an utter mess. But I guess I'll never need to install it from scratch, let's hope not. Unless I'm in the mood for that.
+
+One of the records I brought along with me to this desert is "Rio" by duranduran. The windows decoration on this SGI looks a lot like the album design colors. Weird... And it's one of my alltime favorite albums. But that's not what's playing right now, I'm listening to the Sisters Of Mercy "First and Last and Always". This color scheme reminds me also of the Solaris OS from SUN computers... Memories of Panasonic machines being controlled by american SUN/Solaris machines. Well those times are gone behind me now, but nevertheless, they were good times. Well, sometimes... Black Planet, the first song from the Sisters album reminds me of that Solaris OS, don't know quite why, though... But someday I'll find out, I just know it. And I guess I'll find the answer to that in New York, maybe in Manhattan... This SGI is a portable suited for terrorists. That's just my opinion or impression... Or whatever you want to believe in...
+
+Just went downstairs and there's a russian film on television. Andrei Tarkowsky, I think... The film has some Civil war in Spain footage from the 30's. All along with a gipsy song soundtrack. I wonder how old is this film... A woman turning pages and pages of an old photograph book... Classical music as the soundtrack... All in wonderfull black and white. But the most part of the film is in color. I can see that now. I've been staring at this film for more than half an hour now. The film is somehow inspiring me... Isn't that what films are made for? I wonder what the hell the director thought when he was making this film.
+
+I wonder how old this SGI is. At least three years... I forgot to ask that to the old owner. But this model has been around since 1999 at the very least, maybe sooner, I don't really know. I guess I could google for it, but I'm not in the mood right now. I'll just watch a little bit more of the film. And then, maybe I'll go to bed and read a few articles of the french magazine. And look at the photos... There's a very interesting photo of a woman in a french café, maybe in Paris, with a laptop on a table and people siting in another table talking or whatever they are doing. Interesting and inspiring. I'll have a look at that article later on.
+
+A big explosion in the film. A loud noise. Bright colors. Nobody in this room is watching the film now. I'm the only one, I guess. But they're all listening to the soundtrack and the voices of the actors. It's not that strange as it seems. It almost seems that everybody is dead... At least, not living as they should... A voice inside my head whispers: welcome to the desert, these are it's people. Get used to them...
+
+Sometimes I wonder if I'm writing good reports. I never get any feedback and that doesn't help my writing. I wonder what really does help my writing... My inspiration? My awareness?
+
+===sleeping cells===
+
+The SGI is performing rather well. It is surprising me in a good way. And it doesn't get too hot like the iBook did. It's a little bit slower than the iBook, I believe and, somehow, feel.
+
+I'm going away for 8 months on a cargo boat. Don't know yet the destination but it should be the Artic somewhere near Russia or Alaska. I'll find out when the trip ends... The ship leaves in two weeks and I'm not yet ready. The main object I'll take on the trip will be this laptop.
+
+Maybe then I'll find the time to finish SFinally... And that's if I don't get sea sick.
+
+Somewhere in ___Paris___ there's a woman waiting endlessly for me. That's what the future whispers in my ear. I believe that. I have to. I f I don't, I guess I won't be able to live anymore.
+
+That was done in MacOSX in the TextEdit app. Yes, this IriX OS has a MacOSX emulator. Not as fast as the real thing but acceptable.
+
+So, let's try out Netscape 4.9 with an IriX twist just to see what can I do with this... The report will go on in a few lines...
+
+So this Kaleidoscope theme is very desert-like... It has the feel of desert sand, or of beach sand, who really knows? Anyway, the Xdarwin version of the IriX/SGI look is somehow different, with the Rio theme. This OS9/Kaleidoscope theme is called True IriX and... Well, that's it. A laptop with OS X, OS9 and XDarwin with SGI theme... Well... Let's go on.
+
+I'm in the mood for OS9... Maybe in a few minutes... Just been there but returned after two minutes to OSX and to this ___Composer4.9___.
+
+Well, there's always this problem with intense heat here in the city. People, locals, told me that the temperatures only lower a bit, just a few degrees, not much, in the months of December and January. And since this is April I still have a lot to wait for. Unless I make the boat trip to the artic. And it seems like that's gonna happen. I'm getting ready for that. Not that I will take a lot of bags, no I don't have them and I've always liked to travel light...
+
+Tonight I'll go out into the city to discover a nice pub/bar that I'll feel confortable in. That's not too much to ask. I'm hopefull on finding a good bar. It must have arabic music as the ambient music, that's one of the reasons I came here for in the first place. The days of VonMagnet and the PeterMurphy Dust. I heared some nice ambient music on the local cybercafé, the "___L@Red___". The owners are spanish and speak fluent, for a spanish, english. They also have one SGI computer there, an Indigo with IriX 5.something... It's a bit slow but it always gets there on the MatriX, it's been my favorite computer there along with the ___G4Cube___ from Apple. The other computers there are just trivial... Sometimes I just go there for a cup of coffee and no MatriX time. Just to pass the time and look for other agents, I heared that L@Red was used as a meeting point for some european agents. I guess I alreday spotted two of them, but I'm not too sure. I'll have to be more aware about those kind of things. Maybe one day I'll find WilliamBurroughs there as well with his ___Clark Nova___ or ___Martinelli___...
+
+The streets are empty. Only a few cars pass by once in a while. It's the desert, I guess...
+
+On the desk of the hotel lobby I found a french magazine with an interview with ___Jean-Louis Gassé___ from Be Inc. The magazine dated from June 2000. Nothing really interesting, it was made during the hallucination times of BeInternetAppliances. How wrong was Be? A lot. They declared the extintion of Be Inc. in late 2001, just after the World Trade Center collapsed. Well, even if the terrorist attacks didn't occur, Be would have died anyway. I still have the last version of the OS installed back home in my AMD Duron 800Mhz desktop computer, BeOS 5.0.1. It is a good OS, very fast, very responsive. And there's a XML editor from out of this world called EnglishEditor2 that runs on BeOS5. It was with EE2 that the Koncorrrde files began being written. I still have those XML files archived here on the SGI laptop. Netscape is the only app that opens them well, with the correct character encoding [ UTF-8 ]. BeOS5 had something magical about it just from the simple fact that the boss of Be Inc. was from France. All the europeans felt a good vibe towards that operating system. It mades us [europeans] feel like the americans... A bit, yes. Even though, that's definetly not a good thing.
+
+Listening to Black Planet from the Sisters 1st. So Dark all over Europe... Highway 101... Homesick? Well, no.
+
+If I'm to go on that boat trip I have to take a bus or a plane to Tangier in Morroco. Not a critical thing, in my opinion. If I go by bus it will take about two days and 3 hours by airplane.
+
+There's a little café just down the street that has the New York Times everyday for the public to read. It's always yesterday's edition, but it couldn't be better in this part of the world.
+
+There's a poster of the slogan "___Everything you know is Wrong___" in my desk. I like it, it's been a guiding line in my life. That's another reason for me being here in the desert. I think about that slogan countless times. It's enlightening for me. And sometimes it's disturbing and distressing.
+
+Someone, an english lady of about 50 years old staying here in the hotel in holidays, asked me if I was interested in buying a NeXT Cube from 1993. She noticed this SGI laptop and began talking to me imediatly. The price she asked for it, postage included, was 1000 Euros. I guess I'm not interested. What I need is a laptop not a desktop.
+
+Remembering an old PeterMurphy album from 1992 or 1993 called Holy Smoke. Track5 is particularly good, it reminds me of Bauhaus atmospheres. Dark and mysterious... The Dust album also came to my mind.
+
+There's always something around that reminds me of the desert. I know it's all around this city, it's almost clautrophobic. And strange. Like a room full of typewriters... Like a day with too many clouds and no rain. Like a lost memory that comes back once after too many years hidden. A stranded ship on an empty ocean.
+
+The owner of the hotel just showed me his VHS film collection. He has a copy of ___Naked Lunch___!!! I almost fainted when I saw that! I'm watching the movie now in my room. It's been more than 5 years since I last saw this film. And I saw it two or three times. The Clark Nova and the Martinelli typewriters are fabulous!!!
+
+I go out. I leave the hotel by 10PM. I take a cab and ask the driver for a good bar downtown. In less than 10 minutes I'm standing at the door of "___L'Aura Automatica___". It's a very well decorated bar with arabic ambient music. Just what I expected, and somehow, needed.
+
+The bartender tells me after my second shot of whiskey that someone from Russia wants to speak to me. How the hell does anybody know I'm here??? That's still a mistery to me... And he tells me that the russian agent will arrive shortly at the bar. I wonder what the hell he or she wants from me. At this moment I don't have the slightest idea. I wait for 20 minutes untill the bartender tells me that a russian lady, seated at the other end of the bar, wants to talk to me.
+
+She tells me her name. Natacha is from Gotalonia, a lost city that nobody knows exactly it's location. It's in the north, she tells me, but I guess everybody from Gotalonia says that inspite that the weather there has nothing to do with the northern countries, there's a lot of heat in GotaloNia. It's a mistery city. And I want to go there.
+
+She's not from russia. Or so she told me. she was born in magicland; ___GotaloNia___. She's a real Gotalonian. I believe her. So what's the buiseness with me? Well, her answer is somehow vague and unclear. She wants me to test a secret NeXT laptop in Gotalonia. I never heared of such machine and I guess this is a setup made by someone who wants to see me dead. I guess I'm too suspicious... I do trust her. I made an arrangement for a meeting with her tomorrow at my hotel. I guess I'll have to leave the boat trip for a later date. And if there is a secret NeXT laptop, I'll have to try it. I'm really curious.
+
+There's always too many people in the hotel. It's not a quiet place, even in the night. Sometimes it's a group of russians, or servs or french or german, all kinds of people. Tonight's one of those nights. There's a party downstairs. I decide to go and see what's happening there. The music they're playing right now is hardcore techno. Such a bad taste.
+
+I spend about an hour with a group of german people in their 50's. I drink a lot of vodka in that time, then I decide to take a walk outside. Just to clear things in my mind. And it helps a lot, even if I smoked cigarettes after cigarettes. Someone at that party tells me about a NeXT laptop that was on display at a software fair in Munich a few years ago. So the computer really exists, inspite that every site on the MatriX tells the opposite... Maybe I'm dreaming or hallucinating... I'll find out when I'm in Gotalonia. I'm pretty anxious. I can't wait much longer. If that laptop exists, it should be a wonderfull machine. I'll have to buy a digital photo camera. Then I'll make a website about the NeXT laptop. It should receive a lot of hits...
+
+Meanwhile I return to the hotel and fetch my portable SGI tangerine [ from Tangiers-Morrocco ] and seat on the sofas near the lobby. I write a few pages about life in general. And that's just to clear things in my mind. A slleping cell is not a sleeping mind...
+
+===::: Since 16 March 2003 :::===
+
+Back into writing this report now on another application titled "___HTMLEditoR___" and previewing in OmniWeb browser, which looks great by any standarts. The browser was made for NeXTStep back in the 90's and is now available only for OSX. It's quite confortable to be able to use this LucidaGrande font face on the Tangerine SGI machine. It makes me feel more at home. An SGI laptop with a source html editor? Well, the world is a weird place with weird things.
+
+I have a different Icon for this report now. Made it with a shareware application titled Icon Factory. God, it's hot in this room; the temperature must me well above 45 celcius degrees. Extreme heat can be very annoying...
+
+Surfing with Konqueror... Well... It's rather slow. I prefer Chimera or OmniWeb. And with all this heat it becomes unbearable working with a slow browser. It makes me realize that I'm in a desert and I don't like to think about that... Altough all this sand is becoming more and more present in my life.
+
+I remember, when I was just an innocent child, noticing the size of the fonts in the books I read. I was very observant of that aspect. Every new book I started reading I imediatly measured the size of the font they used for print. I liked the small sizes better, I recall. That's one of the reasons I still use small fonts for all my reports. I'm now using the Apple Garamond font and it looks beautifull. Clean and elegant. The way all reports should be.
+
+There was, this morning when I woke up, a note about the NeXT laptop. It was obviously handwritten by the GotaloNian woman and it says: "please meet me at the lobby at 7:30. I have good news about the NeXT laptop. Do you know Corto Maltese?".
+
+Could I write this report with that machine? I think I'll know it in a few days or weeks. Meanwhile I'll google for this machine. Not sure what the results will be but I must gather some information.
+
+___Blade Runner___ in the desert. That's the film showing right now on the tv set of the hotel. The room is deserted, I'm the only person here. I watch the film with a great pleasure. And I think of large cities without deserts around them. I miss GotaloNia. And I miss a lot of people and a lot of other stuff.
+
+It's 7:30 and the woman from GotaloNia arrives at the hotel lobby. She tells me to follow her to one car parked outside where she has a NeXT Cube waiting to be unloaded. She helps me setting up the cube in my hotel room. She leaves and tells me that if I like the Cube I can have it for 600 euros. I have one week to decide.
+
+The ___Cube___ it's loaded with ___NeXTStep 2.2___ and is connected to one ___17" grayscale NeXT monitor___. The mouse and the keyboard are also original NeXT gear. There's only one MP3 file on the hard disk, it's "Hack Attack" by Sigue Sigue Sputnik. Since this music is from 1986, it's apropiate... Still, I wonder why this MP3 file was left on the hard disk, since there are no more personal documents there.
+
+A NeXT Cube was used to create the "http" protocol and the world wide web. It's the most famous achievement of this computer. The original Cube is on display in London at the computer museum. But this is just what I saw on the MatriX, I've never been there. And I guess I never will, never been too interested in London...
+
+I send all my reports to an email account from my SGI portable and download them into the NeXTCube in under 15 minutes. I'm at the very small desk on my hotel room typing away on the NeXT keyboard this report. I'm listening to Sisterhood's "Gift" album that I ripped to the hard disk of the NeXT machine a few hours ago. It's almost mid-day and the light that enters the window of my room is very intense. And it's very hot too, I'm sweating a bit. Not too much though... I'll have a shower before I go out to have lunch. Right now a cigarette is burning on my lips. A small step towards personal destruction. There's a mosquito flying around the screen and that's annoying me. Another heat induced problem. But what did you expect being in the desert?
+
+The machine is not blazingly fast, it only has a 25Mhz processor, but it performs most tasks at a very reasonable speed. And word processing, or report writing, is not that demanding from the processor. Even when I scroll back and forth between pages of a document. It behaves as I expected it to behave. It takes about two to three seconds saving a text document, so it's not as bad as someone would thought of a 25Mhz computer. Maybe because there are 64MBytes of RAM being used everytime by the computer.
+
+First track "___Jihad___". I hope none of the people here will know why I love this track so much. I guess not... I'm making less and less sense in this report. This track has the strenght of a thousand voices... A wild call to "Jihad" in this city in the midlle of the desert... And it blends well with this black and white NeXT user interface.
+
+::: There's nothing here but my hotel room, my SGI laptop, the NeXT Machine and extreme heat. All else is desert. At least to me. And it shouldn't be like this at all. And this report is part of that desert too. It's sparse and full of sand. And does it really matter to me? I guess I'll never know. Well, let's continue. :::
+
+Although I write most of this report on the SGI laptop I'm also very fond of the word processor of the NeXT machine. It's called "WriteNow" and it's on the version 3, at least on this machine, and it's very stable and elegant along with the overall feel of the system [NeXTStep 2.2]. Another reason for me to like this machine. Enough about the NeXT. Let's change subject...
+
+In a desert you don't have many choices. You can't do anything. You are forever stuck with a few possibilities. Liberty is almost gone. "Where to?", well, that's still is a mistery to me. But I still have acess to the MatriX, and I still have my laptop... And for a few days or weeks I'll still have this vintage NeXT Cube. Paradoxal, I believe. But, nevertheless it is true.
+
+I go down to the hotel bar to have a cup of coffee and to get a sense of the general atmosphere today. The bar tender tells me that the news in town today is that they're expecting Madonna to arrive here at the hotel with a few dozen people. She's supposed to start filming a musical video clip for her new album. I wonder if that's true. I wonder if she'll like this shitty hotel, but I guess she's been used to it during those poverty years of hers back in New York City. He tells me that she's arriving here tomorrow and that they prepared 4 rooms for the people that she brings along. But not all the people that comes with her will be staying here, only the top important people will... The rest of the video team will be staying at an even shittier hotel two or three blocks away. I wonder how long will they take to shoot all the scenes for the video... I guess they'll be gone in two or three days at maximum. But that's just my impression, things may be very different, you never know...
+
+Another bit of news that the bar tender gave me left me with a surprised look. There's a cybercafé in town! It opened a week ago, or so he tells me, and it's very cheap. I decide to go there this afternoon. I'm told that the café opens at 4PM and closes at 1AM. I'm really curious about what people should I find there... And what kind of machines, and how many, do they have there. The bar tender doesn't know the name of the cybercafé but he knows where it's at. Right in the center of the city, I know the street well because I used to go to another very small café located nearby on that same street.
+
+I have a light meal and a big cup of orange juice, it helps me to get away from the heat. I look around to sense the atmosphere of this joint. Everything's calm and quiet... Another quiet day in the desert.
+
+___"Reminiscences N° 1"___
+
+I'm on the plane to GotaloNia. The year is 1999. The flight began a little more than 20 minutes ago, maybe half an hour ago. I'm feeling pretty homesick. I can't wait to walk again on GotaloNia... And I'm going to GotaloNia mainly becase of one very rare NeXT LapTop that some people are going to sell me for a just amount of money. And then... Boom!!!
+
+___End of "Reminiscences N° 1"___
+
+Life in the desert goes well. All the heat is just an excuse to slow down all kinds of activities. Including all room service activities. I ordered a thermus of tea almost an hour ago and they didn't bring it untill now, so everybody's on slow motion... The NeXT Cube doesn't complain about the hot weather, after all, the 25Mhz processor doesn't produce that much heat.
+
+___ ____::::::::::____ ___
+
+___A few weeks later...___
+
+The heat is unbearable. And there's very little I can do about it.
+
+This is not Iraq or Jordan or Saudi Arabia or even Algeria, this is a desert in the middle of the desert, much like GotaloNia... This is nowhere lost between nothing at all. Even the people in this place seem like ghosts sometimes. All dressed in white with stains of dust all over their clothes.
+
+___ ____::::::::::____ ___
+
+The most useful application in the universe is called LaunchBar and runs on NeXTSTEP. I have it installed on this Cube. Just hit "command"+"space bar" and type whatever document, folder or application you want and then hit "enter". It's as fast and simple as that. And LaunchBar learns from your habits so, for instance, if you wanna launch the texteditor you just type "t" and hit "enter" afterwards. How cool is that? And there's a version for Mac OS X too.
+
+Cigarettes taste good with this heat wave. I can never get enough and, as a result, I'm smoking more each passing day. Which reminds me that I have to send this week's report today and the internet connection has been failing a lot for the last couple of days. But I don't really care if I send it in two or three days from now. I guess it won't make any difference since the report itself has very little substancial items in it. Basically it's just a wild bunch of random thoughts and observations.
+
+The sweet sound of Trance. It's been a long time since I last heard trance. I guess, more than a year now. Dream induced music? I guess so. I wonder what it would be to have a rave party in this desert with these people... Crazy night, I guess.
+
+___ ____:::::::::::::::::Last day of August 2003:::::::::::::::::::____ ___ 
+
+Just received an email from my "upper contact" asking my opinion about having a weblog for the report from the desert. At first I thought that was a stupid idea. But now, on second thought, I tend to agree with that choice. It would save me the pain of not logging in to the mail server, since I have almost no problems dealing with the worldwideweb part of the MatriX. So I'll open up a free website to post the reports which will have a bi-weekly appearence on that site. I guess the boss will be happy...
+
+Just created a website and uploaded the first report; just two or three short paragraphs. Everything went out smoothly. The tool I'm using to create them is the very good OmniWeb SourceEditor. Very simple and elegant, just what I needed for the reports. OmniWeb is the best browser for the NeXTSTEP environment. It's on version 3.5 for this OS while it's already on version 4.5 for the MacOSX systems. But this old version works just great for my needs. I'll have to look for an iBook with OSX installed, just in case something goes wrong with the NeXT Cube. And because I miss OSX... Even though, OSX is just an evolution of NeXTSTEP.
+
+I love writing HTML documents in text editors. It gives me total control on how the page will be presented. There's too much heat for me to go to the streets, I'll have a nap instead. Sleep repairs a troubled soul, or something vaguely like that. And with a change of subject like this, it sure will do me good.
+
+And this NeXT machine is behaving like no other that I've owned before. Rock solid, or maybe like steel... Heat, sand and whatever is around me. Confusing further and further my mind. I guess it will never stop, I mean, this mind decaying... What I am saying here? Nothing, I guess...
+
+___ ____:::::::::::::::: another small intermission ::::::::::::::::____ ___
+
+The situation around here is pretty quiet. Nothing really develops here. There's no evolution or the slightest signal of life. Everybody seems to mind their normal day to day lives and nothing more. Not even in this hotel the tourists seem to be doing anything special. Everybody seems dead... This is starting to feel like a zombie city. I guess I must go, as quickly as possible, to GotaloNia... I've been thinking about it for the last few days.
+
+Here I am again in this desert. Trying to figure out what the hell these words are for. I guess I'll never know, so I'll just type away and never give another thought to what I'm writing at any given moment... This is getting more and more confusing. Stability of the mind. A big subject. The NeXT Cube sits there on the table, quietly. Je suis fatigué...
+
+This is starting to feel very weird. I mean, this report. It has lost all logic thought that was supposed to be here. Where did it go? I wonder if it'll ever come back. By the way, rain started to fell on the desert tonight. I wonder if it means that a much cooler weather is coming toward us... I guess not, the hot weather will be with this desert for a long time, maybe except at night... Which is a big stress for the NeXT Cube and all of its components. But it will handle it just fine, I'm pretty sure about that. And I'm sure that, in a few days, I'll be heading to GotaloNia...
+
+I'm trapped inside this fucking desert for too long. Going to GotaloNia to test the NeXT portable. The ultimate myth. The dream machine that drives my will without my knowledge. I'm too tired of this heat and this emptiness that is this desert. I feel like Corto Maltese. I feel the call of the wild, whatever that means... I guess it means that for me the "wild" is spelled "GotaloNia". I look up on a website the timetable of this weeks flights. I choose tomorrow as the date. I make a quick phone call for a ticket reservation and then start to pack one suitcase. That's all I need; that and a rain coat. You never know how's the weather in GotaloNia. Sometimes it's very hot like the desert and sometimes it rains for two weeks without almost any break. It's very unpredictable, especialy when you think about the fact that GotaloNia can be in the southern emisphere or near the equator or sometimes near one of the frozen poles. That's a weird shit about it. I wonder how the pilots of the planes that fly towards GotaloNia, like the one I'll be taking tomorrow, know exactly where the city is at... Weird shit like that will never stop making me wonder. And I thought about this a lot of times before. I just don't understand. I guess I have to think harder.
+
+I wonder if it's raining there. I wish it were. What really worries me now is the state of mind that I wil face when I arrive there. I hope I'll feel better.
+
+___ ____::::::::::::::::: another small intermission ::::::::::::::::____ ___
+
+___ ____::::: The trip to GotaloNia is postponed :::::____ ___
+
+___ ____No reasons why, apparently...____ ___
+
+Sand fills every hole visible in a thousand mile radius. Whatever that means, I don't know. Don't know exactly why but I'm listening to the "Shutov Assembly" by Brian Eno. To relax, I suppose. It suits well the sand all around. It cools my head beneath this heat. It helps me find a better way of thinking. It makes me wanna organize my thoughts in a cleaner way. It induces me in a good state of mind. Nevrmind the fact that all tracks sound almost the same, that's no coincidence. It's meant to be that way. And it sounds better that way too.
+
+Smoking "Detroit" cigarettes. Watching stupid american movies on tv, downstairs. Life is dull, sometimes. A terrorist attack in Istambul makes me want to listen to the Young Gods [ TV Sky ]. Don't know exactly why. I guess our minds work in mysterious ways... And maybe not just that but it's because the tv sky album reminds me of bombs exploding. It could be that, and it's a simple explanation. And, by the way, Switzerland isn't very far away from Turkey and Istambul. Well, let's just forget about that last assertion, ok? Time for Beck and the exellent "Sea Change".
+
+Transparent mood. That's what I'm feeling like now. I really wish it was raining here. Reminds me of "hold back the rain" 12" remix by duranduran.
+
+But things tend to be very different when the rain comes to this desert. Don't know when that will happen, of course, but when it does happen I'll be the first one on the streets enjoying it. Dreaming of the ocean and the wide beaches back home. Even the wind blows in a different way, can't explain why... It's not as hot as here in the desert.
+
+===It's been raining for three whole days now...===
+
+And the journey to Gotalonia never seemed this close to me. Never. So I go to the bank to get the necessary money to buy the plane tickets. I'm thinking in going in the next 7 or 15 days. Maybe the weather here will come to a normal state by then. I want to leave the desert in a hot fashion. So it seems more natural to me. Maybe I won't miss the desert, but what do I know?
+
+The SGI laptop is having a lot of work lately. Besides this report I've been writing other html's in the last few days. Don't know if it's because of the rain, but I highly doubt it. Nevermind though... One of the texts I've been writing is about the NeXT computers and Tim Berns Lee, the creator of the WorldWideWeb and HTML in some form or another. And this laptop has been behaving rather well, even beneath this humidity. 
+
+replanning the trip to GotaloNia
+
+Travelling on Air GotaloNia has always been a good and pleasent experience. They only have two types of aircraft; the Lockheed L1100 and only two Concordes. and that makes them the only company in the world who still has Concordes flying. Unfortunatly the Concordes are not used in this route so I'll have to travel in one Lockheed. The trip will last about 4 hours. Maybe a little less if we're lucky with the wind. There's always a certain amount of uncertainty, but that's life, isn't it? And I do like surprises when I travel, who doesn't?
+
+===this desert is just a loop===
+
+Can't understand it... Tired of loops. They never end, do they? Which reminds me of another thing: don't listen to The SWANS' loops, ok? They're evil and grow on your head like cancer. Or something like that. And this is just not to have to talk about AphexTwin's loops. They sometimes make you feel you're someplace else. Like being transported to another reality instantly.
+
+end of loop ::::: return to start...
+
+I finally have a ticket for a flight to GotaloNia. Gotta have the SGI laptop ready for the trip with all my personal documents which I have stored on the NeXT Cube for now. My personal documents bring me to another subject. A different one. A very different one. It's about sadness and the state of being all alone. Just like my present situation here in the desert. How good is it to anyone to be able to sit alone in a room with a cigarette in one hand and a glass of martini in the other? It's not that simple to answer that. In fact, it's very difficult to find a suitable answer to that.
+
+Ok, let's assume that there's really nothing good in being alone in some desert. So, how come I'm here if I don't have a valid reason to be? The hunt for some rare NeXT laptop that nobody really knows if it exists? Is that a valid reason? I wonder. In my case, I think that any reason is a valid reason. So, why worry? And, by the way, isn't that the same reason I'm getting out of this desert and go to GotaloNia? Yes, that's it. Another endless loop. Another afer-effect of this desert heat that I don't know any more if I really like it or not...
+
+I must find that NeXT portable in GotaloNia. And, deep within me, I know I will.
+
+===-------- Reality check:===
+
+There was a NeXT laptop, I've seen the photo on some NeXT website but it was never released to the stores. I wonder how many still exist... It was called NeXT 9200, I think...
+
+===-------- Reality check ends here.===
+
+Sometimes when I think of the NeXT laptop I remember seeing, once, in a magazine an article about a Sparc laptop capable of running both Solaris and NeXTStep. It was supposed to be launched in 1998 and in a very small quantity. Only 2000 were supposed to ship from the asian plant where almost all Sun hardware came out to the public. That could be a wonderful machine for me. I never knew if that machine really got out to the hands of the public or if only a few prototypes were made. That's another very valuable machine that I must find someday in the future. Maybe it's not that far away, that near future when I'll find it in the hands of someone who can't give it it's real value. Maybe I'll find one in GotaloNia. I'll have to ask to the person who is giving the NeXT laptop to me. Maybe she'll know something about that Sparc powered model. Maybe it's not made by Sun but by some other company with access to Sparc processors. I have to find out. Although it's a bit strange because a lot of Sun people are using Apple's MacOSX latops... Strange world, isn't it? It seems that everybody that works on some Unix flavor is craving for an OSX laptop or has already bought one.
+
+===The art [ heart ] of the OSX laptop===
+
+"It's NeXTStep on steroids with a beautiful face enclosed in a brilliantly designed hardware package". That's just one of the million opinions praising Apple laptops loaded with the excelent MacOS X. Many more can be found throughout the web on reviews, on blogs, etc, etc. So why didn't NeXT released a laptop? Well, the answer might lie in this: by the time laptops began to hit some niches of the consumer market in 1993, NeXT decided to quit the hardware business and focus only in the software business. That might be the right answer. But they did try to make that 9200 model. And a few prototypes were tested, not sure how sucessful they were though... And the price would eventualy be too high for a consumer laptop. Performance might be another issue, although I'm not too certain on that. So, when Apple bought NeXT (or was it the other way around?) and was mainly interested on making a really good operating system based on NeXTStep, the NeXT laptop became a feasable product. Much like a dream that came true.
+
+One of the first laptops that were built to run OSX were the ___Clamshell iBooks___. They were introduced in September 1999 in two very appealing colors: bondi blue and tangerine/orange. They were equiped with a 300Mhz G3 CPU and came originally with 32MB of memory that on the revision B was upgraded to 64MB. When the first public beta of OSX was released in early 2000 a lot of iBook owners upgraded their memory banks to at least 128MB total, the minimum required to install and run OSX. Of course a lot of people bought more than 64MB additional RAM... So the first iBooks were, in a way, the original NeXT laptops. And they even came with a handle!!! So, by mid 2000 everyone with an iBook could carry a machine loaded with the latest version of the BSD/Mach Kernel based NeXTStep, now known as MacOSX. Finally the NeXT inc and it's software began to feel alive again. And ancient software developers that focused their businesses on NeXTStep began to breathe again with the advent of MacOSX. And to have beautiful machine to develop for was a big step forward in their self confidence and bank accounts. One good example of this is a company called "Objective Development" that have a brilliant piece of OSX software that goes by the name "LaunchBar". It's used by people that don't like to use the mouse too much and prefer the keyboard shortcuts instead and by people who don't like the Dock [one of the best features of OSX].
+
+Many people in Europe and in the U.S.A. began to look at their aging NeXT Cubes and Slabs and decided to buy Apple hardware just to have once again the pleasure of running NeXTStep on a modern machine, preferably one laptop.
+
+===The trip towards Gotalonia and the NeXT laptop===
+
+GotaloNia is bathed by the Mediterranean sea. At least that's what the legend says and the fact is that nobody really knows for sure the name of the sea or even exactly where GotaloNia is. But still, most people say it's indeed the Mediterranean. Of the famous people that live there we can count many; Dali, Corto Maltese, Gaudi, Antonin Artaud, Andy Warhol, John Coltrane, Marilyn Monroe, Catherine Deneuve, and many, many other famous people. And Natacha, as well.
+
+The city is separated, like many european cities, between the center with old buildings and the peripheral part with state of the art modern buildings. The place where I always stay whenever I go there is in an old building in the center of the city barely five minutes walking from the water front. It's a very nice and quiet neibourghood. It's also very near to a subway station and from the central plaza that holds most of the buses lines in the city.
+
+I arrived at L'Alma international airport in an Air GotaloNia Concorde at 11 in the morning and 35 minutes later I was in the center of the city and headed to the usual place to rent a room. My contact in GotaloNia was a phone number of the person that had the NeXTbook 9200 model I was craving for. I planned to rest for a few hours before I made that phone call and eventually arranged for a "meeting" with the 9200 owner.
+
+After about two hours resting in the room and writing for a few minutes this report on the SGI laptop using OpenOffice from Sun I went out to eat something and have a large cup of cortado coffee that nobody makes this good in the whole world like in GotaloNia. I'm wondering how many people here are using Irix to work on computers... I know OpenOffice is very popular in GotaloNia but SGI machines are by defenition a rare thing.
+
+I walk into L'Opera [ number 51 on the main avenue that leads to the sea ] for a quick sandwich and a large cortado. The person behind the counter seems to recognize me even though I haven't been to Gotalonia in over 4 years. People here have good memories, or so it seems. Well, I missed these cortados, that's for sure. I buy another pack of cigarettes and ask for the public phone. Then I search in my pockets for the card with the telephone number of the 9200 model contact. I dial the number and wait for a long time before a male voice answers with a funny accent. "Hello, who is this?" I introduce myself and I tell him about the 9200 model. His answer is reassuring saying that he, indeed, has such model for sale and can arrange a meeting with me the next day. I ask him if he knows where L'Opera is and he tells me that everybody in GotaloNia knows it. I ask his name and he says he's called Corto Maltese. That's not a complete surprise. He then tells me to look for a guy in a sailor hat with a laptop computer. It's unlikely that I'll find anybody like that, other than Corto, in L'Opera. Great. I'll have a look at the 9200 machine tomorrow. Everything's looking good.
+
+The music that's playing in L'Opera also came as a surprise: Peter Murphy's Dust album. How cooler can this get? Not much more, I garantee you that. And after the Dust album was over Dead can Dance began to play. I'll stay here for a few more minutes and read some magazine or newspaper. I grab the New York Times and read a long article about terrorist cells working in the New York area. The article grabed my atention because it said that the NYPD found a "lost" Apple laptop with plans for terrorist attacks as well as very detailed maps of New York City. The operating system was in arabic, the newspaper also said.
+
+Left L'Opera and went directly to the water front. Spent the rest of the afternoon there. Went for dinner at 9PM at a restaurant I've never been to in the Port zone. Ordered a bottle of red wine and a simple steak with french fries and a salad.
+
+This night in GotaloNia is pretty cool, contrasting with the last few nights I spent on the desert. No horrid hot temperatures at midnight or 2AM... But not cold either, just right. Went to the cinema to watch a movie about the lebanese war. But didn't like or pay much atention to the film because I just can't stop thinking about the NeXTBook. What price will Mister Corto Maltese ask for it? What software is loaded on the laptop? I wonder...
+
+The place where I'm staying at has this ocean waves atmospheric ambient soundtrack in the lobby all night long. I wonder why. I'll try to remember to ask someone before I leave back to the desert, hopefully, with the NeXTnotebook 9200.
+
+Before I go up to my room I enter into one supermarket to buy a bottle of Martini Bianco and a pack of cigarettes. I switch on the SGI laptop that's placed on the desk and fire up the internet connection to check for email. I have quite a few messages I really need to reply. As a soundtrack I choose Air's Walkie Talkie and begin to sip martini and write whatever feels right in my mind.
+
+I have an email from the porter of the hotel in the desert asking me what it feels like to be in GotaloNia again after so long. I found that email quite funny, coming from that guy. In return I ask him how the desert is doing without me. Of course he'll answer something stupid but that's life. And that's what friendly email is for...
+
+And, yes, I have an email from the russian lady that I met in the desert hotel. Except, as I already knew, she's not from Russia but from GotaloNia and her name is Natacha. That's two Natachas that I know that live in GotaloNia. She's the woman who gave me this NeXT laptop contact; the telephone of Corto Maltese. She asks me when will I be in GotaloNia so she can meet me for lunch or some sort of rendez-vous. I reply imidiatly to her and give her the phone number of the hotel I'm staying at. I also tell her about my meeting tomorrow with Corto and the NeXTBook 9200.
+
+I receive, almost imediatly, a reply from Natacha saying that she'll telephone me tomorrow in the morning to arrange a meeting. She's also interested in seeing the NeXTBook. I tap the SGI laptop and wonder what the hell does she want with the NeXTBook... Maybe she's just as curious as me. Or maybe she's interested in taking photographs of this very rare laptop to sell them to a computer magazine in Japan, or... Oh well, I'm flying high again...
+
+____found in the trash bin:____
+	..........
+    The thought first entered my mind while I was talking to someone in the lobby. Why would someone want to setup a NeXT cube in a large SGI network? It would have to be someone with ancient work habits, for sure. And maybe that someone should have been warned about the almost endless possibilities of an SGI machine. So I decide to make a few phone calls to find out what the hell the cube was meant for.
+	..........
+	..........
+    It came as no surprise; the cube was to be the main machine for html code editing. And the NeXT cube of the "inventor"of html came also to my mind. Was the choice of a NeXT cube related to this fact? The answer came my way a few days later when I had the chance to talk to the person in question.
+	..........
+	..........
+    He told me that his interest in doing html code in a cube had to do with his wish to stay faithfull to the machine that first felt html in the whole world. Well, that's what he told me, anyway. I would soon discover that this was not the reason at all. The real reason was a dangerous one. The person in question had some kind of connection with a russian software company.
+	..........
+
+I wake up at 10AM. I shower, shave and have a very large cup of cortado while browsing through the news on New York Times and a few other news sites. There's nothing outragiously new to be read, just the usual stuff. When I disconnect from the matrix I refill the cup with another obcenly large cortado and another cigarette. It's my way of waking up to an important day. The day I'll finally see the NeXTBook 9200.
+
+
+===a few hours go by:::time for business===
+
+
+I'm on my way to the L'Opera to meet Corto and the NeXTBook. I get there 10 minutes early so I order a martini and a cup of cortado and start to read the local newspapers. There's a full page ad on a computer shop that sells only second-hand laptops. I take note of the address on one of my wallet papers and plan to go there later today.
+
+
+Corto gets here on time and greets me with politeness. He's bringing the famous NeXTBook on a black bag. He opens it and takes the NeXTBook out and places it on the table. It's bigger than I thought it would be and it has a trackpad instead of a trackball. I'm glad because of that since I much prefer trackpads. He opens the latch and raises the screen. Turns the machine on and ___NeXTStep___ begins loading. He then starts to show me what software is loaded on the hard drive of the laptop; ___WriteNow___ [his most used software], ___OmniWeb___ for web browsing and HTML composing and not much else. A copy of ___LaunchBar___ is also installed. He then tells me that he has it for over 6 years and mainly uses it to write HTML and to move around the matrix and check email.
+
+
+I ask him why he's willing to sell the machine. He answers that he bought a Sony Vaio almost a year ago and he doesn't need the NeXTBook anymore because he has the x86 version of NeXTStep installed there as well as BeOS5 and an old version of Windows 95. He also tells me that he is using more and more BeOS because he found a truly amazing piece of software that only runs in BeOS called "___The English Editor 2___". He explains that EE2 is a ___XML/XHTML editor___ with an incredible user interface and that it suits all his needs for writing. EE2 saves XML/XHTML files that can be read by any web browser.
+
+
+We discuss the price. He's asking for 500 Euros. It does seem a reasonable price to me since the NeXTBook is a piece for collectors. We agree on the price and I write him a check with that value. He then invites me to his sail boat to check his Vaio with BeOS5 and EE2. I accept and we leave L'Opera heading down to the harbour.
+
+
+Corto's yatch is named Escuna and is quite old, although is very well preserved. Corto asks me if I want a cup of tea and heads down to the cabin to fetch the tea and his Vaio while I seat at a table in the deck. Corto brings from the cabin the tea pot, cups and a box with natural tobacco and rolling paper as well. He then start to roll one of this very famous cigarettes and talks about the beauty of EnglishEditor2 for a few minutes. He then plugs the Vaio to a power outlet on the stairs to the cabin and switches on the laptop. He has it setup to boot BeOS5 on default. It loads extremely fast, under 30 seconds or some sort of a period of time like that. He then launches EE2 and I'm truly amazed at the simplicity and emptiness of the interface. And the beauty as well.
+
+
+About an hour later I ask him if I can plug my NeXTBook as well to start exploring the old machine and it's performance. Well, it's NeXTStep and that OS never stops to amaze me. The performance is also good, I thought it would be somewhat worse, but fortunatly, it's not. It's quite responsive for such an old equipment. I think it's even a little faster than my NeXT Cube. And Corto says that the battery lasts almost two hours which is very good for an old machine. After all this is ___1999___, or so that's what I believe. But it could be any other year, because it doesn't really matter.
+
+
+This laptop has almost the basic software I have on the Cube. There are a few programs that I never heard of that are also installed, namely a desktop publishing suite with all the menus in russian or some eastern language like that. But all the basic stuff is here and Corto had the attention to delete his own account and create a new one for me. The hard disk of the NeXTBook is only 3Gigabytes in size so it has little few free space, a little over one gigabyte. That's more than enough for me since I'm not planning in installing any more software on that, just my personal documents which don't ammount to much space. So this is the second laptop i buy in a few months time. The SGI first and now this NeXT. Along with the Cube it already ammounts to three computers. I think I'll stop for now. But then again I might need a x86 computer to install BeOS5 on along with English Editor2, of course.
+
+
+===TheEnglishEditor2 revolutions===
+
+
+Well it's a fantastic xhtml editor in all senses and perspectives possible in this world. There's nothing else like this editor in the whole world of xhtml editors in the vast galaxy of operating systems. And Corto knows this also. He shows me how the look of a document can be changed by editing a text file with the stylesheet's parameters. But the user interface is absolutly beautiful and the most clutter free I've seen in a long time, I mean, ever. Corto never saw, also, a user interface like this before in his life and points to me the "hidden" features of the interface. When you move the mouse pointer over each corner of the window [minus the upper left corner] the single pull-down menu appears or the scroll bar appears or a frames per second live counter appears. Simply amazing! Nobody thought of this before, not even on MacOSX applications I've seen this simplicity and functionality.
+
+..........
+
+    Corto tells me that he's writing all his documents in this editor and he can send them to the matrix [ to his own website ] to be read by any browser capable of reading the UTF-8 encoding, which most, if not all browsers do nowadays. What about printing, I ask him. "Well, I don't print too much, I don't even have a printer. Whenever I need to print something I just go to the nearest CyberCafé and print from there, it's not that expensive because I have the habit of formatting the fonts in really small sizes". Well that's what I also normally do. There's always a solution no matter what kind of problem arises with any system. Always. Sometimes you only have to dig deep enough. And the best place to dig is Google.com, as everybody already knows. And sometimes the solution floats on the surface almost hidden from sight because it's too obvious.
+
+
+    He tells me that he converted a lot of his documents from whatever format they had into simple HTML docs so that EE2 could open them and edit them. There's a lot of word processors that can convert to HTML so that wasn't a problem for Corto. He told me that when he was using the NeXTBook he was mainly writing using the ___OmniWeb Composer___ and ___WriteNow___ was the first word processor that NeXTStep knew. He said he often just copy text from WriteNow and pasted it on OW Composer and then filled out the tags to make an HTML doc.
+
+
+    We talk for another two or three hours and then Corto invites me to dinner in his yatch to celebrate my buying of the NeXTBook. I agree and he goes on to the kitchen to make some pasta with pesto, one of his favorite meals.
+
+
+    ___pesto scents in GotaloNia___
+
+
+    While I was waiting for Corto to finish setting up the table for dinner I asked him if I could connect to the matrix just to check my email account. He said sure and I tried the modem on the NeXTBook for the first time. Everything worked as expected and I was able to launch OmniWeb and log on to my account. There was an interesting email waiting for me... My "upper" agent sugested me that I go in a few days time to Algeria and wait there for a further contact. He had a new mission for me. I'm surprised but also pleased to go to Algeria. And I'm sure I'll like the mission that's assigned to me. But that also means that I'll have to leave GotaloNia in two or three days.
+
+
+    ____:: the smell of Algeria ::____
+
+
+    We dine while the boat rocks gently and softly. We have almost two bottles of red gotalonian wine which make me feel a little dizzy and snoozy. We rest in the boat talking for another two or three hours before we go out to have a cortado in some bar in the center of the city. I ask Corto if he knows Natasha but he never heared of her so my hopes that I'll find her in the remaining two or three days here are kind of lost.
+
+    We leave the Escuna after midnight and go to a quiet bar near L'Opera. Well, not as quiet as we thought. The place is almost full and people keep going in and out to the streets to drink and talk. I tell Corto that I'll be going to Algeria in a few days. He then tells me that coincidences do happen since he, also, is going to Algeria in a week or so in a work assignment. We will find each other there. He doesn't tell me the nature of the work he'll be performing and, of course, I do exactly the same. And even if I wanted to tell him I still don't know exactly what I'll be doing there but I already have my suspicions.
+
+
+    I'm listening to a live CD of ___Suicide___ in 1998 that Corto had in the yatch. He has quite a feine collection. I imediatly asked to copy the files to my flash drive since I never heared of the existance of this CD before and it's quite good. Execelent sound quality and more than an hour long. And there's also wild versions of "Sister Ray" and "GhostRider"!
+
+
+    ____:: intermission [ desertic version ] ::____
+
+	..........
+
+        How long is one year? 365 days seems to be the correct answer. Well, not in GotaloNia. Time here doesn't stop or wildly accelerate. It just flows like there's no tomorrow. Will ocean waves ever stop crashing into the shores? I guess not. One year is like 20 minutes when you have all the time in the world.
+
+	..........
+
+    ____:: END OF intermission [ desertic version ] ::____
+
+
+    I'm doing the report on the NeXTBook in XHTML format. I use OmniWeb's Composer and nothing else. It's not the same version that's in the SGI / OSX notebook but it's almost the same. It does all the things I need/want. I think I really made a great deal with this notebook from NeXT. The software is brilliant and the battery runs a bit longer than two hours which is more than I need. The speed is also good for such an old machine. And it will look extremely well with the Cube. But that's not the point, this will be the portable I will take to Algeria. I'll mail the SGI laptop to my address in the desert. Turn on the NeXTBook and poured a glass of Martini. Having one cigarette. The report continues...
+
+
+    I'm thinking about the mission in Algeria. If I'm right I'll be there for just a week or so. I'll be organizing some new unexperienced group and teach them some techniques. I hope it won't be much longer than one week. But, as usual, I'll only know the facts when I get there. It's a matter of personal and organizational security. It's just better this way. I only hope that I'll leave Algeria one or two days before the mission is fully acomplished, once again, for personal security reasons. Anyway, the mission will be completed as always without the need of any active participation during the execution day by myself. I don't like taking high risks, it's just my nature. I'll only take them if there's no other choice available at the moment.
+
+
+    I order another coffee from room-service and try to think about the report. I'm really enjoying LaunchBar. It's almost the same as the MacOSX version I have on the SGI notebook. I spent about 15 minutes configuring the application to my personal taste and needs. I'm now organizing all the contacts in the Adress Book application. Once again very similar to the OSX version. I just wish there was a version of English Editor for NeXTStep... But I guess I'm out of luck. Went to the website that hosts the application and there's only one flavour; BeOS. But that's not a big problem because OmniWeb Composer is simple and effective enough for me. And the NeXT user interface makes it even more beautiful. Black is beautiful. I forgot who said that. It really doesn't matter.
+
+
+    I wake up at 10AM. I'm thinking automatically about one big gotalonian cortado wraped with the taste of a brand new fresh cigarette. The european way of life, can't shake it away. I go to a small café on the other side of the street to enjoy the cortado. I grab a local newspaper and read a few articles. Then I remembered the ad I saw yesterday on another newspaper about the used laptops shop here in GotaloNia. I ask the lady of the café about the street where the shop's located and she gives me some simple directions. She tells me that it's only ten minutes or so away from where we are.
+
+
+    I get to the shop in less than ten minutes. It's absolutely loaded with hundreds of laptops from all sorts of brands. I spend about half an hour just walking along the shelves looking at many models from all sizes and brands; Compaq, Sony, Toshiba, IBM, Apple, SGI, Acer, etc, etc. And the variety of prices are also amazing. A three year old laptop costs about 500 or 600 Euros. A four year old laptop costs 300 or 400 Euros. I decide to telephone Corto so he can help me out choosing a BeOS5 compatible laptop. he told me yesterday that BeOS5 doesn't support fully most of the laptops and it's kind of useless to buy anything that's three years old or newer. I walk out the shop and go to a public telephone booth to call Corto. He answers the call and we arrange a meeting in a nearby café.
+
+
+    He gets there about half an hour later and we begin discussing a good laptop to run BeOS5 and, of course, English Editor 2. He says that a 4 or 5 year old laptop is more than enough. He also brought along a CD with BeOS5 and EnglishEditor2 in it so I can test the laptop compatibility in the shop before I take it home.
+
+
+    I end up choosing an old Sony model with a good working battery and a 12" screen. It has a Pentium 266MMX processor and 64 MBytes of RAM. More than enough to run BeOS5 decently. The price also reflects the old age of the machine: 320 Euros. One important thing is that BeOS recognizes the video, sound and modem cards without the need of any third party drivers. Just what I was looking for. I leave the store with ___BeOS5 and English Editor 2___ already installed and ready to be used. This is one of the fastests computer buys I ever made in my life. So now I have three laptops and an old typewriter when electricity and batteries run out in the desert. I'm quite equiped for everything. But the cherry in the cake is the NeXTBook. Not only for it's beauty but also for it's rariness. Only a few hundreds of these machines saw the light of day, and I'm one of them with a working machine.
+
+
+    We go to Corto's Yatch to install some additional software. Corto has a few CD's with BeOS software including ArtPaint, BePDF reader, PDF writer, FireFox web browser and a few others that are of interest to me. He also pointed me to a very useful website to download software; bebits.com. Almost everything available to BeOS is there. And most of that software is freeware. BeOS5 also come with another gem in audio applications: ___3DMix___. It's a wonderful sound editor, and as EE2, it's user interface is at the minimum revolutionary. I'll try it more seriously in the near future, I'm sure. He also own a few books by ___Aleister Crowley___ in PDF format which I also copy to the hard drive. One of those books is the complete "AC confessions" book which I have been searching for in the last few years.
+
+
+    We have a curious conversation about the ___Xanadu___ project by Ted Nelson. Corto says that the original idea has been surpassed by the rise of the world wide web and HTML in general. I agree with him. We wonder how Ted Nelson might have felt when he saw the first bursts of light of the world wide web and the first browser and html editor. He would have freak out! He also shows me an interview of Nelson he had in an old magazine. The man was obviously a crazy person! But he also, without any doubt, was a genius. Because he envisioned a lot about how people in the future would work with documents inter-linked throughout a big network. He saw the world wide web in many of it's present aspects. And he wanted a more well designed web. The documents would have, in his vision, two way links instead of just one way links. But I guess that's not quite possible or of any interest right now. But he never really gave up his own dream and is still trying to give the Xanadu Project a new life. But since HTML and the world wide web is so entranched now that I really doubt his project will ever be accepted by anyone. But we never know, do we?
+
+
+    I end up installing a lot of HTML editors that Corto shows me on his machine. There's one in particular that I find interesting; it's called ___Globe HTML Editor___ and was made by someone in Hungary. There are a lot of HTML editors for BeOS. It's kind of strange, then again, maybe not. But nothing really compares to ___EE2___. There's nothing like it, period.
+
+
+    BeOS was known for it's little yellow tabs in the window title bar. It sure is original and no other OS has adopted that design. I guess it only looks good in BeOS, not on other systems. There was once, or so Corto tells me, a website with that name "little yellow tabs" that focused on BeOS news and opinion. It's now defunct since BeOS itself died a few years ago. Nevertheless a few people still manage to develop applications for it. probably with a lot of dreams in their heads and a lot of caffeine in their veins. Those people are resistants, they still believe BeOS has a future waiting somewhere. Maybe they're right. We never know untill some time passes by. It would be wonderful if people would break through and delivered some insanely great applications for BeOS. Like some other people do now for MacOSX and other operating systems. One of the reasons, the strongest one, for me to buy a sony portable was English Editor 2. If that application was available for MacOSX or IriX I wouldn't have bought it, surely. But nevertheless I'm quite happy I bought the sony laptop. It's always a pleasure to write in EE2. The other good experience I've had in writing was with two apps for MacOSX; ___TextEdit___ and ___SubEthaEdit___. Well, almost every editor in MacosX or NeXTStep has a beautiful interface. If not all...
+
+
+    I just shiped by airmail the ___SGI laptop___ to the hotel in the desert earlier today. The package is going to be picked up by the receptionist of the hotel. I just phoned him advising of the arrival of the package in the next few days. So I'm down to two laptops: the NeXTBook and the Sony with BeOS5. I wonder if I'll miss MacOSX too much. I guess not because of the NeXTBook with NeXTStep. In fact I'm writing everything on the NBook with ___OmniWeb Composer___. And I'm very pleased with the responsiveness of NS and OW Composer as well. Anyway I'm planning to download all the documents to the Sony machine just to get the feel for a few days of EE2 and BeOS5. So I make a backup to the flash drive from the NBook and then plug the drive into the Sony. I zip all the documents just to test if BeOS can unzip them. It can, as I thought.
+
+
+    I've been writing a report on the two machines I bought in GotaloNia to my superiors. All the software installed and the laptops' specifications are also included. I emailed the report in XHTML format [regular html tags plus other custom tags] from the Mail.app here on the NBook. All went perfectly well, as expected. I didn't have any answer to an email I sent to the russian woman that lives in GotaloNia. Strange, she said she would answer quickly. Well, it's her interested to see the NeXTBook, not mine...
+
+
+    Corto tells me he's going to Algeria in a few days on his yatch to make "some business". I tell him that I'm also going in three days to Algeria to, also, do some business. We smile knowing that our mission are somewhat connected. I'm sure we'll meet there. Maybe Corto is one of my contacts there for the mission...
+
+
+    ____Dawning GotaloNia____
+
+
+    Because the weather was so good last night I ended up sleeping in the deck of the yatch in a sleeping bag above a thin layer of foam. Woke up at 7:30AM to watch the morning rise above GotaloNia and the port. Made a cup of cortado on the yatch's kitchen and went back outside to enjoy the atmosphere a bit more. Rolled up one Amsterdammer and listened to the seagulls flying overhead. Fetched my NBook and continued writing for a few minutes the report. Had to connect the NBook to the power outlet because the battery ran dry after more than two and a half hours. Then I decide to log on to the matrix to check my email accounts. Yes, there was a reply from the russian woman asking me to meet her at some café at 5:30PM today and if I could bring the NBook with me. I reply a short "no problem, I'll be there".
+
+
+    At about 11 in the morning I write Corto a short note and head back to the hotel. I go to the plaza where the café the russian woman told me is suposed to be located. I find it without any problem and finally go to my hotel. I take out my two laptops and turn on the Sony. I experiment with English Editor 2 for about half an hour before I go out for lunch. I take the Sony with me to continue exploring the BeOS system. I was about to leave the NBook in the room but I put it back in the bag with the Sony because I don't know if I'll be coming back to the hotel before I meet the russian woman.
+
+
+    I choose an old restaurant in the center of GotaloNia, not very far from the hotel, to have lunch. I've been in this restaurant before for quite a few times and I like it's food very much. Never managed to remember it's name but I can always find it whenever I'm in GotaloNia. On the way I found a rather peculiar music shop with a lot of alternative music and old records. It's always an attraction to me. I end up buying two very old CDs; one by ___Coil "Gold is the Metal"___ and ___Peter Murphy's "Dali's Car"___. I also bought Dust here in GotaloNia, the last time I was here. At the restaurant I manage to recognize two of the people working here. Both women and young. One of them, the waitress, also seems to recognize me and greets me in a very kind way. I order Spaghetti al Pesto and a glass of red Gotalonian wine. I just love the pasta they have here and the pesto sauce is my all time favorite. I take a long time eating since the food is so delicious. By the time I finish the main plate there's almost half a bottle of wine yet to be drunk. I sip the wine while testing other software on the Sony laptop. The afternoon is warm but not overwhelming. Not like in the desert. One of the times I was looking out the window besides me I spotted a woman that reminded me of the russian that lives here in GotaloNia. After staring at her for a few seconds, while she stared back I made a greeting gesture with my hand and then she began to walk towards the restaurant's door. It was really her. She seated at my table and ordered a big cortado and a small chocolate cake. She was just passing by and spotted me in the restaurant. Uncertain if it was really me she hesitaded for a while but when I greeted her she had no more doubts. Now she stares profoudly at the screen of the NBook. She asks a few questions about the WriteNow app and if it can save in RTF format. I explain that it can even produce some decently formed HTML. Ah, and it supports cyrilic encoding! She's absolutly salivating over the machine. She then asks me, partly serious partly joking, if I want to sell the laptop. I smile and say no, not yet, and maybe never. I tell her that if she loves so much the software she can install NeXTStep on a x86 laptop if she wants because Corto made a copy of the installer CD and it has the x86 version on it. She takes out of her bag a very small Sony Vaio [ the screen is only 10" or even less ] and wonders if the software will install correctly on that machine. Well, we have to try. And since we're close to the port we decide to check if Corto is in the yatch and if she can borrow the CD and try an install.
+
+
+    Corto is hosing the deck of the yatch and greets us as we aproach the boat. Corto seems to know very well Natalia and goes inside to look for the NeXTStep install CD. She plugs-in the small Vaio and boots it up to a very rare version of ___MacOSX for x86___! I never knew that version existed. She tells me this OS it's not supposed to be running outside of Apple's headquarters but she managed to get hold of a copy and has it installed on the Vaio as her main OS. It's an early beta version of MacOSX.1.4. How much did she pay for it? I ask. Nothing, someone working at Apple gave her a copy of the install CD as a birthday gift two or three years ago. It includes a WYSIWYG html editor and the browser is a beta version of OmniWeb 4.02. I tell her that this version of MacOSX is the dream of a million PC users out there. She smiles and tells me that she's aware of that. Of there's almost no software available for this version of OSX but she's quite happy with the email, net and writing apps. She doesn't need more she tells me. She also uses it mainly to write reports and other html stuff. She maintains a very minimalistic website with it. She writes about fashion shows and other irrelevant stuff, in her own words.
+
+
+    Corto comes out with the CD and we begin the instalation of ___NeXTStep___. We use an unused partition of 2 GBytes she has on the disk and the installer begins it's work. After 30 minutes or so the installer prompts for a reboot. The boot manager asks what OS we want to boot; MacOSX, BeOS5, Windows98 or NeXTStep. We choose the last option and after about one and a half minute the little Vaio has the default NeXTStep desktop. Everything seems to be working, even the sound card and the modem which we weren't expecting to see recognized by the OS. Corto has downloaded all the latest patches so that might be the reason why. We then install from another CD LaunchBar, OmniWeb and a few other image manipulating software. Everything installs as expected.
+
+
+    We spend the rest of the afternoon in the yatch discussing politics, music, restaurants and a lot of other things. We drink martinis and coffee as we talk. The sun is almost setting on us and we three watch in bliss with the atmospheric music of Cocteau Twins in the background, playing lightly. It's always a magical moment, the setting of the sun, anywhere in the world. Natalia invites Corto and myself for a true GotaloNian dinner at her favorite restaurant, a place called __Torre Ghotic__. What's their speciality, we ask. She spits out two words: fish cakes. I'm delighted, I haven't eaten fish cakes for quite a long time now. We accept her invitation and set up an hour for us to be there. I then leave the boat with Natalia and we call a cab. I leave the cab just a few meters from the hotel entrance and she continues the ride towards her house. I arrive at the room and turn on the hot water in the shower.
+
+
+    My guess, right now, is that both Natalia and Corto work for the same organization and are trying, somehow, to recruit me. Or maybe they are willing to work with my organization. I guess, also, that I'll know exactly if this is true at tonight's dinner. I wonder what's their current mission. I wonder what kind of buisiness Corto has to do in Algeria. It's a small world, after all. Meanwhile, here I am pouring this into the report with my NBook. And then, out of the blue, a thought came to me. I must try someday a Java text editor. I wonder what it would feel like... I know Java apps tend to run very slowly but a simple text editor wouldn't be a problem for me. I'll have to check out the matrix for that. And as the train of thought progresses I remember the CD Natalia is supposed to be burning for me with that very exquisite and rare version of ___OSX.1.4 for x86___. I have to install that on my sony.
+
+
+    ____dinner : the awake of the sleeping cell : no more wine, please, thank you____
+
+
+    The dinner started really well with us 3 drinking a few liquor shots just to spice up the appetite. Matalia brought me a copy of that very rare MacOSX.1.4 for x86. Now my Sony will be able to run a basic MacOSX. I'm glad. Not just BeOS5, but OSX.1.4 also. I'm getting drunk with every passing minute. I'm enjoying every second that goes by. And in the meantime, before dinner arrives, I'll plug the sony to an outlet power on the restaurant wall and try to install OSX now. If I run into some kind of problem maybe Corto or Natalia will be able to help me out. The restaurant sound system is playing "___Computador___" by Von Magnet. Which only adds up to the experience. There's a lot of support here in GotaloNia for that group of performers. Another example of GotaloNian good taste. Of course there are plenty of other good examples like the food and drinks they serve here, for instance...
+
+
+    The instalation of OSX.1.4 went really well. It took almost an hour but everything's working perfectly. It's a shame that no other apps besides OmniWeb and LaunchBar are available for this x86 version. But that's enough for me. I closed the sony screen and went back to finish my dinner. Natalia said that there are a few experimental applications for this version on the matrix. I just might try that, out of curiosity. But the beauty of an old ___Aqua___ [version X.1.4] is something to behold with great pleasure.
+
+
+    I order one coca-cola bottle and have a large sip. I'm missing something with sugar. The red wine is also making me dizzy. I'll have a alchool break for an hour or so. Corto and Natalia continue with the wine, gladly. I start to talk about my plans to go to Algeria and ask Corto if he'll be there shortly like he mentioned to me earlier. He's planning to go there "in business" in one or two weeks time. He stresses the word "business" with a strange smile and says that we'll probably meet there. He'll email me when he gets there. Natacha also says that she'll be doing an article for a newspaper in GotaloNia and that she might need to go there too. She doesn't know when but she suspects it won't take too much time for that to happen. So it seems that we'll all meet there! Can't wait for that. Although I must be very carefull doing my business there. I don't want them to know what it is I'm really doing there. I guess they wouldn't aprove my line of business. But, then again, you never know, do you?
+
+
+    While the sony is idle I notice the long forgotten ___AquaIcons screensaver___ of the first versions of OSX. It doesn't ship anymore with newer versions. But that happens with all operating systems, I guess. And sometimes I wonder about the state of this report... I'm doing it right now. Ah, OSX.1.4...
+
+
+    ____sshhhhh....____
+
+
+    I'm on the roof of the hotel writing this on the NBook. I'm feeling lost but not that lonely . I'm wondering very hard where the hell Natacha is. I know she's here in Gotalonia. I just sense it. I may be wrong but, deep in me, I know I'm not. And that's enough for me to keep on dreaaming. I brought one cortado with me but it's almost cold. Still, it's delicious and it's another fuel for my dreams. I guess I should be sleeping by now. I'm tired and it's past three in the morning. I'm leaving GotaloNia tomorrow afternoon on my way to another mission in Algeria. Will it be my last one? Maybe I'm just sad because I'll be leaving this beautiful city. I wonder when will I return. Or, maybe I'm sad because I know nothing about Natacha for the last few years.
+
+
+    What if she knew I was here and decided to call me? I wonder how I would react... Would I have the nerve to see her. Ah, I guess so. In fact, there's nothing else I'd like better to happen to me than to be able to see her. I don't even know if she's alive. But it's not very probable that she is dead, either. Maybe one of these days I'll send her an email, the problem is that I really don't know if she keeps the same email account, but I guess she does. Anyway, I really don't think she'll answer my message. I have to think about it in the next days...
+
+
+    ____the noise continues... from __computador__ to __mezclador__ ____
+
+
+    Corto and Natalia are now ordering the special spiritual drinks to start the night in an insane manner. I also order one very disturbing strong drink. It tastes like fire with a faint twist of sugar. The taste of this drink reminds me of an expression I heared a few years ago: "half awake, half asleep". It's a mysterious expression that never left my mind. It keeps popping up in my mind at the most unexpected times and situations.
+
+
+    Suddenly Natalia starts to tell us about a plan she heared about something happening in ___Algeria___. A big "event". And then she smiles as if she's waiting for a reaction from me or Corto. "We don't know anything, yet. But we'll know more in a few days".
+
+
+    ____noise fades into... cosmogonia by cybergypsies... but wait, or is it Gotalonia by the CyberGypsies?____
+
+
+    The rest of the night kept on going fast and faster with each passing hour untill we ended up at Corto's yatch for the rest of dawn. Listening softly to some old music Corto had on the boat. I think it was some old vynil records he had the chance to save in CD format at somebody's house here in GotaloNia. Old Broadway songs. Quite nice for a wild dawn of endless conversations and laughter. And then suddenly, nothing else matters. No mission in Algeria, no nothing. It's seems like time itself had stopped and we are all living in some kind of fucked up dawn twilight and nothing around us is real. Everything seems nice and gentle.
+
+
+    This morning I'm gonna catch the plane to Algeria. Then, when I get there I'll email my boss with the number of the hotel where I'm staying so he can phone me. I guess I'll have one or two days before going into action. The NBook is waiting to be packed in my backpack. It's the only hand baggage I'll carry on the plane.
+
+
+    ____the smell of Algeria [ part II ]____
+
+
+    hope everything goes as planned...
+
+
+    ____new, warmer, air____
+
+
+    Algeria is, as always, a very hot country in the spring/summer time. And this time is no exception either; the temperatures for the next three days are all above 40 degrees celcius. Welcome to the desert.
+
+
+    When I rent a room in the hotel it's already 9PM. I set up the NBook and connect to the matrix. Omniweb nad I'm reading my email. Nothing new there. So I go out for a cup of coffee and to get the feel of the city. Tomorrow I'll have some contacts to make and to check the process of the mission. Fire up the MP3 reader and start listening to "___Another Green World___" by Brian Eno. Gets me in a mysterious mood. Never really knew why...
+
+posted by rd @ 2:54 PM
+
+===Myself, Natasha and Corto===
+
+We will change the fucking world!
+
+That's all we have to say at this time.
+
+posted by rd @ 2:47 PM

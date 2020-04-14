@@ -1,0 +1,240 @@
+Uplink
+
+Cheat Codes:
+------------
+by Blackclaw :
+blackclaw18@hotmail.com
+
+Register your name as "TooManySecrets" than enter the game after logging 
+press "F1" and bring cheat menu.Good bye Pals.
+Note: If you install the v1.2 patch, this code will no longer work.
+
+With the FBI mod installed, create a new agent with the name CharlieBean
+(case-sensitive) and any desired password.  Once the game begins, press 
+[F1] to activate the cheat menu. 
+
+
+Cheats supplied by Rushyo (on the Uplink forum):
+------------------------------------------------
+rushyo@modsgalore.cjb.net
+
+--- Big Wallet ---
+Type 'toomanysecrets' as your name and password when signing up as a new user.
+
+--- Password for gamebible on the CD ---
+I'll leave you with a riddle:
+Look on the back of the box and convert the strange line into the first 3 letters 
+of a 5-sided shape.
+
+--- Huge Score ---
+NOTE: Unless your an expert you will be caught doing this. 
+However you still keep the score gained from it.
+
+Whilst attempting the bank hacking missions you may notice either:
+a) An account with over a million credits
+b) A statement with over a million credits
+
+Either way, note down the account with the money and the bank. Go back and transfer 
+the money to your account.If you clean up logs on both ends and the logs for your 
+connection, you will gain that money.
+If you don't then the game will end with a huge score (your normal score + the amount 
+you stole).
+
+
+Cheat Code:
+-----------
+Submitted by: J.M.T.H
+
+Make a new game. When it says enter name, put TooManySecrets and enter any password 
+that you want. Start the game
+
+Code    Result
+--------------
+Press F1 to open cheat menu.
+
+
+Cheataccess:
+------------
+Submitted by: Norman Pillow
+E-mail: normanp@worldonline.co.uk
+
+There are two ways to access the cheat menu. The slow one, and the fast one 
+
+Here is the fast way:
+---------------------
+Step 1: Start a new gamefile with the username "TooManySecrets"
+
+Step 2: Create a password for this username, such as "TooManySecrets"
+
+Step 3: Enter the game, and press "F1" at any screen. A cheat menu will appear,
+        giving you a list of cheats.
+
+
+And here is the slow way:
+-------------------------
+Step 1: Open up all the servers in the game.(on your world map, and your server
+        list, making them visible).
+
+Step 2: Get access to all the government servers (Stock Market, GCD, Academic, 
+        Social Security, Criminal Database) and get admin access. Then get admin
+        access on the Protovision game server. Now connect to the credits machine,
+        and back to the Uplink Internal Services. There should be a new item called
+        "Cheats", in the "Software" upgrades menu.
+
+Step 3: and last but not least, you buy it as if it were a normal piece of equipment
+        (software). It costs 0g, and goes in your program list under other.
+
+Well this is the 1st way I got the cheats with. Of course you "COULD" use the fast 
+"TooManySecrets" way, but what is the fun in that. This method takes about 30 - 60 
+min, if your fast, and it involves alotta fast thinkin, weather or not to delete the 
+logs, or just logout and hope not to get caught.
+
+
+Uplink cheats & hints:
+----------------------
+Submitted by: xiang-deng
+
+Use 'TooManySecrets' (case sensitive) as your agent name with any password, press 
+[F1] anytime during the game to bring up the cheat menu.
+
+Introversion IP                  - 128.128.128.128
+Uplink test machine password     - rosebud
+Protivision Game Server password - joshua
+Uplink Game Bible password       - too many secrets?
+
+
+Game developers:
+----------------
+Get disavowed, then quit the game. Log back into the game and when the score 
+screen appears, move the pointer to the upper-left corner. A symbol will appear. 
+Click on the symbol. 
+
+
+Hidden message:
+---------------
+Open up the rear shell of the game's jewel case to find a hidden message on a 
+white slip of paper. 
+
+
+Crack into the InterNIC:
+------------------------
+To crack into the InterNIC, buy the Dictionary_Hacker v1.0 and use it on the 
+Admin button.
+
+
+Mole Mission:
+-------------
+Hack the admin account of the Uplink Internal Service System. Once there, 
+download the agent lists (you cannot get #4). You will soon be emailed about 
+selling the list. 
+
+
+Cheaper memory:
+---------------
+When buying memory in large amounts, purchase it in 24 Gq bundles. 
+It is cheaper than all the others per module.
+
+
+False alarms:
+-------------
+If you have the motion detector turned on, it will turn red when technicians 
+are installing parts. Do not nuke your gateway then.
+
+
+Get extra links:
+----------------
+Go to interNIC. Go to "Browse/Search". The large bookmark menu is all of 
+the links in the game. Press the "Plus" button to the left of the bookmark 
+to get it. You can now use them to bounce around your calls. 
+
+
+Introversion Uplink:
+--------------------
+Submitted by:Matt Borja
+The Article Project - Free Articles and Submission
+http://www.articleproject.com/
+
+The latest patch for the Uplink game has a lot of nice new features in it. 
+However, at the same time, it disables many of the common cheats out there. 
+Here's a way to take advantage of both worlds!
+
+Install Uplink from the CD, and download the patch from the Introversion site, 
+but DO NOT install it yet. Create a user named TooManySecrets and hit F1 in the 
+game to bring up the cheats menu. Click on Max Rating (but DO NOT click on Next 
+Rating after this otherwise you'll crash it), then click on the extra money option 
+until you have over 1,000,000 credits. Don't forget to click All Software and 
+Hardware as well.
+
+Once you are done, exit the game and go into C:\Program Files\Uplink\users 
+(or wherever you installed Uplink to). Make a copy of TooManySecrets.usr, 
+rename it as New User.usr and set the attributes to Read Only. Make another 
+copy and rename it to the username you would like to use in the game, making 
+sure you append .usr at the end of the filename. Now install the latest patch 
+and you will find that it has backwards compatibility with your user accounts.
+
+Do this, and you will have all hardware, all software, outrageous sum of money, 
+and most of the new features of the latest patch. Pretty cool huh!
+
+
+Saving your software:
+---------------------
+Note: This is only really useful once you have got the Gateway Motion Sensor and 
+Gateway Nuke. Get a "Copy and secure database" mission of any kind (corporate, 
+research, software, customer, etc.) and your employer will give the address of 
+the fileserver to upload all of the database files to. After you complete the 
+mission and get paid, do not delete the fileserver link. Your password and username 
+will work on that system indefinitely; after they pay you, go back to the server 
+and upload all your software. Do not bother with Motion Sensor or Gateway Nuke, 
+since you have to have hardware installed to use them. If the machine stops letting 
+you copy files, you can delete the database files, as long as you have already been 
+paid and keep uploading your software. Then, if you have to nuke your gateway you 
+can connect again as soon as you get a new gateway. You do not need a Trace Tracker,
+and can get all your software back. You need to have the Connection Analysis, and 
+LAN View upgrades before you can use LAN software or bypassers.
+
+
+Avoid getting caught by the sysadmin: 
+-------------------------------------
+When you get to the main server on a LAN, the sysadmin will start tracing you as 
+soon as you connect. The trace tracker starts going off and the LAN map starts 
+showing the sysadmin's progress in tracing you. However, the two are not the same. 
+On missions where you have to destroy the targets system's files, go into the 
+console and type: 
+
+cd usr [press enter]
+delete [press enter] 
+
+Then while it is deleting files type:
+
+disconnect [press enter] 
+
+You can now switch to the LAN view and watch the admin, because the machine will 
+not run the "disconnect" command until after it is done deleting. When the files 
+finish deleting, you will be automatically disconnected, and since your watching 
+the sysadmin you can hit the "Disconnect" button when he gets too close or the 
+trace tracker runs low on time.
+
+
+Bank Robbing:
+------------- 
+Not really a cheat but still a great way to get money easily. You'll need a Log 
+Deleter version 4, A HUD Connection Analyzer, a Proxy Bypass version 5, a dictionary
+hacker is useful, and a rank of intermediate. Get a mission to trace a balance 
+transfer. After you complete the mission to find out where the money went go back 
+into the account and set up a transfer for the money to your bank account. You'll 
+need to turn on the Proxy Bypass to finalize it. Then go into view statement and 
+erase the log of the transfer (top one). Leave and immediately go to wherever you 
+wipe your tracks at and do so. Then go into your bank account, bypass the proxy, 
+delete the record in the statement saying you received the money, and leave and 
+wipe your tracks again. This is an easy way to make hundreds of thousands of 
+credits
+
+
+No Evidence:
+------------
+You will first need a password breaker. Connect directly to InterNic, select admin 
+and then crack the password (They will not trace you!). Then with a Lvl 4 or above 
+Log Deleter, you can delete everything in the list (if any) to cover your tracks. 
+In order for this to work you will have to re-route your connection through InterNic 
+when doing missions. Preferably make it your third or fourth connection. 
+Then once you've finished the mission follow the steps as above.
