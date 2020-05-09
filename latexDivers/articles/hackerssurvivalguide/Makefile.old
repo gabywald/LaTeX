@@ -1,0 +1,27 @@
+
+all : pdf
+
+pdf : hackersSurvivalGuide.dvi
+	dvipdf hackersSurvivalGuide.dvi
+
+ps : hackersSurvivalGuide.dvi
+	dvips hackersSurvivalGuide.dvi
+
+clean : hackersSurvivalGuide.dvi mrproper
+	rm hackersSurvivalGuide.log
+	rm hackersSurvivalGuide.dvi
+	rm hackersSurvivalGuide.pdf
+
+mrproper : hackersSurvivalGuide.aux hackersSurvivalGuide.bbl hackersSurvivalGuide.blg hackersSurvivalGuide.toc
+	rm hackersSurvivalGuide.aux
+	rm hackersSurvivalGuide.bbl
+	rm hackersSurvivalGuide.blg
+	rm hackersSurvivalGuide.toc
+
+hackersSurvivalGuide.dvi : hackersSurvivalGuide.tex
+	#rm hackersSurvivalGuide.bbl
+	latex hackersSurvivalGuide.tex
+	#bibtex hackersSurvivalGuide
+	latex hackersSurvivalGuide.tex
+	latex hackersSurvivalGuide.tex
+	latex hackersSurvivalGuide.tex
