@@ -1,0 +1,27 @@
+20140309
+reprendre quelques éléments de HackerSurvivalGuide (_Steal This Book_ Abbir Hoffman, 1971), mais avec des données ré-actualisée (quoique... une base de donnée partagée en ligne serait suffisante ?! ou des généralités !?)
+une liste de Hackers Spaces / DIY Labs / Fab Labs !?
+survie : 
+	- liste de groupes / squats / festivals alternatifs ???
+	- associations caritatives
+hack informatique : reprendre de 'devenir hacker' mais +++ 
+	- notions programmation C / C++ / Java / Scripting (bash, Perl, python?) / ...
+	- promouvoir plutôt Linux et Unix-Like (mais donner base du DOS)et Live-CD : knoppix, Juppix, BackTrack, Ubuntu...)
+	- cours initiation / moyen de réseau (protocoles et couches réseaux, TCP/IP, HTTP(s), ftp(s), telnet et ssh (générer clefs), créer / configurer / utiliser un serveur distant (web ou non)
+	- packages intéressants à installer (apache, ssh, svn, maven, postfix...) et utilitaires : mutt, wyrd, nano, pine mc, screen / byobu, open-ssh-[client|server], openvas / nessus, zenmap, iptables / firestarter, texlive-latex-[base|extra|doc], jdk, eclipse et ses modules (CDT, Epic), g++/gcc, jedit, geany, lyx, jabref... 
+	- moyens de contacts : mail (utiliser POP / IMAP / SMTP), IRC
+	- moyens d'échanges : news, tor (et équivalents), bitcoins (et équivalents)... Cistes, geocaching ?
+	- édition : LaTeX, BibRef, OpenOffice, texte brut
+
+Services IRL
+	- logement : squats / couchsurfing / BnB ?
+	- impression de documents/ cyberCafés / ...
+	- ...
+
+Notes spéciales / cours / Cheat Sheet : 
+	- utiliser un LiveCD + USB ; créer / personnaliser un LiveCD ; ...
+	- packages sans passer par le réseau (via CD / DVD / USB / Disque Dur sur une machine connectée
+	- programmation : ASCII ; DBG ; little endian / big endian
+	- compilation gcc ; débugage gdb ; ...
+	- ...
+
