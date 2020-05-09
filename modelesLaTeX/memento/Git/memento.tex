@@ -1,0 +1,197 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{multirow}
+
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols}
+
+%% https://texblog.org/2011/02/26/generating-dummy-textblindtext-with-latex-for-testing/
+%% https://fr.sharelatex.com/learn/Multiple_columns
+%% \usepackage{blindtext}
+%% \usepackage{lipsum}
+\usepackage{wrapfig}
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{57pt}{3pt}
+
+\usepackage{lscape} % changement orientation page
+\usepackage{pdflscape}
+% --- style de page (pour les en-tete) ---
+% \pagestyle{headings}
+\pagestyle{empty}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+
+% http://www.trustonme.net/didactels/250.html
+
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% % \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+% \fancyhf{}
+% \fancyhead[LE,RO]{\bfseries\thepage}
+% \fancyhead[LO]{\bfseries\rightmark}
+% \fancyhead[RE]{\bfseries\leftmark}
+% \fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+	% TITLE
+% \hfill \includegraphics[width=0.5cm]{img/logo_glider.png} }
+% \fancyfoot[RO]{\includegraphics[width=0.5cm]{img/logo_glider.png} \hfill
+	% TITLE
+% \hfill \thepage /\pageref{LastPage}}
+% \renewcommand{\headrulewidth}{0.5pt}
+% \renewcommand{\footrulewidth}{0.5pt}
+% \addtolength{\headheight}{0.5pt}
+% \fancypagestyle{plain}{
+	% \fancyhead{}
+	% \renewcommand{\headrulewidth}{0pt}
+% }
+
+%--- Definitions de nouvelles commandes ---
+\newcommand{\N}{\mathbb{N}} % les entiers naturels
+
+%============================= Corps =================================
+\begin{document}
+\begin{landscape}
+
+% \setcounter{page}{0}
+% \thispagestyle{empty}
+
+%% https://openclassrooms.com/fr/courses/1233741-gerez-vos-codes-source-avec-git
+%% https://www.christopheducamp.com/2013/12/15/github-pour-nuls-partie-1/
+%% 
+
+\begin{multicols}{2}
+	\section*{Memento Git}
+	
+	\subsection*{Notions de base}
+	
+	Logiciel de contr{\^o}le de version. ~\\
+	
+	Outil en ligne de commande ; outils graphiques disponibles (eGit, GitEye...). ~\\
+	
+	D{\'e}p{\^o}t :: Repository. 
+	
+	Commit : instantan{\'e} / point de contr{\^o}le. 
+	Push : envoi vers serveur distant. 
+	Branche : pour travaux en parall{\`e}le (une fusion sera n{\'e}cessaire ensuite, via 'merge'). 
+	
+	\subsection*{Quelques Indications}
+	
+	Configuration ({\'e}ventuellement \emph{vim ~/.gitconfig}) : 
+	
+	\begin{verbatim}
+git config --global color.diff auto
+git config --global color.status auto
+git config --global color.branch auto
+git config --global user.name "<pseudo>"
+git config --global user.email <pesudo@domaine.extension>
+	\end{verbatim}
+	
+	\vfill~\\
+	\columnbreak
+	
+	\subsection*{Commandes de base}
+	
+	\begin{itemize}
+		\item[git init] cr{\'e}e un d{\'e}p{\^o}t dans le r{\'e}pertoire courant
+		\item[git config] param{\'e}trage / configuration 
+		\item[git help] liste les 21 commandes de base de git (et permet de d{\'e}tailler) 
+		\item[git status] liste fichiers, {\'e}tat, modifications en cours, branche courante 
+		\item[git add] signale fichier {\`a} ajouter (sera fait par 'commit') 
+		\item[git commit] cr{\'e}e un instantan{\'e} de changements / modifications (accepte message, peut {\^e}tre amend{\'e}...) 
+		\item[git branch] cr{\'e}er une nouvelle branche 
+		\item[git checkout] navigation (branches, projets...) 
+		\item[git merge] fusionne dans la branche courante... 
+		\item[git push] envoie les changments sur d{\'e}p{\^o}t distant... 
+		\item[git pull] appliquer les changements sur r{\'e}pertoire courant
+		\item[git fetch] 
+		\item[git clone] r{\'e}cup{\'e}rer en local historique et code source d{\'e}p{\^o}t distant 
+		\item[git diff] ... 
+		\item[git reset] ... 
+		\item[git log] ... 
+		\item[git revert] ... 
+		\item[git merge] ... 
+		\item[git stash] ... 
+		\item[git tag] ... 
+		\item[git grep] ... 
+		\item[] ... 
+	\end{itemize}
+	
+	\vfill~\\
+	\columnbreak
+	
+	\begin{table}[ht]
+	\begin{tabular}{ p{2.0cm} p{10.0cm} }
+		\hline
+		git help			&	affiche l’aide de la commande git 				\\
+		git clone			&	clone un d{\'e}p{\^o}t dans un nouveau d{\'e}p{\^o}t			\\
+		git log				&	affiche l’historique (logs) des commits			\\
+		git show			&	affiche le d{\'e}tail des commits et d’autres objets	\\
+		\hline
+		git config			&	liste ou modifie les options de configuration	\\
+		git status			&	affiche le statut de l’arbre de travail			\\
+		git diff			&	affiche les modifications entre deux commits	\\
+		git add				&	ajoute des fichiers {\`a} l’index					\\
+		git commit			&	enregistre les modifications dans le d{\'e}p{\^o}t		\\
+		git checkout		&	change la branche courante ou le chemin courant	\\
+		git mv				&	d{\'e}place ou renomme un fichier du d{\'e}p{\^o}t			\\
+		git rm				&	supprime un fichier du d{\'e}p{\^o}t et de l’index		\\
+		git init			&	cr{\'e}e un d{\'e}p{\^o}t git vide ou en r{\'e}initialise un	\\
+		\hline
+		git remote			&	g{\`e}re une collection de d{\'e}p{\^o}ts git				\\
+		git fetch			&	t{\'e}l{\'e}charge des objets depuis un d{\'e}p{\^o}t distant	\\
+		git pull			&	t{\'e}l{\'e}charge depuis un d{\'e}p{\^o}t distant et fusionne les commits	\\
+		git push			&	t{\'e}l{\'e}verse (upload) des commits vers un d{\'e}p{\^o}t distant		\\
+		\hline
+		git tag				&	liste, cr{\'e}e ou v{\'e}rifie des objets tag			\\
+		git branch			&	liste, cr{\'e}e ou supprime des branches			\\
+		git reflog			&	g{\`e}re les informations de reflog					\\
+		git merge			&	fusionne deux branches de commits				\\
+		git rebase			&	envoie les commits locaux en t{\^e}te de branche	\\
+		\hline
+		git blame			&	affiche les lignes pr{\'e}fix{\'e}es par r{\'e}vision et auteur		\\
+		git grep			&	affiche les lignes correspondant {\`a} un motif de recherche		\\
+		git bisect			&	cherche par dichotomie le commit d’origine d’un bug		\\
+		git commit -amend	&	amende le commit pr{\'e}c{\'e}dent		\\
+		git rebase -i		&	r{\'e}organise l’historique des commits locaux		\\
+		git reset			&	r{\'e}initialise la HEAD {\`a} un {\'e}tat ant{\'e}rieur		\\
+		git config			&	modifie les options de configuration		\\
+		git cherry-pick		&	applique un commit distant sans fusionner		\\
+		\hline
+		/.gitconfig			&	fichier de configuration global (utilisateur)		\\
+		./.git/config		&	fichier de configuration local (projet)		\\
+		\hline
+	\end{tabular}
+	\end{table}
+	
+	...
+\end{multicols}
+
+\clearpage
+
+\end{landscape}
+\end{document}
