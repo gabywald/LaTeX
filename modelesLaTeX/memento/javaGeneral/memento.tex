@@ -98,7 +98,7 @@
 				\item I (Interface Segregation) : plusieurs petites interfaces plut{\^o}t qu'une grosse
 				\item D (Dependency Inversion) : d{\'e}pendre d'abstractions et pas d'implantations $\rightarrow$ essentiel pour permettre le test unitaire
 			\end{itemize}
-			\item[] Robert Martin. « Design Principles and Design Patterns ». objectmentor.com
+			\item[] Robert Martin. <<Design Principles and Design Patterns>>. objectmentor.com
 		\end{itemize}
 		\item[] 
 		\item "Java8+"
@@ -199,7 +199,7 @@
 		\item pom.xml : l{\`a} o{\`u} est d{\'e}crit le projet maven
 		\item <build> : d{\'e}crit les fonctions relatives {\`a} la construction d'1 projet (classpath, version de java...)
 		\item <profiles>: profils de construction, pour personnaliser la totalit{\'e} du pom selon des identifiants de profil
-		\item <dependencies>: liste les d{\'e}pendances selon 1 format « qualifi{\'e} »
+		\item <dependencies>: liste les d{\'e}pendances selon 1 format <<qualifi{\'e}>>
 		\begin{itemize}
 			\item groupId : nom d'un groupe (en g{\'e}n{\'e}ral : pr{\'e}fixe du package principal)
 			\item artifactId : nom de la d{\'e}pendance (en g{\'e}n{\'e}ral : nom du projet)
@@ -231,7 +231,7 @@
 
 	\section*{REST (Representational state transfer)}
 	\begin{itemize}
-		\item Orient{\'e} \textsc{ressources} ; différent de SOAP (services)
+		\item Orient{\'e} \textsc{ressources} ; diff{\'e}rent de SOAP (services)
 		\item Contraintes architecturales
 		\begin{itemize}
 			\item Client–serveur
@@ -272,24 +272,24 @@
 	
 	\begin{itemize}
 		\item \textbf{POM} : Project Object Model (descripteur de projet maven)
-		\item \textbf{Artefact} : fichier résultat du build d'un projet
+		\item \textbf{Artefact} : fichier r{\'e}sultat du build d'un projet
 		\item \textbf{Groupe} : Espace de nom permettant le regroupement d'artefacts
 		\item \textbf{Version} : identification d'une version d'un artefact
-		\item \textbf{Repository} : référentiel (dépôt) d'artefacts
+		\item \textbf{Repository} : r{\'e}f{\'e}rentiel (d{\'e}p{\^o}t) d'artefacts
 		\item \textbf{Plugin} : composant enfichable dans le processus de build
-		\item \textbf{Archétype} : modèle (prototype) de projet
-		\item \textbf{Goal} : objectif du build, réalisé par un plugin
+		\item \textbf{Arch{\'e}type} : mod{\`e}le (prototype) de projet
+		\item \textbf{Goal} : objectif du build, r{\'e}alis{\'e} par un plugin
 		%% \item[]
-		\item \underline{\textbf{Phases : étapes clés de la construction du projet}}
+		\item \underline{\textbf{Phases : {\'e}tapes cl{\'e}s de la construction du projet}}
 		\begin{enumerate}
 			\item \textsf{validate} : validation du projet, voir s'il est correct
 			\item \textsf{compile} : compilation du projet
 			\item \textsf{test} : compiler les tests unitaires et les passer
 			\item \textsf{package} : mettre en forme le livrable. Souvent : faire un jar/un war
 			\item \textsf{integration-test} : Tests qui doivent passer sur un environnement
-			\item \textsf{verify} : Vérifier la qualité du livrable suivant une série de critères
-			\item \textsf{install} : Déposer le package livrable sur le Repository Local
-			\item \textsf{deploy} : Publier le package final sur un environnement partagé
+			\item \textsf{verify} : V{\'e}rifier la qualit{\'e} du livrable suivant une s{\'e}rie de crit{\`e}res
+			\item \textsf{install} : D{\'e}poser le package livrable sur le Repository Local
+			\item \textsf{deploy} : Publier le package final sur un environnement partag{\'e}
 		\end{enumerate}
 %% validate
 %% generate-sources
@@ -306,7 +306,7 @@
 %% deploy
 		\item hors cycle de vie : \textsf{clean}, \textsf{site}, \textsf{assembly:assembly}, \textsf{site-deploy}...
 		%% \item[]
-		\item \underline{\textbf{Convention plutôt que configuration}}
+		\item \underline{\textbf{Convention plut{\^o}t que configuration}}
 		\begin{itemize}
 			\item \textsf{/src} : les sources du projet
 			\item \textsf{/src/main} : code source et fichiers source principaux
@@ -316,8 +316,8 @@
 			\item \textsf{/src/test} : fichiers de test
 			\item \textsf{/src/test/java} : code source de test
 			\item \textsf{/src/test/resources} : fichiers de ressources de test
-			\item \textsf{/src/site} : informations sur le projet et/ou les rapports générés suite aux traitements effectués
-			\item \textsf{/target} : fichiers résultat, les binaires (du code et des tests), les packages générés et les résultats des tests
+			\item \textsf{/src/site} : informations sur le projet et/ou les rapports g{\'e}n{\'e}r{\'e}s suite aux traitements effectu{\'e}s
+			\item \textsf{/target} : fichiers r{\'e}sultat, les binaires (du code et des tests), les packages g{\'e}n{\'e}r{\'e}s et les r{\'e}sultats des tests
 		\end{itemize}
 		\item[]
 		\item \textbf{pom.xml} \texttt{http://maven.apache.org/maven-model/maven.html}
@@ -467,17 +467,73 @@
 	
 	\columnbreak
 	
-	\tableofcontents
+	
+	
+	%% \tableofcontents
+	%% \vfill
+	%% \columnbreak
+	
+	\section*{Divers {\'e}l{\'e}ments / Notes diverses}
+	
+	\begin{itemize}
+		\item SOAP : ressources ; REST : services
+		\item Injection de d{\'e}pendance / Inversion de contr{\^o}le (impl{\'e}mentation {\`a} partir de description / configuration) ; {\'e}viter les d{\'e}pendances lors de appel / h{\'e}ritage / composition et transitivit{\'e} (passer par les Interfaces)
+		\item Depuis Java 1.5 : les annotations permettent l'ajout de m{\'e}tadonn{\'e}es (classes, m{\'e}thodes, attributs, param{\`e}tres, variables locales, paquets...)
+		\item Concepts sup{\'e}rieurs aux outils (utiles pour monter en comp{\'e}tences)
+		\item {\'e}changes avec m{\'e}tier : faire reformuler, donner des informations (vulgariser la technique !)
+		\item Spring (voir aussi Micronaut)
+		\begin{itemize}
+			\item conteneur
+			\item AOP (Aspect-Oriented-Programming)
+			\item Construction et d{\'e}finition d'une infrastructure d'application Java
+		\end{itemize}
+		\item Hibernate (voir aussi eBean)
+		\begin{itemize}
+			\item persistence des des objets en base relationnelle
+			\item mapping ORM relationnel-objet (impl{\'e}mentation JPA, Java Persistence API)
+			\item m{\'e}thodes et gestion de plus haut niveau
+		\end{itemize}
+	\end{itemize}
+	
+	\section*{Questions {\`a} poser en entretien client / embauche}
+	
+	Source : \texttt{https://artisandeveloppeur.fr/7questions/}~\\
+	\texttt{http://artisandeveloppeur.fr/wp-content/uploads/2019/04/7-Questions.pdf}~\\
+	
+	%% https://www.maddyness.com/2019/12/16/7-questions-developpeur-doit-poser-entretien/
+	%% https://www.maddyness.com/2019/06/05/7-questions-developpeur-entretien-rh/
+	
+	Surtout valable dans un contexte industriel (ou d'applications directes, en mise en production) de d{\'e}veloppement (un peu diff{\'e}rent et plus cool dans un contexte R\&D, mais ce sera {\`a} faire).  
+	\begin{enumerate}
+		\item Quel gestionnaire de source est utilis{\'e} ?
+		\item Quelle est l'anciennet{\'e} du code du projet ?
+		\item Combien de bugs recens{\'e}s {\`a} date ?
+		\item Quelle biblioth{\`e}que de tests unitaires et foncgtionnels est utilis{\'e}e ?
+		\item Quelle est la couverture du code actuelle ?
+		\item Comment se prend une d{\'e}cision d'architecture ?
+		\item Combien de temps est allou{\'e} {\`a} la veille technologique / formation ? 
+	\end{enumerate}
+	
+	Et surtout, la pr{\'e}sence de documentation {\'e}crite est importante (Wiki, MarkDown... si c'est "une tradition orale", cela deviens dangereux !). 
 	
 	\vfill
-	
 	\columnbreak
 	
-	% \vfill
+	\section*{Tierce Maintenance Applicative (TMA)}
 	
-	...
-	
-	some data... 
+	Un {\'e}l{\'e}m{\'e}nt qui peut arriver en cas de prestations / d{\'e}l{\'e}gation : la TMA. {\`A} propos de la Tierce Maintenance Applicative (TMA), voire corrective / {\'e}volutive :~\\
+	\begin{itemize}
+		\item Par <<tierce maintenance applicative>>, on d{\'e}signe les prestations qui consistent {\`a} conserver un programme informatique dans un {\'e}tat lui permettant de remplir sa fonction. Ces prestations de maintien en condition op{\'e}rationnelle s’ex{\'e}cutent {\`a} titre pr{\'e}ventif ou correctif. Elles peuvent {\'e}galement concerner des prestations d’{\'e}volution des logiciels.
+		\item Par maintenance corrective et tierce maintenance applicative corrective, on entend les mesures consistant {\`a} corriger les anomalies. La maintenance applicative consiste {\`a} assurer le bon {\'e}tat de fonctionnement d'un logiciel, ce qui comprend notamment la correction des bugs, l'adaptation {\`a} un nouvel environnement ou {\`a} de nouveaux cas d'utilisation ou encore assurer la mont{\'e}e en charge de l'application. 
+		\item Par <<{\'e}volutif>>, on entend les mesures de maintenance visant {\`a} faire {\'e}voluer ou {\`a} adapter une ou plusieurs applications, afin d’int{\'e}grer de nouvelles fonctions, en y appportant de nouvelles fonctionnalit{\'e}s.
+		\item \texttt{http://www.marche-public.fr/CCAG-TIC/31-definitions-CCAG-TIC.htm}
+		\item \texttt{http://www.marche-public.fr/Marches-publics/Definitions/Entrees/Tierce-maintenance-evolutive.htm}
+		\item \texttt{https://www.lecoindesentrepreneurs.fr/contrat-de-prestation-informatique-redaction-contenu/}
+		\item ... 
+		\item \texttt{https://www.commentcamarche.net/contents/331-tma-tierce-maintenance-applicative}
+		\item ... 
+		\item Pratique pour apprendre : peu enrichissant d'un point de vue professionnel !
+	\end{itemize}
 \end{multicols}
 
 \clearpage
