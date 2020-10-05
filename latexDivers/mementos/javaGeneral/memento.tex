@@ -119,6 +119,107 @@
 	
 	\columnbreak
 	
+
+\subsection*{Le concept de la Programmation Orient{\'e}e Objet (POO)}
+\emph{\footnotesize Source : \texttt{https://blog.invivoo.com/reussir-mon-entretien-technique-java-la-programmation-orientee-objet/} }
+
+Contrairement {\`a} la programmation proc{\'e}durale qui repose sur des s{\'e}ries d'instructions et de logique, la programmation orient{\'e}e objet est un style de programmation qui s'articule autour d'objets renfermant des donn{\'e}es et des m{\'e}canismes.
+
+Avantages :
+\begin{itemize}
+	\item Traduit un univers complexe en de petits ensembles simples et autonomes (Objets),
+    \item Permet de s{\'e}curiser nos donn{\'e}es en d{\'e}finissant des r{\`e}gles d'acc{\`e}s et de modification,
+    \item Permet de travailler {\`a} plusieurs sur un m{\^e}me projet compos{\'e} de plusieurs briques.
+\end{itemize}
+
+\subsection*{Classe et Objet}
+\subsubsection*{Qu'est-ce qu'une classe en java ?}
+
+Une « classe » est un ensemble d'attributs et de m{\'e}thodes (fonctions). En outre, elle repr{\'e}sente l'ensemble des caract{\'e}ristiques et des m{\'e}canismes d'un concept du monde r{\'e}el.
+
+\textbf{{\`a} quoi sert le constructeur ?}
+
+Un constructeur est une m{\'e}thode qui permet de cr{\'e}er une nouvelle instance d'une classe. Il porte toujours le nom de la classe dans laquelle il est d{\'e}fini et sert {\`a} initialiser des attributs soit avec des valeurs pass{\'e}es en param{\`e}tre ou avec des valeurs par d{\'e}faut.
+
+Sa d{\'e}finition n'est pas obligatoire et nous pouvons en d{\'e}finir, dans une m{\^e}me classe, autant que l'on souhaite avec des signatures diff{\'e}rentes.
+
+\textbf{Qu'est-ce qui diff{\'e}rencie un constructeur d'une m{\'e}thode ?}
+
+Une m{\'e}thode (ou fonction) en POO est une fonctionnalit{\'e} rattach{\'e}e {\`a} un concept d'entit{\'e} du monde r{\'e}el ou simplement une routine d{\'e}finie dans une classe utilitaire.
+
+Litt{\'e}ralement, un constructeur est une m{\'e}thode mais il faut pr{\'e}ciser qu'un constructeur :
+\begin{itemize}
+	\item Prend obligatoirement le nom de la classe dans laquelle elle est d{\'e}finie,
+	\item N'a pas « de type de retour » et ne retourne « aucune valeur »,
+	\item Existe toujours dans une classe, celui par d{\'e}faut en cas d'absence de constructeur,
+	\item Ne peut pas {\^e}tre appel{\'e} directement. Ils sont appel{\'e}s implicitement {\`a} l'instanciation d'un objet avec le mot cl{\'e} new.
+\end{itemize}
+
+\subsubsection*{Que repr{\'e}sente un objet en java ?}
+
+Un objet est un conteneur qui contient un ensemble de donn{\'e}es avec des m{\'e}canismes int{\'e}gr{\'e}s permettant de les manipuler.
+
+\subsubsection*{Quelle est la diff{\'e}rence (ou relation) entre une classe et un objet ?}
+
+Il est important de distinguer la relation et les diff{\'e}rences existant entre une classe et un objet :
+\begin{itemize}
+	\item Un objet est une instance d'une classe. Tandis qu'une classe est d{\'e}finie comme {\'e}tant un model « Template » correspondant un {\'e}l{\'e}ment du monde r{\'e}el.
+	\item Normalement, on devrait parler d'objet qu'{\`a} l'ex{\'e}cution d'un programme.
+	\item Un objet est cr{\'e}{\'e} gr{\^a}ce au mot cl{\'e} \textbf{new} en utilisant un constructeur. Alors qu'une classe est d{\'e}finie avec le mot cl{\'e} \textbf{class}.
+	\item Au cours de l'ex{\'e}cution, on peut avoir plusieurs objets instances d'une classe, alors que la classe concern{\'e}e n'est d{\'e}clar{\'e}e qu'une seule fois.
+	\item La cr{\'e}ation d'un objet n{\'e}cessite l'allocation de m{\'e}moire cependant ce n'est pas le cas pour une classe.
+\end{itemize}
+
+\subsection*{Encapsulation et H{\'e}ritage}
+
+\subsubsection*{En quoi consiste l'encapsulation ?}
+
+L'encapsulation consiste {\`a} d{\'e}finir la visibilit{\'e} et l'accessibilit{\'e} des propri{\'e}t{\'e}s et m{\'e}thodes d'une classe pour mieux en ma{\^i}triser leur utilisation.
+
+\subsubsection*{Les niveaux d'acc{\`e}s en JAVA}
+
+En Java, il existe quatre niveaux d'acc{\`e}s : public, protected, private et package (non d{\'e}fini / acc{\`e}s par d{\'e}faut).
+
+\begin{tabular}{|p{3.0cm}|p{3.0cm}|p{3.0cm}|p{3.0cm}|p{3.0cm}|p{3.0cm}|}
+	\hline
+	Lieu		&	Dans la Classe 	&	Classe Fille \newline (m{\^e}me package)	&	
+					Classe Fille \newline (autre package)	&	M{\^e}me package	&	
+					Autre package  \\
+	Niveau		&		&		&		&		&			\\
+	\hline
+	public		&	OUI	&	OUI	&	OUI	&	OUI	&	OUI		\\
+	\hline
+	protected	&	OUI	&	OUI	&	OUI	&	OUI	&	NON		\\
+	\hline
+	package		&	OUI	&	OUI	&	NON	&	OUI	&	NON		\\
+	\hline
+	private		&	OUI	&	NON	&	NON	&	NON	&	NON		\\
+	\hline
+\end{tabular}
+
+	\vfill ~\\
+	
+	\columnbreak
+
+\subsubsection*{Que signifie l'h{\'e}ritage en POO et quelle est son utilit{\'e} ?} 
+
+L'h{\'e}ritage consiste {\`a} d{\'e}finir une classe par extension des m{\'e}canismes et attributs d'une autre classe. En outre, pour un ensemble d'entit{\'e}s du monde r{\'e}el donn{\'e}, cela consiste {\`a} regrouper leurs caract{\'e}ristiques communes dans une classe m{\`e}re de laquelle seront d{\'e}riv{\'e}es les classes (filles) correspondant {\`a} ces entit{\'e}s. ~\\
+
+\textbf{{\`A} retenir :}
+\begin{itemize}
+	\item En Java, il est impossible d'h{\'e}riter de deux ou plusieurs classes. Si un tel besoin se pr{\'e}sente, on pourrait se servir des \textbf{interfaces}.
+	\item L'h{\'e}ritage se fait gr{\^a}ce au mot cl{\'e} \textbf{extends}.
+	\item L'appel d'un constructeur de la classe m{\`e}re se fait avec le mot-cl{\'e} \textbf{super}.
+	\item L'h{\'e}ritage permet d'{\'e}viter de r{\'e}p{\'e}ter un code plusieurs fois et de ne pas modifier un code d{\'e}j{\`a} existant dans une classe de base :~\\
+	Exemple : Class Point $\longrightarrow$ NamedPoint : un point nomm{\'e} en plus de ses coordonn{\'e}es.
+	\item Il est fortement conseill{\'e} de rendre \textbf{protected} les attributs de la classe m{\`e}re susceptibles d'{\^e}tre utilis{\'e}s dans les classes filles,
+	\item Il existe en Java des classes non h{\'e}ritables, par exemple, la classe \textbf{String}.
+\end{itemize}
+	
+	\vfill ~\\
+	
+	\columnbreak
+	
 	\section*{Java 8}
 	\begin{itemize}
 		\item Lambda
@@ -339,7 +440,6 @@
     <artifactId>ApplicationName</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    
     <name>Project Name</name>
     <url>http://www.example.org/</url>
     
@@ -380,6 +480,44 @@
 </project>
 	\end{verbatim}
 	\normalsize
+	
+	\vfill
+	\columnbreak
+	
+	\section*{7 Questions {\`a} poser en entretien (par le d{\'e}veloppeur, 2 fois ; par le recruteur aussi, questions finales)}
+	
+	\emph{\footnotesize \textbf{Source : } \texttt{https://www.maddyness.com/2020/09/12/7-questions-developpeur-doit-poser-entretien/} }
+	\begin{itemize}
+		\item Dans le process d'entretien vais-je {\'e}changer avec des d{\'e}veloppeurs·euses de l'{\'e}quipe ? 
+		\item Quelles sont les m{\'e}thodologies et rituels mis en place ?
+		\item Comment vous assurez-vous de la qualit{\'e} du code ?
+		\item Quelle est l'importante de la dette technique, comment est-elle trait{\'e}e ?
+		\item Quelle est la fr{\'e}quence de vos mises en production ? Est-ce automatis{\'e} ?
+		\item ... 
+		\item ... 
+	\end{itemize}
+	
+	\emph{\footnotesize \textbf{Source : } \texttt{http://artisandeveloppeur.fr/wp-content/uploads/2019/04/7-Questions.pdf} }
+	\begin{itemize}
+		\item Quel gestionnaire de source est utilis{\'e} ? (Si il n'y en a pas : probl{\`e}mes potentiels. )
+		\item Quelle est l'anciennet{\'e} du code du projet ?
+		\item Combien de bugs sont recens{\'e}s {\`a} date ?
+		\item Quelle biblioth{\`e}que de tests unitaires et fonctionnels est utilis{\'e}e ?
+		\item Quelle est la couverture du code actuelle ?
+		\item Comment se prend une d{\'e}cision d'architecture ?
+		\item Combien de temps est allou{\'e} {\`a} la veille technologique / formation ?
+	\end{itemize}
+	
+	\emph{\footnotesize \textbf{Source : } \texttt{https://www.maddyness.com/2019/06/05/7-questions-developpeur-entretien-rh/} }
+	\begin{itemize}
+		\item Pour quelles raisons aimez-vous la programmation ?
+		\item Qu'est-ce qui vous a plu et d{\'e}plu dans votre environnement de travail pr{\'e}c{\'e}dent ?
+		\item Que pensez-vous de la revue de code entre pairs ? Appr{\'e}ciez-vous de vous pr{\^e}ter {\`a} l'exercice ?
+		\item Donnez-moi un exemple r{\'e}cent d'une situation qui vous a particuli{\`e}rement stress{\'e}(e) au travail. Que s'est-il pass{\'e} ? Comment avez-vous surmont{\'e} cette {\'e}preuve ?
+		\item Parlez-moi du projet sur lequel vous avez travaill{\'e} et dont vous {\^e}tes le/la plus fier({\`e}re). Qu'est-ce qui a particuli{\`e}rement bien fonctionn{\'e} ?
+		\item Quel est le projet dont vous {\^e}tes le/la moins fier({\`e}re) et que vous consid{\'e}rez comme un {\'e}chec ? Que feriez-vous diff{\'e}remment ?
+		\item Quelle technologie souhaiteriez-vous apprendre cette ann{\'e}e ?
+	\end{itemize}
 	
 	\vfill
 	\columnbreak
@@ -467,8 +605,6 @@
 	
 	\columnbreak
 	
-	
-	
 	%% \tableofcontents
 	%% \vfill
 	%% \columnbreak
@@ -521,18 +657,18 @@
 	
 	\section*{Tierce Maintenance Applicative (TMA)}
 	
-	Un {\'e}l{\'e}m{\'e}nt qui peut arriver en cas de prestations / d{\'e}l{\'e}gation : la TMA. {\`A} propos de la Tierce Maintenance Applicative (TMA), voire corrective / {\'e}volutive :~\\
+	Un {\'e}l{\'e}m{\'e}nt qui peut arriver en cas de prestations / d{\'e}l{\'e}gation : la TMA. {\`A} propos de la Tierce Maintenance Applicative (TMA), voire corrective / {\'e}volutive :
 	\begin{itemize}
-		\item Par <<tierce maintenance applicative>>, on d{\'e}signe les prestations qui consistent {\`a} conserver un programme informatique dans un {\'e}tat lui permettant de remplir sa fonction. Ces prestations de maintien en condition op{\'e}rationnelle s’ex{\'e}cutent {\`a} titre pr{\'e}ventif ou correctif. Elles peuvent {\'e}galement concerner des prestations d’{\'e}volution des logiciels.
+		\item Par <<tierce maintenance applicative>>, on d{\'e}signe les prestations qui consistent {\`a} conserver un programme informatique dans un {\'e}tat lui permettant de remplir sa fonction. Ces prestations de maintien en condition op{\'e}rationnelle s'ex{\'e}cutent {\`a} titre pr{\'e}ventif ou correctif. Elles peuvent {\'e}galement concerner des prestations d'{\'e}volution des logiciels.
 		\item Par maintenance corrective et tierce maintenance applicative corrective, on entend les mesures consistant {\`a} corriger les anomalies. La maintenance applicative consiste {\`a} assurer le bon {\'e}tat de fonctionnement d'un logiciel, ce qui comprend notamment la correction des bugs, l'adaptation {\`a} un nouvel environnement ou {\`a} de nouveaux cas d'utilisation ou encore assurer la mont{\'e}e en charge de l'application. 
-		\item Par <<{\'e}volutif>>, on entend les mesures de maintenance visant {\`a} faire {\'e}voluer ou {\`a} adapter une ou plusieurs applications, afin d’int{\'e}grer de nouvelles fonctions, en y appportant de nouvelles fonctionnalit{\'e}s.
+		\item Par <<{\'e}volutif>>, on entend les mesures de maintenance visant {\`a} faire {\'e}voluer ou {\`a} adapter une ou plusieurs applications, afin d'int{\'e}grer de nouvelles fonctions, en y appportant de nouvelles fonctionnalit{\'e}s.
 		\item \texttt{http://www.marche-public.fr/CCAG-TIC/31-definitions-CCAG-TIC.htm}
 		\item \texttt{http://www.marche-public.fr/Marches-publics/Definitions/Entrees/Tierce-maintenance-evolutive.htm}
 		\item \texttt{https://www.lecoindesentrepreneurs.fr/contrat-de-prestation-informatique-redaction-contenu/}
 		\item ... 
 		\item \texttt{https://www.commentcamarche.net/contents/331-tma-tierce-maintenance-applicative}
 		\item ... 
-		\item Pratique pour apprendre : peu enrichissant d'un point de vue professionnel !
+		\item Pratique pour apprendre au d{\'e}but (ou pour une mission interm{\'e}diaire) : peu enrichissant d'un point de vue professionnel !
 	\end{itemize}
 \end{multicols}
 
