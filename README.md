@@ -7,7 +7,7 @@ Quelques modèles / "templates" de documents LateX "prêt à l'emploi" et des do
     * base
         * img/ : pour les images
         * *.tex : file TeX de base
-        * *.pdf : PDF généré
+        * *.pdf : PDF généré (ignoré dans dans certains cas, pour éviter la charge)
         * *.bib (le cas échéant)
         * Makefile (pour un système Unix / GNU-Linux avec packages texlive-\*)
 
@@ -23,7 +23,10 @@ Quelques modèles / "templates" de documents LateX "prêt à l'emploi" et des do
         * latexEcrit : modèle de lettre
         * latexLivre : exemple de livre (avec chapitres)
         * latexPresentation : Beamer et bases slides LaTeX
-        * memento : exemple de base, mais également : 
+        * latexTemplateMemento : pour faire des aide-mémoire
+    * latexDivers
+        * convergencesPratiques
+        * mementos, notamment : 
             * hibernate (TODO)
             * Java3D (TODO)
             * javaGeneral
@@ -31,8 +34,6 @@ Quelques modèles / "templates" de documents LateX "prêt à l'emploi" et des do
             * rest
             * spring
             * template
-    * latexDivers
-        * convergencesPratiques
         * presentationM2GBI : présentation de 2010 pour des étudiants de l'Université d'Evry, filière Master GBI (Génie Biologie et Informatique
         * presentationARG : une présentation sur les Alternate Reality Game (Jeux en Réalité Alternée) pour des étudiants d' l'UPEC (Créteil) ; contexte association Ligue Ludique (JdR)
         * presentationAtelierCreerIntrigueJdR : présentation "Du scénario de Jeu de Rôle (JdR) au Roman : éléments d'intrigues" ; contexte association Ligue Ludique (JdR)
