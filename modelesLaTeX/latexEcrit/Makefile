@@ -18,8 +18,9 @@ pdf : $(LATEXFILE).dvi
 ps : $(LATEXFILE).dvi
 	$(CCPSTEX) $(LATEXFILE).dvi
 
-clean : $(LATEXFILE).log mrproper
+clean : $(LATEXFILE).log $(LATEXFILE).out mrproper
 	rm $(LATEXFILE).log
+	rm $(LATEXFILE).out
 	# rm $(LATEXFILE).dvi
 	# rm $(LATEXFILE).pdf
 
@@ -31,11 +32,9 @@ $(LATEXFILE).dvi : $(LATEXFILE).tex #$(BIBTEFILE).bib
 	# $(CCBIBTE) $(LATEXFILE)
 	$(CCLATEX) $(LATEXFILE).tex
 	$(CCLATEX) $(LATEXFILE).tex
-	$(CCLATEX) $(LATEXFILE).tex
 
 pdflatex : $(LATEXFILE).tex #$(BIBTEFILE).bib
 	$(CCPDFLA) $(LATEXFILE).tex
 	# $(CCBIBTE) $(BIBTEFILE)
-	$(CCPDFLA) $(LATEXFILE).tex
 	$(CCPDFLA) $(LATEXFILE).tex
 	$(CCPDFLA) $(LATEXFILE).tex
