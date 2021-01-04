@@ -1,0 +1,12 @@
+
+Themes : AnnArbor Antibes Bergen Berkeley Berlin Boadilla boxes CambridgeUS Copenhagen Darmstadt default Dresden Frankfurt Goettingen Hannover Ilmenau JuanLesPins Luebeck Madrid Malmoe Marburg Montpellier PaloAlto Pittsburgh Rochester Singapore Szeged Warsaw
+Colors : albatross beaver beetle crane default dolphin dove fly lily orchid rose seagull seahorse sidebartab structure whale wolverine
+Fonts : default professionalfonts serif structurebold structureitalicserif structuresmallcapsserif
+
+\usetheme{Marburg}
+\usecolortheme{rose}
+\usefonttheme{default}
+
+https://deic-web.uab.cat/~iblanes/beamer_gallery/index.html
+https://mpetroff.net/files/beamer-theme-matrix/
+
