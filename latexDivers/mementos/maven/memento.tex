@@ -25,6 +25,8 @@
 
 \usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols}
 
+\usepackage{graphicx}
+
 %% https://texblog.org/2011/02/26/generating-dummy-textblindtext-with-latex-for-testing/
 %% https://fr.sharelatex.com/learn/Multiple_columns
 %% \usepackage{blindtext}
@@ -225,9 +227,14 @@
 	
 	
 	...
+
+%% https://www.scivision.dev/flip-rotate-latex-image/
+\rotatebox[origin=c]{90}{\includegraphics[width=\textwidth]{mavenphasesv3.png} }
+
 \end{multicols}
 
 \clearpage
+
 
 \end{landscape}
 \end{document}

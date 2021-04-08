@@ -25,6 +25,9 @@
 
 \usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols}
 
+\usepackage{fancyvrb} % for "\Verb" macro
+\VerbatimFootnotes    % enable use of \Verb in footnotes
+
 %% https://texblog.org/2011/02/26/generating-dummy-textblindtext-with-latex-for-testing/
 %% https://fr.sharelatex.com/learn/Multiple_columns
 %% \usepackage{blindtext}
@@ -95,13 +98,13 @@
 	
 	D{\'e}p{\^o}t :: Repository. 
 	
-	Commit : instantan{\'e} / point de contr{\^o}le. 
-	Push : envoi vers serveur distant. 
-	Branche : pour travaux en parall{\`e}le (une fusion sera n{\'e}cessaire ensuite, via 'merge'). 
+	Commit : instantan{\'e} / point de contr{\^o}le.  ~\\
+	Push : envoi vers serveur distant.  ~\\
+	Branche : pour travaux en parall{\`e}le (une fusion sera n{\'e}cessaire ensuite avec la branxche principale, via \emph{merge}).  ~\\
 	
 	\subsection*{Quelques Indications}
 	
-	Configuration ({\'e}ventuellement \emph{vim ~/.gitconfig}) : 
+	Configuration ({\'e}ventuellement \emph{vim \textasciitilde{}/.gitconfig}) : 
 	
 	\begin{verbatim}
 git config --global color.diff auto
@@ -111,6 +114,28 @@ git config --global user.name "<pseudo>"
 git config --global user.email <pesudo@domaine.extension>
 	\end{verbatim}
 	
+
+Sur une machine avec un OS Windows, il faut configurer Git pour convertir automatiquement entre les caractères de fin de ligne LR et CRLF (normalement LF dans un repository Git. Utile sous Linux ? Selon la configuration du projet / de l'IDE, conversion lors du commit avec \texttt{input} à la place de \texttt{true}. 
+%% On a Windows machine, you must configure Git to automatically convert between LF and CRLF line endings (normally Git repositories contain LF line endings):
+%% On a Linux machine, you must configure Git to convert CRLF to LF on commit:
+%% git config --global core.autocrlf input
+
+	\begin{verbatim}
+git config --global core.autocrlf true
+	\end{verbatim}
+
+Quelque soit la machine / l'OS, après chaque \emph{git pull}, cela peut être utile de réappliquer ses changement locaux après les éléments ajoutés : configuration d'un \emph{git rebase} automatique pour toutes les branches. 
+%% On all machines, after each git pull, it is interesting to reapply your local changes on top of the new changes so configure git to setup automatically rebase mode on all created branches:
+
+	\begin{verbatim}
+git config --global branch.autosetuprebase always
+	\end{verbatim}
+ 
+Ignorer les espaces :
+	\begin{verbatim}
+git merge -Xignore-space-change <source_branch>
+	\end{verbatim}
+
 	\vfill~\\
 	\columnbreak
 	
@@ -187,6 +212,53 @@ git config --global user.email <pesudo@domaine.extension>
 		\hline
 	\end{tabular}
 	\end{table}
+	
+	%% \columnbreak
+	
+\textsc{Removing a File from Every Commit}~\\
+
+This occurs fairly commonly. Someone accidentally commits a huge binary file with a thoughtless \verb/git add ./, and you want to remove it everywhere. Perhaps you accidentally committed a file that contained a password, and you want to make your project open source. filter-branch is the tool you probably want to use to scrub your entire history. To remove a file named passwords.txt from your entire history, you can use the \verb/--tree-filter/ option to filter-branch:~\\
+	\begin{verbatim}
+$ git filter-branch --tree-filter 'rm -f passwords.txt' HEAD 
+	Rewrite 6b9b3cf04e7c5686a9cb838c3f36a8cb6a0fc2bd (21/21) 
+	Ref 'refs/heads/master' was rewritten
+	\end{verbatim}
+The \verb/--tree-filter/ option runs the specified command after each checkout of the project and then recommits the results. In this case, you remove a file called passwords.txt from every snapshot, whether it exists or not. If you want to remove all accidentally committed editor backup files, you can run something like \verb/git filter-branch --tree-filter 'rm -f *~' HEAD/.~\\
+You'll be able to watch Git rewriting trees and commits and then move the branch pointer at the end. It's generally a good idea to do this in a testing branch and then hard-reset your master branch after you've determined the outcome is what you really want. To run filter-branch on all your branches, you can pass \verb/--all/ to the command.~\\
+
+Command to execute:
+	\begin{verbatim}
+git filter-branch --tree-filter 'rm -fr <file>' HEAD
+	\end{verbatim}
+
+\textsc{Propagating changes to other users}~\\
+
+In order to make the changes available to others (or you in the future), you could force a push. This will ensure that everyone that clones the repository from there on will have the new version of the repository, be it with the deleted files or with the changes to sensitive data. It is important to note though, that this will only work for the people that make a fresh clone of the repository. If you have other contributors and you would like them to have the new version, they will have to either fresh clone the repository again or run the commands as well before performing a pull.~\\
+
+I want to emphasize that your other contributors should download a fresh clone of the repository or run the commands. The problem with performing a pull for a person with the older version of the repository, is that it will merge the old commits (with the files still added or the sensitive data) with the new commits. This would result on some “duplicated” commits, and would re-add the deleted files or override the changes we’ve made. So try to be very careful with that.~\\
+
+One last thing that I want to point out is that old commits will still remain on the remote repository, but without any references pointing to them.~\\
+
+So procedure will be:
+\begin{itemize}
+	\item identify users of this repository
+	\item make them commit \& push their changes
+	\item make them delete the repository
+	\item I will pull the latest changes
+	\item I will clean the repo with the filter-branch operation
+	\item I will force the push of the history
+	\item users will be able to clone the repository and resume working on it
+\end{itemize}~\\
+
+Sources: 
+\begin{itemize}
+	\item \texttt{\footnotesize https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History\#The-Nuclear-Option:-filter-branch}
+	\item \texttt{\footnotesize https://www.gonzedge.com/blog/2012/04/27/git-removing-sensitive-data-and-rewriting-history.html}
+	\item \texttt{\footnotesize https://help.github.com/en/articles/removing-sensitive-data-from-a-repository}
+\end{itemize}~\\
+
+	\vfill~\\
+	%% \columnbreak
 	
 	...
 \end{multicols}
