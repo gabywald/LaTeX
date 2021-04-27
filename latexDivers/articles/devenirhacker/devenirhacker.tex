@@ -22,6 +22,10 @@
 % \usepackage[pdftex]{hyperref}
 
 % \usepackage[ paper=a4paper, tmargin=1.5cm,bmargin=1.5cm,lmargin=2cm,rmargin=2cm]{geometry}
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.00cm}{1.00cm}{1.00cm}{1.00cm}{15pt}{3pt}{45pt}{20pt}
 
 % \usepackage{eso-pic} %% mettre une image de fond
 % http://forums.fedora-fr.org/viewtopic.php?pid=337748
@@ -37,11 +41,15 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE,RO]{\begin{center} \textbf{Comment devenir Hacker ? Suivez le guide !} \end{center}}
-\fancyfoot[LE]{\thepage \hfill
-\textit{Comment devenir hacker // Alchimiste de l'informatique} \hfill \includegraphics[width=0.5cm]{img/glider.png} }
-\fancyfoot[RO]{\includegraphics[width=0.5cm]{img/glider.png} \hfill
-\textit{Comment devenir hacker // Alchimiste de l'informatique} \hfill \thepage}
+\fancyhead[LE,RO]{ \centering \textbf{Comment devenir Hacker ? Suivez le guide !} }
+\fancyfoot[LE]{
+	\thepage \hfill
+	\textit{Comment devenir hacker // Alchimiste de l'informatique} 
+	\hfill \includegraphics[width=0.35cm]{img/glider.png} }
+\fancyfoot[RO]{
+	\includegraphics[width=0.35cm]{img/glider.png} 
+	\hfill \textit{Comment devenir hacker // Alchimiste de l'informatique} 
+	\hfill \thepage }
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0.5pt}
 \addtolength{\headheight}{0.5pt}
@@ -53,7 +61,6 @@
 
 %--- Definitions de nouvelles commandes ---
 \newcommand{\N}{\mathbb{N}} % les entiers naturels
-
 
 	\author{Gaby Wald}
 	\title{Comment devenir hacker ? Alchimiste de l'informatique...}
@@ -75,12 +82,6 @@
 				\includegraphics[width=3cm]{img/glider.png}~\\[\baselineskip]
 			\end{tabular}
 		\end{tabular}
-		% \\ \hline
-		 	% % if more than one logo
-			% \includegraphics[width=5cm]{img/logo_glider.eps}
-			% \includegraphics[width=5cm]{img/logo_wifi.eps}
-		% \\ \hline
-		% \end{tabular}
 			~\\[\baselineskip]~\\[\baselineskip]
 			\Huge{Comment devenir Hacker ?}~\\[\baselineskip]
 			\Large{Alchimiste de l'informatique...}~\\[\baselineskip]
@@ -90,8 +91,6 @@
 	\large{
 		\textsc{\textbf{<<In Interweb We Trust>>}}
 		~\\[\baselineskip]
-		% <<titre personne>> : \texttt{Anne ONYME}~\\[\baselineskip]
-		% <<titre personne>> : \texttt{Jocelyn CONNU}~\\[\baselineskip]
 		~\\[\baselineskip]
 		\textit{Re-Use and diffuse this documentation !}
 	}
@@ -193,9 +192,6 @@
 
 		\hline
 		
-
-		
-
 	\end{tabular}
 
 \end{center}
@@ -209,11 +205,6 @@
 	% pdfkeywords={hacker,alchimiste,information,programmation}
 %ecrire le titre...
 \maketitle
-\setcounter{page}{0}
-\thispagestyle{empty}
-\clearpage
-
-~\\
 \setcounter{page}{0}
 \thispagestyle{empty}
 \clearpage
@@ -269,7 +260,7 @@ Les informations et conseils donn{\'e}s dans ce document r{\'e}sument le minimum
 
 		L'{\'e}criture de l'adresse dans la barre du navigateur ou le clic sur un lien indique au navigateur d'acc{\'e}der {\`a} la page concern{\'e}e (si elle existe), et le navigateur s'occuper du reste (demande de la page via les protocoles TCP/IP et http gr{\^a}ce {\`a} l'ordinateur) et traduction lisible de la page (traduction des balises en apparence du texte). ~\\
 
-		Il existe diff{\'e}rents navigateurs internets : FireFox, Mozilla, Safari, Internet Explorer (fr{\'e}quent mais peu performant...). Ils ont tous des capacit{\'e}s similaires, certains sites internets {\'e}tant plus adapt{\'e}s {\`a} certains (ou pas du tout adapt{\'e}s). ~\\~\\~\\
+		Il existe diff{\'e}rents navigateurs internets : FireFox, Mozilla, Safari, Internet Explorer (fr{\'e}quent mais peu performant...). Ils ont tous des capacit{\'e}s similaires, certains sites internets {\'e}tant plus adapt{\'e}s {\`a} certains (ou pas du tout adapt{\'e}s). ~\\
 
 	\subsection{Le courrier {\'e}lectronique}
 \textit{(adresses du type prenom.nom@fournisseur.com ou surnom@serveur.fr)}
@@ -283,7 +274,6 @@ Les informations et conseils donn{\'e}s dans ce document r{\'e}sument le minimum
 
 			Des r{\^e}gles de politesse existent sur ces forum, pour les plus {\'e}videntes il s'agit surtout de ne pas poster <<hors sujet>>, {\'e}viter d'envoyer des propos injurieux ou de poser une question en {\'e}crivant que l'on ne viendra pas lire les r{\'e}ponses... Une Foire Aux Question et une pr{\'e}sentation du groupe sont post{\'e}s r{\'e}guli{\`e}rement, tous les quinze jours ou tous les mois ; lisez attentivement ces documents afin d'{\'e}viter les erreurs...~\\
 
-
 \section{Apprendre {\`a} lire (et {\`a} {\'e}crire) en anglais}
 		\c{C}a, on est cens{\'e} le faire {\`a} l'{\'e}cole, mais le faire de soi-m{\^e}me et se maintenir au top niveau c'est mieux ! Lire des livres en anglais est une bonne solution pour y arriver, une visite {\`a} la biblioth{\`e}que la plus proche est une fa\c{c}on de trouver des livres en anglais (ou dans une librairie). ~\\
 
@@ -295,7 +285,7 @@ Les informations et conseils donn{\'e}s dans ce document r{\'e}sument le minimum
 		\item $<$\emph{http://www.e-anglais.com/}$>$
 	\end{itemize}~\\
 
-	Un bon conseil est de passer le test TOEIC (Test Of English For International Communication) ou TOEFL (Test Of English as a foreign language), \c{c}a fait toujours bien sur le Curriculum Vitae... Et l'anglais est (malheureusement ?) utile partout : autant pour le travail qu'{\`a} titre personnel, les notices techniques, certaines informations ne sont disponibles qu'en anglais (donn{\'e}es scientifiques et informatiques)...~\\
+	Un bon conseil est de passer le test TOEIC (Test Of English For International Communication) ou TOEFL (Test Of English as a foreign language), \c{c}a fait toujours bien sur le Curriculum Vitae... Et l'anglais est (malheureusement ?) utile partout : autant pour le travail qu'{\`a} titre personnel, les notices techniques, certaines informations ne sont disponibles qu'en anglais (donn{\'e}es scientifiques et informatiques)... %% ~\\
 
 \section{D{\'e}couvrez comment marche votre ordinateur}
 		La carte m{\`e}re rassemble les {\'e}l{\'e}ments principaux pour un bon fonctionnement de l'ordinateur et s'occupe du traitement et de l'{\'e}change de donn{\'e}es avec les autres {\'e}l{\'e}ments de l'ordinateur ({\'e}cran, disques, p{\'e}riph{\'e}riques divers). Le processeur est l'unit{\'e} de calcul centrale, li{\'e}e {\`a} diff{\'e}rents registres de calculs inclus et {\`a} la m{\'e}moire vive (RAM). D'autres {\'e}l{\'e}ments peuvent s'ajouter {\`a} la carte m{\`e}re, essentiellement des <<cartes filles>> : carte son, carte vid{\'e}o, carte Ethernet... Ces derni{\`e}res permettent d'acc{\'e}l{\'e}rer ou de remplir certaines fonctions en plus du processeur de la carte m{\`e}re car ils comportent des processeurs d{\'e}di{\'e}s {\`a} des algorithmes de calculs particuliers, ainsi que des connections particuli{\`e}res vers d'autres {\'e}l{\'e}ments. ~\\
@@ -341,8 +331,6 @@ Les informations et conseils donn{\'e}s dans ce document r{\'e}sument le minimum
 
 	Comme indiqu{\'e} plus haut, chaque protocole passe par un port particulier, par exemple le port 80 pour le protocole http, 25 pour SMTP, 110 pour POP, 443 pour https, 6667 pour IRC... Cela permet un traitement particulier par le syst{\`e}me d'exploitation et les logiciels qui utilisent ces protocoles (ces ports peuvent {\^e}tre modifi{\'e}s  par l'utilisateur, mais par convention, ce sont ceux utilis{\'e}s par d{\'e}faut).~\\
 
-\clearpage
-
 \section{Utiliser un syst{\`e}me Unix open source : LINUX, BSD...}
 		Pourquoi utiliser Linux ? Pour changer de votre syst{\`e}me d'exploitation habituel (on peut raisonnablement penser qu'il s'agit de windows) et vous apprendre un syst{\`e}me qui utilise des normes assez standards et universelles (syst{\`e}mes unix et assimil{\'e}s dans les universit{\'e}s et les entreprises, syst{\`e}mes analogues, Mac OS X). On trouve maintenant de tr{\`e}s belles interfaces graphiques solides (Gnome et KDE par exemple) en plus du syst{\`e}me de ligne de commande tr{\`e}s formateur pour comprendre le fonctionnement d'un syst{\`e}me d'exploitation...~\\
 
@@ -350,17 +338,19 @@ Les informations et conseils donn{\'e}s dans ce document r{\'e}sument le minimum
 
 		Ubuntu est un syst{\`e}me d'exploitation Linux qui peut {\^e}tre t{\'e}l{\'e}charg{\'e} gratuitement ou envoy{\'e} gratuitement sur CD par voie postale via une demande sur $<$\emph{https://shipit.ubuntu.com/}$>$, tr{\`e}s facile {\`a} installer sur tout ordinateur, il suffit de se laisser guider  ; petite surprise : on peut {\'e}galement d{\'e}marrer un ordinateur avec ce CD, tout comme avec les Live-CD Knoppix et d{\'e}riv{\'e}s. ~\\
 
+\clearpage
+
 \section{Restez loin des outils d'attaques ou ill{\'e}gaux}
 		{\`A} quoi sert un mailbomber ? Faire du spam, donc {\`a} encombrer le r{\'e}seau (les services de courrier {\'e}lectroniques ont, de toute fa\c{c}on, tendance {\`a} effacer directement les messages r{\'e}p{\'e}t{\'e}s plus de cinq ou dix fois). {\`a} quoi cela peut-il servir d'effacer (ou tenter d'effacer) le disque dur d'une personne que vous venez {\`a} peine de rentrer sur IRC ou chat ? Rien, sinon vous faire exclure... ~\\
 
 		Aimeriez-vous que votre ordinateur subissent les cons{\'e}quences d'une telle attaque en r{\'e}ponse {\`a} un tel comportement ? Je crois que non, surtout si la personne en face est plus comp{\'e}tente que vous (si c'est le cas, oubliez votre pare-feu / firewall et votre antivirus)... J'esp{\`e}re que vous aurez compris pourquoi ne pas utiliser ces logiciels g{\'e}n{\'e}ralement ill{\'e}gaux... Si vous n'avez pas encore compris, m{\'e}ditez : <<Taper sur les autres pour montrer que l'on est le meilleur... est la meilleure fa\c{c}on de montrer que l'on est un imb{\'e}cile. >> (si les terroristes pensaient {\`a} \c{c}a, on serait plus tranquilles). ~\\
 
-\clearpage
-% \rule{10cm}{0.5mm}~\\
+%% \clearpage
+\rule{10cm}{0.5mm}~\\
 
 Voil{\`a} donc pour les neufs points essentiels, que l'on peut d{\'e}velopper tr{\`e}s fortement par les {\'e}l{\'e}ments qui suivent dans les pages suivantes, mais {\^e}tre hacker, c'est aussi savoir chercher des informations compl{\'e}mentaires sans point de vue <<pr{\^e}t {\`a} l'emploi>>. ~\\
 
-% \clearpage
+\clearpage
 
 \rule{10cm}{1mm}~\\
 
@@ -373,14 +363,13 @@ Pour devenir un hacker, \textbf{r{\'e}p{\'e}tez les phrases suivantes} jusqu'{\`
 \item Personne ne devrait jamais avoir {\`a} r{\'e}soudre le m{\^e}me probl{\`e}me deux fois.
 \item La routine et l'ennui sont inacceptables. 
 \item Vive la libert{\'e}!
-\item L'attitude n'est pas un substitut {\`a} la comp{\'e}tence. Pour cela il vous faut : ~\\
+\item L'attitude n'est pas un substitut {\`a} la comp{\'e}tence. Pour cela il vous faut : %% ~\\
 	\begin{enumerate}
-	\item Apprendre {\`a} programmer. 
-	\item Installer un Unix libre et apprendre {\`a} s'en servir.
-	\item Apprendre {\`a} utiliser le World Wide Web et {\`a} {\'e}crire en HTML. 
+		\item Apprendre {\`a} programmer. 
+		\item Installer un Unix libre et apprendre {\`a} s'en servir.
+		\item Apprendre {\`a} utiliser le World Wide Web et {\`a} {\'e}crire en HTML. 
 	\end{enumerate}
 \end{enumerate}~\\
-
 
 Les statuts dans la culture des hackers sont principalement socio-culturels selon vos centres d'int{\'e}r{\^e}t et votre aptitude {\`a} communiquer avec d'autres (geek, nerd...). Il y a principalement cinq types de \textbf{choses {\`a} faire pour {\^e}tre respect{\'e}} par les hackers : 
 \begin{enumerate}
@@ -414,7 +403,6 @@ Une liste de \textbf{choses {\`a} \underline{ne pas} faire} (l'exclusion est g{\
 	\item Ne pas poster de message rempli de fautes d'orthographe ou de grammaire. 
 \end{itemize}
 
-
 \clearpage
 
 \part*{Pour aller plus loin...\markboth{Pour aller plus loin...}{Pour aller plus loin...}}
@@ -443,10 +431,6 @@ Adresses utiles
 
 Pour information les termes Hacker et Cracker sont (presques) mutuellement exclusifs : l'un est un bidouilleur dans l'{\^a}me, l'autre veut d{\'e}truire ;  la mentalit{\'e} Geek est tr{\`e}s proche (voire d{\'e}finis) la mentalit{\'e} Hacker, un Nerd voire un Otaku est la version plus obscure du Geek...~\\
 
-
-
-
-
 Quelques livres de science-fiction pour parfaire votre culture sont indiqu{\'e}s dans les r{\'e}f{\'e}rences bibliographiques...
 \begin{itemize}
 	\item L'ensemble des livres de William Gibson : \emph{Neuromancien}, \emph{Comte Z{\'ero}}...
@@ -471,7 +455,7 @@ Quelques livres de science-fiction pour parfaire votre culture sont indiqu{\'e}s
 
 \makeglossaire
 
-\clearpage
+%% \clearpage
 
 \section*{Bibliographie\markboth{Bibliographie}{Bibliographie}}
 
