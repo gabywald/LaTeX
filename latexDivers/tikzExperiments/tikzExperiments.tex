@@ -37,17 +37,17 @@
 
 \begin{minipage}[ht]{0.45\textwidth}
 	\begin{tikzpicture}
-		\fill[gray] (0,2) arc (-90:90:1);
-	 	\fill[red] (0,-1) arc (0:90:1cm);
+		\fill[gray] (0, 2) arc (-90:90:1);
+	 	\fill[red]  (0,-1) arc (0:90:1cm);
 		\draw (0,-1) arc (-90:-270:1);
 	\end{tikzpicture}
 \end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
 	\begin{tikzpicture}
-		\fill[gray] (0,0) arc (-180:0:1cm);
+		\fill[gray]  (0,0) arc (-180:0:1cm);
 		\fill[black] (0,0) arc (0:180:1cm);
 	\end{tikzpicture}
 	\begin{tikzpicture}
-		\fill[gray] (0,0) arc (0:-180:1cm);
+		\fill[gray]  (0,0) arc (0:-180:1cm);
 		\fill[black] (0,0) arc (0:180:1cm);
 	\end{tikzpicture}
 \end{minipage} ~\\
@@ -105,14 +105,140 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 \begin{minipage}[ht]{0.45\textwidth}
 	\colorbox{purple!30}{
 	\begin{tikzpicture}
-		\draw[fill, gray] (0,0) arc (0:-180:1cm);
-		\draw[fill, black] (0,0) arc (0:180:1cm);
+		\draw[fill, gray]  (0,0) arc (0:-180:1cm);
+		\draw[fill, black] (0,0) arc (0: 180:1cm);
 		
 		\draw[fill, red] 	(-1.25,-0.25) rectangle (-1.60,-5);
 		\draw[fill, green] 	(-0.75,-0.25) rectangle (-1.10,-6);
 		\draw[fill, blue] 	(-0.25,-0.25) rectangle (-0.60,-7);
 	\end{tikzpicture}
 	}
-\end{minipage}
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}
+	
+		\draw[fill, red]    ( 0.0, 0.0) -- ( 1.5, 0.0) arc[start angle=  0, end angle= 90,radius=1.5cm] -- ( 0.0, 0.0);
+		\draw[fill, green]  ( 0.0, 0.0) -- ( 0.0, 1.5) arc[start angle= 90, end angle=180,radius=1.5cm] -- ( 0.0, 0.0);
+		\draw[fill, blue]   ( 0.0, 0.0) -- (-0.0,-1.5) arc[start angle=270, end angle=360,radius=1.5cm] -- ( 0.0, 0.0);
+		\draw[fill, yellow] ( 0.0, 0.0) -- (-1.5,-0.0) arc[start angle=180, end angle=270,radius=1.5cm] -- ( 0.0, 0.0);
+		
+		\draw [->] (-0.0,-2.0) -- ( 0.0, 2.0);
+		\draw [->] (-2.0,-0.0) -- ( 2.0, 0.0);
+		
+		\node at (-1.0,  2.00) {Promoter1};
+		\node at ( 1.0,  2.00) {Promoter2};
+		\node at (-1.0, -2.00) {Promoter3};
+		\node at ( 1.0, -2.00) {Promoter4};
+		
+		%% \node at ( 3.5, -1.25) {Promoter5};
+		%% \node at ( 3.5,  1.25) {Promoter6};
+		\node[rotate= 23] at ( 3.5,  -1.25) {Promoter5};
+		\node[rotate=-23] at ( 3.5,   1.25) {Promoter6};
+		
+		\node[fill=yellow, draw=black, text=blue, rotate=90] at (-3.0,  1.0) {Promoter7};
+		\node[fill=green , draw=black, text=red , rotate=90] at (-3.0, -1.0) {Promoter8};
+		
+	\end{tikzpicture}
+\end{minipage} ~\\
+
+
+ \begin{minipage}[ht]{0.45\textwidth}
+	\colorbox{purple!30}{
+	\begin{tikzpicture}
+		\draw[fill, gray]  (0,0) arc (0:-180:1cm);
+		\draw[fill, black] (0,0) arc (0: 180:1cm);
+		
+		\draw[fill, red] 	(-1.25,-0.25) rectangle (-1.60,-5);
+		\draw[fill, green] 	(-0.75,-0.25) rectangle (-1.10,-6);
+		\draw[fill, blue] 	(-0.25,-0.25) rectangle (-0.60,-7);
+	\end{tikzpicture}
+	}
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}
+		\draw[fill=yellow!30] (0,0) -- (2.0, 0.0) arc[start angle=0, end angle=60,radius=2cm] -- (0,0);
+		\draw[fill=cyan!30]   (0,0) -- (0.0, 1.5) arc[start angle=90, delta angle=30, radius=1.5cm] -- (0,0);
+		\draw[-latex] (120:0.5) arc (120:360:0.5) ;
+	\end{tikzpicture}~\\
+
+	\begin{tikzpicture}
+		\draw[fill, red]    (0,0) arc (  0: 90:1.0cm);
+		\draw[fill, green]  (0,0) arc ( 90:180:1.0cm);
+		\draw[fill, blue]   (0,0) arc (180:270:1.0cm);
+		\draw[fill, yellow] (0,0) arc (270:360:1.0cm);
+	\end{tikzpicture} ~\\
+\end{minipage} ~\\
+
+\begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}
+		\draw [->] (-0.0,-3.0) -- ( 0.0, 3.0);
+		\draw [->] (-3.0,-0.0) -- ( 3.0, 0.0);
+	
+		\draw[fill, red]    ( 0.0, 0.0) -- ( 2.0, 0.0) arc[start angle=  0, delta angle= 90,radius=2.0cm] -- ( 0.0, 0.0);
+		\draw[fill, green]  ( 0.0, 0.0) -- ( 2.0, 2.0) arc[start angle= 90, delta angle= 90,radius=2.0cm] -- ( 1.5, 1.5);
+		\draw[fill, blue]   ( 0.0, 0.0) -- ( 0.0, 2.0) arc[start angle=180, delta angle= 90,radius=2.0cm] -- ( 1.0, 1.0);
+		\draw[fill, yellow] ( 0.0, 0.0) -- ( 0.0, 0.0) arc[start angle=270, delta angle= 90,radius=2.0cm] -- ( 2.0, 2.0);
+	\end{tikzpicture}
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}
+		\draw [->] (-0.0,-3.0) -- ( 0.0, 3.0);
+		\draw [->] (-3.0,-0.0) -- ( 3.0, 0.0);
+	
+		\draw[fill, red]    ( 0.0, 0.0) -- ( 2.0, 0.0) arc[start angle=  0, end angle= 90,radius=2.0cm] -- ( 0.0, 0.0);
+		\draw[fill, green]  ( 2.0, 0.0) -- ( 2.0, 2.0) arc[start angle= 90, end angle=180,radius=2.0cm] -- ( 1.5, 1.5);
+		\draw[fill, blue]   ( 2.0, 2.0) -- ( 0.0, 2.0) arc[start angle=180, end angle=270,radius=2.0cm] -- ( 1.0, 1.0);
+		\draw[fill, yellow] ( 0.0, 2.0) -- ( 0.0, 0.0) arc[start angle=270, end angle=360,radius=2.0cm] -- ( 2.0, 2.0);
+	\end{tikzpicture}
+\end{minipage} ~\\
+
+\begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}
+		\draw [->] (-0.0,-3.0) -- ( 0.0, 3.0);
+		\draw [->] (-3.0,-0.0) -- ( 3.0, 0.0);
+	
+		\draw[fill, red]    ( 0.0, 0.0) -- ( 2.0, 0.0) arc[start angle=  0, end angle= 90,radius=2.0cm] -- ( 0.0, 0.0);
+		\draw[fill, green]  ( 0.0, 0.0) -- ( 0.0, 2.0) arc[start angle= 90, end angle=180,radius=2.0cm] -- ( 0.0, 0.0);
+		\draw[fill, blue]   ( 0.0, 0.0) -- ( 2.0, 2.0) arc[start angle=180, end angle=270,radius=2.0cm] -- ( 0.0, 0.0);
+		\draw[fill, yellow] ( 0.0, 0.0) -- ( 0.0, 0.0) arc[start angle=270, end angle=360,radius=2.0cm] -- ( 0.0, 0.0);
+	\end{tikzpicture}
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}
+		\draw [->] (-0.0,-3.0) -- ( 0.0, 3.0);
+		\draw [->] (-3.0,-0.0) -- ( 3.0, 0.0);
+	
+		\draw[fill, red]    ( 0.0, 0.0) -- ( 2.0, 0.0) arc[start angle=  0, end angle= 90,radius=2.0cm] -- ( 0.0, 0.0);
+		\draw[fill, green]  ( 0.0, 0.0) -- ( 0.0, 2.0) arc[start angle= 90, end angle=180,radius=2.0cm] -- ( 0.0, 0.0);
+		\draw[fill, blue]   ( 0.0, 0.0) -- (-2.0,-0.0) arc[start angle=180, end angle=270,radius=2.0cm] -- ( 0.0, 0.0);
+		\draw[fill, yellow] ( 0.0, 0.0) -- (-0.0,-2.0) arc[start angle=270, end angle=360,radius=2.0cm] -- ( 0.0, 0.0);
+	\end{tikzpicture}
+\end{minipage} ~\\
+
+%% https://tex.stackexchange.com/questions/45848/rotate-node-text-and-use-relative-positioning-in-tikz
+%% \begin{tikzpicture}
+%%   \node [draw] (first) {1};
+%%   \foreach \o [count=\oi from 0] in {0.1, 0.15, 0.3, 0.5, 1} {%
+%%     \pgfmathtruncatemacro{\angle}{90 * \oi/4}
+%%     \node [draw, right=of first, opacity=\o, rotate=\angle, anchor=north] (second\oi) {2};
+%%     \coordinate (second_rotated_center) at (second\oi.center);
+%%   }
+%%   \begin{scope}[red, very thin]
+%%     \node at (second0.north) {
+%%       \begin{tikzpicture}[scale=0.02, very thin]
+%%         \draw (-1, -1) -- (1,  1);
+%%         \draw (-1,  1) -- (1, -1);
+%%       \end{tikzpicture}
+%%     };
+%%     \begin{scope}[dash pattern=on 0.1mm off 0.1mm]
+%%       \draw (second0.north) -- (second0.center);
+%%       \draw (second0.north) -- (second_rotated_center);
+%%     \end{scope}
+%%     \draw ([yshift=-0.5mm] second0.north)
+%%       -- ([yshift=-0.5mm, xshift=0.5mm] second0.north)
+%%       -- ([xshift=0.5mm] second0.north);
+%%     \draw [>=stealth,
+%%            decoration={markings, mark=at position 1 with
+%%              {\arrow[scale=0.5]{>}}}, 
+%%            postaction={decorate}]
+%%       (second0.center) to [bend right=45] (second_rotated_center);
+%%   \end{scope}
+%% \end{tikzpicture}~\\
 
 \end{document}
