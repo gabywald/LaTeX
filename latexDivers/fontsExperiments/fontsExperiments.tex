@@ -1,0 +1,253 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}	             % pour la taille   
+\usepackage{epsfig}          % pour gerer les images
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figures
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{lscape} % changement orientation page
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing, shapes}
+
+%% \setmainfont[Ligatures=TeX]{Computerfont}
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont{Computerfont} %% Ubuntu
+%% \setmonofont{Lucida Sans Typewriter}
+
+\usepackage{lipsum}
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+%% \usepackage{vmargin}
+%% \setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{60pt}{20pt}
+
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+% \pagestyle{headings}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+% http://www.trustonme.net/didactels/250.html
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+	\textbf{Un superbe titre}
+\hfill \includegraphics[width=0.5cm]{fonts/logo_glider.png} }
+\fancyfoot[RO]{\includegraphics[width=0.5cm]{fonts/logo_glider.png} \hfill
+	\textbf{Un superbe titre}
+\hfill \thepage /\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\fancyfoot{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+%--- Definitions de nouvelles commandes ---
+\newcommand{\N}{\mathbb{N}} % les entiers naturels
+
+%--- Pour le titre ---
+\def\maketitle{%
+	\begin{center}
+		\begin{tabular}[c]{c|c}
+			\textsc{\textbf{Un superbe titre}}~\\[\baselineskip]~\\[\baselineskip]
+			\emph{\textbf{Sous-titre 1}}~\\[\baselineskip]~\\[\baselineskip]
+			\emph{\textbf{Sous-titre 2}}~\\[\baselineskip]~\\[\baselineskip]
+			\textsc{Auteur Inconnu}~\\[\baselineskip]~\\[\baselineskip]
+			& 
+			\includegraphics[width=3cm]{fonts/logo_glider.png}~\\[\baselineskip]
+		\end{tabular}
+			~\\[\baselineskip]~\\[\baselineskip]
+			\Huge{Machin / Bidule}~\\[\baselineskip]
+			\Large{Underground et InterWeb}~\\[\baselineskip]
+		
+		~\\[\baselineskip]
+		~\\[\baselineskip]
+	\large{
+		\textsc{\textbf{<<In Interweb we Trust>>}}
+		~\\[\baselineskip]
+		<<titre personne>> : \texttt{Anne ONYME}~\\[\baselineskip]
+		<<titre personne>> : \texttt{Jocelyn CONNU}~\\[\baselineskip]
+		~\\[\baselineskip]
+		\textit{Some other elements in Italics !}
+	}
+
+	\end{center}
+
+}%
+
+
+
+%--- Pour le glossaire --- a defaut de \makeglossary ou d'utilisation d'index latex
+
+\definecolor{verylightgray}{rgb}{0.8,0.8,0.8}
+\def\makeglossaire{%
+	\begin{center}
+
+	\begin{tabular}{|>{\columncolor{verylightgray}} p{0.2\textwidth}|p{0.8\textwidth}|}
+
+		\hline
+
+		\textbf{BLAST} & 
+
+			\begin{tabular}{p{0.8\textwidth}}
+
+			Basic Local Alignment Search Tool \\
+
+			\textit{algorithmes et logiciels pour l'alignement de s{\'e}quences et la recherche de similarit{\'e}s locales}
+
+			\end{tabular} \\
+
+		\hline
+
+		\textbf{BNDB} & Biochemical NetWork DataBase \textit{(entrep{\^o}t de donn{\'e}es)} \\
+
+		\hline
+
+	\end{tabular}
+
+\end{center}
+
+}%
+
+%============================= Corps =================================
+\begin{document}
+
+%ecrire le titre...
+\maketitle
+\setcounter{page}{0}
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{0}
+\thispagestyle{empty}
+% ecrire la table des mati{\'e}res...
+\tableofcontents
+
+% ecrire la table des figures et celle des tableaux
+
+\setcounter{page}{0}
+\thispagestyle{empty}
+
+~\\ \rule{10cm}{1mm}~\\
+
+\listoffigures
+
+~\\ \rule{10cm}{1mm}~\\
+
+\listoftables
+\clearpage
+
+%% le contenu
+
+% \rule{10cm}{0.5mm}~\\
+
+\section*{Introduction\markboth{Introduction}{Introduction}}
+
+\addcontentsline{toc}{section}{Introduction}
+
+{
+	\setmainfont{Ubuntu}
+	\lipsum[1]
+}
+
+{
+	\setmainfont{Cyberpunk Is Not Dead}
+	\lipsum[2]
+}
+
+{
+	\setmainfont{CthulhuianV2}
+	\lipsum[3]
+}
+
+
+[...]~\\
+
+\rule{10cm}{0.5mm}~\\
+
+
+\clearpage
+
+
+\section{Section}
+
+\subsection{Sous-section}
+
+\subsubsection{sous sous sous section}
+
+[...]~\\
+
+\subsubsection{sous sous sous section}
+
+
+\begin{table}[ht]
+
+	\begin{center}
+
+		\begin{tabular}{|p{0.1\textwidth}|p{0.8\textwidth}|}
+
+		\hline
+
+			\includegraphics[width=1cm]{fonts/logo_glider.png}
+
+			& 
+
+			\textbf{GLIDER} est le logo des hacker, symbole repris du jeu de la vie (cavalier). \\
+
+		\hline
+
+		\end{tabular}
+
+	\end{center}
+
+	\caption{Un tableau r{\'e}f{\'e}renc{\'e}}
+
+	\label{tab:TabReference01}
+
+\end{table}~\\
+
+\subsection{Encore une sous-section}
+
+\begin{figure}[H]
+	\centerline {\includegraphics[width=15cm]{fonts/logo_glider.png} }
+	\caption{Une belle image}
+	\label{fig:FigReference01}
+\end{figure}
+
+
+\section*{Abbr{\'e}viations\markboth{Abbr{\'e}viations}{Abbr{\'e}viations}}
+
+\addcontentsline{toc}{section}{Abbr{\'e}viations}
+
+%% voir en haut : sous la definition du titre : glossaire
+
+\makeglossaire
+
+
+
+\clearpage
+
+\end{document}
+

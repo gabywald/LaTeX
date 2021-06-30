@@ -5,3 +5,11 @@ latexDivers/mementos/spring/memento.pdf
 latexDivers/mementos/Java3D/memento.pdf
 latexDivers/mementos/hibernate/memento.pdf
 latexDivers/mementos/git/memento.pdf
+
+*.aux
+*.lof
+*.log
+*.lot
+*.toc
+*.bbl
+*.blg

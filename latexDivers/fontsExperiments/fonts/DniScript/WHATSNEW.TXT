@@ -1,0 +1,39 @@
+D'ni Script Standard 2.2  - What's new?
+---------------------------------------
+
+01.10.2000
+ -Corrected the blue color symbol in all three fonts - I forgot
+  the dot in the center!
+  Many thanks to ~Brad~ (HishinoSenshi@aol.com) for informing me.
+ -on a side note: I got my hands on an old version of
+  Macromedia Fontographer (version 4.1), and it crashes when
+  loading any of the D'ni fonts. Apparently there are some faults
+  in the encoding of the TTF files. On a few systems, Windows
+  won't allow to install them because of that. Luckily, the fonts
+  seem to work on most machines nevertheless.
+  I'll see what I can do fix this problem.
+
+
+25.07.2000
+ -Corrected the structure of the Moiety dagger and the number symbols
+ -Internet Explorer didn't display the symbols that are mapped
+  to the extended letters such as í, Ä, etc.
+  Gave the fonts a code page character range, now it works.
+ -Enlarged the space between the lines for better readability.
+
+
+20.03.2000
+ -Fixed an error in the "incorrect z" glyph of "D'NI_SCR.TTF"
+
+
+18.03.2000
+ -First release of version 2.2, including "D'ni Script LM" and "D'ni Script Angular".
+ -All characters enhanced again.
+ -The ones which are printed in "From Myst to Riven" are nearly 100% identical.
+  They are: ['][v][t][s][j][y][x][a][f][i][e][r][m][þ][ð][u][n]
+  (including their dotted derivatives, of course)
+ -Characters which I had to model on low resolution images:
+  [h][o][ç][w][c][l][æ][z][-][.], incorrect z, non-standard l
+  Nevertheless, they are pretty accurate! ;-)
+ -Number symbols are exactly constructed
+ -Same thing for the colour symbols
