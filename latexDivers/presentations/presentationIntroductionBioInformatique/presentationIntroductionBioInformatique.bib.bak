@@ -1,0 +1,75 @@
+% Encoding: UTF-8
+
+@Electronic{BTSbiotechProgrammeAbrege,
+  author = {dendalj},
+  year   = {2009},
+  title  = {Programme du BTS Biotechnologie},
+  url    = {http://eric.vinas.free.fr/IMG/pdf/programme_abrege.pdf},
+}
+
+@Electronic{BTSbiotechReferentiel,
+  author       = {Direction de l'enseignement sup{\'e}rieur},
+  year         = {2007},
+  title        = {Brevet de technicien sup{\'e}rieur Biotechnologies},
+  organization = {Minist{\`e}re del'Enseignement Sup{\'e}rieur et de la Recherche},
+  url          = {https://eduscol.education.fr/bio/moteur/referentiel-BTS-Biotech},
+}
+
+@Electronic{LicenceBioInfoCNAM,
+  title = {Cours BioInformatique de Licence du CNAM},
+  url   = {http://bioinfo.cnam.fr/index.php?index=supports},
+}
+
+@Electronic{AgorithmiqueBioInfoCNAM,
+  title    = {Algorithmique de la bio-informatique},
+  url      = {https://formation.cnam.fr/rechercher-par-discipline/algorithmique-de-la-bio-informatique-207779.kjsp},
+  abstract = {Algorithmique de la bio-informatique
+
+    Présentation
+    Programme
+    Parcours
+    Informations pratiques 
+
+Public, conditions d’accès et prérequis
+Prérequis : Les auditeurs devront de préférence avoir assisté au cours BNF102 ou sinon justifier d'un niveau suffisant en programmation
+Biologistes ou Informaticiens.
+Titulaires d'un BTS de Biochimie, Biotechnologie, Biologie ou d'un DUT de Biologie appliquée (ou diplômes équivalents bac+2)
+Titulaire d'un BTS ou d'une licence d'informatique ou diplôme de niveau équivalent.
+Objectifs pédagogiques
+Initier aux algorithmes utilisés pour les principaux programmes de bio-informatique.
+Compétences visées
+Cette formation doit permettre aux auditeurs non initiés de comprendre le fonctionnement des principaux programmes de la bio-informatique et pour pouvoir les utiliser au mieux.
+Mots-clés
+
+    Compilation
+    Programmation algorithmique
+    Langage de programmation
+    Bioinformatique
+    Programmation
+    Algorithmique
+    Langage informatique
+
+
+
+
+Contenu
+1) Bases algorithmiques
+2) Alignements multiples et recherche de motifs
+3) Recherche de similarités dans les banques : BLAST et FASTA
+4) Assemblage de séquences et présentation de logiciels
+5) Automates et expressions régulières
+6) Recherche de gènes : méthodes heuristiques
+Modalité d'évaluation
+Examen final
+Bibliographie
+
+    AD Baxevanis et al. Wiley Interscience New York (USA) : Bioinformatics
+    L. Bloch Ed Technip : Initiation à la programmation avec Scheme},
+}
+
+@Electronic{UtilisationBioInfoLicenceCNAM,
+  title = {Utilisation et applications de la bio-informatique},
+  url   = {https://formation.cnam.fr/rechercher-par-discipline/utilisation-et-applications-de-la-bio-informatique-207780.kjsp?RF=},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

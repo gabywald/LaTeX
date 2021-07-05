@@ -1,0 +1,123 @@
+
+
+***** https://www.dimension-bts.com/bts-biotechnologie/77
+
+Module 6 : Bioinformatique et informatique de laboratoire : 1ère année 1,5h - 2ème année 1h 
+Réseaux et Internet,  bases et banques de données, recherche traitement présentation de l’information (traitement de texte, tableur-Grapheur et outils bureautiques), acquisitions de données,gestion des procédés, bioinformatique utilisateur (analyse de l'information biologique à l'aide d'outils informatiques). 
+
+***** https://www.dimension-bts.com/bts-bio-analyses-et-controles/75
+
+***** https://www.cidj.com/etudes-formations-alternance/les-diplomes/bts-biotechnologies
+***** https://www.cidj.com/etudes-formations-alternance/les-diplomes/bts-bc-bioanalyses-et-controles
+
+Quelques notes de cours
+***** http://fdanieau.free.fr/cours/bts/A2/bcm.php
+***** https://lewebpedagogique.com/catherinedahm/cours-de-biologie-et-technologies-cellulaires-2eme-annee/
+https://lewebpedagogique.com/catherinedahm/bio-informatique/
+https://www.symbaloo.com/mix/sitesdebio-informatique
+
+
+====================================================
+https://eduscol.education.fr/bio/moteur/referentiel-BTS-Biotech
+Fonction 
+Mise en œuvre de techniques de laboratoire 
+Participation à un système qualité 
+Activités Mise en œuvre et exploitation d’outils bio-informatiques 
+Conditions d’exercice MOYENS ET RESSOURCES : 
+  - Formation technique préalable 
+  - Ordinateur connecté en réseau local et distant ou/et interfacé avec un automate 
+  - Logiciels « locaux » ou « en ligne » (internet) d’interrogation, de traitement ou d’archivage des données 
+  - Accès aux banques de données  
+  - Données à traiter : fichier texte (séquences nucléiques et protéiques) ou fichier image 
+  - Protocoles de traitement des données 
+  - Procédures d’archivage des données 
+  - Documentation informatique d’utilisation des logiciels et des banques
+	AUTONOMIE : Autonomie partielle
+Résultats attendus 
+  - Participation aux choix des outils informatiques adaptés 
+  - Recherche d’informations et de données dans les banques 
+  - Organisation pertinente de la séquence de traitements de données 
+  - Respect des protocoles de traitement informatique des données 
+  - Analyse critique des résultats dans le contexte biologique de l’exploitation 
+  - Archivage des fichiers résultats 
+
+http://eric.vinas.free.fr/IMG/pdf/programme_abrege.pdf
+MODULE 6 : BIOINFORMATIQUE ET INFORMATIQUE DE LABORATOIRE
+L'omniprésence de l'outil informatique dans les biotechnologies impose que le futur technicien supérieur possède des savoirs et savoir faire solides dans les différentes composantes de cet outil.
+Section 1 : Notions de base 
+		L'objectif essentiel de cette section est de donner au futur technicien les bases qui lui permettront d'être un utilisateur averti. 
+	Le codage de l'information et la numérisation des données (nombres, textes, images ...)
+	Architecture matérielle et logicielle d'un ordinateur
+	Les réseaux et Internet
+	Fichiers et bases de données
+	Algorithmique
+Section 2 : Recherche, traitement et présentation de l'information 
+		Les savoir-faire de cette section seront réinvestis dans les autres modules
+	Interrogation d'une banque de données bibliographiques
+	Traitement de texte
+	Tableur-Grapheur
+	Utilisation d'un logiciel de présentation
+Section 3 : Acquisition de données et gestion de procédés 
+		Il s'agit pour les contenus de cette section de dégager quelques notions simples
+	Contrôle et commandes de bioréacteurs
+	Traitements et Analyses d'images :
+	  - Définitions et formats de fichiers
+	  - Logiciels de traitement (exemple)
+	  - Analyse densitométrique d'une image
+	  - Imagerie microscopique de fluorescence
+	Robotisation de pipetages, de dépôts, d'extractions ...
+Section 4 : Bioinformatique utilisateur 
+		La bioinformatique se définit comme l'analyse de l'information biologique, notamment à l'aide d'outilsinformatiques.
+	L'objectif est de former des utilisateurs avertis des principaux outils, dont on fera ressortir de manière simple le principe de fonctionnement.
+	L'enseignement des savoir et savoir-faire de cettesection se fera en liaison étroite avec les modules 1 et3.
+	On insistera sur la relativité des réponses apportées par la bioinformatique, la plupart du temps statistiques t fondées sur des modèles perfectibles et évolutifs. 
+	Lors des recherches et traitements desinformations, on privilégiera la problématique biologique, en analysant la pertinence des requêtes effectuées et la validité des résultats obtenus.
+	Les portails, logiciels et banques de données en bioinformatique et en génomique
+	Comparaison d'une séquence nucléique ou protéique avec une banque de séquences
+	Multi-alignements de séquences nucléiques ou protéiques
+	Recherche de gènes et de séquences consensus
+	Analyse tridimensionnelle de biomolécules
+
+====================================================
+
+***** http://www.aftlm.fr/spip.php?article536
+
+1er décembre 2018
+
+Liste des titres et diplômes exigés pour exercer la profession de technicien de laboratoire médical
+
+Les formations
+
+Bac +2 ans pour préparer le BTS analyses de biologie médicale ou le DUT génie biologique, option analyses biologiques et biochimiques, ou encore le DEUST analyse des milieux biologiques de Corte ; ou Bac + 3 ans pour obtenir le DE de technicien de laboratoire médical.
+
+Bac + 2 ans :
+
+    BTS Analyses de biologie médicale
+    BTS Bioanalyses et contrôles
+    BTS Biotechnologies
+    BTSA Analyses agricoles, biologiques et biotechnologiques
+    DEUST Analyse des milieux biologiques
+    DUT Génie biologique option analyses biologiques et biochimiques 
+
+Bac + 3 ans :
+
+    Assistant ingénieur en biologie-biochimie-biotechnologies
+    Diplôme d’Etat de technicien de laboratoire médical 
+
+Les diplômes
+
+Afin d’exercer la profession de technicien de laboratoire médical en France, il est exigé la possession de l’un des titres ou diplômes suivants :
+
+    Le diplôme d’Etat de laborantin d’analyses médicales (DELAM), le diplôme d’Etat de technicien en analyses biomédicales (DETAB) ou Diplôme d’Etat Technicien de laboratoire médical (DETLM) ;
+    Le diplôme universitaire de technologie (DUT), spécialité biologie appliquée, option analyses biologiques et biochimiques, ou le diplôme universitaire de technologie, spécialité génie biologique, option analyses biologiques et biochimiques ;
+    Le brevet de technicien supérieur (BTS) d’analyses biologiques ;
+    Le brevet de technicien supérieur (BTS) biochimiste ou le brevet de technicien supérieur bioanalyses et contrôles ;
+    Le brevet de technicien supérieur (BTS) de biotechnologie ;
+    Le brevet de technicien supérieur(BTS) agricole, option laboratoire d’analyses biologiques ou option analyses agricoles, biologiques et biotechnologiques ;
+    Le diplôme de premier cycle technique biochimie-biologie ou le titre professionnel de technicien supérieur des sciences et techniques industrielles - parcours biochimie-biologie, délivrés par le Conservatoire national des arts et métiers ;
+    Le diplôme d’études universitaires scientifiques et techniques, spécialité analyses des milieux biologiques, délivré par l’université de Corte ;
+    Le diplôme de technicien de laboratoire biochimie-biologie clinique ou le titre de technicien supérieur de laboratoire biochimie-biologie ou le titre d’assistant de laboratoire biochimie-biologie délivrés par l’Ecole supérieure de technicien biochimie-biologie de la faculté catholique des sciences de Lyon ;
+    Le certificat de formation professionnelle de technicien supérieur physicien chimiste homologué par la commission technique d’homologation des titres et diplômes de l’enseignement technologique du ministère du travail ou le titre professionnel de technicien supérieur physicien chimiste, inscrit au répertoire national des certifications professionnelles, délivrés par le ministère chargé de l’emploi.
+
+Référence : Arrêté du 4 novembre 1976 fixant la liste des titres ou diplômes exigés des personnes employées en qualité de technicien dans un laboratoire de biologie médicale. Version consolidée au 28 décembre 2018 https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000487893
+

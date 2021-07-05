@@ -1,0 +1,311 @@
+\documentclass{beamer}
+
+\usepackage[T1]{fontenc} 
+\usepackage[latin1]{inputenc}
+%% \usepackage[frenchb]{babel}
+
+\usetheme{Warsaw}
+
+% Supprimer les icones de navigation (pour les transparents)
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations, decorations.pathreplacing, decorations.pathmorphing, shapes}
+
+\title[Introduction {\`a} la Bio-Informatique]{Introduction {\`a} la Bio-Informatique}
+\author{Gabriel Chandesris}
+%% \institute{ --- }
+\institute{ \includegraphics[height=0.5cm]{img/logo_glider.png} }
+%% \logo{ \includegraphics[height=2.5cm]{img/logo_glider.png} }
+
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}
+	\frametitle{Contenu de cette pr{\'e}sentation}
+	\small \tableofcontents[hideallsubsections]
+\end{frame}
+
+\begin{frame}
+	\frametitle{ Sources d'inspiration }
+	\begin{itemize}
+		\item Plan du programme du contenu du module 6 du BTS Biotechnologies (et ressources associ{\'e}es) ;  
+		\item Cours de licence Bio-Informartique du CNAM (Conservatoire Natoire des Arts et M{\'e}tiers) ; 
+		\item ... 
+	\end{itemize}
+\end{frame} 
+%%%%% %%%%% %%%%% %%%%% %%%%% PARTIE 0 %%%%% %%%%% %%%%% %%%%% %%%%% 
+
+\def\titleSection0{Rappels de Biologie / Biochimie et Pacours Rapide}
+\section{ \titleSection0 }
+\begin{frame}
+	\frametitle{ \titleSection0 }
+	\tableofcontents[sections=1,currentsection,subsectionstyle=show/shaded/hide]
+\end{frame} 
+
+\def\titleSection0SubsectionI{Rappels de base de biologie {\`a} usage pour la bio-informatique}
+\subsection{ \titleSection0SubsectionI }
+\begin{frame}
+	\frametitle{ \titleSection0SubsectionI }
+	\begin{itemize}
+		\item Les cha{\^i}nes du vivant, ADN et Prot{\'e}ines.
+		\item La cellule : unit{\'e} fonctionnelle du vivant.
+		\item {\'E}l{\'e}ments de physiopathologie : inflammation, maladies infectieuses et cancers
+	\end{itemize}
+\end{frame}
+
+\def\titleSection0Subsection2{Les grandes banques (bases de donn{\'e}es) bio-informatiques}
+\subsection{ \titleSection0Subsection2 }
+\begin{frame}
+	\frametitle{ \titleSection0Subsection2 }
+	\begin{itemize}
+		\item Banques de donn{\'e}es disponibles sur Internet : s{\'e}quences, polymorphismes, structure des prot{\'e}ines. 
+		\item Le syst{\`e}me Entrez : du g{\`e}ne {\`a} la fonction. \texttt{https://www.ncbi.nlm.nih.gov/Web/Search/entrezfs.html}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection0Subsection3{Exploitation des banques de s{\'e}quences et applications}
+\subsection{ \titleSection0Subsection3 }
+\begin{frame}
+	\frametitle{ \titleSection0Subsection3 }
+	\begin{itemize}
+		\item Les logiciels disponibles sur Internet : criblage de banque, alignement de deux s{\'e}quences, phylog{\'e}nie. Principes algorithmiques et utilisation.
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection0Subsection4{Mod{\'e}lisation mol{\'e}culaire et applications}
+\subsection{ \titleSection0Subsection4 }
+\begin{frame}
+	\frametitle{ \titleSection0Subsection4 }
+	\begin{itemize}
+		\item Logiciels de r{\'e}f{\'e}rence (RasMol, Cn3D, VMD). Pr{\'e}diction de structure, m{\'e}thodes automatiques.
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection0Subsection5{Probl{\'e}matiques Bio-informatiques li{\'e}es aux nouvelles technologies}
+\subsection{ \titleSection0Subsection5 }
+\begin{frame}
+	\frametitle{ \titleSection0Subsection5 }
+	\begin{itemize}
+		\item S{\'e}quen\c{c}age massif du g{\'e}nome  (Next Generation Sequencing, NGS), puces de g{\'e}notypage, puces de transcriptome, g{\'e}nomique sur cohorte et maladies, g{\'e}n{\'e}tique d'association, initiation {\`a} l'utilisation des donn{\'e}es NGS avec Galaxy.
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+
+%%%%% %%%%% %%%%% %%%%% %%%%% PARTIE 1 %%%%% %%%%% %%%%% %%%%% %%%%% 
+
+\def\titleSection1{Notions de base}
+\section{ \titleSection1 }
+\begin{frame}
+	\frametitle{ \titleSection1 }
+	\tableofcontents[sections=1,currentsection,subsectionstyle=show/shaded/hide]
+\end{frame} 
+
+\def\titleSection1SubsectionI{Le codage de l'information et la num{\'e}risation des donn{\'e}es (nombres, textes, images ...)}
+\subsection{ \titleSection1SubsectionI }
+\begin{frame}
+	\frametitle{ \titleSection1SubsectionI }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection1Subsection2{Architecture mat{\'e}rielle et logicielle d'un ordinateur}
+\subsection{ \titleSection1Subsection2 }
+\begin{frame}
+	\frametitle{ \titleSection1Subsection2 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection1Subsection3{Les r{\'e}seaux et Internet}
+\subsection{ \titleSection1Subsection3 }
+\begin{frame}
+	\frametitle{ \titleSection1Subsection3 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection1Subsection4{Fichiers et bases de donn{\'e}es}
+\subsection{ \titleSection1Subsection4 }
+\begin{frame}
+	\frametitle{ \titleSection1Subsection4 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection1Subsection5{Algorithmique}
+\subsection{ \titleSection1Subsection5 }
+\begin{frame}
+	\frametitle{ \titleSection1Subsection5 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+%%%%% %%%%% %%%%% %%%%% %%%%% Recherche, traitement et pr{\'e}sentation de l'information %%%%% %%%%% %%%%% %%%%% %%%%% 
+
+\def\titleSection2{Recherche, traitement et pr{\'e}sentation de l'information}
+\section{ \titleSection2 }
+\begin{frame}
+	\frametitle{ \titleSection2 }
+	\tableofcontents[sections=2,currentsection,subsectionstyle=show/shaded/hide]
+\end{frame} 
+
+\def\titleSection2SubsectionI{Interrogation d'une banque de donn{\'e}es bibliographiques}
+\subsection{ \titleSection2SubsectionI }
+\begin{frame}
+	\frametitle{ \titleSection2SubsectionI }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection2Subsection2{Traitement de texte}
+\subsection{ \titleSection2Subsection2 }
+\begin{frame}
+	\frametitle{ \titleSection2Subsection2 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection2Subsection3{Tableur-Grapheur}
+\subsection{ \titleSection2Subsection3 }
+\begin{frame}
+	\frametitle{ \titleSection2Subsection3 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection2Subsection4{Utilisation d'un logiciel de pr{\'e}sentation}
+\subsection{ \titleSection2Subsection4 }
+\begin{frame}
+	\frametitle{ \titleSection2Subsection4 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+%%%%% %%%%% %%%%% %%%%% %%%%% Acquisition de donn{\'e}es et gestion de proc{\'e}d{\'e}s %%%%% %%%%% %%%%% %%%%% %%%%% 
+
+\def\titleSection3{Acquisition de donn{\'e}es et gestion de proc{\'e}d{\'e}s}
+\section{ \titleSection3 }
+\begin{frame}
+	\frametitle{ \titleSection3 }
+	\tableofcontents[sections=3,currentsection,subsectionstyle=show/shaded/hide]
+\end{frame} 
+
+\def\titleSection3SubsectionI{Contr{\^o}le et commandes (automates, bior{\'e}acteurs...)}
+\subsection{ \titleSection3SubsectionI }
+\begin{frame}
+	\frametitle{ \titleSection3SubsectionI }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection3Subsection2ACRO{TAI}
+\def\titleSection3Subsection2{Traitements et Analyses d'Images (TAI)}
+\subsection{ \titleSection3Subsection2 }
+\begin{frame}
+	\frametitle{ \titleSection3Subsection2 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+
+\def\titleSection3Subsection2to1{ TAI : D{\'e}finitions et formats de fichiers}
+\subsection{ \titleSection3Subsection2to1 }
+\begin{frame}
+	\frametitle{ \titleSection3Subsection2to1 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection3Subsection2subsubsection2{ TAI : Logiciels de traitement (exemple)}
+\subsection{ \titleSection3Subsection2subsubsection2 }
+\begin{frame}
+	\frametitle{ \titleSection3Subsection2subsubsection2 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection3Subsection2subsubsection3{ TAI : Analyse densitom{\'e}trique d'une image}
+\subsection{ \titleSection3Subsection2subsubsection3 }
+\begin{frame}
+	\frametitle{ \titleSection3Subsection2subsubsection3 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection3Subsection2subsubsection4{ TAI : Imagerie microscopique de fluorescence}
+\subsection{ \titleSection3Subsection2subsubsection4 }
+\begin{frame}
+	\frametitle{ \titleSection3Subsection2subsubsection4 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+
+
+\def\titleSection3Subsection3{Robotisation de pipetages, de d{\'e}p{\^o}ts, d'extractions ...}
+\subsection{ \titleSection3Subsection3 }
+\begin{frame}
+	\frametitle{ \titleSection3Subsection3 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+%%%%% %%%%% %%%%% %%%%% %%%%% PARTIE %%%%% %%%%% %%%%% %%%%% %%%%% 
+
+\def\titleSection4{Bioinformatique utilisateur }
+\section{ \titleSection4 }
+\begin{frame}
+	\frametitle{ \titleSection4 }
+	\tableofcontents[sections=4,currentsection,subsectionstyle=show/shaded/hide]
+\end{frame} 
+
+\def\titleSection4SubsectionI{}
+\subsection{ \titleSection4SubsectionI }
+\begin{frame}
+	\frametitle{ \titleSection4SubsectionI }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+%%%%% %%%%% %%%%% %%%%% %%%%% BIBLIOGRAPHIE %%%%% %%%%% %%%%% %%%%% %%%%% 
+
+\def\sectionPartBibliographie{Bibliographie / Mediagraphie}
+\section{\sectionPartBibliographie}
+\begin{frame}[allowframebreaks]
+	\frametitle{\sectionPartBibliographie}
+	\nocite{*}
+	%\footnotesize
+	%toutes references biblio : 6 lettres + 2 chiffres
+	\bibliography{presentationIntroductionBioInformatique}
+	% \bibliographystyle{frplain} % plain or frplain
+	\bibliographystyle{plain}
+\end{frame}
+
+\end{document}
