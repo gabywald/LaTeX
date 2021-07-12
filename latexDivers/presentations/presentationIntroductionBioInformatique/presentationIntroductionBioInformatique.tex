@@ -32,12 +32,24 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{ Sources d'inspiration }
-	\begin{itemize}
-		\item Plan du programme du contenu du module 6 du BTS Biotechnologies (et ressources associ{\'e}es) ;  
-		\item Cours de licence Bio-Informartique du CNAM (Conservatoire Natoire des Arts et M{\'e}tiers) ; 
-		\item ... 
-	\end{itemize}
+	\frametitle{ Vision G{\'e}n{\'e}rale du cours et Sources d'inspiration }
+	
+	\begin{columns}[T]
+	\begin{column}[T]{5.0cm}
+	
+		\includegraphics[width=4.0cm]{resources/BioInformaticsWorkflowWithTools.jpg} 
+	
+	\end{column}
+	\begin{column}[T]{7.5cm}
+	
+		\begin{itemize}
+			\item Plan du programme du contenu du module 6 du BTS Biotechnologies (et ressources associ{\'e}es) ;  
+			\item Cours de licence Bio-Informatique du CNAM (Conservatoire National des Arts et M{\'e}tiers) ; 
+			\item ... 
+		\end{itemize}
+		
+		\end{column}
+	\end{columns}
 \end{frame} 
 %%%%% %%%%% %%%%% %%%%% %%%%% PARTIE 0 %%%%% %%%%% %%%%% %%%%% %%%%% 
 
@@ -103,11 +115,11 @@
 
 %%%%% %%%%% %%%%% %%%%% %%%%% PARTIE 1 %%%%% %%%%% %%%%% %%%%% %%%%% 
 
-\def\titleSection1{Notions de base}
+\def\titleSection1{Notions de base (informatique)}
 \section{ \titleSection1 }
 \begin{frame}
 	\frametitle{ \titleSection1 }
-	\tableofcontents[sections=1,currentsection,subsectionstyle=show/shaded/hide]
+	\tableofcontents[sections=2,currentsection,subsectionstyle=show/shaded/hide]
 \end{frame} 
 
 \def\titleSection1SubsectionI{Le codage de l'information et la num{\'e}risation des donn{\'e}es (nombres, textes, images ...)}
@@ -115,6 +127,8 @@
 \begin{frame}
 	\frametitle{ \titleSection1SubsectionI }
 	\begin{itemize}
+		\item Fichiers textes ("texte brut" et WYSIWIG) et fichiers binaires
+		\item Nombres : repr{\'e}sentation et limites
 		\item ... 
 	\end{itemize}
 \end{frame}
@@ -124,6 +138,10 @@
 \begin{frame}
 	\frametitle{ \titleSection1Subsection2 }
 	\begin{itemize}
+		\item Unit{\'e} centrale : disque dur, carte m{\`e}re, processeur, carte graphique, carte(s) r{\'e}seau(x) ; 
+		\item {\'E}cran et autres {\'e}l{\'e}ments d'affichage (et d'impression) : p{\'e}riph{\'e}riques de sortie ; 
+		\item Clavier, souris et autres p{\'e}riph{\'e}riques d'entr{\'e}es ; 
+		\item Ordinateurs r{\'e}cents ("iMacs", SmartPhones...) : monobloc ; 
 		\item ... 
 	\end{itemize}
 \end{frame}
@@ -132,16 +150,43 @@
 \subsection{ \titleSection1Subsection3 }
 \begin{frame}
 	\frametitle{ \titleSection1Subsection3 }
-	\begin{itemize}
-		\item ... 
-	\end{itemize}
+	\begin{columns}[T]
+	\begin{column}[T]{5.0cm}
+	
+		\includegraphics[width=5.0cm]{resources/langfr-330px-OSI_Model_v1.svg.png} 
+	
+	\end{column}
+	\begin{column}[T]{7.5cm}
+	
+		\begin{itemize}
+			\item Couches OSI
+			\item Du mat{\'e}riel et du logiciel !
+			\item Protocoles d'{\'e}changes (TCP / IP) ; 
+			\item Routeurs, R{\'e}seaux Locaux (WAN / LAN) et r{\'e}seau global ; 
+			\item ... 
+		\end{itemize}
+		
+	\end{column}
+	\end{columns}
 \end{frame}
+
+	% \begin{itemize}
+	% 	\footnotesize
+	% 	\item[Couche 7 -- Applicative] Logiciels. %% C'est {\`a} ce niveau que sont les logiciels: navigateur, logiciel d'email, FTP, chat...
+	% 	\item[Couche 6 -- Pr{\'e}sentation] Affichage. %% Elle est en charge de la repr{\'e}sentation des donn{\'e}es (de telle sorte qu'elle soit ind{\'e}pendante du type de microprocesseur ou du syst{\`e}me d'exploitation par exemple) et - {\'e}ventuellement - du chiffrement.
+	% 	\item[Couche 5 -- Session] Identificatiion. %% En charge d'{\'e}tablir et maintenir des sessions (c'est {\`a} dire d{\'e}buter le dialogue entre 2 machines: v{\'e}rifier que l'autre machine est pr{\^e}te {\`a} communiquer, s'identifier, etc.)
+	% 	\item[Couche 4 -- Transport] Liaison. %% En charge de la liaison d'un bout {\`a} l'autre. S'occupe de la fragmentation des donn{\'e}es en petits paquets et v{\'e}rifie {\'e}ventuellement qu'elles ont {\'e}t{\'e} transmises correctement.
+	% 	\item[Couche 3 -- R{\'e}seau] Transport. %% En charge du transport, de l'adressage et du routage des paquets.
+	% 	\item[Couche 2 -- Liaison de donn{\'e}es] Encodage. %% En charge d'encoder (ou moduler) les donn{\'e}es pour qu'elles soient transportables par la couche physique, et fournit {\'e}galement la d{\'e}tection d'erreur de transmission et la synchronisation.
+	% 	\item[Couche 1 -- Physique] Support. %% C'est le support de transmissions lui-m{\^e}me: un fil de cuivre, une fibre optique, les ondes hertziennes...
+	% \end{itemize}
 
 \def\titleSection1Subsection4{Fichiers et bases de donn{\'e}es}
 \subsection{ \titleSection1Subsection4 }
 \begin{frame}
 	\frametitle{ \titleSection1Subsection4 }
 	\begin{itemize}
+		\item Fichier plat, tabulaires, XML, bases relationnelles (SQL)
 		\item ... 
 	\end{itemize}
 \end{frame}
@@ -151,6 +196,7 @@
 \begin{frame}
 	\frametitle{ \titleSection1Subsection5 }
 	\begin{itemize}
+		\item Programmation : structures de contr{\^o}les, structures de donn{\'e}es, traitement des donn{\'e}es ; 
 		\item ... 
 	\end{itemize}
 \end{frame}
@@ -161,7 +207,7 @@
 \section{ \titleSection2 }
 \begin{frame}
 	\frametitle{ \titleSection2 }
-	\tableofcontents[sections=2,currentsection,subsectionstyle=show/shaded/hide]
+	\tableofcontents[sections=3,currentsection,subsectionstyle=show/shaded/hide]
 \end{frame} 
 
 \def\titleSection2SubsectionI{Interrogation d'une banque de donn{\'e}es bibliographiques}
@@ -206,7 +252,7 @@
 \section{ \titleSection3 }
 \begin{frame}
 	\frametitle{ \titleSection3 }
-	\tableofcontents[sections=3,currentsection,subsectionstyle=show/shaded/hide]
+	\tableofcontents[sections=4,currentsection,subsectionstyle=show/shaded/hide]
 \end{frame} 
 
 \def\titleSection3SubsectionI{Contr{\^o}le et commandes (automates, bior{\'e}acteurs...)}
@@ -282,13 +328,49 @@
 \section{ \titleSection4 }
 \begin{frame}
 	\frametitle{ \titleSection4 }
-	\tableofcontents[sections=4,currentsection,subsectionstyle=show/shaded/hide]
+	\tableofcontents[sections=5,currentsection,subsectionstyle=show/shaded/hide]
 \end{frame} 
 
-\def\titleSection4SubsectionI{}
+\def\titleSection4SubsectionI{Les portails, logiciels et banques de donn{\'e}es en bioinformatique et en g{\'e}nomique}
 \subsection{ \titleSection4SubsectionI }
 \begin{frame}
 	\frametitle{ \titleSection4SubsectionI }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection4Subsection2{Comparaison d'une s{\'e}quence nucl{\'e}ique ou prot{\'e}ique avec une banque de s{\'e}quences}
+\subsection{ \titleSection4Subsection2 }
+\begin{frame}
+	\frametitle{ \titleSection4Subsection2 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection4Subsection3{Multi-alignements de s{\'e}quences nucl{\'e}iques ou prot{\'e}iques}
+\subsection{ \titleSection4Subsection3 }
+\begin{frame}
+	\frametitle{ \titleSection4Subsection3 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection4Subsection4{Recherche de g{\`e}nes et de s{\'e}quences consensus}
+\subsection{ \titleSection4Subsection4 }
+\begin{frame}
+	\frametitle{ \titleSection4Subsection4 }
+	\begin{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\def\titleSection4Subsection5{Analyse tridimensionnelle de biomol{\'e}cules}
+\subsection{ \titleSection4Subsection5 }
+\begin{frame}
+	\frametitle{ \titleSection4Subsection5 }
 	\begin{itemize}
 		\item ... 
 	\end{itemize}

@@ -69,8 +69,8 @@ Section 3 : Acquisition de données et gestion de procédés
 Section 4 : Bioinformatique utilisateur 
 		La bioinformatique se définit comme l'analyse de l'information biologique, notamment à l'aide d'outilsinformatiques.
 	L'objectif est de former des utilisateurs avertis des principaux outils, dont on fera ressortir de manière simple le principe de fonctionnement.
-	L'enseignement des savoir et savoir-faire de cettesection se fera en liaison étroite avec les modules 1 et3.
-	On insistera sur la relativité des réponses apportées par la bioinformatique, la plupart du temps statistiques t fondées sur des modèles perfectibles et évolutifs. 
+	L'enseignement des savoir et savoir-faire de cette section se fera en liaison étroite avec les modules 1 et3.
+	On insistera sur la relativité des réponses apportées par la bioinformatique, la plupart du temps statistiques et fondées sur des modèles perfectibles et évolutifs. 
 	Lors des recherches et traitements desinformations, on privilégiera la problématique biologique, en analysant la pertinence des requêtes effectuées et la validité des résultats obtenus.
 	Les portails, logiciels et banques de données en bioinformatique et en génomique
 	Comparaison d'une séquence nucléique ou protéique avec une banque de séquences

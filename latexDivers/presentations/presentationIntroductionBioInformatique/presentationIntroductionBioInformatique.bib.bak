@@ -68,8 +68,67 @@ Bibliographie
 }
 
 @Electronic{UtilisationBioInfoLicenceCNAM,
-  title = {Utilisation et applications de la bio-informatique},
-  url   = {https://formation.cnam.fr/rechercher-par-discipline/utilisation-et-applications-de-la-bio-informatique-207780.kjsp?RF=},
+  title    = {Utilisation et applications de la bio-informatique},
+  url      = {https://formation.cnam.fr/rechercher-par-discipline/utilisation-et-applications-de-la-bio-informatique-207780.kjsp?RF=},
+  abstract = {Utilisation et applications de la bio-informatique
+
+    Présentation
+    Programme
+    Parcours
+    Informations pratiques 
+
+Public, conditions d’accès et prérequis
+Biologistes ou Informaticiens.
+Titulaires d'un BTS de Biochimie, Biotechnologie, Biologie ou d'un DUT de Biologie appliquée (ou diplômes équivalents bac+2).
+Titulaire d'un BTS ou d'une licence d'informatique ou diplôme de niveau équivalent. Dans ce cas, une connaissance préliminaire de la biologie/biochimie est recommandée, par exemple grâce à l'UE Biochimie Fondamentale #BCA001.
+L'avis des auditeurs
+
+Les dernières réponses à l'enquête d'appréciation pour cet enseignement :
+
+    Fiche synthétique au format PDF 
+
+Objectifs pédagogiques
+Former des bio-informaticiens pour répondre à l'émergence des métiers nouveaux liés aux nouvelles biotechnologies.
+Compétences visées
+Connaissance et utilisation des banques de données et des logiciels existants sur le Web, qui permettent déjà de traiter de manière puissante les données biologiques générées par les nouvelles biotechnologies (bases de données, logiciels de traitement de séquence, outils de prédiction, logiciels statistiques).
+Apprentissage des problématiques bio-informatiques liées à l'émergence des nouvelles biotechnologies.
+Mots-clés
+
+    Génétique moléculaire
+    Génie génétique
+    Drug design
+    Banque de données
+    Biotechnologie
+    Langage informatique
+    Algorithmique
+    Génétique
+    Bioinformatique
+
+
+
+
+Contenu
+1) Rappels de base de biologie à usage pour la bio-informatique :
+Les chaînes du vivant, ADN et Protéines.
+La cellule : unité fonctionnelle du vivant.
+Éléments de physiopathologie : inflammation, maladies infectieuses et cancers
+2) Les grandes banques bio-informatiques :
+Banques de données disponibles sur Internet :
+séquences, polymorphismes, structure des protéines. Le système Entrez : du gène à la fonction.
+3) Exploitation des banques de séquences et applications :
+Les logiciels disponibles sur Internet :
+criblage de banque, alignement de deux séquences, phylogénie. Principes algorithmiques et utilisation.
+4) Modélisation moléculaire et applications :
+Logiciels de référence (RasMol, Cn3D, VMD). Prédiction de structure, méthodes automatiques.
+5) Problématiques Bio-informatiques liées aux nouvelles technologies :
+Séquençage massif du génome  (Next Generation Sequencing, NGS), puces de génotypage, puces de transcriptome, génomique sur cohorte et maladies, génétique d'association, initiation à l'utilisation des données NGS avec Galaxy.
+Modalité d'évaluation
+Examen final sur ordinateur
+Bibliographie
+
+    AD Baxevanis et al. : Bioinformatics, Wiley Interscience. New-York
+    Denis Tagu et Jean-Loup Risler : Bio-informatique. Principes d'utilisation des outils. Edition Quae
+    Deléage Gilbert et Gouy Manolo : Bioinformatique - 2e édition: Cours et applications},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
