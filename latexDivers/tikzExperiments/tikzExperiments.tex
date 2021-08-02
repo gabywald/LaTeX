@@ -10,6 +10,8 @@
 
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathmorphing, shapes}
+\usetikzlibrary{shapes.geometric, intersections, calc}
+\usetikzlibrary{decorations.markings, arrows}
 
 %============================= Corps =================================
 \begin{document}
@@ -240,5 +242,100 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 %%       (second0.center) to [bend right=45] (second_rotated_center);
 %%   \end{scope}
 %% \end{tikzpicture}~\\
+
+\clearpage
+
+	%% https://tex.stackexchange.com/questions/497485/create-hexagon-style
+	\begin{tikzpicture}[]
+		\def\rot{-60}    
+		\node[regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=4cm, minimum height=1cm, draw,shape border rotate=\rot] (reg) {};
+		
+		\path [draw,name path=beam1] ($(reg.corner 3)!0.65!(reg.corner 4)$)coordinate(A)--($(reg.corner 5)!0.35!(reg.corner 6)$)coordinate(B);
+		\begin{scope}[rotate=\rot]
+			\path [name path=beam2](reg.side 4)--++(90:2);
+			\path [name intersections={of=beam1 and beam2,by={x}}];
+			\draw (reg.side 4)--(x);
+			\filldraw [opacity=0.3,cyan](A)--(B)--(reg.corner 5)--(reg.corner 4)--cycle;
+			\node[rotate=\rot] at (x)[anchor=north west]{label1};
+			\node[rotate=\rot] at (x)[anchor=north east]{label2};
+		\end{scope}
+	\end{tikzpicture}
+	~\\
+
+~\\ %% \begin{minipage}[ht]{0.45\textwidth}
+	%% https://tex.stackexchange.com/questions/345978/drawing-a-regular-hexagon
+	\begin{tikzpicture}
+	  [thick,decoration =
+	    {markings,mark=at position 0.5 with {\arrow{stealth}}} ]
+	  \newdimen\R
+	  \R=2.5cm
+	  \node {X};
+	  \draw[-stealth'] (-150:{0.7*\R}) arc (-150:150:{0.7*\R});
+	  \foreach \x/\l in
+	    { 
+	     60/a,
+	     120/b,
+	     180/c,
+	     240/d,
+	     300/e,
+	     360/f
+	    }
+	    \draw[postaction={decorate}] ({\x-60}:\R) -- node[auto,swap]{\l} (\x:\R);
+	  \foreach \x/\l/\p in
+	    { 
+	     60/{(2,3,1)}/above,
+	     120/{(2,1,3)}/above,
+	     180/{(1,2,3)}/left,
+	     240/{(1,3,2)}/below,
+	     300/{(3,1,2)}/below,
+	     360/{(3,2,1)}/right
+	    }
+	    \node[inner sep=2pt,circle,draw,fill,label={\p:\l}] at (\x:\R) {};
+	\end{tikzpicture}
+~\\ %% \end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	%% https://tex.stackexchange.com/questions/345978/drawing-a-regular-hexagon
+	\begin{tikzpicture}
+	   \newdimen\R
+	   \R=2.5cm
+	   \draw (0:\R) \foreach \x in {60,120,...,360} {  -- (\x:\R) };
+	   \foreach \x/\l/\p in
+	     { 
+	      60/{(2,3,1)}/above,
+	      120/{(2,1,3)}/above,
+	      180/{(1,2,3)}/left,
+	      240/{(1,3,2)}/below,
+	      300/{(3,1,2)}/below,
+	      360/{(3,2,1)}/right
+	     }
+	     \node[inner sep=1pt,circle,draw,fill,label={\p:\l}] at (\x:\R) {};
+	\end{tikzpicture}
+~\\ %% \end{minipage} 
+
+\clearpage
+
+%% https://tex.stackexchange.com/questions/474155/a0-hexagon-background-tikz
+\def\hexapavage{--++(60:1)--+(120:1)++(0,0)--++(1,0)--++(60:1)--+(1,0)++(-120:1)--++(-60:1)}
+\tikz\draw[blue](0,0)\hexapavage;
+
+\begin{tikzpicture}
+	%% Pavage hexagonal
+	\foreach \j in {0,1,...,4} {
+		\foreach \i in {0,1,...,4} {
+			\draw[thick] (60:\j)++(120:\j)++
+			(60:\i)++(-60:\i)++(\i,0)++(\i,0) \hexapavage ;
+	}}
+	\draw[blue,very thick](0,0)\hexapavage;
+	
+	% Pavage avec scale
+	\begin{scope}[yshift=-6cm,scale=.6]
+		 \foreach \j in {0,1,...,4} {
+			\foreach \i in {0,1,...,4} {
+				\draw[thick] (60:\j)++(120:\j)++
+				(60:\i)++(-60:\i)++(\i,0)++(\i,0) \hexapavage ;
+	}}
+	\draw[blue,very thick](0,0)\hexapavage;
+	\end{scope}
+\end{tikzpicture} 
+
 
 \end{document}
