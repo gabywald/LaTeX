@@ -1,0 +1,9 @@
+Le manifeste “Dead Drops”
+
+Dead Drops est un réseau d’échange de fichiers anonyme, hors-ligne, de pair à pair (P2P) dans les lieux publics. Tout le monde peut accéder aux Dead Drops et tout le monde peut installer un Dead Drop dans sa région ou dans sa ville. Un Dead Drop doit être accessible au public. Un Dead Drop à l’intérieur d’un bâtiment fermé ou dans un lieu privé avec accès limité ou temporaire n’est pas un Dead Drop. Un vrai Dead Drop est un périphérique de stockage en lecture/écriture sans logiciel spécifique. Les Dead Drops n’ont pas besoin d’être synchronisés ou connectés entre eux. Chaque Dead Drop possède son existence autonome. Un beau Dead Drop est cimenté dans un mur et ne laisse apparaître que son connecteur métalique USB Type-A ; il doit difficilement se remarquer. Les Dead Drops n’ont pas besoin de câble et n’utilisent pas de technologie sans fil. Vous n’avez besoin que de vous agenouiller ou tendre votre veste contre un mur pour partager vos fichiers hors ligne. Un Dead Drop est un support USB nu, auto-alimenté, intégré dans votre ville, le seul véritable espace public. À une époque de dématérialisation massive des échanges sur la Toile et de multiplication de gadgets sans accès aux fichiers locaux, nous avons besoin de repenser la liberté des échanges de données au niveau local. Le mouvement des Dead Drops est sur la voie de ce changement !
+
+Libérez vos données dans le domaine public avec du ciment ! 
+Faites votre propre Dead Drop maintenant ! 
+Re-matérialisez vos fichiers aujourd’hui !
+
+Aram Bartholl 2010
