@@ -20,8 +20,8 @@ ps : $(LATEXFILE).dvi
 
 clean : mrproper
 	rm $(LATEXFILE).log
-	rm $(LATEXFILE).lot
-	rm $(LATEXFILE).lof
+	# rm $(LATEXFILE).lot
+	# rm $(LATEXFILE).lof
 	# rm $(LATEXFILE).dvi
 	# rm $(LATEXFILE).pdf
 
