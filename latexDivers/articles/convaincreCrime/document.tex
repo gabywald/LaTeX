@@ -1,0 +1,107 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{multirow}
+
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols} 
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{0.20cm}{0.20cm}{0.20cm}{0.20cm}{15pt}{3pt}{15pt}{3pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{empty}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+
+% http://www.trustonme.net/didactels/250.html
+
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% % \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+% \fancyhf{}
+% \fancyhead[LE,RO]{\bfseries\thepage}
+% \fancyhead[LO]{\bfseries\rightmark}
+% \fancyhead[RE]{\bfseries\leftmark}
+% \fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+	% TITLE
+% \hfill \includegraphics[width=0.5cm]{img/logo_glider.png} }
+% \fancyfoot[RO]{\includegraphics[width=0.5cm]{img/logo_glider.png} \hfill
+	% TITLE
+% \hfill \thepage /\pageref{LastPage}}
+% \renewcommand{\headrulewidth}{0.5pt}
+% \renewcommand{\footrulewidth}{0.5pt}
+% \addtolength{\headheight}{0.5pt}
+% \fancypagestyle{plain}{
+	% \fancyhead{}
+	% \renewcommand{\headrulewidth}{0pt}
+% }
+
+
+%============================= Corps =================================
+\begin{document}
+
+\setlength\parindent{0pt}
+
+\texttt{http://passeurdesciences.blog.lemonde.fr/2015/02/03/comment-convaincre-aisement-quelquun-quil-a-commis-un-crime/}~\\
+
+\textbf{\LARGE Comment convaincre ais{\'e}ment quelqu'un qu'il a commis un crime} ~\\
+
+\emph{\small  3 f{\'e}vrier 2015, par Pierre Barth{\'e}l{\'e}my	} ~\\
+
+\textbf{Paragraphe Introduction } ~\\
+
+\begin{minipage}[ht]{0.65\textwidth}
+	\textbf{C'est une donn{\'e}e} qui fait mal. Selon l'organisme am{\'e}ricain Innocence Project, dont l'objectif est de faire sortir de prison celles et ceux qui ont condamn{\'e}s par erreur, environ 30 \% des personnes innocent{\'e}es sur la base de l'ADN \texttt{ont au pr{\'e}alable avou{\'e} un crime qu'elles n'ont pas commis~\footnotemark }. En France, un des exemples les plus m{\'e}morables de ce ph{\'e}nom{\`e}ne est celui de Patrick Dils, condamn{\'e} -- par deux fois -- {\`a} tort pour le meurtre de deux gar\c{c}ons {\`a} Montigny-l{\`e}s-Metz en 1986, apr{\`e}s avoir reconnu les faits face aux enqu{\^e}teurs. Si l'on met de c{\^o}t{\'e} les pratiques polici{\`e}res qui consistent {\`a} extorquer des aveux, lesquels constituent une des plus puissantes preuves retenues par la machine judiciaire, l'aspect le plus troublant du sujet tient au fait que, bien souvent, les suspects finissent par croire {\`a} la vraisemblance de l'histoire invent{\'e}e qu'ils racontent, gr{\^a}ce {\`a} la force des "faux souvenirs". C'est pour comprendre la mani{\`e}re dont fonctionne ce processus que deux psychologues, Julia Shaw (universit{\'e} du Bedfordshire, Royaume-Uni) et Stephen Porter (universit{\'e} de Colombie-Britannique, Canada), ont {\'e}labor{\'e} une exp{\'e}rience originale dont les r{\'e}sultats, qui \texttt{viennent d'{\^e}tre publi{\'e}s par la revue \emph{Psychological Science}~\footnotemark}, eux aussi d{\'e}rangent, car ils montrent {\`a} quel point il est simple de convaincre une personne qu'elle a commis un crime (au sens anglo-saxon du terme)... %% ~\\
+\end{minipage} \hfill \begin{minipage}[ht]{7.00cm}
+	\includegraphics[width=6.95cm]{img/people-315910_1280-1024x678.jpg}
+	\emph{\footnotesize Plus des deux tiers des participants ont fini l'exp{\'e}rience convaincus qu'ils avaient commis un crime pendant leur adolescence. \textcopyright PublicDomainPictures.}
+\end{minipage} ~\\ %% ~\\
+\footnotetext[1]{\texttt{http://www.innocenceproject.org/understand/False-Confessions.php}}
+\footnotetext{\texttt{http://pss.sagepub.com/content/early/2015/01/14/0956797614562862.abstract}}
+
+\textbf{Le ph{\'e}nom{\`e}ne} des faux souvenirs n'est pas une question nouvelle en science. Notamment explor{\'e} par la chercheuse am{\'e}ricaine \texttt{Elizabeth Loftus, sp{\'e}cialiste mondiale de la mall{\'e}abilit{\'e} des t{\'e}moignages~\footnote{\texttt{http://socialecology.uci.edu/faculty/eloftus}}}, il a fait l'objet de nombreuses {\'e}tudes montrant que les sujets reprenaient facilement {\`a} leur compte un sc{\'e}nario qu'on leur avait expos{\'e} au pr{\'e}alable. Toutes sortes d'anecdotes ont ainsi pu {\^e}tre implant{\'e}es avec succ{\`e}s dans le cerveau de ces personnes, depuis le souvenir de s'{\^e}tre perdu dans un centre commercial {\`a} celui d'avoir trich{\'e} {\`a} un examen, en passant -- chez des enfants -- par celui d'avoir pris le th{\'e} avec... le prince Charles. Restait {\`a} savoir si l'on pouvait tout aussi ais{\'e}ment manipuler la m{\'e}moire d'un adulte pour lui faire croire qu'il s'est rendu coupable d'un crime dans sa jeunesse.~\\
+
+\textbf{Le protocole} de l'exp{\'e}rience d{\'e}crite dans \emph{Psychological Science} est assez perfectionn{\'e}. Plusieurs dizaines d'{\'e}tudiants d'une universit{\'e} canadienne -- qui n'avaient {\'e}videmment jamais eu affaire {\`a} la justice -- ont {\'e}t{\'e} recrut{\'e}s en croyant participer {\`a} une {\'e}tude sur la r{\'e}cup{\'e}ration des souvenirs. Les chercheurs leur ont tout d'abord demand{\'e} l'autorisation de contacter leurs parents afin de leur soumettre un questionnaire sur leur prime adolescence (la p{\'e}riode 11-14 ans). Les parents devaient notamment raconter, avec un maximum de d{\'e}tails, un moment riche en {\'e}motions fortes v{\'e}cu par leur rejeton au cours de cette p{\'e}riode, et promettre de ne pas {\'e}voquer la question avec leur enfant pendant la dur{\'e}e de l'exp{\'e}rience.~\\
+
+\textbf{Puis l'exp{\'e}rience} proprement dite commen\c{c}ait, chacun des {\'e}tudiants retenus ayant un premier entretien, film{\'e}, avec un chercheur-interviewer. Celui-ci lisait le r{\'e}cit de l'anecdote v{\'e}ritable rapport{\'e}e par les parents ainsi qu'une autre histoire, tout aussi forte sur le plan {\'e}motionnel, mais invent{\'e}e de toutes pi{\`e}ces. Dans la moiti{\'e} des cas, l'{\'e}tudiant {\'e}tait cens{\'e} avoir commis un crime (vol, agression, agression avec arme), dans l'autre moiti{\'e} avoir subi une grosse m{\'e}saventure (blessure, attaque par un chien, perte d'une grosse somme d'argent ayant entra{\^i}n{\'e} un conflit avec les parents). A chaque fois, le r{\'e}cit fictif {\'e}tait agr{\'e}ment{\'e} de d{\'e}tails v{\'e}ridiques comme par exemple le nom de la ville o{\`u} vivait l'{\'e}tudiant {\`a} l'{\'e}poque ou celui d'un ami. Apr{\`e}s avoir racont{\'e} les deux histoires, l'exp{\'e}rimentateur donnait la parole au "cobaye" en lui demandant de donner des pr{\'e}cisions sur les deux {\'e}v{\'e}nements. Revenir sur l'anecdote authentique ne posait pas de probl{\`e}me mais les participants {\'e}taient bien incapables de parler de l'autre, et pour cause...~\\
+
+\clearpage
+
+\textbf{On arrivait} l{\`a} au c\oe ur de l'exp{\'e}rience. L'interviewer encourageait son interlocuteur {\`a} fouiller sa m{\'e}moire tout en faisant, gentiment mais r{\'e}ellement, pression sur lui. Il pouvait glisser de faux indices comme \emph{"Dans le questionnaire, vos parents ont dit que..."} . L'exp{\'e}rimentateur recourait aussi {\`a} une certaine forme de pression sociale en assurant que, \emph{"si elles font de gros efforts, la plupart des personnes sont capables de retrouver les souvenirs perdus"}. Ajoutons quelques ficelles plus ou moins subtiles (acquiescements, sourires, longues pauses pour inciter le sujet {\`a} ajouter quelque chose pour rompre de silence, faire semblant d'{\^e}tre d{\'e}\c{c}u quand cela ne vient pas...), ainsi qu'un d{\'e}cor ad{\'e}quat (une {\'e}tag{\`e}re compl{\`e}te pleine de livres sur la m{\'e}moire pour laisser penser que l'on {\`a} affaire {\`a} un expert) et on obtient une mise en condition du "cobaye". A la fin de cette premi{\`e}re s{\'e}ance, ce dernier {\'e}tait invit{\'e} {\`a} se remettre les deux histoires en m{\'e}moire, notamment en visualisant, le soir {\`a} la maison, l'encha{\^i}nement des {\'e}v{\'e}nements qu'on lui a lus.~\\
+
+\textbf{Suivaient deux autres rencontres}, chacune {\`a} une semaine d'intervalle de la pr{\'e}c{\'e}dente. Cette fois, le participant devait donner le plus de d{\'e}tails possibles sur ces deux anecdotes, la r{\'e}elle et la fausse, sans que, cette fois, l'exp{\'e}rimentateur n'ajoute plus d'{\'e}l{\'e}ment suppl{\'e}mentaire aux r{\'e}cits. Au terme de ces trois interviews, le pot-aux-roses {\'e}tait d{\'e}voil{\'e}, le sujet apprenant qu'une des deux histoires {\'e}tait une pure invention. Les chercheurs ont n{\'e}anmoins pris soin de ne pas laisser les participants avec cette seule information et une s{\'e}ance suppl{\'e}mentaire de d{\'e}briefing, plus approfondie, a {\'e}t{\'e} organis{\'e}e pour leur expliquer le processus de cr{\'e}ation des faux souvenirs.~\\
+
+\textbf{Les r{\'e}sultats} sont assez impressionnants. Sur la base des d{\'e}tails "rem{\'e}mor{\'e}s" lors des s{\'e}ances et sur les d{\'e}clarations des sujets eux-m{\^e}mes, plus des deux tiers des participants ont effectivement cru avoir v{\'e}cu la fausse histoire, qu'il s'agisse du pseudo-crime ou de l'accident imaginaire. Un des aspects les plus {\'e}tonnants tient au luxe de pr{\'e}cisions apport{\'e}es sur les officiers de police auxquels les personnes {\'e}taient cens{\'e}es avoir parl{\'e}. En moyenne, une douzaine de d{\'e}tails {\'e}taient {\'e}voqu{\'e}s {\`a} leur sujet, alors m{\^e}me qu'ils n'avaient jamais {\'e}t{\'e} rencontr{\'e}s ! Moins nombreux que pour les histoires vraies, ces d{\'e}tails (visuels, sonores, olfactifs, tactiles...) parcouraient n{\'e}anmoins toute la gamme des sensations attendues dans ce type d'interaction. Selon l'{\'e}tude, l'exp{\'e}rience a tellement bien march{\'e} qu'il a {\'e}t{\'e} d{\'e}cid{\'e} de l'interrompre apr{\`e}s avoir travaill{\'e} avec 60 des 70 participants pr{\'e}vus, les chercheurs ayant jug{\'e} inutile d'implanter de faux souvenirs de crimes dans le cerveau de "cobayes" suppl{\'e}mentaires, un peu comme, lors d'un essai de m{\'e}dicament, on finit par donner aux malades prenant un placebo la mol{\'e}cule test{\'e}e, tant elle a fait ses preuves.~\\
+
+\textbf{Pour Julia Shaw} et Stephen Porter, la facilit{\'e} d{\'e}concertante avec laquelle une personne se persuade d'avoir commis un crime tient au fait que les vrais souvenirs se r{\'e}activent {\`a} l'aide de fragments {\'e}parpill{\'e}s dans la m{\'e}moire et qui n'ont d'ailleurs parfois pas de lien direct avec l'histoire qu'on se rappelle. Les faux souvenirs \texttt{empruntant les m{\^e}mes chemins c{\'e}r{\'e}braux, au moins dans certaines r{\'e}gions du cortex sensoriel~\footnote{\texttt{http://www.ncbi.nlm.nih.gov/pubmed/20861170}}}, ce processus de reconstruction du puzzle m{\'e}moriel ouvre la porte {\`a} la cr{\'e}ation de ce que certains chercheurs nomment les "mensonges honn{\^e}tes" ou "souvenirs fant{\^o}mes". Cela se fait d'autant plus ais{\'e}ment que le sujet peut, dans les situations de stress ou dans des interrogatoires r{\'e}p{\'e}titifs, oublier la source des indices sur lesquels il fonde son souvenir et en particulier qu'ils ont {\'e}t{\'e} induits... par ses interlocuteurs. "\emph{Autrement dit, r{\'e}sume l'{\'e}tude, les {\'e}l{\'e}ments du souvenir imagin{\'e} disant {\`a} quoi cela \underline{aurait pu} ressembler peuvent se transformer en {\'e}l{\'e}ments disant {\`a} quoi cela \underline{aurait} ressembl{\'e}, qui, {\`a} leur tour, peuvent devenir des {\'e}l{\'e}ments disant {\`a} quoi cela \underline{a} ressembl{\'e}."}~\\
+
+\textbf{Ce travail} montre une fois de plus {\`a} quel point il est simple de manipuler la plausibilit{\'e} d'une histoire. Mais, dans le contexte d'enqu{\^e}tes criminelles, ce ph{\'e}nom{\`e}ne peut avoir des r{\'e}percussions dramatiques lorsqu'il touche les suspects mais aussi les t{\'e}moins. \emph{"Comprendre que les faux souvenirs complexes existent et que les individus "normaux" peuvent {\^e}tre conduits {\`a} les engendrer assez facilement est le premier pas pour emp{\^e}cher le processus, souligne Julia Shaw. En d{\'e}montrant de mani{\`e}re empirique ce que peuvent faire les techniques d'interrogatoire agressives -- celles qui sont connues pour cr{\'e}er de faux souvenirs –, nous pourrons plus rapidement convaincre les enqu{\^e}teurs d'en utiliser de "bonnes" {\`a} la place."} Pour {\'e}viter que la pression polici{\`e}re ne se transforme en erreur judiciaire.~\\
+
+Pierre Barth{\'e}l{\'e}my (suivez-moi \texttt{ici sur Twitter~\footnote{\texttt{https://twitter.com/PasseurSciences}}} ou bien \texttt{l{\`a} sur Facebook~\footnote{\texttt{http://www.facebook.com/passeur.desciences}}})~\\
+
+\end{document}
