@@ -5,13 +5,13 @@
 %--- Insertion de paquetages (optionnel) ---
 %--- Insertion de paquetages (optionnel) ---
 \usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
-\usepackage{a4}	             % pour la taille   
-\usepackage[T1]{fontenc}     % pour les font postscript
-\usepackage{epsfig}          % pour gerer les images
+\usepackage{a4}				 % pour la taille   
+\usepackage[T1]{fontenc}	 % pour les font postscript
+\usepackage{epsfig}		  % pour gerer les images
 %\usepackage{psfig}
 \usepackage{amsmath, amsthm} % tres bon mode mathematique
 \usepackage{amsfonts,amssymb}% permet la definition des ensembles
-\usepackage{float}           % pour le placement des figure
+\usepackage{float}		   % pour le placement des figure
 \usepackage{verbatim}
 
 \usepackage{longtable} % pour les tableaux de plusieurs pages
@@ -80,7 +80,7 @@
 % \thispagestyle{empty}
 
 \begin{multicols}{2}
-	\section*{Memento Java General}
+	\section*{Memento Recrutement Informatique}
 	
 	\begin{itemize}
 		\item ACID : Atomicity, Consistency, Isolation, Durability // Atomicit{\'e}, Coh{\'e}rence, Isolation et Durabilit{\'e}
@@ -128,12 +128,12 @@ Contrairement {\`a} la programmation proc{\'e}durale qui repose sur des s{\'e}ri
 Avantages :
 \begin{itemize}
 	\item Traduit un univers complexe en de petits ensembles simples et autonomes (Objets),
-    \item Permet de s{\'e}curiser nos donn{\'e}es en d{\'e}finissant des r{\`e}gles d'acc{\`e}s et de modification,
-    \item Permet de travailler {\`a} plusieurs sur un m{\^e}me projet compos{\'e} de plusieurs briques.
+	\item Permet de s{\'e}curiser nos donn{\'e}es en d{\'e}finissant des r{\`e}gles d'acc{\`e}s et de modification,
+	\item Permet de travailler {\`a} plusieurs sur un m{\^e}me projet compos{\'e} de plusieurs briques.
 \end{itemize}
 
 \subsection*{Classe et Objet}
-\subsubsection*{Qu'est-ce qu'une classe en java ?}
+\subsubsection*{Qu'est-ce qu'une classe ?}
 
 Une « classe » est un ensemble d'attributs et de m{\'e}thodes (fonctions). En outre, elle repr{\'e}sente l'ensemble des caract{\'e}ristiques et des m{\'e}canismes d'un concept du monde r{\'e}el.
 
@@ -155,7 +155,7 @@ Litt{\'e}ralement, un constructeur est une m{\'e}thode mais il faut pr{\'e}ciser
 	\item Ne peut pas {\^e}tre appel{\'e} directement. Ils sont appel{\'e}s implicitement {\`a} l'instanciation d'un objet avec le mot cl{\'e} new.
 \end{itemize}
 
-\subsubsection*{Que repr{\'e}sente un objet en java ?}
+\subsubsection*{Que repr{\'e}sente un objet ?}
 
 Un objet est un conteneur qui contient un ensemble de donn{\'e}es avec des m{\'e}canismes int{\'e}gr{\'e}s permettant de les manipuler.
 
@@ -163,9 +163,9 @@ Un objet est un conteneur qui contient un ensemble de donn{\'e}es avec des m{\'e
 
 Il est important de distinguer la relation et les diff{\'e}rences existant entre une classe et un objet :
 \begin{itemize}
-	\item Un objet est une instance d'une classe. Une classe est d{\'e}finie comme {\'e}tant un modèle / "template" correspondant à un {\'e}l{\'e}ment du monde r{\'e}el.
+	\item Un objet est une instance d'une classe. Une classe est d{\'e}finie comme {\'e}tant un mod{\`e}le / "template" correspondant {\`a} un {\'e}l{\'e}ment du monde r{\'e}el.
 	\item Normalement, on devrait parler d'objet qu'{\`a} l'ex{\'e}cution d'un programme.
-	\item Un objet est cr{\'e}{\'e} gr{\^a}ce au mot cl{\'e} \textbf{new} en utilisant un constructeur. 
+	\item Un objet est cr{\'e}{\'e} gr{\^a}ce au mot cl{\'e} \textbf{new} en utilisant un constructeur. Alors qu'une classe est d{\'e}finie avec le mot cl{\'e} \textbf{class}.
 	\item Au cours de l'ex{\'e}cution, on peut avoir plusieurs objets instances d'une classe, alors que la classe concern{\'e}e n'est d{\'e}clar{\'e}e qu'une seule fois.
 	\item La cr{\'e}ation d'un objet n{\'e}cessite l'allocation de m{\'e}moire cependant ce n'est pas le cas pour une classe.
 \end{itemize}
@@ -226,7 +226,7 @@ There are 4 basic concepts of OOP: APIE!
 \end{itemize}~\\
 \end{minipage}
 \begin{minipage}{0.50\linewidth}
-	\includegraphics[width=1.00\linewidth]{./OOPsConceptsRepresentation.png}
+	\includegraphics[width=1.00\linewidth]{../javaGeneral/OOPsConceptsRepresentation.png}
 \end{minipage}
 
 %% https://maheshjtp.medium.com/introduction-to-oops-concept-in-java-with-example-81186da10a3d
@@ -459,52 +459,52 @@ There are 4 basic concepts of OOP: APIE!
 	\footnotesize
 	\begin{verbatim}
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                        http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    
-    <groupId>com.example.package</groupId>
-    <artifactId>ApplicationName</artifactId>
-    <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <name>Project Name</name>
-    <url>http://www.example.org/</url>
-    
-    <dependencies>
-        <!-- ... -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- ... -->
-    </dependencies>
-    
-    <properties>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <build.name>BuildName</build.name>
-        <!-- ... -->
-    </properties>
-    
-    <build>
-        <finalName>${build.name}</finalName>
-        <plugins>
-            <!-- ... -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5.1</version>
-                <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
-                </configuration>
-            </plugin>
-            <!-- ... -->
-        </plugins>
-    </build>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+						http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>com.example.package</groupId>
+	<artifactId>ApplicationName</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>Project Name</name>
+	<url>http://www.example.org/</url>
+	
+	<dependencies>
+		<!-- ... -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- ... -->
+	</dependencies>
+	
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<build.name>BuildName</build.name>
+		<!-- ... -->
+	</properties>
+	
+	<build>
+		<finalName>${build.name}</finalName>
+		<plugins>
+			<!-- ... -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+				</configuration>
+			</plugin>
+			<!-- ... -->
+		</plugins>
+	</build>
 </project>
 	\end{verbatim}
 	\normalsize
@@ -534,13 +534,13 @@ There are 4 basic concepts of OOP: APIE!
 		\end{itemize}
 	\end{itemize}
 	
-	\section*{Divers : idées et idéaux, valeurs}
+	\section*{Divers : id{\'e}es et id{\'e}aux, valeurs}
 	
 	\begin{itemize}
 		\item[Trust] Working closely with other team members, we are confident in their ability to complete the task at hand. With our customers, through our achievements, we are focused on building a long-term relationship.
 		\item[K.I.S.S.] Keep It Simple, Stupid. Pragmatic options are always our first choice.
 		\item[Kaizen] Japanese: literally, “continuous improvement”. We keep improving our development technologies and methodologies, our internal organisation, our products.
-		\item[Commitment] We, individually, are committed to the needs of our customers, the self-realization of our colleagues and the development of our company’s project.
+		\item[Commitment] We, individually, are committed to the needs of our customers, the self-realization of our colleagues and the development of our company's project.
 		\item[Fulfilment] Together, we do everything we can to ensure that each of us can fully express his or her personality and explore his or her full potential in a respectful and supportive work environment.
 	\end{itemize}
 	
@@ -624,7 +624,7 @@ There are 4 basic concepts of OOP: APIE!
 			\item[4xx -- Erreur client] {\`a} l'origine du client
 			\item[5xx -- Erreur serveur] {\`a} l'origine du serveur
 		\end{itemize}
-	\end{itemize}
+	\end{itemize}~\\
 	
 	\vfill
 	\columnbreak
@@ -645,28 +645,40 @@ There are 4 basic concepts of OOP: APIE!
 		%% \item \texttt{https://www.lecoindesentrepreneurs.fr/contrat-de-prestation-informatique-redaction-contenu/}
 		%% \item \texttt{https://www.commentcamarche.net/contents/331-tma-tierce-maintenance-applicative}
 		\item ... 
-	\end{itemize}~\\
+	\end{itemize} %% ~\\
 	
 	Pratique pour apprendre au d{\'e}but (ou pour une mission interm{\'e}diaire) : peu enrichissant d'un point de vue professionnel !
 	
-	\vfill
+	\vfill ~\\
 	\columnbreak
 	
-	\section*{7 Questions {\`a} poser en entretien (par le d{\'e}veloppeur, 2 fois ; par le recruteur aussi, questions finales)}
+	\section*{{\'E}lements importants {\`a} garder / conserver / v{\'e}rifier}
 	
-	\emph{\footnotesize \textbf{Source : } \texttt{https://www.maddyness.com/2020/09/12/7-questions-developpeur-doit-poser-entretien/} }
 	\begin{itemize}
+		\item Avoir un objectif clair (en trois points), m{\^e}me si vous ne savez pas vers quel m{\'e}tier / sp{\'e}cialit{\'e} vous orienter pour les juniors ;
+		\item Crit{\`e}res de s{\'e}l{\'e}ction du / des postes (3 !) : int{\'e}r{\^e}t ?, localisation ?, salaire / r{\'e}mun{\'e}ration ?, {\'e}quipe ?, ambiance ?... et {\^e}tre capable de r{\'e}pondre {\`a} chacun de ces {\'e}l{\'e}ments ;  
+		\item Traces {\'e}crites (suivi : tableau des entretiens,  noms, mail, t{\'e}l{\'e}phone, adresse...) ; 
+		\item NE PAS communiquer directement son num{\'e}ro de t{\'e}l{\'e}phone (ou sinon un num{\'e}ro d{\'e}di{\'e}) ; 
+		\item Localisation : au-del{\`a} d'une heure de transports (ou autre d{\'e}lai autour ; aller ou retour), {\`a} faire r{\'e}fl{\'e}chir ; 
+		\item Ambiance d'{\'e}quipe, positionnement hi{\'e}rarchique, ... Et tout {\'e}l{\'e}ment pertinent pour recruteur ET pour soi. 
+		\item D{\'e}finir ses situations limites et acceptables (tutoiement / vouvoiement, se faire draguer pendant l'entretien, questions personnelles...) ; 
+		\item ... 
+	\end{itemize}~\\
+	
+	\vfill~\\
+	\columnbreak
+	
+	\section*{Questions {\`a} poser en entretien (dev ET recruteur)}
+	
+	\begin{itemize}
+	%% \emph{\footnotesize \textbf{Source : } \texttt{https://www.maddyness.com/2020/09/12/7-questions-developpeur-doit-poser-entretien/} }
 		\item Dans le process d'entretien vais-je {\'e}changer avec des d{\'e}veloppeurs·euses de l'{\'e}quipe ? 
 		\item Quelles sont les m{\'e}thodologies et rituels mis en place ?
 		\item Comment vous assurez-vous de la qualit{\'e} du code ?
 		\item Quelle est l'importante de la dette technique, comment est-elle trait{\'e}e ?
 		\item Quelle est la fr{\'e}quence de vos mises en production ? Est-ce automatis{\'e} ?
-		\item ... 
-		\item ... 
-	\end{itemize}
-	
-	\emph{\footnotesize \textbf{Source : } \texttt{http://artisandeveloppeur.fr/wp-content/uploads/2019/04/7-Questions.pdf} }
-	\begin{itemize}
+		\item[] 
+	%% \emph{\footnotesize \textbf{Source : } \texttt{http://artisandeveloppeur.fr/wp-content/uploads/2019/04/7-Questions.pdf} }
 		\item Quel gestionnaire de source est utilis{\'e} ? (Si il n'y en a pas : probl{\`e}mes potentiels. )
 		\item Quelle est l'anciennet{\'e} du code du projet ?
 		\item Combien de bugs sont recens{\'e}s {\`a} date ?
@@ -674,10 +686,8 @@ There are 4 basic concepts of OOP: APIE!
 		\item Quelle est la couverture du code actuelle ?
 		\item Comment se prend une d{\'e}cision d'architecture ?
 		\item Combien de temps est allou{\'e} {\`a} la veille technologique / formation ?
-	\end{itemize}
-	
-	\emph{\footnotesize \textbf{Source : } \texttt{https://www.maddyness.com/2019/06/05/7-questions-developpeur-entretien-rh/} }
-	\begin{itemize}
+		\item[] 
+	%% \emph{\footnotesize \textbf{Source : } \texttt{https://www.maddyness.com/2019/06/05/7-questions-developpeur-entretien-rh/} }
 		\item Pour quelles raisons aimez-vous la programmation ?
 		\item Qu'est-ce qui vous a plu et d{\'e}plu dans votre environnement de travail pr{\'e}c{\'e}dent ?
 		\item Que pensez-vous de la revue de code entre pairs ? Appr{\'e}ciez-vous de vous pr{\^e}ter {\`a} l'exercice ?
@@ -685,9 +695,44 @@ There are 4 basic concepts of OOP: APIE!
 		\item Parlez-moi du projet sur lequel vous avez travaill{\'e} et dont vous {\^e}tes le/la plus fier({\`e}re). Qu'est-ce qui a particuli{\`e}rement bien fonctionn{\'e} ?
 		\item Quel est le projet dont vous {\^e}tes le/la moins fier({\`e}re) et que vous consid{\'e}rez comme un {\'e}chec ? Que feriez-vous diff{\'e}remment ?
 		\item Quelle technologie souhaiteriez-vous apprendre cette ann{\'e}e ?
+	\end{itemize}~\\
+	
+	D'autres questions, selon inspiration...
+	
+	\vfill~\\
+	\columnbreak
+	
+	\section*{Les meilleures questions {\`a} poser au recruteur lors d'un entretien d'embauche}
+	
+	%% \texttt{https://www.welcometothejungle.com/fr/articles/entretien-embauche-meilleures-poser}~\\
+	
+	\begin{itemize}
+		\item Quel est votre avantage majeur par rapport aux autres entreprises de votre secteur ?
+		\item Quels sont les objectifs de cette ann{\'e}e ?
+		\item Quels sont les challenges auxquels l'entreprise est confront{\'e}e ?
+		\item Comment l'entreprise parvient-elle {\`a} se maintenir dans le contexte actuel ?
+		\item Quelles sont les valeurs de l'entreprise ?
+		\item Personnellement, qu'est-ce qui vous anime dans cette entreprise ?
+		\item Quel impact souhaitez-vous avoir dans la soci{\'e}t{\'e} ?
+		\item Quel type de profil se sentirait bien dans votre entreprise ? 
+		\item[]
+		\item Quel est l'organigramme de l'entreprise ?
+		\item Comment les diff{\'e}rentes {\'e}quipes interagissent entre elles ?
+		\item Qui sera mon manager direct ?
+		\item Quelles sont les principales missions de l'{\'e}quipe que j'int{\'e}grerai ?
+		\item L'{\'e}quipe travaille-t-elle en pr{\'e}sentiel ou en t{\'e}l{\'e}travail ?
+		\item Comment prenez-vous des d{\'e}cisions au sein de votre {\'e}quipe ?
+		\item Comment sera {\'e}valu{\'e} mon travail ?
+		\item Quelle est votre vision de l'{\'e}chec ?
+		\item Avez-vous des rituels ou des logiciels pour vous aider {\`a} bien communiquer ?
+		\item Comment d{\'e}finiriez-vous l'esprit de votre {\'e}quipe en quelques mots ? 
+		\item[]
+		\item Combien de candidats avez-vous pr{\'e}vu de rencontrer ?
+		\item Quelle est la prochaine {\'e}tape du processus de recrutement ?
+		\item Souhaitez-vous que je vous transmette le contact de mon employeur actuel ? 
 	\end{itemize}
 	
-	%% \vfill
+	%% \vfill~\\
 	%% \columnbreak
 	
 \end{multicols}
