@@ -211,7 +211,21 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 		\draw[fill, blue]   ( 0.0, 0.0) -- (-2.0,-0.0) arc[start angle=180, end angle=270,radius=2.0cm] -- ( 0.0, 0.0);
 		\draw[fill, yellow] ( 0.0, 0.0) -- (-0.0,-2.0) arc[start angle=270, end angle=360,radius=2.0cm] -- ( 0.0, 0.0);
 	\end{tikzpicture}
-\end{minipage} ~\\
+\end{minipage} ~\\~\\~\\
+
+\hfill \begin{minipage}[ht]{0.45\textwidth}
+	\def\triangle{--++(120:1)--++(240:1)--cycle}
+	\def\triangleReverse{--++(240:1)--cycle}
+	\begin{tikzpicture}
+		\tikz\draw[red,thick](0,0)\triangle; %% FEU
+		
+		\tikz\draw[blue,thick](2,0)\triangle (1,0.40)--(2,0.40); %% AIR
+		
+		\tikz\draw[orange,thick](3,1)--(4,1)\triangleReverse; %% EAU
+		
+		\tikz\draw[green,thick](5,1)--(6,1)\triangleReverse (5,0.60)--(6,0.60); %% TERRE
+	\end{tikzpicture}
+\end{minipage} ~\\~\\~\\
 
 %% https://tex.stackexchange.com/questions/45848/rotate-node-text-and-use-relative-positioning-in-tikz
 %% \begin{tikzpicture}
