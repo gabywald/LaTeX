@@ -13,6 +13,15 @@
 \usetikzlibrary{shapes.geometric, intersections, calc}
 \usetikzlibrary{decorations.markings, arrows}
 
+\usepackage{fdsymbol}
+%% \clubsuit
+%% \vardiamondsuit
+%% \spadesuit
+%% \varheartsuit
+\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+\DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
+
 %============================= Corps =================================
 \begin{document}
 
@@ -211,21 +220,44 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 		\draw[fill, blue]   ( 0.0, 0.0) -- (-2.0,-0.0) arc[start angle=180, end angle=270,radius=2.0cm] -- ( 0.0, 0.0);
 		\draw[fill, yellow] ( 0.0, 0.0) -- (-0.0,-2.0) arc[start angle=270, end angle=360,radius=2.0cm] -- ( 0.0, 0.0);
 	\end{tikzpicture}
-\end{minipage} ~\\~\\~\\
+\end{minipage} ~\\
 
-\hfill \begin{minipage}[ht]{0.45\textwidth}
+\begin{minipage}[ht]{0.45\textwidth}
+	%% color 		white, black, red, green, blue, cyan, magenta, yellow 
+	%% thickness 	ultra thin, very thin, thin, thick, very thick, ultra thick 
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (6,11);
+		
+		\draw [very thick, blue] (5.75,10.75) -- (5.75,3) -- (5.07,1.07);
+		\draw [very thick, blue] (5.75, 3)    -- (5.07,2.07);
+		\draw [very thick, blue] (5.75, 3)    -- (5.07,3.00);
+		\draw [very thick, blue] (5   , 1) circle (0.1);
+		\draw [very thick, blue] (5   , 2) circle (0.1);
+		\draw [very thick, blue] (5   , 3) circle (0.1);
+		% \draw [very thin, cyan]    (5.75,10.75) circle (0.1);
+		% \draw [very thin, cyan]    (5.75, 3) circle (0.1);
+		% \draw [very thin, cyan]    (5.10, 1.10) circle (0.1);
+		\draw [thick, blue] (5.65,10.75) -- (5.65,3.5);
+		\draw [blue]        (5.55,10.75) -- (5.55,4.0);
+		
+	\end{tikzpicture}
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
 	\def\triangle{--++(120:1)--++(240:1)--cycle}
 	\def\triangleReverse{--++(240:1)--cycle}
 	\begin{tikzpicture}
-		\tikz\draw[red,thick](0,0)\triangle; %% FEU
+		\draw[red,thick](0,0)\triangle; %% FEU
 		
-		\tikz\draw[blue,thick](2,0)\triangle (1,0.40)--(2,0.40); %% AIR
+		\draw[blue,thick](2,0)\triangle (1,0.40)--(2,0.40); %% AIR
 		
-		\tikz\draw[orange,thick](3,1)--(4,1)\triangleReverse; %% EAU
+		\draw[orange,thick](3,1)--(4,1)\triangleReverse; %% EAU
 		
-		\tikz\draw[green,thick](5,1)--(6,1)\triangleReverse (5,0.60)--(6,0.60); %% TERRE
+		\draw[green,thick](5,1)--(6,1)\triangleReverse (5,0.60)--(6,0.60); %% TERRE
 	\end{tikzpicture}
-\end{minipage} ~\\~\\~\\
+	
+	$\heartsuit \varheart \diamondsuit \vardiamond \clubsuit \spadesuit$ ~\\
+	
+\end{minipage} ~\\ 
+
 
 %% https://tex.stackexchange.com/questions/45848/rotate-node-text-and-use-relative-positioning-in-tikz
 %% \begin{tikzpicture}
