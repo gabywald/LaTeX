@@ -240,6 +240,13 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 		\draw [thick, blue] (5.65,10.75) -- (5.65,3.5);
 		\draw [blue]        (5.55,10.75) -- (5.55,4.0);
 		
+		%% above, below, right, left,
+		%% above left, above right, below left, below right
+		\draw ( 1.00, 0.50) node[right]{$0/I - Cartouche Bas$} ;
+		\draw ( 1.00,10.50) node[right]{$0/I - Cartouche Haut$} ;
+		%% \draw (1,0) node[right]{$A$} ;
+		%% \draw (0,1) node[above]{$B$} ;
+		
 	\end{tikzpicture}~\\
 \end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
 	\def\triangle{--++(120:1)--++(240:1)--cycle}
