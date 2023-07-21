@@ -1,0 +1,229 @@
+\documentclass[slidetop,11pt]{beamer}
+%
+% Ces deux lignes {\`a} d{\'e}commenter pour sortir 
+% le texte en classe article
+% \documentclass[class=article,11pt,a4paper]{beamer}
+% \usepackage{beamerbasearticle}
+
+% Packages pour les fran\c{c}ais
+%
+\usepackage[T1]{fontenc} 
+\usepackage[latin1]{inputenc}
+\usepackage[frenchb]{babel}
+% pour un pdf lisible {\`a} l'{\'e}cran si on ne dispose pas 
+% des fontes cmsuper ou lmodern
+%\usepackage{lmodern}
+\usepackage{aeguill}
+
+% Pour afficher le pdf en plein ecran
+% (comment{\'e} pour imprimer les transparents et pour les tests)
+%\hypersetup{pdfpagemode=FullScreen}
+
+% Red{\'e}finit la couleur de fond pour imprimer sur transparents
+%\xdefinecolor{fondtexte}{rgb}{1,1,1}     % blanc
+
+% commande differente pour les couleurs nomm{\'e}es - de base
+%\colorlet{coultexte}{black} 
+
+% -------------- Fioritures de style -------------
+% Fait afficher l'ensemble du frame 
+% en peu lisible (gris clair) d{\`e}s l'ouverture
+\beamertemplatetransparentcovered
+
+% Supprimer les icones de navigation (pour les transparents)
+\setbeamertemplate{navigation symbols}{}
+
+% Mettre les icones de navigation en mode vertical (pour projection)
+% \setbeamertemplate{navigation symbols}[vertical]
+
+\usetheme{Warsaw}
+
+%------------ fin style beamer -------------------
+
+% Faire appara{\^i}tre un sommaire avant chaque section
+% \AtBeginSection[]{
+%   \begin{frame}
+%   \frametitle{Plan}
+%   \medskip
+%   %%% affiche en d{\'e}but de chaque section, les noms de sections et
+%   %%% noms de sous-sections de la section en cours.
+%   \small \tableofcontents[currentsection, hideothersubsections]
+%   \end{frame} 
+% }
+
+% ----------- Contenu de la page de titre --------
+\title{Recruter en informatique}
+\subtitle{Les mauvaises id{\'e}es... et les bonnes !} 
+\author{Gaby Wald}
+\institute{\emph{to be defined}}
+%% \date{\today} \date{19 mai 2020} %% \date{\today} %% \date{03 Janvier 2018}
+\logo{\includegraphics[height=0.5cm]{img/logo_glider.png}}
+
+% ----------- Nom des diff{\'e}rentes parties --------
+
+%% Mis au fur et {\`a} mesure...
+
+% ------------------------------------------------
+% -------------   D{\'e}but document   ---------------
+% ------------------------------------------------
+\begin{document}
+%--------- {\'e}criture de la page de titre ----------
+% avec la commande frame simplifi{\'e}e
+\frame[plain]{\titlepage } 
+%
+
+%------------------ Sommaire ---------------
+
+\begin{frame}
+	\frametitle{Sommaire}
+	\small \tableofcontents[hideallsubsections]
+\end{frame} 
+
+\section{Recrutement en informatique, une introduction}
+\begin{frame}
+	\frametitle{Recrutement en informatique, une introduction}
+	\tableofcontents[sections=1,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+\subsection{Introduction}
+\begin{frame}
+	\frametitle{Introduction}
+	\begin{itemize}
+		\item L'objectif ici est seulement de recenser une liste de pratiques ; 
+		\item Enlever les clich{\'e}s RH sur les infomaticiens, d{\'e}veloppeurs, ing{\'e}nieurs... ; 
+		\item Faire sauter les soucis principaux du recrutement (nombre de candidats, turn-over, refus de contact...) ;
+		\item Faire {\'e}voluer les mentalit{\'e}s (divas des deux bords, sexisme...) ; 
+		\item ...  
+	\end{itemize}
+\end{frame}
+
+\subsection{Mauvaises id{\'e}es, pr{\'e}jug{\'e}s...}
+\begin{frame}
+	\frametitle{Mauvaises id{\'e}es, pr{\'e}jug{\'e}s...}
+	\begin{itemize}
+		\item Recrutement uniquement sur mots-clefs et ignorer le contenu ; 
+		\item Que des femmes pour recruter des hommes ("LinkedIn est un Tinder invers{\'e}. ") ; 
+		\item Recrutement sur "gadget" : comp{\'e}tences, ann{\'e}es d'exp{\'e}riences... et le sens ?
+		\item Recherche de "M{\^a}les Alphas C{\'e}libataires Sans Enfants" ; 
+		\item R{\'e}f{\'e}rences ? Quelles r{\'e}f{\'e}rences ? Pourquoi ?
+		\item Pr{\'e}sentation g{\'e}n{\'e}rique, "recrutement sur profil", "grille de salaire"... ; 
+		\item "Le digital : {\`a} manipuler avec doigt{\'e} !" : num{\'e}rique !
+		\item Et la culture associ{\'e}e... 
+	\end{itemize}
+\end{frame}
+
+\subsection{Bonnes id{\'e}es (?)}
+\begin{frame}
+	\frametitle{Bonnes id{\'e}es (?)}
+	\begin{itemize}
+		\item Instruisez-vous, renseignez-vous, oubliez vos clich{\'e}s...
+		\item Communiquer directement les enjeux (missions, r{\'e}mun{\'e}ration, conditions de travail...) ;
+		\item Environnement bienveillant, tol{\'e}rant, ouvert, inclusif, divers...
+		\item Distinction Vie Pro et Vie Perso...
+		\item Reconnaissance et assurer l'avenir : {\^e}tre correct avec tout le monde, y compris les contractuels / prestataires / stagiaires...
+		\item Une {\'e}quipe, cela se construit, et il n'y a pas d'argent magique, ni de management magique...
+		%% \item ...
+	\end{itemize}
+	
+	\emph{Note : une obligation l{\'e}gale sociale n'est pas un avantage (mutuelle, transports...). } 
+\end{frame}
+
+%%%%% %%%%% %%%%% %%%%% %%%%% 
+
+\section{Recrutement en informatique : les mauvaises pratiques}
+\begin{frame}
+	\frametitle{Recrutement en informatique : les mauvaises pratiques}
+	\tableofcontents[sections=2,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+\subsection{Pr{\'e}jug{\'e}s "techniques"}
+\begin{frame}
+	\frametitle{Pr{\'e}jug{\'e}s "techniques"}
+	\begin{itemize}
+		\item Aspects techniques peu attirants... ; 
+		\item Milieu Geek / Nerd / "Alternatif"... ; 
+		\item Terminologie magique ("digital / num{\'e}rique", acronymes, "Java / JavaScript"...) ; 
+		\item Informatique magique ("c'est simple", parfois non) ;  
+		\item[] 
+		\item Comme tout, \c{c}a s'apprend ! Au moins une culture minimale sur les acronymes... 
+	\end{itemize}
+\end{frame}
+
+\subsection{Soucis de recrutement}
+\begin{frame}
+	\frametitle{Soucis de recrutement}
+	\begin{itemize}
+		\item Turn-Over, concurrence des recruteurs (ESN / SS2I), harc{\`e}lement de contact... 
+		\item Recrutement uniquement sur mots-clefs et ignorer le contenu ; 
+		\item Que des femmes pour recruter des hommes ("LinkedIn est un Tinder invers{\'e}. ") ; 
+		\item Recrutement sur "gadget" : comp{\'e}tences, ann{\'e}es d'exp{\'e}riences... et le sens ?
+		\item Recherche de "M{\^a}les Alphas C{\'e}libataires Sans Enfants" ; ...
+	\end{itemize}
+\end{frame}
+
+\subsection{Lev{\'e}es de drapeaux rouges !}
+\begin{frame}
+	\frametitle{Lev{\'e}es de drapeaux rouges !}
+	\begin{itemize}
+		\item Soci{\'e}t{\'e} de Service en Informatique ("A*" / externalisations) ; 
+		\item Pr{\'e}sentation comme avantages ce qui rel{\`e}ve du l{\'e}gal (cong{\'e}s pay{\'e}s, tickets restaurants, remboursement des transports...) ; 
+		\item Ambiance(s) toxique(s) : management inadapt{\'e}, "mascus et alphas", prestataires / consultants...
+		\item Recrutement sur profil (bloquer la concurrence ?) ; 
+		\item Recrutement en comp{\'e}tition (fa\c{c}on consultant commercial) ; 
+		\item Conditions : OpenSpace avec plus de 10 personnes, T{\'e}l{\'e}Travail limit{\'e}...
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+%%%%% %%%%% %%%%% %%%%% %%%%% 
+
+\section{Recrutement en informatique : pour faire mieux}
+\begin{frame}
+	\frametitle{Recrutement en informatique : pour faire mieux}
+	\tableofcontents[sections=3,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+\subsection{Bonnes id{\'e}es (1)}
+\begin{frame}
+	\frametitle{Bonnes id{\'e}es (1)}
+	\begin{itemize}
+		\item Instruisez-vous, renseignez-vous, oubliez vos clich{\'e}s...
+		\item Communiquer directement les enjeux (missions, r{\'e}mun{\'e}ration, conditions de travail...) ;
+		\item Environnement bienveillant, tol{\'e}rant, ouvert, inclusif, divers...
+		\item Distinction Vie Pro et Vie Perso...
+		\item Reconnaissance et assurer l'avenir : {\^e}tre correct avec tout le monde, y compris les contractuels / prestataires / stagiaires...
+		\item Une {\'e}quipe, cela se construit, et il n'y a pas d'argent magique, ni de management magique...
+		\item Aller chercher les candidats (et s'int{\'e}resser {\`a} leur CV)...
+	\end{itemize} 
+\end{frame}
+
+\subsection{Bonnes id{\'e}es (2)}
+\begin{frame}
+	\frametitle{Bonnes id{\'e}es (2)}
+	\begin{itemize}
+		\item ... 
+	\end{itemize} 
+\end{frame}
+
+\subsection{Bonnes id{\'e}es (3)}
+\begin{frame}
+	\frametitle{Bonnes id{\'e}es (3)}
+	\begin{itemize}
+		\item ... 
+	\end{itemize} 
+\end{frame}
+
+%% \def\sectionPartBibliographie{Bibliographie / Mediagraphie}
+%% \section{\sectionPartBibliographie}
+%% \begin{frame}
+%% 	\frametitle{\sectionPartBibliographie}
+%% 	{\footnotesize 
+%% 		\nocite{*}
+%% 		%toutes references biblio : 6 lettres + 2 chiffres
+%% 		\bibliography{presentationRecrutementInformatique}
+%% 		% \bibliographystyle{frplain} % plain or frplain
+%% 		\bibliographystyle{plain}
+%% 	}
+%% \end{frame}
+
+\end{document}
