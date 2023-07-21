@@ -1,0 +1,401 @@
+\documentclass[slidetop,11pt]{beamer}
+%
+% Ces deux lignes {\`a} d{\'e}commenter pour sortir 
+% le texte en classe article
+% \documentclass[class=article,11pt,a4paper]{beamer}
+% \usepackage{beamerbasearticle}
+
+% Packages pour les fran\c{c}ais
+%
+\usepackage[T1]{fontenc} 
+\usepackage[latin1]{inputenc}
+\usepackage[frenchb]{babel}
+% pour un pdf lisible {\`a} l'{\'e}cran si on ne dispose pas 
+% des fontes cmsuper ou lmodern
+%\usepackage{lmodern}
+\usepackage{aeguill}
+
+% Pour afficher le pdf en plein ecran
+% (comment{\'e} pour imprimer les transparents et pour les tests)
+%\hypersetup{pdfpagemode=FullScreen}
+
+% Red{\'e}finit la couleur de fond pour imprimer sur transparents
+%\xdefinecolor{fondtexte}{rgb}{1,1,1}     % blanc
+
+% commande differente pour les couleurs nomm{\'e}es - de base
+%\colorlet{coultexte}{black} 
+
+% -------------- Fioritures de style -------------
+% Fait afficher l'ensemble du frame 
+% en peu lisible (gris clair) d{\`e}s l'ouverture
+\beamertemplatetransparentcovered
+
+% Supprimer les icones de navigation (pour les transparents)
+\setbeamertemplate{navigation symbols}{}
+
+% Mettre les icones de navigation en mode vertical (pour projection)
+% \setbeamertemplate{navigation symbols}[vertical]
+
+\usetheme{Warsaw}
+
+%------------ fin style beamer -------------------
+
+% Faire appara{\^i}tre un sommaire avant chaque section
+% \AtBeginSection[]{
+%   \begin{frame}
+%   \frametitle{Plan}
+%   \medskip
+%   %%% affiche en d{\'e}but de chaque section, les noms de sections et
+%   %%% noms de sous-sections de la section en cours.
+%   \small \tableofcontents[currentsection, hideothersubsections]
+%   \end{frame} 
+% }
+
+% ----------- Contenu de la page de titre --------
+\title{Ludop{\'e}dagogie / Gamification }
+\subtitle{Faire assimiler un savoir de fa\c{c}on diff{\'e}rente et ludique !} 
+%% \subtitle{Cr{\'e}er une Intrigue (cas du JdR)}
+\author{Gabriel Chandesris}
+% \author{Gabriel Chandesris & Nicolas Dagron}
+\institute{\emph{to be defined}} %% \institute{Ligue Ludique / OXiane}
+% \institute{\includegraphics[width=5cm]{img/ligueludique-1.png}}
+% \institute{\includegraphics[width=5cm]{img/ligueludique-1.png}~\includegraphics[width=5cm]{img/logo-studio-infinite-2.png}}
+%% \date{\today} \date{19 mai 2020} %% \date{\today} %% \date{03 Janvier 2018}
+%% \logo{\includegraphics[height=0.5cm]{img/logo_glider.png}}
+
+% ----------- Nom des diff{\'e}rentes parties --------
+
+%% Mis au fur et {\`a} mesure...
+
+\def\moreInFrameTitleLeftt{\includegraphics[height=0.5cm]{img/ligueludique-0.png}~~~~~}
+\def\moreInFrameTitleRight{~~~~~\includegraphics[height=0.5cm]{img/logo_glider.png}}
+
+% ------------------------------------------------
+% -------------   D{\'e}but document   ---------------
+% ------------------------------------------------
+\begin{document}
+%--------- {\'e}criture de la page de titre ----------
+% avec la commande frame simplifi{\'e}e
+\frame[plain]{\titlepage } 
+%
+
+%------------------ Sommaire ---------------
+
+\begin{frame}
+	\frametitle{Sommaire}
+	\small \tableofcontents[hideallsubsections]
+\end{frame} 
+
+
+\section{Ludop{\'e}dagogie / Gamification : K{\'e}zako ?}
+\begin{frame}
+	\frametitle{Ludop{\'e}dagogie / Gamification : K{\'e}zako ?}
+	\tableofcontents[sections=1,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+
+\subsection{Une tentative de d{\'e}finition}
+\begin{frame}
+	\frametitle{Une tentative de d{\'e}finition}
+	\begin{itemize}
+		\item D{\'e}mystifier un contenu (programmation, finance, gestion\ldots) ; 
+		\item Jeu pour le plaisir $\rightarrow$ jeu pour apprentissage : effort de transformation ; 
+		\item D{\'e}velopper une situation ludique, s'approprier un {\'e}l{\'e}ment de connaissance (difficile {\`a} faire appr{\'e}hender) ; 
+		\item Autre fa\c{c}on d'appr{\'e}hender un sujet et contenus {\`a} explorer ; 
+		\item Quantification / {\'e}valuation qui reste ; 
+		\item Comportement {\'e}valu{\'e} (et pas seulement le contenu). 
+	\end{itemize}
+\end{frame}
+
+
+\subsection{Supports ludop{\'e}dagogie}
+\begin{frame}
+	\frametitle{Supports ludop{\'e}dagogie}
+	\begin{itemize}
+		\item "Jeux de soci{\'e}t{\'e}" : plateau, cartes, r{\^o}le...
+		\item Jeu(x) Vid{\'e}o ; 
+		\item Jeux s{\'e}rieux / Serious games ; 
+		\item Mises en situation ; 
+		\item Utilisation du continuum de MilGram : passage R{\'e}el $\leftrightarrow$ Virtuel
+		\item "Sc{\'e}nario de sc{\'e}nario(s)"
+		\item ...
+	\end{itemize}
+\end{frame}
+
+\section{Ludop{\'e}dagogie / Gamification : Id{\'e}es \& applications}
+\begin{frame}
+	\frametitle{Ludop{\'e}dagogie / Gamification : Id{\'e}es \& applications}
+	\tableofcontents[sections=2,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+\subsection{Quelques id{\'e}es et notes (Pourquoi ?)}
+\begin{frame}
+	\frametitle{Quelques id{\'e}es et notes (Pourquoi ?)}
+	\begin{itemize}
+		\item Faire analyser pourquoi \c{c}a marche / ne marche pas (aux joueurs / personnes form{\'e}es) : d{\'e}briefing ; 
+		\item Sujet / Sc{\'e}nario cadre et du contenu ; 
+		\item Id{\'e}ation / brainstorming / narration interactive ; 
+		\item Serious Games \& Alternate Reality Games (immersion) ; 
+		\item Autour de la table : {\'e}l{\'e}ments r{\'e}els, {\'e}l{\'e}ments fictionnels. 
+	\end{itemize}
+\end{frame} 
+
+\subsection{Quelques id{\'e}es et notes (Supports et inspirations)}
+\begin{frame}
+	\frametitle{Quelques id{\'e}es et notes (Supports et inspirations)}
+	\begin{itemize}
+		\item Jeux Vid{\'e}o et Cin{\'e}ma (CyberS{\'e}curit{\'e} notamment) ; 
+		\item Obtenir des cas r{\'e}els sans forcer le formalisme (peut {\^e}tre sujet de formalisme en cours de jeu ou apr{\`e}s) ; 
+		\item Supports (cartes {\`a} jouer, combinatoire, plateau de jeu...) ; Aspect mat{\'e}riel, Aspect r{\'e}flexion ; 
+		\item D{\'e}tournement de jeux existants (jeu de plateau, jeu vid{\'e}o\ldots) ; 
+		\item Quel support de jeu ? Quels Outils (informations, documents...) ?
+	\end{itemize}
+\end{frame} 
+
+\subsection{Quelques id{\'e}es et notes (Cadre et 'Sortir du cadre')}
+\begin{frame}
+	\frametitle{Quelques id{\'e}es et notes (Cadre et 'Sortir du cadre')}
+	\begin{itemize}
+		\item Cadrer / formaliser : joueurs (et encadrants) ont d{\'e}j{\`a} des id{\'e}es / pr{\'e}jug{\'e}s (exemple : "La Bonne Paye" ou "Monopoly" => "utiliser {\`a} fond un syst{\`e}me capitaliste ou d'{\'e}conomie de march{\'e}")
+		\item Donner un point de vue diff{\'e}rent ("former en gestion, en finance\ldots") ; 
+		\item Sortir de la routine / Sortir de la zone de confort ; 
+		\item Narration interactive ; 
+		\item ...
+	\end{itemize}
+\end{frame} 
+
+\subsection{Cadre : Cours informatique et programmation}
+\begin{frame}
+	\frametitle{Cadre : Cours informatique et programmation}
+	\begin{itemize}
+		\item Reprendre un jeu de plateau et l'informatiser (mille bornes ?, jeu de l'oie ?) ; 
+		\item Appr{\'e}hender et utiliser les concepts de programmation (anciens ou nouveau) ; 
+		\item Aspects proc{\'e}dureaux / fonctionnels / objets ; 
+		\item {\'E}l{\'e}ments du jeu et r{\`e}gles du jeu ; 
+		\item {\'E}tapes successives. 
+	\end{itemize}
+\end{frame}
+
+\subsection{Quelques id{\'e}es et notes (Sc{\'e}narios)}
+\begin{frame}
+	\frametitle{Quelques id{\'e}es et notes (Sc{\'e}narios)}
+	\begin{itemize}
+		\item Sc{\'e}narios de JdR Cyberpunk (CyberPunk 2020, ShadowRun, CyberAge, GURPS Cyberpunk, The Sprawl\ldots) ; 
+		\item Sc{\'e}narios de JdR Contemporains (DeltaGreen, Agence ARES\ldots) ; 
+		\item Sc{\'e}narios cin{\'e}ma (m{\^e}me dans les clich{\'e}s comme Mission Impossible : infiltration, d{\'e}tournement bancaire, usurpation d'identit{\'e}\ldots) ; 
+		\item \ldots
+		\item D{\'e}j{\`a} existant pour des \emph{Serious Games} pour la sensibilit{\'e} (et plus) {\`a} la s{\^u}ret{\'e} de l'information. 
+	\end{itemize}
+\end{frame} 
+
+\section{Ludop{\'e}dagogie / Gamification : Ressources}
+\begin{frame}
+	\frametitle{Ludop{\'e}dagogie / Gamification : Ressources}
+	\tableofcontents[sections=3,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+\subsection{Techniques ludop{\'e}dagogie}
+\begin{frame}
+	\frametitle{Techniques ludop{\'e}dagogie} %% ~\ref{9techniquesLudopedagogiques}
+	R{\'e}f{\'e}rence~\cite{9techniquesLudopedagogiques}
+	\begin{enumerate}
+		\item Simulations gamifi{\'e}es
+		\item Activit{\'e}s p{\'e}dagogiques gamifi{\'e}es
+		\item Serious game (surtout jeu vid{\'e}o)
+		\item Serious game int{\'e}gral (d{\'e}tournement sans modification)
+		\item Serious game partiel (d{\'e}tournement pour objectif principal)
+		\item Apprentissage par le dessein / dessin du jeu
+		\item Ressource pr{\'e}texte (utilisation "app{\^a}t")
+		\item Incident / loisir
+		\item M{\'e}taJeu (auto-apprentissage)
+	\end{enumerate}
+\end{frame} 
+
+\subsection{M{\'e}caniques fondamentales du jeu}
+\begin{frame}
+	\frametitle{M{\'e}caniques fondamentales du jeu} %% ~\ref{gamificationEntrepriseCommentCaMarche}
+	R{\'e}f{\'e}rence~\cite{gamificationEntrepriseCommentCaMarche}
+	\begin{enumerate}
+		\item Points (gratiffication imm{\'e}diate)
+		\item Badges (visuel d'objectifs interm{\'e}diaires)
+		\item Niveaux (progression)
+		\item Classement (positionnement des joueurs)
+		\item Challenges / D{\'e}fis (maintentir l'engagement)
+	\end{enumerate}
+\end{frame}
+
+\subsection{Leviers d'engagement}
+\begin{frame}
+	\frametitle{Leviers d'engagement}
+	
+	\begin{columns}[T]
+	\begin{column}[T]{5cm}
+		\includegraphics[width=5cm]{img/evaluation-heuristique.png}~\\
+	\end{column}
+	\begin{column}[T]{7cm}
+		\footnotesize
+		R{\'e}f{\'e}rence~\cite{PiliersGamification}
+		\begin{enumerate}
+			\item Sens ({\'e}pique)
+			\item Possession
+			\item Raret{\'e} et P{\'e}nurie
+			\item Immersion
+			\item Cr{\'e}ativit{\'e} et Autonomie
+			\item Curiosit{\'e} et Impr{\'e}visibilit{\'e}
+			\item Aversion {\`a} la perte (acquis, opportunit{\'e})
+			\item Influence Sociale (collaboration)
+			\item Comp{\'e}tence et ma{\^i}trise (am{\'e}lioration)
+		\end{enumerate}
+		Leviers $\leftrightarrow$ Feedback $\leftrightarrow$ Progression
+	\end{column}
+	\end{columns}
+\end{frame}
+
+\subsection{Autres Images : boucle et parcours}
+\begin{frame}
+	\frametitle{Autres Images : boucle et parcours}
+	
+	\begin{columns}[T]
+	\begin{column}[T]{6cm}
+		% Boucle d'engagement gamifi{\'e}e~\\
+		\includegraphics[width=5.5cm]{img/boucle-engagement-gamifie.png}~\\
+	\end{column}
+	\begin{column}[T]{6cm}
+		% Parcours de l'utilisateur~\\
+		\includegraphics[width=5.5cm]{img/parcours-utilisateur-gamifie.png}~\\
+	\end{column}
+	\end{columns}
+
+\end{frame}
+
+\subsection{Th{\'e}orie des jeux / Strat{\'e}gies applicables}
+\begin{frame}
+	\frametitle{Th{\'e}orie des jeux / Strat{\'e}gies applicables}
+	\begin{itemize}
+		\item {\'E}quilibre de Nash (concurrence sur un m{\^e}me domaine ou aller voir ailleurs) ; 
+		\begin{itemize}
+			\item ... 
+		\end{itemize}
+		\item Dilemme du prisonnier ; 
+		\begin{itemize}
+			\item M{\^e}me 'gain' B si gagnant-gagnant ;  
+			\item M{\^e}me 'gain' C si ``pourrir-pourrir`` ; 
+			\item 'Gains' A et D si un mix des actions ; 
+			\item {\'E}quilibre si A > B > C > D
+			\item Diff{\'e}rentes strat{\'e}gies possibles, tendance {\`a} appliquer le "donnant-donnant" ou tendance {\`a} 'pourrir' alors qu'une strat{\'e}gie gagnant-gagnant est b{\'e}n{\'e}fique pour le long terme. 
+		\end{itemize}
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\subsection{D{\'e}marches diff{\'e}rentes de p{\'e}dagogie}
+\begin{frame}
+	\frametitle{D{\'e}marches diff{\'e}rentes de p{\'e}dagogie}
+	\begin{itemize}
+		\item ``Out of the box'' : faire deviner un fonctionnement avec une description partielle, que l'on compl{\`e}te ensuite (effet "{\'e}sot{\'e}risme" / "nain de jardin" / Numen{\'E}ra) ; 
+		\item ``Pens{\'e}e lat{\'e}rale'' : l'explicitation n'am{\`e}ne pas de solution mais une r{\'e}flexion ("le m{\'e}chant d{\'e}voile ses plans, qui jusqu'ici n'{\'e}taient pas compr{\'e}hensibles par autres que lui") ;
+		\item ``Acc{\'e}l{\'e}rateur neuro-ergonomique'' (Diane D'Esposito) : un simulacre (le jeu) est aussi efficace que la r{\'e}alit{\'e}, et moins couteux, pour l'exp{\'e}rience et la m{\'e}morisation ; 
+		\item ... 
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\section{Exemples et applications}
+\begin{frame}
+	\frametitle{Exemples et applications}
+	\tableofcontents[sections=4,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame} 
+
+\subsection{Apprentissages}
+\begin{frame}
+	\frametitle{Apprentissages}
+	\tableofcontents[sections=4,currentsection,subsectionstyle=show/shaded/hide]
+\end{frame} 
+
+\subsubsection{D{\'e}tournements de 'jeux ludiques'}
+\begin{frame}
+	\frametitle{D{\'e}tournements de 'jeux ludiques'}
+	\begin{itemize}
+		\item Monopoly / AntiMonopoly / Confinopoly : propri{\'e}t{\'e}, espaces...
+		\item La Bonne Paye / Jeu de l'Oie  : gestion, {\'e}v{\`e}nements... 
+		\item Captain Sonar : management, r{\'e}partition de r{\^o}les au sein d'une {\'e}quipe... 
+		\item ... 
+		\item ... 
+	\end{itemize}
+\end{frame} 
+
+\subsubsection{Du s{\'e}rieux au ludique}
+\begin{frame}
+	\frametitle{Du s{\'e}rieux au ludique}
+	\begin{itemize}
+		\item \emph{Landlords} et \emph{Monopoly} : achats immobiliers, conqu{\^e}te de march{\'e}...
+		\item \emph{Pandemic} (et version Legacy) : mod{\'e}lisation de pand{\'e}mies et r{\'e}action en {\'e}quipe
+		\item \emph{Risk} (et version Legacy) : le kriegspiel / wargame
+		\item[] 
+		\item \emph{Version Legacy d'un jeu : }le plateau de jeu est modifi{\'e} par chaque partie, et impacte les parties suivantes (ex: ville d{\'e}truite, zone irradi{\'e}e, construction ou destruction d'un centre de recherche...). 
+	\end{itemize}
+\end{frame} 
+
+\subsubsection{Et le jeu vid{\'e}o ? Et le Jeu de R{\^o}le ?}
+\begin{frame}
+	\frametitle{Et le Jeu Vid{\'e}o ? Et le Jeu de R{\^o}le ?}
+	\begin{itemize}
+		\item[$\circ$] \emph{MineCraft} (construction immobili{\`e}re) : travail d'{\'e}quipe, r{\'e}partition de t{\^a}ches... 
+		\item[$\circ$] MMORPG (par ex. : \emph{World of Warcraft})  : les guildes et leur(s) gestion(s), management, r{\'e}unions r{\'e}guli{\`e}res, r{\^o}les pr{\'e}cis... 
+		\item[$\circ$] \emph{Star Citizen} (et \emph{No Man's Sky} ?) : exploration spatiale et {\'e}quipages, management... 
+		\item[] 
+		\item[$\bullet$] \emph{Star Trek Aventures} ou \emph{The Strange} : apprentissage de l'anglais, travail en {\'e}quipe, coordination !
+		\item[$\bullet$] \emph{CyberPunk 2020} et \emph{ShadowRun} : s{\^u}ret{\'e} et s{\'e}curit{\'e} physique et informatique (CyberS{\'e}curit{\'e}), logistique de missions !
+		\item[$\bullet$] Sc{\'e}narios typiques transverses (l{\'e}gaux ou non selon l'univers, vol, infiltration, exfiltration, assassinat, ...)
+	\end{itemize}
+\end{frame} 
+
+\subsection{Apprentissage logiciel, id{\'e}es d'exercices / projets ludiques}
+\begin{frame}
+	\frametitle{Apprentissage logiciel, id{\'e}es d'exercices / projets ludiques}
+	\tableofcontents[sections=4,currentsection,subsectionstyle=show/shaded/hide]
+\end{frame} 
+
+\subsubsection{Id{\'e}es Simples et avanc{\'e}es}
+\begin{frame}
+	\frametitle{Id{\'e}es Simples et avanc{\'e}es}
+	\begin{itemize}
+		\item Jeu d'aventure (Java Swing, IHM, MVC, import d'images)
+		\item Parsely Game (console texte interactive / terminal / console, MVC, fichiers de configuration)
+		\item Partionner un jeu de plateau (MVC)
+		\item Syst{\`e}me de messagerie en direct (socket, web services...)
+		\item Jeu de plateau, syst{\`e}me bancaire (web services, microservices...)
+		\item Bases De Donn{\'e}es et Droits d'Acc{\`e}s (Base de donn{\'e}es d'agence de renseignement, niveaux de confidentialit{\'e}), mots-clef, tri...)
+		%% \emph{``(Delta) Green Box''},
+		\item ... 
+	\end{itemize}
+\end{frame} 
+
+\subsubsection{Autres id{\'e}es}
+\begin{frame}
+	\frametitle{Autres id{\'e}es}
+	\begin{itemize}
+		\item Des id{\'e}es ?
+		\item Conditions : aspect ludique ET utilisable par ailleurs !
+		\item ...
+	\end{itemize}~\\
+	
+	% L'univers Infini du "Learning By..."~\\
+	\begin{center} \includegraphics[width=8.0cm]{img/1626087344286.jpeg} \end{center}~\\
+	
+\end{frame} 
+
+\def\sectionPartBibliographie{Bibliographie / Mediagraphie}
+\section{\sectionPartBibliographie}
+\begin{frame}
+	\frametitle{\sectionPartBibliographie}
+	{\footnotesize 
+		\nocite{*}
+		%toutes references biblio : 6 lettres + 2 chiffres
+		\bibliography{presentationAtelierLudopedagogie}
+		% \bibliographystyle{frplain} % plain or frplain
+		\bibliographystyle{plain}
+	}
+\end{frame}
+
+\end{document}
