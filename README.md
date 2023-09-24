@@ -39,11 +39,13 @@ Quelques modèles / "templates" de documents LateX "prêt à l'emploi" et des do
       * spring
       * template
     * presentations : 
-      * presentationM2GBI : présentation de 2010 pour des étudiants de l'Université d'Evry, filière Master GBI (Génie Biologie et Informatique)
-      * presentationARG : une présentation sur les Alternate Reality Game (Jeux en Réalité Alternée) pour des étudiants d' l'UPEC (Créteil) ; contexte association Ligue Ludique (JdR)
-      * presentationAtelierCreerIntrigueJdR : présentation "Du scénario de Jeu de Rôle (JdR) au Roman : éléments d'intrigues" ; contexte association Ligue Ludique (JdR)
-      * presentationInstitutPasteur : présentation effectuée pour une candidature
-      * presentationBasesBiologie : pour donner quelques notions et explications
+      * presentationM2GBI : présentation de 2010 pour des étudiants de l'Université d'Evry, filière Master GBI (Génie Biologie et Informatique) ; 
+      * presentationARG : une présentation sur les Alternate Reality Game (Jeux en Réalité Alternée) pour des étudiants de l'UPEC (Créteil) ; contexte association Ligue Ludique (JdR) ; 
+      * presentationAtelierCreerIntrigueJdR : présentation "Du scénario de Jeu de Rôle (JdR) au Roman : éléments d'intrigues" ; contexte association Ligue Ludique (JdR) ; 
+      * presentationInstitutPasteur : présentation effectuée pour une candidature ; 
+      * presentationBasesBiologie : pour donner quelques notions et explications ; 
+      * presentationLudopedagogieGamification : des notes sur la ludopédagogie et la gamification ; 
+      * presentationRecrutementInformatique : des idées et recommendations pour le recrutement en informatique ; 
     * articles : 
       * aboutPubMedCommons
       * bitcoins / blockchain
