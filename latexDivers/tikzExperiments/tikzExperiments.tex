@@ -98,18 +98,65 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 
 ~\\ \hrule~\\
 
-%% https://tex.stackexchange.com/questions/520699/drawing-simple-dna-helix
-\begin{tikzpicture}
-    \begin{scope}[scale=.3, domain=0:15, samples=101]
-        \foreach \x in {0,1, ...,14}{
-          \draw[thick, gray] (\x,{-sin(\x*36)}) -- (\x,{sin(\x*36)});
-        }
-        \draw[gray, very thick] plot (\x,{sin(\x*36)});
-        \draw[gray, very thick] plot (\x,{-sin(\x*36)});
-    \end{scope}
-\end{tikzpicture}
+	%% https://tex.stackexchange.com/questions/520699/drawing-simple-dna-helix
+	\begin{tikzpicture}
+	    \begin{scope}[scale=.3, domain=0:15, samples=101]
+	        \foreach \x in {0,1, ...,14}{
+	          \draw[thick, gray] (\x,{-sin(\x*36)}) -- (\x,{sin(\x*36)});
+	        }
+	        \draw[gray, very thick] plot (\x,{sin(\x*36)});
+	        \draw[gray, very thick] plot (\x,{-sin(\x*36)});
+	    \end{scope}
+	\end{tikzpicture}
+	
+	%% https://shantoroy.com/latex/taxonomy-tree-in-latex-for-publication/
 
-%% https://shantoroy.com/latex/taxonomy-tree-in-latex-for-publication/
+\begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (6,11);
+	\end{tikzpicture}
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (5,5);
+		
+		\draw[ultra thick, black, fill=white] (2, 4) arc (0:180:1.0cm and 0.5cm);
+		\foreach \y in {1, 2, 3, 4} { \draw[ultra thick, black, fill=white] (2, \y) arc (0:-180:1.0cm and 0.5cm); }
+		\draw[ultra thick, black] (0,1) -- (0,4) ;
+		\draw[ultra thick, black] (2,1) -- (2,4) ;
+		
+		\foreach \y in {1, 2, 3} { 
+			% \draw[ultra thick, black] (0.20, \y+0.20) -- (0.20, \y+0.30) ; 
+			\draw[ultra thick, black]  (0.20, \y+0.20) arc (-180:-160:1.0cm and 0.5cm) ; 
+		}
+		
+		%% Circuitry Lines and Dots
+		\draw[ultra thick, black] (2.5,0.5) -- (2.5,4.5) ;
+		
+		\draw[ultra thick, black] (2.5,0.5) -- (3.5,0.5) ;
+		\draw[ultra thick, black] (2.5,4.5) -- (3.5,4.5) ;
+		\draw[ultra thick, black] (2.5,1.5) -- (4.8,1.5) ;
+		\draw[ultra thick, black] (2.5,3.5) -- (4.8,3.5) ;
+		\draw[ultra thick, black] (2.5,2.5) -- (4.0,2.5) ;
+		
+		\draw [very thick, black, fill=white] (3.5, 0.5) circle (0.1);
+		\draw [very thick, black, fill=white] (3.5, 4.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.8, 1.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.8, 3.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.0, 2.5) circle (0.1);
+		
+		%% Dental Gear !
+		\draw[black, fill=white] (2.5,2.5) circle (1.00);
+		\draw[black, fill=cyan] (2.5,2.5) circle (0.75);
+		\draw[ultra thick, black, fill=white] (2.5,2.5) circle (0.50);
+		%% ARC : start point + angle:angle:diameter
+		\foreach \x/\y in {
+			3/2
+		} { 
+			\draw[ultra thick, red] (\x,\y) arc (-10:10:1cm);
+		}
+		 
+	\end{tikzpicture}
+\end{minipage} ~\\
 
 \clearpage
 
