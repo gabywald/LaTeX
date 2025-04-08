@@ -451,12 +451,16 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 	\begin{tikzpicture}
 		\draw [very thin, gray] (0,0) grid (8,1);
 		
+		\draw ( 0.00, 1.25) node[right]{$FIRE$} ;
 		\draw[red,thick](1,0)\triangle; %% FEU
 		
+		\draw ( 2.00, 1.25) node[right]{$AIR$} ;
 		\draw[blue,thick](3,0)\triangle (2,0.40)--(3,0.40); %% AIR
 		
+		\draw ( 4.00, 1.25) node[right]{$WATER$} ;
 		\draw[orange,thick](4,1)--(5,1)\triangleReverse; %% EAU
 		
+		\draw ( 6.00, 1.25) node[right]{$EARTH$} ;
 		\draw[green,thick](6,1)--(7,1)\triangleReverse (6,0.60)--(7,0.60); %% TERRE
 	\end{tikzpicture}~\\
 	
