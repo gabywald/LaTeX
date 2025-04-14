@@ -22,6 +22,114 @@
 \DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
 \DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
 
+% https://tex.stackexchange.com/questions/100928/how-to-make-a-cog-gear-in-latex
+% #1 number of teeths
+% #2 radius intern
+% #3 radius extern
+% #4 angle from start to end of the first arc
+% #5 angle to decale the second arc from the first 
+\newcommand{\gearmacro}[5]{%
+	\foreach \i in {1,...,#1} {%
+	  [rotate=(\i-1)*360/#1]  (0:#2)  arc (0:#4:#2) {[rounded corners=1.5pt]
+	             -- (#4+#5:#3)  arc (#4+#5:360/#1-#5:#3)} --  (360/#1:#2)
+}}
+
+% #1 number of teeths
+% #2 radius intern
+% #3 radius extern
+% #4 angle from start to end of the first arc
+% #5 angle to decale the second arc from the first
+% #6 Inner fill color 
+% #7 Border color 
+\newcommand{\mechanicalgear}[7]{%
+	\fill[#6] (0,0) circle (#2);
+	\filldraw[ultra thick,rotate=12,fill=#6,draw=#7] \gearmacro{#1}{#2}{#3}{#4}{#5};
+	\filldraw[ultra thick,fill=white,draw=#7] (0,0) circle(#2 / 1.41421356237); %% sqrt(2)
+}
+
+% #1 number of teeths
+% #2 radius intern
+% #3 radius extern
+% #4 angle from start to end of the first arc
+% #5 angle to decale the second arc from the first
+% #6 Inner fill color 
+% #7 Border color 
+\newcommand{\mechanicalgearINtikz}[7]{%
+	\begin{tikzpicture}
+		\fill[#6] (0,0) circle (#2);
+		\filldraw[ultra thick,rotate=12,fill=#6,draw=#7] \gearmacro{#1}{#2}{#3}{#4}{#5};
+		\filldraw[ultra thick,fill=white,draw=#7] (0,0) circle(#2 / 1.41421356237); %% sqrt(2)
+	\end{tikzpicture}
+}
+
+\def\DataEngineerLOGOtikzBASE{%
+	\begin{tikzpicture}
+		%% \draw [very thin, gray] (0,0) grid (5,5);
+		
+		%% DataBase
+		\draw[ultra thick, black, fill=white] (2, 4) arc (0:180:1.0cm and 0.5cm);
+		\foreach \y in {1, 2, 3, 4} { \draw[ultra thick, black, fill=white] (2, \y) arc (0:-180:1.0cm and 0.5cm); }
+		\draw[ultra thick, black] (0,1) -- (0,4) ;
+		\draw[ultra thick, black] (2,1) -- (2,4) ;
+		
+		\foreach \y in {1, 2, 3} { \draw[ultra thick, black]  (0.20, \y+0.20) arc (-180:-160:1.0cm and 0.5cm) ; }
+		
+		%% Circuitry Lines and Dots
+		\draw[ultra thick, black] (2.5,0.5) -- (2.5,4.5) ;
+		
+		\draw[ultra thick, black] (2.5,0.5) -- (3.5,0.5) ;
+		\draw[ultra thick, black] (2.5,4.5) -- (3.5,4.5) ;
+		\draw[ultra thick, black] (2.5,1.5) -- (4.8,1.5) ;
+		\draw[ultra thick, black] (2.5,3.5) -- (4.8,3.5) ;
+		\draw[ultra thick, black] (2.0,2.5) -- (4.0,2.5) ;
+		
+		\draw [very thick, black, fill=white] (3.5, 0.5) circle (0.1);
+		\draw [very thick, black, fill=white] (3.5, 4.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.8, 1.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.8, 3.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.0, 2.5) circle (0.1);
+		
+		%% Dental Gear !
+		\begin{scope}[xshift=2.00cm, yshift=2.50cm]
+			\mechanicalgear{8}{0.80}{1.00}{20}{2}{white}{black}
+		\end{scope}
+	\end{tikzpicture}
+}
+
+\newcommand{\DataEngineerLOGOtikzBASEwithargs}[2]{%
+	\begin{tikzpicture}[scale=#1,opacity=#2]
+		%% \draw [very thin, gray] (0,0) grid (5,5);
+		
+		%% DataBase
+		\draw[ultra thick, black, fill=white] (2, 4) arc (0:180:1.0cm and 0.5cm);
+		\foreach \y in {1, 2, 3, 4} { \draw[ultra thick, black, fill=white] (2, \y) arc (0:-180:1.0cm and 0.5cm); }
+		\draw[ultra thick, black] (0,1) -- (0,4) ;
+		\draw[ultra thick, black] (2,1) -- (2,4) ;
+		
+		\foreach \y in {1, 2, 3} { \draw[ultra thick, black]  (0.20, \y+0.20) arc (-180:-160:1.0cm and 0.5cm) ; }
+		
+		%% Circuitry Lines and Dots
+		\draw[ultra thick, black] (2.5,0.5) -- (2.5,4.5) ;
+		
+		\draw[ultra thick, black] (2.5,0.5) -- (3.5,0.5) ;
+		\draw[ultra thick, black] (2.5,4.5) -- (3.5,4.5) ;
+		\draw[ultra thick, black] (2.5,1.5) -- (4.8,1.5) ;
+		\draw[ultra thick, black] (2.5,3.5) -- (4.8,3.5) ;
+		\draw[ultra thick, black] (2.0,2.5) -- (4.0,2.5) ;
+		
+		\draw [very thick, black, fill=white] (3.5, 0.5) circle (0.1);
+		\draw [very thick, black, fill=white] (3.5, 4.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.8, 1.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.8, 3.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.0, 2.5) circle (0.1);
+		
+		%% Dental Gear !
+		\begin{scope}[xshift=2.00cm, yshift=2.50cm]
+			\mechanicalgear{8}{0.80}{1.00}{20}{2}{white}{black}
+		\end{scope}
+	\end{tikzpicture}
+}
+
 %============================= Corps =================================
 \begin{document}
 
@@ -98,18 +206,107 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 
 ~\\ \hrule~\\
 
-%% https://tex.stackexchange.com/questions/520699/drawing-simple-dna-helix
-\begin{tikzpicture}
-    \begin{scope}[scale=.3, domain=0:15, samples=101]
-        \foreach \x in {0,1, ...,14}{
-          \draw[thick, gray] (\x,{-sin(\x*36)}) -- (\x,{sin(\x*36)});
-        }
-        \draw[gray, very thick] plot (\x,{sin(\x*36)});
-        \draw[gray, very thick] plot (\x,{-sin(\x*36)});
-    \end{scope}
-\end{tikzpicture}
+	%% https://tex.stackexchange.com/questions/520699/drawing-simple-dna-helix
+	\begin{tikzpicture}
+	    \begin{scope}[scale=.3, domain=0:15, samples=101]
+	        \foreach \x in {0,1, ...,14}{
+	          \draw[thick, gray] (\x,{-sin(\x*36)}) -- (\x,{sin(\x*36)});
+	        }
+	        \draw[gray, very thick] plot (\x,{sin(\x*36)});
+	        \draw[gray, very thick] plot (\x,{-sin(\x*36)});
+	    \end{scope}
+	\end{tikzpicture}
+	
+	%% https://shantoroy.com/latex/taxonomy-tree-in-latex-for-publication/
+	
+\clearpage
 
-%% https://shantoroy.com/latex/taxonomy-tree-in-latex-for-publication/
+	\begin{minipage}[b]{0.5\linewidth}
+		\begin{tikzpicture}
+			\fill[gray] (0,0) circle (2cm);
+			\draw[thick,rotate=12,fill=gray] \gearmacro{8}{2}{2.4}{20}{2};
+			\draw[thick,fill=white] (0cm,0cm) circle(1.35cm);
+		\end{tikzpicture}
+	\end{minipage}\hfill\begin{minipage}[b]{0.5\linewidth}
+		% \mechanicalgear{8}{2}{2.4}{20}{2};
+		\begin{tikzpicture}
+			\fill[gray] (0,0) circle (2cm);
+			\draw[thick,rotate=12,fill=gray] \gearmacro{8}{2}{2.4}{20}{2};
+			\draw[thick,fill=white] (0cm,0cm) circle(2 / 1.41421356237); %% sqrt(2)
+		\end{tikzpicture}
+	\end{minipage}~\\
+	
+	\begin{minipage}[b]{0.5\linewidth}
+		\mechanicalgearINtikz{8}{2}{2.4}{20}{2}{magenta}{cyan}
+	\end{minipage}\hfill\begin{minipage}[b]{0.5\linewidth}
+		\mechanicalgearINtikz{8}{2}{2.4}{20}{10}{blue}{black}
+	\end{minipage}~\\
+	
+	\begin{minipage}[b]{0.5\linewidth}
+		\mechanicalgearINtikz{8}{2}{2.4}{20}{2}{magenta}{yellow}
+	\end{minipage}\hfill\begin{minipage}[b]{0.5\linewidth}
+		\mechanicalgearINtikz{8}{2}{2.4}{20}{10}{blue}{red}
+	\end{minipage}~\\
+	
+	\begin{minipage}[b]{0.5\linewidth}
+		\mechanicalgearINtikz{8}{2}{2.4}{20}{2}{white}{blue}
+	\end{minipage}\hfill\begin{minipage}[b]{0.5\linewidth}
+		\mechanicalgearINtikz{8}{2}{2.4}{20}{10}{white}{black}
+	\end{minipage}~\\
+	
+\clearpage
+
+\begin{minipage}[ht]{0.45\textwidth}
+	\mechanicalgearINtikz{8}{2}{2.4}{20}{2}{white}{black}
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (5,5);
+		
+		%% DataBase
+		\draw[ultra thick, black, fill=white] (2, 4) arc (0:180:1.0cm and 0.5cm);
+		\foreach \y in {1, 2, 3, 4} { \draw[ultra thick, black, fill=white] (2, \y) arc (0:-180:1.0cm and 0.5cm); }
+		\draw[ultra thick, black] (0,1) -- (0,4) ;
+		\draw[ultra thick, black] (2,1) -- (2,4) ;
+		
+		\foreach \y in {1, 2, 3} { \draw[ultra thick, black]  (0.20, \y+0.20) arc (-180:-160:1.0cm and 0.5cm) ; }
+		
+		%% Circuitry Lines and Dots
+		\draw[ultra thick, black] (2.5,0.5) -- (2.5,4.5) ;
+		
+		\draw[ultra thick, black] (2.5,0.5) -- (3.5,0.5) ;
+		\draw[ultra thick, black] (2.5,4.5) -- (3.5,4.5) ;
+		\draw[ultra thick, black] (2.5,1.5) -- (4.8,1.5) ;
+		\draw[ultra thick, black] (2.5,3.5) -- (4.8,3.5) ;
+		\draw[ultra thick, black] (2.5,2.5) -- (4.0,2.5) ;
+		
+		\draw [very thick, black, fill=white] (3.5, 0.5) circle (0.1);
+		\draw [very thick, black, fill=white] (3.5, 4.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.8, 1.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.8, 3.5) circle (0.1);
+		\draw [very thick, black, fill=white] (4.0, 2.5) circle (0.1);
+		
+		%% Dental Gear !
+		\begin{scope}[xshift=2.00cm, yshift=2.50cm]
+			\mechanicalgear{8}{0.80}{1.00}{20}{2}{white}{black}
+		\end{scope}
+	\end{tikzpicture}
+\end{minipage} ~\\
+
+\begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}[scale=0.50, opacity=0.50]
+		\DataEngineerLOGOtikzBASE
+	\end{tikzpicture}
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}[scale=0.25, opacity=0.25]
+		\DataEngineerLOGOtikzBASE
+	\end{tikzpicture}
+\end{minipage} ~\\
+
+\begin{minipage}[ht]{0.45\textwidth}
+	\DataEngineerLOGOtikzBASEwithargs{0.5}{0.5}
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\DataEngineerLOGOtikzBASEwithargs{0.75}{0.5}
+\end{minipage} ~\\
 
 \clearpage
 
@@ -254,12 +451,16 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 	\begin{tikzpicture}
 		\draw [very thin, gray] (0,0) grid (8,1);
 		
+		\draw ( 0.00, 1.25) node[right]{$FIRE$} ;
 		\draw[red,thick](1,0)\triangle; %% FEU
 		
+		\draw ( 2.00, 1.25) node[right]{$AIR$} ;
 		\draw[blue,thick](3,0)\triangle (2,0.40)--(3,0.40); %% AIR
 		
+		\draw ( 4.00, 1.25) node[right]{$WATER$} ;
 		\draw[orange,thick](4,1)--(5,1)\triangleReverse; %% EAU
 		
+		\draw ( 6.00, 1.25) node[right]{$EARTH$} ;
 		\draw[green,thick](6,1)--(7,1)\triangleReverse (6,0.60)--(7,0.60); %% TERRE
 	\end{tikzpicture}~\\
 	
