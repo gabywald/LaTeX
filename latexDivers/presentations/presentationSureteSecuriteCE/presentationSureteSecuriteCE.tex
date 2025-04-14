@@ -1,0 +1,531 @@
+\documentclass[slidetop,11pt]{beamer}
+%
+% Ces deux lignes {\`a} d{\'e}commenter pour sortir 
+% le texte en classe article
+% \documentclass[class=article,11pt,a4paper]{beamer}
+% \usepackage{beamerbasearticle}
+
+% Packages pour les fran\c{c}ais
+%
+\usepackage[T1]{fontenc} 
+\usepackage[latin1]{inputenc}
+\usepackage[frenchb]{babel}
+% pour un pdf lisible {\`a} l'{\'e}cran si on ne dispose pas 
+% des fontes cmsuper ou lmodern
+%\usepackage{lmodern}
+\usepackage{aeguill}
+
+% Pour afficher le pdf en plein ecran
+% (comment{\'e} pour imprimer les transparents et pour les tests)
+%\hypersetup{pdfpagemode=FullScreen}
+
+% Red{\'e}finit la couleur de fond pour imprimer sur transparents
+%\xdefinecolor{fondtexte}{rgb}{1,1,1}     % blanc
+
+% commande differente pour les couleurs nomm{\'e}es - de base
+%\colorlet{coultexte}{black} 
+
+% -------------- Fioritures de style -------------
+% Fait afficher l'ensemble du frame 
+% en peu lisible (gris clair) d{\`e}s l'ouverture
+\beamertemplatetransparentcovered
+
+% Supprimer les icones de navigation (pour les transparents)
+\setbeamertemplate{navigation symbols}{}
+
+% Mettre les icones de navigation en mode vertical (pour projection)
+% \setbeamertemplate{navigation symbols}[vertical]
+
+\usetheme{Warsaw}
+
+%------------ fin style beamer -------------------
+
+% Faire appara{\^i}tre un sommaire avant chaque section
+% \AtBeginSection[]{
+%   \begin{frame}
+%   \frametitle{Plan}
+%   \medskip
+%   %%% affiche en d{\'e}but de chaque section, les noms de sections et
+%   %%% noms de sous-sections de la section en cours.
+%   \small \tableofcontents[currentsection, hideothersubsections]
+%   \end{frame} 
+% }
+
+% ----------- Contenu de la page de titre --------
+\title{S{\^u}ret{\'e}, S{\'e}curit{\'e}, Contre-Espionnage}
+\subtitle{Guide de bonne conduite pour {\'e}viter les fuites d'informations !} 
+\author{Gaby Wald}
+\institute{\emph{to be defined}}
+%% \date{\today} \date{19 mai 2020} %% \date{\today} %% \date{03 Janvier 2018}
+\logo{\includegraphics[height=0.5cm]{img/logo_glider.png}}
+
+% ----------- Nom des diff{\'e}rentes parties --------
+
+%% Mis au fur et {\`a} mesure...
+
+% ------------------------------------------------
+% -------------   D{\'e}but document   ---------------
+% ------------------------------------------------
+\begin{document}
+%--------- {\'e}criture de la page de titre ----------
+% avec la commande frame simplifi{\'e}e
+\frame[plain]{\titlepage } 
+%
+
+%------------------ Sommaire ---------------
+
+\begin{frame}
+	\frametitle{Sommaire}
+	\small \tableofcontents[hideallsubsections]
+\end{frame} 
+
+
+\section{D{\'e}finitions et pourquoi}
+\begin{frame}
+	\frametitle{D{\'e}finitions et pourquoi}
+	\tableofcontents[sections=1,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+
+\subsection{S{\^u}ret{\'e} et S{\'e}curit{\'e} et ...}
+\begin{frame}
+	\frametitle{S{\^u}ret{\'e} et S{\'e}curit{\'e} et ...}
+	\begin{itemize}
+		\item Compl{\'e}mentarit{\'e} et diff{\'e}rences entre S{\^u}ret{\'e} et S{\'e}curit{\'e} ; 
+		\item \underline{S{\^u}ret{\'e}} : surveriller, {\'e}viter l'intentionnel et la malveillance ; 
+		\item \underline{S{\'e}curit{\'e}} : {\'e}viter et soigner (voire gu{\'e}rir) l'accidentel
+		\item[] 
+		\item Ensuite 3 axes : bonne conduite, protection de l'information et s{\'e}curit{\'e} informatique ; 
+		\item Contexte de "Guerre {\'E}conomique", sans "Convention de Gen{\`e}ve" (ch{\^o}meurs et autres exclus) ; 
+		\item Contestation et cr{\'e}ativit{\'e} : prot{\'e}ger comp{\'e}tences, techniques, expertises, d{\'e}couvertes... ; 
+		\item ...
+	\end{itemize}
+\end{frame}
+
+\subsection{Contexte et n{\'e}cessit{\'e}s}
+\begin{frame}
+	\frametitle{Contexte et n{\'e}cessit{\'e}s}
+	\begin{itemize}
+		\item Probl{\`e}me identifi{\'e} rendu public (vol de portable, cyberattaque)... ; 
+		\item Taille critique de l'entit{\'e} et exposition automatique : besoin, d'une s{\^u}ret{\'e} interne (et / ou aide externe) ; 
+		\item Menaces identifi{\'e}es et {\`a} identifier : introduction t{\'e}l{\'e}phonique / physique / "cyber" ; 
+		\item Pr{\'e}coniser, r{\'e}pondre, supporter ; 
+		\item Standards {\`a} mettre en place (physique : grillages, sas, tourniquets, proc{\'e}dures...)
+		\item ...
+		\item ...
+	\end{itemize}
+\end{frame}
+
+\subsection{S{\^u}ret{\'e} et Menaces}
+\begin{frame}
+	\frametitle{S{\^u}ret{\'e} et Menaces}
+	\begin{itemize}
+		\item 3 niveaux s{\^u}ret{\'e}
+		\begin{itemize}
+			\item DSSEP
+			\item Correspondants s{\^u}ret{\'e}
+			\item Collaborateurs / Agents (internes {\`a} l'entit{\'e})
+		\end{itemize}
+		\item Menaces sur l'entit{\'e} (quelque soit l'entit{\'e})
+		\begin{itemize}
+			\item S{\^u}ret{\'e} n{\'e}cessaire ; 
+			\item Malveillance ; 
+			\item "D{\'e}linquance au quotidien" qui cible particuliers et organisations ; 
+			\item Informatique, mat{\'e}riel, stylos, montres... ; 
+		\end{itemize}
+		\item Cam{\'e}ras : prot{\'e}ger l'infrastructure (limit{\'e} par la CNIL, l'inspection du travail et le code du travail) ; 
+	\end{itemize}
+\end{frame}
+
+\subsection{Attaques internes / externes : typologie et impacts}
+\begin{frame}
+	\frametitle{Attaques internes / externes : typologie et impacts}
+	\begin{itemize}
+		\item Espionnage industriel ; 
+		\item Contrefa\c{c}ons ; 
+		\item Image de l'entit{\'e} (et notori{\'e}t{\'e}) ;
+		\item Int{\'e}grit{\'e} physique des collaborateurs / agents ; 
+		\item Lutte anti-(anti-exploitation animale) ou {\'e}quivalent (li{\'e} {\`a} activit{\'e} entit{\'e}) ; 
+		\item[] 
+		\item $\Rightarrow$ R{\'e}agir vite car opinion publique mall{\'e}able !
+	\end{itemize}
+\end{frame}
+
+\section{Probl{\'e}matiques connexes pas si annexes }
+\begin{frame}
+	\frametitle{Probl{\'e}matiques connexes pas si annexes }
+	\tableofcontents[sections=2,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+\subsection{Contrefa\c{c}ons}
+\begin{frame}
+	\frametitle{Contrefa\c{c}ons}
+	\begin{itemize}
+		\item Produits contrefaits $\Rightarrow$ Autres soucis bien sup{\'e}rieurs au manque {\`a} gagner !
+		\item Impacts sur la sant{\'e} publique (pharmacie, cosm{\'e}tique, tabac, autres...) ; 
+		\item Impacts sur l'environnement (production, d{\'e}chets...) ; 
+		\item Impacts sur la sant{\'e} publique (pharmacie, cosm{\'e}tique, tabac, autres...) ; 
+		\item {\`A} l'image de l'entit{\'e}, si contrefaits adroitement ET de mauvaise qualit{\'e} : mauvaise image de l'entit{\'e} !
+	\end{itemize}
+\end{frame}
+
+\subsection{Image (m{\'e}diatique) de l'entit{\'e}}
+\begin{frame}
+	\frametitle{Image (m{\'e}diatique) de l'entit{\'e}}
+	\begin{itemize}
+		\item "Entit{\'e}" : entreprise, agence gouvernementale, administration...
+		\item Emploi, recrutement, fournisseurs, clients... De nombreux liens !
+		\item Visibilit{\'e} g{\'e}r{\'e}e : 
+		\begin{itemize} 
+			\item Badges (couleur selon typologie de personnel : permanent, temporaire...) ; 
+			\item Tours de cou aux couleurs de l'entit{\'e} : g{\'e}rer l'acc{\`e}s et {\'e}viter captation / vol / copie et risques li{\'e}es {\`a} cette visibilit{\'e} ;
+			\item Supports de communications diverses : identifiables, diffusion contr{\^o}l{\'e}e, peut toujours {\^e}tre copi{\'e} / d{\'e}tourn{\'e} ; 
+		\end{itemize}
+		\item ...
+	\end{itemize}
+\end{frame}
+
+\subsection{Int{\'e}grit{\'e} physique des collaborateurs / agents}
+\begin{frame}
+	\frametitle{Int{\'e}grit{\'e} physique des collaborateurs / agents}
+	\begin{itemize}
+		\item Trajets domicile / travail (conditions, navettes, contr{\^o}les d'acc{\`e}s {\`a} l'entr{\'e}e...) ; 
+		\item Conditions de travail ; 
+		\item Voyages d'affaire (le plus important) : localiser et r{\'e}cup{\'e}rer en cas de prise d'otage, guerre, n{\'e}gociation... : D{\'e}claratif voyages et situation dans la destination (blanc, jaune, orange, rouge) + d{\'e}claratif pour joindre en permanence, motivation manuscrite si besoin ;
+		\item ... 
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\subsection{Lutte anti-(anti-*) : groupes opposants}
+\begin{frame}
+	\frametitle{Lutte anti-(anti-*) : groupes opposants}
+	\begin{itemize}
+		\item Lutte anti-(anti-*) : groupes opposants, quelqu'en soit le sujet / contexte...
+		\item Li{\'e} {\`a} une activit{\'e} l{\'e}gitime de l'entit{\'e} (exploitation animale, mat{\'e}riaux radioactifs...) ; 
+		\item Groupes d'activistes et communaut{\'e} en lien, contestation parfois sportive des manifestants ; 
+		\item R{\'e}ponses t{\'e}l{\'e}phoniques et probl{\`e}mes d'appels r{\'e}currents ; 
+		\item ...
+		\item ...
+	\end{itemize}
+\end{frame}
+
+\subsection{Espionnage {\'e}conomique industriel}
+\begin{frame}
+	\frametitle{Espionnage {\'e}conomique industriel}
+	\begin{itemize}
+		\item Augmentation depuis la fin de la Guerre Froide (ne concernait QUE le militaire pendants cette p{\'e}riode ??) ; 
+		\item L'information est un produit marchand (devis, factures...) ; 
+		\item Espions, fonctionnaires ordinaires ? (Convention de Vienne) ; 
+		\item Arme Ultime : Intelligence {\'E}conomique (l{\'e}gale),~\newline
+			pratique collective (recueil, analyse et distribution informations par voie l{\'e}gale) ;~\newline
+			veille et captation de l'information : rapport d'{\'e}tonnement !
+		\item Coups classiques : ordinateur / t{\'e}l{\'e}phone / blackberry ou autre smartphone dans les transports\newline
+			mais aussi : restaurants, bar, ascenseurs, h{\^o}tels, taxi, coiffeurs... ("n'est sourd que celui qui ne veut pas entendre")
+	\end{itemize}
+\end{frame}
+
+\section{Protection, des bases}
+\begin{frame}
+	\frametitle{Protection, des bases}
+	\tableofcontents[sections=3,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+\subsection{Documentation "sensible"}
+\begin{frame}
+	\frametitle{Documentation "sensible"}
+	\begin{itemize}
+		\item Classification des documents (diffusable, interne, et diff{\'e}rents niveaux de confidentialit{\'e} et TLP / couleurs) ; 
+		\item Clefs / armoires / coffres ; broyeuse ; "clean desk" ... 
+		\item Ordinateur : c{\^a}ble antivol (qui doit remplir sa fonction) ; 
+		\item Ne pas laisser de clefs ou de badges sur les portes ; 
+		\item Impression : aller chercher le r{\'e}sultat sur l'imprimante papier au moins 2 fois par jour
+		\item Supports d'{\'e}changes, confidentialit{\'e} des {\'e}changes, ... 
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\subsection{Externes, Stagiaires, Visiteurs... }
+\begin{frame}
+	\frametitle{Externes, Stagiaires, Visiteurs... }
+	\begin{itemize}
+		\item Stagiaire (plus de cinq jours) : r{\'e}f{\'e}rent + consid{\'e}ration + savoir o{\`u} + confidentialit{\'e} + suppression {\'e}l{\'e}ments rapports et th{\`e}ses
+		\item Visiteurs : communication / vitrine ;~\newline
+			Organiser le temps et l'espace de la visite~\newline
+			Jamais la personne questionn{\'e}e qui doit r{\'e}pondre ! D{\'e}tourner la question, aiguillonner sur une autre personne...~\newline
+			Personne(s) qui a (ont) l'habitude d'accompagner. ~\newline
+			Montrer ce que l'on veut montrer. 
+		\item Prestataires : limiter {\`a} la n{\'e}cessit{\'e} absolue ?!
+		\item Bienveillance malgr{\'e} surveillance : "le stagiaire d'aujourd'hui peut {\^e}tre le Nobel / Turing / Fields de demain : autant qu'il ou elle se rappelle de vous dans ses bons souvenirs !" 
+		%% \item ... 
+	\end{itemize}
+\end{frame}
+
+\subsection{Intelligence {\'e}conomique / Espionnage Industriel}
+\begin{frame}
+	\frametitle{Intelligence {\'e}conomique / Espionnage Industriel}
+	\begin{itemize}
+		\item Prot{\'e}ger activit{\'e} de l'entit{\'e} et {\'e}viter diffusion de donn{\'e}es pouvant nuire (donn{\'e}es internes, b{\'e}n{\'e}ficiaires, salari{\'e}s...)
+		\item \textbf{Suivi et tra\c{c}abilit{\'e}} ; 
+		\item Prestation / sous-traitance : points sensibles, RH et informatique ; 
+		\item {\'E}galement : prestataires, stagiaires, technologie sous toute ses formes (ordinateur, {\'e}cran, photocopieuse, fax, t{\'e}l{\'e}phone...)
+		\item "Coup classique" et lieux communs / publics : ascenseur, m{\'e}tro, train, avion, h{\^o}tel, transports...
+		\item "Documents sensibles" : clefs, armoires, coffres, broyeuses, "clean desk"...
+		\item Anticvls fonctionnels, pas de clefs laiss{\'e}es en place (portes, caissons...) ; 
+		\item ...
+	\end{itemize}
+\end{frame}
+
+\subsection{Ing{\'e}nierie Sociale (1)}
+\begin{frame}
+	\frametitle{Ing{\'e}nierie Sociale (1)}
+	\begin{itemize}
+		\item "Confiance Spontan{\'e}e", {\'e}changes pas forc{\'e}ments contraints, obtenir information ou acc{\`e}s par symptathie ou cr{\'e}dibilit{\'e} ; 
+		\item V{\'e}rification (syst{\'e}matique) des informations, interlocuteurs connus et reconnus ; 
+		\item Mettre en confiance (contexte, costume, ambiance sonore...) ; 
+		\item Pression / manipulation : ne pas laisser le temps de r{\'e}fl{\'e}chir, "le culot", "la drague"...
+		\item "Contre SE" : confidentialit{\'e}, escorter inviter, sensibilisation (affichage, conf{\'e}rences, rappels...)
+	\end{itemize}
+\end{frame}
+
+\subsection{Ing{\'e}nierie Sociale (2)}
+\begin{frame}
+	\frametitle{Ing{\'e}nierie Sociale (2)}
+	\begin{itemize}
+		\item Pr{\'e}parer la situation (nom, acolyte) ; 
+		\item Sc{\'e}narios (support technique fallacieux, faux fournisseur, faux concours, faux sites web / employ{\'e}s / visiteurs / recruteurs...
+		\item Objectifs : acc{\`e}s (clefs, badges, identifiants, propri{\'e}t{\'e} intellectuelle, informations sur employ{\'e}s, liste des clients / prospects / b{\'e}n{\'e}ficiairees...
+		\item Poubelles : listings, annuaires, organigrammes, carnets, r{\`e}gles, organisation r{\'e}seau, mots de passe...
+		\item "Contre SE" : pr{\'e}paration(s), exercices, sensibilisation...
+	\end{itemize}
+\end{frame}
+
+\section{Introduction Vigilance Renseignement}
+\begin{frame}
+	\frametitle{Introduction Vigilance Renseignement}
+	\tableofcontents[sections=4,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+\subsection{OSINT et OPSEC}
+\begin{frame}
+	\frametitle{OSINT et OPSEC (1)}
+	\begin{itemize}
+		\item OSINT (Open-Source Intelligence)
+		\begin{itemize}
+			\item Recherches en Sources Ouvertes (SO) ; 
+			\item Rapatriement de donn{\'e}es et requ{\^e}tage, services sp{\'e}cialis{\'e}s, outils en acc{\`e}s libres ; 
+			\item Outils et Donn{\'e}es peuvent {\^e}tre r{\'e}cup{\'e}r{\'e}s puis analys{\'e}s offline ; 
+		\end{itemize}
+		\item OPSEC (S{\'e}curit{\'e} Op{\'e}rationnelle)
+		\begin{itemize}
+			\item Ne pas montrer ce que l'on fait (de fa\c{c}on intentionnelle) ; 
+			\item Minimiser la divulgation intentionnelle (contr{\^o}le) ; 
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{OSINT et OPSEC (2)}
+	\begin{itemize}
+		\item Sujets non abordables en dehors d'un cadre d{\'e}fini (physique, temporel) : 
+		\begin{itemize}
+			\item Nucl{\'e}aire ;  
+			\item Renseignement (services) ; 
+			\item Pr{\'e}sidence / Direction ; 
+			\item Op{\'e}rations ; 
+		\end{itemize}
+		\item "Moche {\`a} Paris, Moche en Russie" ; 
+		\item "Ce qui se passe {\`a} bord du Galactica..." ; 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{OSINT et OPSEC (3)}
+	\begin{itemize}
+		\item Segmenter et attention aux "amiti{\'e}s" ; 
+		\item Acc{\`e}s professionnels sont... professionnels ! (codes, VPN, ...) ; 
+		\item Pas de mise en {\'e}vidence ; 
+	\end{itemize}
+\end{frame}
+
+\subsection{Charte SI, et rappels de bonnes pratiques}
+\begin{frame}
+	\frametitle{Charte SI, et rappels de bonnes pratiques (1)}
+	\begin{itemize}
+		\item Yubikeys et autres MFA (Multi-Factor Authentication) ; 
+		\item Consignes mises {\`a} jours r{\'e}guli{\`e}rement pour trajets {\`a} l'{\'e}tranger ; 
+		\begin{itemize}
+			\item pr{\'e}venir trajet en amont ; 
+			\item d{\'e}lais ; 
+			\item dur{\'e}es s{\'e}jours ; 
+			\item briefing avant ; 
+			\item destinations ET escales avec dur{\'e}e ; 
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Charte SI, et rappels de bonnes pratiques (2)}
+	\begin{itemize}
+		\item D{\'e}placements, formations, passeports de services (pour d{\'e}placement pros !) ; 
+		\begin{itemize}
+			\item Ojectif de passeport de service est d{\'e}viter la diffusion des adresses personnelles et l'association de visas exotiques
+			\item En bin{\^o}mes le plus souvent ; et sensibilisation le plus souvent (formation "{\'e}voluer en contexte international")
+			\item Valise blanchie (sp{\'e}cifique ET ne rien laisser trainer (idem coffre), toujours conserver sur soi ;  
+			\item Que les donn{\'e}es n{\'e}cessaires ; 
+			\item {\'E}quipements {\'e}teints pendant le trajet ;
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Labels de Classification}
+\begin{frame}
+	\frametitle{Labels de Classification}
+	\begin{itemize}
+		\item Visibilit{\'e}s et limitations, restrictions, notamment sur documents (physiques, num{\'e}riques...) ; 
+		\item TLP "Traffic Light Protocol" : pour DIFFUSION ; 
+		\begin{itemize}
+			\item Non-Classifi{\'e} ; Diffusion Restreinte ; Secret ; Top Secret ; 
+		\end{itemize}
+		\item PAP "Possible Action Protocol" : pour UTILISATION ; 
+		\begin{itemize}
+			\item CLEAR / WHITE ; YELLOW ; AMBER ; RED ; 
+		\end{itemize}
+		\item Attention aggr{\'e}gation [DR $\Rightarrow$ S $\Rightarrow$ TS] : SECRET (et mention) ; 
+		\begin{itemize}
+			\item[$\Longrightarrow$] Ce n'est pas le support ou la transmission qui fait la classification 
+			(c'est le \textbf{contenu qui est classifi{\'e}} !)
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{IG 1300}
+\begin{frame}
+	\frametitle{IG 1300}
+	\begin{itemize}
+		\item Directive Inter-Gouvernementale / Minist{\'e}rielle (France) ; 
+		\item D{\'e}finitions pour : mobiliser, prot{\'e}ger, limiter l'acc{\`e}s aux donn{\'e}es, informations, supports ; 
+		\item Acc{\`e}s et habilitations, besoin d'en connaitre (exercice, accomplissement, ...) ; 
+		\item Choix, tampons / templates (mod{\`e}les), page de garde, mentions particuli{\`e}res ; 
+		\item DR : Diffusion Restreinte = protection ; 
+		\item Supports amovibles : demander, usage d{\'e}di{\'e} ({\'e}changes d'un certain niveau uniquement, dans un sens unique) ; 
+	\end{itemize}
+\end{frame}
+
+\subsection{Supports d'{\'e}changes et de transports}
+\begin{frame}
+	\frametitle{Supports d'{\'e}changes et de transports}
+	\begin{itemize}
+		\item Enveloppes d{\'e}di{\'e}es et sur-enveloppe (ouverture des deux est un acc{\`e}s significatif) ; 
+		\item Pour types de transports (documents, outil informatique...) ; 
+		\item Supports amovibles : {\'e}changes d'un certain niveau uniquement ou dans une direction unique ;
+		\item D{\'e}classification : au cas par cas, automatique 50 / 15 / 75 ans ; 
+		\item Nettoyage (par logiciel, commandes sp{\'e}cifiques, ou mat{\'e}riel) ; 
+	\end{itemize}
+\end{frame}
+
+\section{Renseignement / Espionnage / Contre-Espionnage}
+\begin{frame}
+	\frametitle{Renseignement / Espionnage / Contre-Espionnage}
+	\tableofcontents[sections=5,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+\subsection{Espionnage Universel (public, priv{\'e}...)}
+\begin{frame}
+	\frametitle{Espionnage Universel (public, priv{\'e}...), objectifs : }
+	\begin{itemize}
+		\item Acc{\'e}der {\`a} des informations sensibles ; 
+		\item Avoir un coup d'avance ; 
+		\item Se rassurer ; 
+		\item Peser sur les processus d{\'e}cisionnels ; 
+		\item Influencer ; 
+		\item Maitriser des probl{\'e}matiques internes ; 
+	\end{itemize}
+\end{frame}
+
+\subsection{"Vous {\^e}tes des cibles. "}
+\begin{frame}
+	\frametitle{"Vous {\^e}tes des cibles. "}
+	\begin{itemize}
+		\item Prendre du recul ; 
+		\item Analyser les leviers psychologiques ; 
+		\item Entit{\'e}, r{\'e}seau, badges, acc{\`e}s b{\^a}timent, habitudes...
+		\item Sociogramme ; sur un temps plus ou moins long ; 
+		\item Faisceaux d'indices concordants ; 
+		\item[] 
+		\item "Processus long cabinet de conseil" et autres cas : ne pas h{\'e}siter {\`a} dire non !
+	\end{itemize}
+\end{frame}
+
+\subsection{Processus de recrutement }
+\begin{frame}
+	\frametitle{Processus de recrutement }
+	\begin{itemize}
+		\item Ciblage ; 
+		\item Environnement ; 
+		\item Approche ; 
+		\item Recrutement 
+		\item Phase d'activation ; 
+		\item Traitement ; 
+	\end{itemize}
+\end{frame}
+
+\subsection{Le recueil de renseignements}
+\begin{frame}
+	\frametitle{Le recueil de renseignements}
+	\begin{itemize}
+		\item Informations classifi{\'e}es ; 
+		\item Informations grises ; 
+		\item Information ambiance ; 
+		\item[] 
+		\item Documents internes et plus ou moins classifi{\'e}s ; 
+		\item[] 
+		\item Puzzle de petits {\'e}l{\'e}ments : petits d{\'e}tails de s{\'e}curit{\'e}s, n{\'e}gligences... 
+	\end{itemize}
+\end{frame}
+
+\subsection{Pr{\'e}paration et {\'e}vitement}
+\begin{frame}
+	\frametitle{Pr{\'e}paration et {\'e}vitement}
+	\begin{itemize}
+		\item Vitesse $\rightarrow$ comme le marketing $\rightarrow$ sentiment d'urgence : si pas de danger de mort ou danger imm{\'e}diat $\rightarrow$ {\^e}tre moins reptilien !!
+		\item[] 
+		\item Pr{\'e}parer, {\'e}viter le chaos, ne pas sortir du cadre de s{\'e}curit{\'e} : fiabilit{\'e} et r{\`e}gles et temporiser
+		\item[]
+		\item Moyens des espions : OSINT ; HUMINT ; R{\'e}seaux Sociaux ; Petites Annonces ; Compromission ; 
+	\end{itemize}
+\end{frame}
+
+\subsection{Facteur humain et leviers de recrutement}
+\begin{frame}
+	\frametitle{Facteur humain et leviers de recrutement}
+	\begin{itemize}
+		\item Effet d'habitude ; d{\'e}marches banales ; 
+		\item "Voyager l{\'e}ger" (s{\'e}parer mondes pro / monde perso) ; 
+		\item Entretiens de recrutement "r{\'e}mun{\'e}r{\'e}s" (?) ; 
+		\item Prudence au quotidien (et pr{\'e}venir) ; 
+		\begin{itemize}
+			\item Lieu de travail et environs ; 
+			\item Sollicitations d'anciens coll{\`e}gues , amis ; 
+			\item Vols cibl{\'e}s : bien v{\'e}rifier ; 
+			\item Activit{\'e}s ext{\'e}rieures ; 
+			\item Trajets ; 
+		\end{itemize}
+		\item ...
+	\end{itemize}
+\end{frame}
+
+%% \def\sectionPartBibliographie{Bibliographie / Mediagraphie}
+%% \section{\sectionPartBibliographie}
+%% \begin{frame}
+%% 	\frametitle{\sectionPartBibliographie}
+%% 	{\footnotesize 
+%% 		\nocite{*}
+%% 		%toutes references biblio : 6 lettres + 2 chiffres
+%% 		\bibliography{presentationLikeMcKinsey}
+%% 		% \bibliographystyle{frplain} % plain or frplain
+%% 		\bibliographystyle{plain}
+%% 	}
+%% \end{frame}
+
+\end{document}
