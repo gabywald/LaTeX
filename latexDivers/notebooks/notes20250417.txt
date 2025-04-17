@@ -23,4 +23,86 @@ Other resources :
  - https://fr.wikipedia.org/wiki/Lulu.com
  - https://fr.wikipedia.org/wiki/Books_on_Demand
  - https://fr.wikipedia.org/wiki/Impression_à_la_demande
- 
+
+===== ===== ===== ===== ===== 
+https://www.mathweb.fr/euclide/2023/07/05/creer-un-calendrier-a-laide-de-python-et-latex/
+Cahier des charges
+	
+	Il faudra que chaque mois tienne sur une page.
+	
+	Sur chaque page, il faudra qu’il y ait une en-tête (une image représentant le mois) sur laquelle sont écrits le mois et l’année.
+	
+	Je veux que les jours soient écrits sous l’en-tête, et que le calendrier sus sous la forme d’une grille. Dans chaque case de cette grille, il faut qu’il y ait la date (le numéro du jour).
+	
+	Je veux aussi que l’utilisateur ou l’utilisatrice ait la possibilité de choisir des options: position de la date dans la case, couleur, taille, couleur des trait de la grille, jours écrits en entier, ou en abrégé, ou uniquement avec les initiales.
+	
+	L’implémentation en Python
+	
+	Je décide d’utiliser la Programmation Orientée Objet (POO) pour ce projet.
+	
+	Je veux une classe Calendrier qui admet l’année en attribut. Par exemple,
+	
+	>>> Calendrier(2023)
+	
+	devra désigner l’ensemble du calendrier de l’année 2023.
+	
+	Comme mentionné plus haut, il faut aussi d’autres attributs à la classe pour l’export au format PDF.
+	
+	Il faut aussi une méthode pour exporter au format PDF. Cette méthode va avoir des arguments (nom du fichier, booléen pour supprimer ou non les fichiers auxiliaires pour générer le PDF et liste des mois qui nous intéressent).
+	
+	L’exportation du calendrier à l’aide de Python et LaTeX
+	
+	Je souhaite donc passer par LaTeX, et utiliser plus particulièrement TiKZ: c’est une solution graphique avec laquelle je me sens à l’aise.
+	Les attributs de la classe et les arguments de la méthode d’exportation
+	
+	Attributs de la classe:
+	---------------------
+	* year 							: année du calendrier
+	
+	* dayname 						: style d'écriture des jours
+	--> trois valeurs possibles :
+	----- 'long' (par défaut),
+	----- 'short' (Initiales des jours)
+	----- 'abr' (trois premières lettres des jours)
+	
+	* colorday 						: couleur avec laquelle les jours sont écrits
+	---> Valeur par défaut : 'black'
+	
+	* position 						: position du nombre indiquant le jour dans les cases
+	---> Valeurs possibles :
+	----- 'center' (par défaut),
+	----- 'bottom left',
+	----- 'bottom right',
+	----- 'top left',
+	----- 'top right'
+	
+	* scale 						: échelle du nombre
+	---> Si position = 'center', scale=4 par défaut
+	---> Sinon scale=2 par défaut
+	
+	* opacity 						: opacité avec laquelle est écrit le nombre du jour dans les cases
+	---> Valeur par défaut : 0.2
+	
+	* textcolor 					: couleur TiKZ avec laquelle est écrite le jour dans les cases
+	---> Valeur par défaut : 'gray'
+	
+	* linecolor 					: couleur des traits du calendrier
+	---> Valeur par défaut : 'black'
+	
+	* linewidth 					: épaisseur des traits de la grille
+	---> Valeur par défaut : '1pt'
+	
+	
+	Arguments de la méthode 'export()':
+	---------------------------------
+	* L : liste des mois à exporter.
+	---> Par exemple, L = [7,8] pour juillet et août.
+	---> Valeur par défaut : L = range(1,13)
+	
+	* erase : booléen qui indique si les fichiers auxiliaires, y compris le fichier '.tex', doivent être supprimés.
+	---> Valeur par défaut : False
+	
+	* filename : nom du calendrier
+	---> Valeur par défaut : filename = 'calendrier-<année>'
+
+===== ===== ===== ===== ===== 
