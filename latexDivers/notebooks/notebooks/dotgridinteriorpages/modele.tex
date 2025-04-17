@@ -1,0 +1,22 @@
+\documentclass[a5paper]{article}
+
+% \usepackage{a5}  
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{0.00cm}{0.00cm}{0.00cm}{0.00cm}{0pt}{0pt}{0pt}{0pt}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing, shapes}
+\usetikzlibrary{shapes.geometric, intersections, calc}
+\usetikzlibrary{decorations.markings, arrows}
+
+\begin{document}
+	% \tikz \foreach \x / \y in {1/1,2/2...,30/20} \draw (\x,\y) circle (0.25);
+	\begin{tikzpicture}
+		\foreach \x in {0,0.5,...,20} %% paperwidth | textwidth
+			\foreach \y in {0,0.5,...,29.5} %% 29 | paperheight | textheight
+				{ \draw (\x,\y) circle (0.01); }
+	\end{tikzpicture}
+\end{document}

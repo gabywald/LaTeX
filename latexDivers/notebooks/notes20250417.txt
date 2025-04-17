@@ -1,0 +1,26 @@
+
+Main idea here is to generate some "templates" for printable notebook easy-to-print via a platform of "print on demand" like lulu.com ; see some examples at https://www.lulu.com/create/notebooks . 
+
+Typologies of NoteBook : 
+	- Blank Interior Pages ; 
+	- Lined Interior Pages ; 
+	- Graph Interior Pages ; 
+	- Dot Grid Interior Pages ; 
+	
+Typologies of Planners : 
+	- Daily Planner Interior Pages ; 
+	- Weekly Planner Interior Pages ; 
+	- Monthly Planner Interior Pages ; 
+	- Habit Tracker Planner Interior Pages ; 
+
+Formats (for most of them) : 
+	- Pocket Book (4.25 x 6.875 in | 108 x 175 mm) ;
+	- A5 (5.83 x 8.27 in | 148 x 210 mm) ; 
+	- US Trade (6 x 9 in | 152 x 229 mm) ; 
+	- Executive (7 x 10 in | 178 x 254 mm) ; 
+
+Other resources : 
+ - https://fr.wikipedia.org/wiki/Lulu.com
+ - https://fr.wikipedia.org/wiki/Books_on_Demand
+ - https://fr.wikipedia.org/wiki/Impression_à_la_demande
+ 
