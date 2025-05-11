@@ -1,4 +1,6 @@
 
+20250417
+
 Main idea here is to generate some "templates" for printable notebook easy-to-print via a platform of "print on demand" like lulu.com ; see some examples at https://www.lulu.com/create/notebooks . 
 
 Typologies of NoteBook : 
@@ -106,3 +108,14 @@ Cahier des charges
 	---> Valeur par défaut : filename = 'calendrier-<année>'
 
 ===== ===== ===== ===== ===== 
+
+20250511
+
+OK pour les templates de 'planners' vides (ou au moins en cours de dev), génériques au possible. 
+
+Pour dev 'planners' / calendriers remplis : 
+	- voir librairies dédiées dans "metascript" au choix (ou plusieurs possibles ?!) ; 
+	- bash / shell = commande 'cal' et parser le résultat (?) ; 
+	- Python / Perl / Java => voir librairies ou commandes dédies (Calendar, DateTime) ; 
+	
+	=> utile surtout pour planners 'monthly' et 'yearly' (mise en page dédiée)  !
