@@ -1,0 +1,48 @@
+\documentclass[a5paper,11pt]{letter}
+
+% \usepackage{a5paper}
+
+\usepackage[top=0.50cm, bottom=0.50cm, left=1.00cm, right=1.00cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+% \usepackage{vmargin}
+% \setmarginsrb{0.00cm}{0.00cm}{0.00cm}{0.00cm}{0pt}{0pt}{0pt}{0pt}
+
+\pagestyle{empty}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing, shapes}
+\usetikzlibrary{shapes.geometric, intersections, calc}
+\usetikzlibrary{decorations.markings, arrows}
+
+\begin{document}
+	\textsc{\textbf{Date \hfill Schedule \dotfill }}~\\\hrule~\\
+	\foreach \x in {0700,0800,0900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000}
+		{ \x~\\ \hrule~\\ }
+	\clearpage
+	\begin{minipage}[ht]{0.48\textwidth}
+		\fbox{\begin{minipage}{0.975\textwidth}
+			\textsc{\textbf{Goals \hfill }}~\\ % 
+			\foreach \x in {\dotfill,\dotfill,\dotfill,\dotfill,\dotfill,\dotfill,\dotfill} % 
+				{ \x~\\ } % 
+		\end{minipage}} % end fbox
+			\fbox{\begin{minipage}{0.975\textwidth}
+			\textsc{\textbf{Notes \hfill }}~\\ % 
+			\foreach \x in {\dotfill,\dotfill,\dotfill,\dotfill,\dotfill,\dotfill,\dotfill} % 
+				{ \x~\\ } % 
+		\end{minipage}} % end fbox
+	\end{minipage} \hfill \begin{minipage}[ht]{0.48\textwidth}
+		\textsc{\textbf{Tasks \hfill }}~\\ % 
+		\foreach \x in {$\circ$,$\circ$,$\circ$,$\circ$,$\circ$,$\circ$,$\circ$,$\circ$,$\circ$}
+			{ \x~\\ \hrule~\\ }
+	\end{minipage}~\\
+	\textsc{\textbf{One Thing}}~\\
+	\foreach \y in {One Thing I Learned Today Was,One Thing I Would Like To Learn more About It Is,One thing I Am Looking Forward To Is,One Good Thing That Was Happened Today Was,One Thing I Am Grateful For Is} 
+	{
+		\fbox{\begin{minipage}{0.975\textwidth}
+		\textbf{\textsc{\y: \hfill }}~\\ % 
+		\foreach \x in {\dotfill,\dotfill} % 
+			{ \x~\\ } % 
+		\end{minipage}}~\\ % end fbox
+	}
+	
+\end{document}
