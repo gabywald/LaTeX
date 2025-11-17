@@ -54,8 +54,8 @@
 % ----------- Contenu de la page de titre --------
 \title{Recruter en informatique}
 \subtitle{Les mauvaises id{\'e}es... et les bonnes !} 
-\author{Gaby Wald}
-\institute{\emph{to be defined}}
+\author{Gabriel Chandesris}
+\institute{\emph{Data Engineer / Dev Senior / ...}}
 %% \date{\today} \date{19 mai 2020} %% \date{\today} %% \date{03 Janvier 2018}
 \logo{\includegraphics[height=0.5cm]{img/logo_glider.png}}
 
@@ -63,13 +63,25 @@
 
 %% Mis au fur et {\`a} mesure...
 
+% ----------- Autres Packages --------
+
+\usepackage{tikzpeople}
+
+\usepackage{JeuxCartes}
+
 % ------------------------------------------------
 % -------------   D{\'e}but document   ---------------
 % ------------------------------------------------
 \begin{document}
 %--------- {\'e}criture de la page de titre ----------
 % avec la commande frame simplifi{\'e}e
-\frame[plain]{\titlepage } 
+%% \frame[plain]{ \titlepage }
+\frame[plain]{ \titlepage %
+		\MainCartesJeuAleatoire[TypeJeu=Uno,Eventail,Hauteur=2.5,EspH=0,EspV=0.1]{5}
+		\MainCartesJeuAleatoire[TypeJeu=Poker,Eventail,Hauteur=2.5,EspH=0,EspV=0.1]{5}
+		\MainCartesJeu[TypeJeu=Tarot,Inverse,Eventail,Hauteur=3.0,EspH=0,EspV=0.1]%
+			{Exc § 1AT § 3AT § 7AT § 21AT}
+} 
 %
 
 %------------------ Sommaire ---------------
@@ -90,11 +102,37 @@
 	\frametitle{Introduction}
 	\begin{itemize}
 		\item L'objectif ici est seulement de recenser une liste de pratiques ; 
-		\item Enlever les clich{\'e}s RH sur les infomaticiens, d{\'e}veloppeurs, ing{\'e}nieurs en informatique... ; 
+		\item Enlever les clich{\'e}s RH sur les informaticiens, d{\'e}veloppeurs, ing{\'e}nieurs en informatique... ; 
 		\item Faire sauter les soucis principaux du recrutement (nombre de candidats, turn-over, refus de contact...) ;
-		\item Faire {\'e}voluer les mentalit{\'e}s (divas des deux bords, sexisme...) ; 
+		\item Faire {\'e}voluer les mentalit{\'e}s (divas des deux bords, sexisme, racisme, LGBTphobies...) ; 
 		\item ...  
 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Introduction (visuelle)}
+
+	\begin{tikzpicture}
+		% \draw [very thin, gray] (0,0) grid (11,7);
+		% \node[person,minimum size=1.5cm] (B) at (0,4) {A Person};
+		
+		\node[name=alice,alice,minimum size=1.5cm] (A) at (1,6) {Alice};
+		\node[name=bob,bob,mirrored,minimum size=1.5cm] (B) at (10,5) {Bob};
+		
+		\node[draw,text width=5cm,text justified,minimum width=5.5cm,minimum height=1cm,font=\tiny,fill=yellow!35]
+			at (5,6) {Salut ! Tu me files ton '06', qu'on fasse un call ?};
+		\node[draw,text width=3cm,text justified,minimum width=3.5cm,minimum height=1cm,font=\tiny,fill=green!35]
+			at (7,5) {D'abord que proposez-vous, par {\'e}crit ? (pas assez intimes)};
+		\node[draw,text width=5cm,text justified,minimum width=5.5cm,minimum height=1cm,font=\tiny,fill=yellow!35]
+			at (5,4) {C'est super urgent pour un "grand compte", avec une super ambiance  et super avantages !};
+		\node[draw,text width=3cm,text justified,minimum width=3.5cm,minimum height=1cm,font=\tiny,fill=green!35]
+			at (7,3) {Et sinon, pour le reste ? ( secteur d'activit{\'e}, localisation, r{\'e}mun{\'e}rations...) ?};
+		\node[draw,text width=5cm,text justified,minimum width=5.5cm,minimum height=1cm,font=\tiny,fill=yellow!35]
+			at (5,2) {Comment \c{c}a, ma description g{\'e}n{\'e}rique ne suffit pas ? C'est pour du bancaire {\`a} Champignac-En-Cambrousse, selon pofil !};
+		\node[draw,text width=3cm,text justified,minimum width=3.5cm,minimum height=1cm,font=\tiny,fill=green!35]
+			at (7,1) {Non ! (pas de descriptif, loin, pas assez bien pay{\'e}...) };
+	\end{tikzpicture}
+
 \end{frame}
 
 \subsection{Mauvaises id{\'e}es, pr{\'e}jug{\'e}s...}
@@ -103,7 +141,7 @@
 	\begin{itemize}
 		\item Recrutement uniquement sur mots-clefs et ignorer le contenu ; 
 		\item Que des femmes pour recruter des hommes~\newline
-		("LinkedIn est un Tinder invers{\'e}. ") ; 
+			("LinkedIn est un Tinder invers{\'e}. ") ; 
 		\item Recrutement sur "gadget" : comp{\'e}tences, ann{\'e}es d'exp{\'e}riences... et le sens ?
 		\item Recherche de "M{\^a}les Alphas C{\'e}libataires Sans Enfants" ; 
 		\item R{\'e}f{\'e}rences ? Quelles r{\'e}f{\'e}rences ? Pourquoi ?
@@ -111,6 +149,32 @@
 		\item "Le digital : {\`a} manipuler avec doigt{\'e} !" : num{\'e}rique !
 		\item Et la culture associ{\'e}e... 
 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Mauvaises id{\'e}es, pr{\'e}jug{\'e}s... : non-recrutement !}
+
+	\begin{tikzpicture}
+		% \draw [very thin, gray] (0,0) grid (11,7);
+		% \node[person,minimum size=1.5cm] (B) at (0,4) {A Person};
+		
+		\node[name=businessman,businessman,minimum size=1.5cm] (A) at (1,6) {Commercial};
+		\node[name=charlie,charlie,mirrored,minimum size=1.5cm] (B) at (10,5) {Charlie};
+		
+		\node[draw,text width=5cm,text justified,minimum width=5.5cm,minimum height=1cm,font=\tiny,fill=yellow!35]
+			at (5,6) {Salut ! Tu as 5 {\`a} 10 ans d'exp{\'e}riences sur SuperTechnoXYZ ? et sur SuperTechnoXYZ-script ?};
+		\node[draw,text width=3cm,text justified,minimum width=3.5cm,minimum height=1cm,font=\tiny,fill=green!35]
+			at (7,5) {Je connais bien "SuperTechnoXYZ", \c{c}a existe depuis 18 mois ! "SuperTechnoXYZ"-script n'a rien {\`a} voir !};
+		\node[draw,text width=5cm,text justified,minimum width=5.5cm,minimum height=1cm,font=\tiny,fill=yellow!35]
+			at (5,4) {Le client veut absolument minimum 5 ans d'exp{\'e}rience sur SuperTechnoXYZ !};
+		\node[draw,text width=3cm,text justified,minimum width=3.5cm,minimum height=1cm,font=\tiny,fill=green!35]
+			at (7,3) {C'est moi qui ai cr{\'e}{\'e} "SuperTechnoXYZ" (sur mon temps libre, pour faciliter le travail).};
+		\node[draw,text width=5cm,text justified,minimum width=5.5cm,minimum height=1cm,font=\tiny,fill=yellow!35]
+			at (5,2) {Votre profil ne convient pas du tout aux besoins ! Et il faut aussi {\^e}tre d'un signe astrologique pr{\'e}cis, et sans famille !};
+		\node[draw,text width=3cm,text justified,minimum width=3.5cm,minimum height=1cm,font=\tiny,fill=green!35]
+			at (7,1) {Est-ce que vous comprenez r{\'e}ellement ces besoins ?};
+	\end{tikzpicture}
+
 \end{frame}
 
 \subsection{Bonnes id{\'e}es (?)}
@@ -131,23 +195,154 @@
 
 %%%%% %%%%% %%%%% %%%%% %%%%% 
 
+\section{Interm{\`e}de (Pop-)Culture}
+\begin{frame}
+	\frametitle{Interm{\`e}de (Pop-)Culture}
+	\tableofcontents[sections=2,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+\end{frame}
+
+\def\titleSubSectionEntreprisesFictives{Quelques entreprises fictives}
+\subsection{\titleSubSectionEntreprisesFictives }
+\begin{frame}
+	\frametitle{\titleSubSectionEntreprisesFictives  (1)}
+	
+	\begin{center}
+		\includegraphics[width=0.65\textwidth]{img/191816865_144589207657338_3945577351766051195_n.png}~\\
+		\emph{Quelques entreprises de fiction / fictives~\newline certaines pr{\'e}sentes sur LinkedIn !}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{\titleSubSectionEntreprisesFictives  (2)}
+	
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=0.95\textwidth]{img/191743009_5940031996070069_3438760338176067873_n.jpg}~\\
+		\emph{Wallace Corporation~\newline (Film "BladeRunner 2049")}~\\
+	\end{minipage} \hfill \begin{minipage}{0.45\textwidth}
+		\includegraphics[width=0.95\textwidth]{img/191939426_5940071632732772_6985810412209495092_n.jpg}~\\
+		\emph{InGen~\newline (Franchise "Jurassic Park")}~\\
+	\end{minipage}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{\titleSubSectionEntreprisesFictives  (3)}
+	
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=0.95\textwidth]{img/192261268_4163395560408024_2949464129711293154_n.jpg}~\\
+		\emph{Skynet~\newline (Film "Terminator")}~\\
+	\end{minipage} \hfill \begin{minipage}{0.45\textwidth}
+		\includegraphics[width=0.95\textwidth]{img/zOrg_cropped-part1.jpg}~\\
+		\emph{zOrg Industries$^{TM}$~\newline ("Le Cinqui{\`e}me {\'E}l{\'e}ment")}~\\
+	\end{minipage}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{\titleSubSectionEntreprisesFictives  (4)}
+	
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=0.95\textwidth]{img/Corpo_segatari.png}~\\~\\
+		\emph{SEGATARI~\newline (JdR "CyberPunk 2020"~\newline JV "CyberPunk 2077")}~\\
+	\end{minipage} \hfill \begin{minipage}{0.45\textwidth}
+		\includegraphics[width=0.95\textwidth]{img/Logo_Arasaka_(rouge)_cropped-part1.png}~\\
+		\emph{Arasaka Corporation~\newline (JdR "CyberPunk 2020"~\newline JV "CyberPunk 2077")}~\\
+		%% \includegraphics[width=0.95\textwidth]{img/Logo_Raven_Microcybernetics.png}~\\
+		%% \emph{Raven Microcybernetics~\newline (JdR "CyberPunk 2020", JV "CyberPunk 2077")}~\\
+	\end{minipage}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{\titleSubSectionEntreprisesFictives  (5)}
+	
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=0.95\textwidth]{img/tessier_ashpool_sa_cover_cropped-part1.jpeg}~\\
+		\emph{Tessier-Ashpool SA~\newline (Roman "Neuromancien")}~\\
+	\end{minipage} \hfill \begin{minipage}{0.45\textwidth}
+		\includegraphics[width=0.95\textwidth]{img/ApertureLaboratories.jpeg}~\\
+		\emph{Aperture Laboratories~\newline (JV "Portal" \& "Portal 2")}~\\
+	\end{minipage}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Quelques entreprises (5)}
+	
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=0.95\textwidth]{img/StarkIndustries_cropped-part1.jpeg}~\\
+		\emph{Stark Industries~\newline (Franchise "Marvel")}~\\
+	\end{minipage} \hfill \begin{minipage}{0.45\textwidth}
+		\includegraphics[width=0.95\textwidth]{img/WaynesEnterprises.png}~\\
+		\emph{Wayne Enterprises~\newline (Franchise "DC")}~\\
+	\end{minipage}
+	
+\end{frame}
+
+\def\titleSubSectionDefinitionPopCulture{D{\'e}finition (?) de la "Pop-Culture"}
+\subsection{\titleSubSectionDefinitionPopCulture }
+\begin{frame}
+	\frametitle{\titleSubSectionDefinitionPopCulture }
+	\footnotesize 
+	Ce qui sort de la culture classique apprise {\`a} l'{\'e}cole (auteurs reconnus...) et d'un r{\'e}f{\'e}rentiel "norm{\'e}" / normatif. 
+	\begin{columns}[T]
+	\begin{column}[T]{5.0cm}
+		\begin{block}{Supports {\'e}crits et assimil{\'e}s}
+			\begin{itemize}
+				\item Livres, films, jeux vid{\'e}os (et autres supports) ; 
+				\item Curiosit{\'e} : Fantasy, Science-Fiction et (sous-)divisions (CyberPunk...)
+				\item Anim{\'e}, Manga...
+				\item Tolkien (Hobbit, Anneaux), Asimov (Robots, Fondation), Herbert (Dune)... 
+				\item JdR (non limitatif {\`a} DnD !) : Vampire, Cthulhu, ... 
+				%% \item Jeux vid{\'e}os ("The cake is a lie !", "Too Many Secrets"...)
+			\end{itemize}
+		\end{block}
+	\end{column}
+	\begin{column}[T]{5.0cm}
+		\begin{block}{Memes culturels}
+			\begin{itemize}
+				\item Besoin de cr{\'e}ativit{\'e} ! Et d'abstraction ! Moyens d'existence et d'expression ! ; 
+				\item L{\'e}gendes Urbaines (CreepyPasta, et classiques) ; 
+				\item Culture du 'meme' (message visuel et {\'e}crit) ; 
+				\item R{\'e}f{\'e}rences {\`a} des {\'e}l{\'e}ments culturels partag{\'e}s ; 
+				\item Cultures 'alternatives' (M{\'e}tal, Gamer, LGBTQI+, Goth...) ; 
+			\end{itemize}
+		\end{block}
+	\end{column}
+	\end{columns}~\\
+\end{frame}
+
+%%%%% %%%%% %%%%% %%%%% %%%%% 
+
 \section{Recrutement en informatique : les mauvaises pratiques}
 \begin{frame}
 	\frametitle{Recrutement en informatique : les mauvaises pratiques}
-	\tableofcontents[sections=2,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+	\tableofcontents[sections=3,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
 \end{frame}
 
 \subsection{Pr{\'e}jug{\'e}s "techniques"}
 \begin{frame}
 	\frametitle{Pr{\'e}jug{\'e}s "techniques"}
-	\begin{itemize}
-		\item Aspects techniques peu attirants... \c{C}a d{\'e}pend pour qui ! ; 
-		\item Milieu Geek / Nerd / "Alternatif" / LGBTQIA+ / (?)... ; %% Mascu ?
-		\item Terminologie magique ("digital / num{\'e}rique", acronymes, "Java / JavaScript", "Shell / PowerShell", le terminal "Matrix"...) ; 
-		\item Informatique magique ("c'est simple", parfois non, apprentissage et dipl{\^o}mes !) ;  
-		\item[] 
-		\item Comme tout, \c{c}a s'apprend ! Au moins une culture minimale sur les acronymes, des {\'e}l{\'e}ments de pop-culture... 
-	\end{itemize}
+	\begin{minipage}{0.82\textwidth}
+		\begin{itemize}
+			\item Aspects techniques peu attirants... \c{C}a d{\'e}pend pour qui ! ; 
+			\item Milieu Geek / Nerd / "Alternatif" / LGBTQIA+ / (?)... ; %% Mascu ?
+			\item Terminologie magique ("digital / num{\'e}rique", acronymes, "Java / JavaScript", "Shell / PowerShell", le terminal "Matrix"...) ; 
+			\item Informatique magique ("c'est simple", parfois non, apprentissage et dipl{\^o}mes ! ) ; 
+			\item[] 
+			\item Comme tout, \c{c}a s'apprend ! Au moins une culture minimale sur les acronymes, des {\'e}l{\'e}ments de (pop-)culture... 
+		\end{itemize}
+	\end{minipage} \hfill \begin{minipage}{0.14\textwidth}
+		\begin{tikzpicture}
+			\node[name=alice,alice,mirrored,monitor,minimum size=0.75cm] at (0,7) {};
+			\node[name=nun,nun,mirrored,monitor,minimum size=0.75cm] at (0,6) {};
+			\node[name=nurse,nurse,mirrored,monitor,minimum size=0.75cm] at (0,5) {};
+			\node[name=groom,groom,mirrored,monitor,minimum size=0.75cm] at (0,4) {};
+			\node[name=sailor,sailor,mirrored,monitor,minimum size=0.75cm] at (0,3) {};
+			\node[name=graduate,graduate,mirrored,monitor,minimum size=0.75cm] at (0,2) {}; 
+		\end{tikzpicture}
+	\end{minipage} 
 \end{frame}
 
 \subsection{Soucis de recrutement}
@@ -155,11 +350,12 @@
 	\frametitle{Soucis de recrutement}
 	\begin{itemize}
 		\item Turn-Over, concurrence des recruteurs (ESN / SS2I), harc{\`e}lement de contact... 
-		\item Recrutement uniquement sur mots-clefs et ignorer le contenu ; 
 		\item Que des femmes pour recruter des hommes, ou presque !~\newline
 		("LinkedIn est un Tinder invers{\'e}. ") ; 
-		\item Recrutement sur "gadget" : comp{\'e}tences, ann{\'e}es d'exp{\'e}riences... et le sens ?
 		\item Recherche de "M{\^a}les Alphas C{\'e}libataires Sans Enfants" ; ...
+		\item Recrutement uniquement sur mots-clefs et ignorer le contenu ("c'est quoi XYZ ?") ; 
+		\item Recrutement sur "gadget" : comp{\'e}tences, ann{\'e}es d'exp{\'e}riences... et le sens ?
+		\item Recrutement sur "exp{\'e}rience biais{\'e}e" : Cinq ans d'exp{\'e}riences pour une technologie / technique existant de puis deux ans ?!
 	\end{itemize}
 \end{frame}
 
@@ -173,6 +369,19 @@
 		\item Recrutement sur profil (bloquer la concurrence ?) ; 
 		\item Recrutement en comp{\'e}tition (fa\c{c}on consultant commercial) ; 
 		\item Conditions : OpenSpace avec plus de 10 personnes, T{\'e}l{\'e}Travail limit{\'e}, "argent magique"...
+		\item ... 
+	\end{itemize}
+\end{frame}
+
+\subsection{Prise de contact avec un(e) candidat(e) ?}
+\begin{frame}
+	\frametitle{Prise de contact avec un(e) candidat(e) ?}
+	\begin{itemize}
+		\item {\'E}viter de lire son profil LinkedIn / son CV (au-del{\`a} s{\'e}lection) ; 
+		\item \emph{Mettez votre mauvaise pratique ici !} ; 
+		\item Contacter fortement et rapidement par t{\'e}l{\'e}phone en ignorant le r{\'e}pondeur (ou autre outil, par exemple email...) ;  
+		\item MESSAGE G{\'E}N{\'E}RIQUE OU AUTOMATIQUE :~\newline pour avoir des candidats fant{\^o}mes ("ghosting") ; 
+		\item MESSAGE G{\'E}N{\'E}RIQUE OU AUTOMATIQUE :~\newline si vous {\^e}tes disponible soirs et WeekEnd !
 		\item ... 
 	\end{itemize}
 \end{frame}
@@ -197,13 +406,19 @@
 		%% https://www.linkedin.com/posts/pb42_on-a-quune-chance-de-faire-bonne-impression-activity-7199329366139424768-fXHX
 		\item \textbf{\emph{Exp{\'e}rience v{\'e}cue, ne reproduisez pas chez vous !}}
 		\item[] 
-		\item "On n'a qu'une chance de faire bonne impression,~\newline c{\^o}t{\'e} recruteur !"
-		\item[] 
-		\item Entretiens {\`a} r{\'e}p{\'e}tition (occuper le terrain ?) ; 
+		\item "On n'a qu'une chance de faire bonne impression,~\newline c{\^o}t{\'e} recruteur !"~\newline
+		\begin{tikzpicture}
+			\node[name=jester,jester,mirrored,evil,minimum size=0.75cm] at (0,0) {};
+			\node[name=criminal,criminal,good,female,minimum size=0.75cm] at (2.5,0) {};
+			\node[name=santa,santa,good,evil,minimum size=0.75cm] at (5,0) {};
+			\node[name=nun,nun,female,good,evil,minimum size=0.75cm] at (7,0) {};
+			\node[name=maninblack,maninblack,mirrored,good,evil,minimum size=0.75cm] at (9,0) {};
+		\end{tikzpicture}
+		\item Entretiens {\`a} r{\'e}p{\'e}tition (occuper le terrain ?) aux "candidats" ; 
 		\item Tests d{\'e}pass{\'e}s : technique d{\'e}su{\`e}te ; 
 		\item Tests sans rapport avec le poste propos{\'e} ;  
 		\item D{\'e}marche "{\`a} l'instinct" plut{\^o}t que de documentation ; 
-		\item ... 
+		%% \item ... 
 	\end{itemize}
 \end{frame}
 
@@ -212,20 +427,20 @@
 \section{Recrutement en informatique : pour faire mieux}
 \begin{frame}
 	\frametitle{Recrutement en informatique : pour faire mieux}
-	\tableofcontents[sections=3,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+	\tableofcontents[sections=4,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
 \end{frame}
 
 \subsection{Bonnes id{\'e}es (1)}
 \begin{frame}
 	\frametitle{Bonnes id{\'e}es (1)}
 	\begin{itemize}
-		\item Instruisez-vous, renseignez-vous : culture ? technicit{\'e} ?...
-		\item Communiquer directement les enjeux (missions, r{\'e}mun{\'e}ration, conditions de travail...) ;
-		\item Environnement bienveillant, tol{\'e}rant, ouvert, inclusif, diversit{\'e}...
+		\item Instruisez-vous, renseignez-vous : culture ? technicit{\'e} ? industrie ? ambiance ?...
+		\item Communiquer directement les enjeux (missions, conditions de travail, r{\'e}mun{\'e}ration...) ;
+		\item Environnement bienveillant, tol{\'e}rant, ouvert, inclusif, diversit{\'e}. % , t{\'e}l{\'e}travail...
 		\item Distinction Vie Pro et Vie Perso...
 		\item Reconnaissance et assurer l'avenir : {\^e}tre correct avec tout le monde, y compris les contractuels / prestataires / stagiaires...
 		\item Une {\'e}quipe, cela se construit, et il n'y a pas d'argent magique, ni de management magique...
-		\item Aller chercher les candidats (et s'int{\'e}resser {\`a} leur CV, leur parcours pro)...
+		\item Aller chercher les candidats (et s'int{\'e}resser {\`a} leur CV, leur parcours pro, contraintes {\'e}ventuelles)...
 	\end{itemize} 
 \end{frame}
 
@@ -234,7 +449,7 @@
 	\frametitle{Bonnes id{\'e}es (2)}
 	\begin{itemize}
 		\item Poste sur lequel il y a recrutement : les enjeux doivent {\^e}tre donn{\'e}s (premier contact ou entretien qui suit) ;~\newline
-		Pr{\'e}parez ces donn{\'e}es en amont : sinon, c'est du temps perdu pour tout le monde !
+		$\Rightarrow$ Pr{\'e}parez ces donn{\'e}es en amont : sinon, c'est du temps perdu pour tout le monde !
 		
 		\item Environnement de travail inclusif, et diversit{\'e}... ~\newline
 		Pas de concessions ici : mal {\`a} l'aise en entretien ou apr{\`e}s, le ressenti a des cons{\'e}quences pas forc{\'e}ments visibles imm{\'e}diatement.
@@ -258,7 +473,38 @@
 				et qui sont en poste depuis au moins 2-3 ans (sous-pay{\'e}es) ;
 			\item Cibler personne d{\'e}j{\`a} connue favorablement : ad{\'e}quation, projets pr{\'e}c{\'e}dents, voire culture interne connue ; 
 		\end{itemize} 
-		\item ...
+		%% \item ...
+	\end{itemize} 
+\end{frame}
+
+\subsection{Bonnes id{\'e}es (4)}
+\begin{frame}
+	\frametitle{Bonnes id{\'e}es (4)}
+	\begin{itemize}
+		\item Aspects concurrentiels du recrutement / "March{\'e} du Travail" : entre entreprises priv{\'e}es, entit{\'e}s du service public, associations, Organisations Non Gouvernementales, Freelances / AutoEntrepreneurs, Soci{\'e}t{\'e}s de Services... 
+		\item N{\'e}cessit{\'e} de la prospection : d{\'e}j{\`a} se faire conna{\^i}tre du ou des candidats potentiels, m{\^e}me du domaine ! 
+		\item Aller chercher les candidats : mots-clefs et culture !
+		\begin{itemize}
+			\item Int{\'e}r{\^e}t ET compr{\'e}hension du contenu du poste par les RH / recruteurs (acronymes notamment) ;  
+			\item Culture commune en informatique : Pop-Culture, Science-Fiction, Romans, Films... ; 
+			\item Se renseigner est possible : Wikipedia, ou via un moteur de recherche ou en demandant au(x) candidat(s) !
+		\end{itemize}
+	\end{itemize} 
+\end{frame}
+
+\subsection{Bonnes id{\'e}es (5)}
+\begin{frame}
+	\frametitle{Bonnes id{\'e}es (5)}
+	\begin{itemize}
+		\item Conna{\^i}tre les mauvaises pratiques est UTILE et bon {\`a} savoir : 
+		\begin{itemize}
+			\item Pratiques pas seulement mauvaises : certaines sont interdites ! %% Souvent {\`a} raison !
+			\item C'est ce que subissent tout de m{\^e}me les candidats potentiels ; 
+			\item Savoir ce qui est repoussoir pour ces candidats potentiels ; 
+			\item Ne pas reproduire, pour se diff{\'e}rentier (?), pour se faire (re)conna{\^i}tre ; 
+			\item La demande de r{\'e}f{\'e}rence envers les candidats peut servir {\`a} ... de la prospection commerciale et / ou de la veille concurrentielle ! (zone grise)
+			\item Les concurrents se renseignent ... aussi ... via des entretiens de recrutement et le contenu des CV ! ({\'E}volutions, technologies utilis{\'e}es, {\'e}tat d'avancement des projets, ambiance des {\'e}quipes...)
+		\end{itemize}
 	\end{itemize} 
 \end{frame}
 
@@ -267,12 +513,12 @@
 \section{Autres id{\'e}es et r{\'e}f{\'e}rences}
 \begin{frame}
 	\frametitle{Autres id{\'e}es et r{\'e}f{\'e}rences}
-	\tableofcontents[sections=4,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
+	\tableofcontents[sections=5,currentsection,subsectionstyle=show/shaded/hide] %% sectionstyle=hide/hide,
 \end{frame}
 
 \subsection{Autres id{\'e}es (En vrac)}
 \begin{frame}
-	\frametitle{Autres id{\'e}es (En vrac - 1/8)}
+	\frametitle{Autres id{\'e}es (En vrac - 1/9)}
 	%% --- 
 	\begin{columns}[T]
 	\begin{column}[T]{5cm}
@@ -301,7 +547,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Autres id{\'e}es (En vrac - 2/8)}
+	\frametitle{Autres id{\'e}es (En vrac - 2/9)}
 	\begin{itemize}
 		\item "Le recrutement, c'est comme la chasse : il y a les bons, les brutes et les truands !" (Le recrutement fonctionne mieux avec les bons !)
 		\item Il ne faut pas que ce soit \emph{The Most Dangerous Game}, \emph{Battle Royale} ou \emph{Hunger Games} ! (Il y a des codes sociaux accept{\'e}s et des limites l{\'e}gales. )
@@ -316,7 +562,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Autres id{\'e}es (En vrac - 3/8)}
+	\frametitle{Autres id{\'e}es (En vrac - 3/9)}
 	%% ---
 	\begin{columns}[T]
 	\begin{column}[T]{5cm}
@@ -337,7 +583,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Autres id{\'e}es (En vrac - 4/8)}
+	\frametitle{Autres id{\'e}es (En vrac - 4/9)}
 	\begin{columns}[T]
 	\begin{column}[T]{5cm}
 		\includegraphics[width=5cm]{img/1657616562690.jpeg}~\\
@@ -358,7 +604,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Autres id{\'e}es (En vrac - 5/8)}
+	\frametitle{Autres id{\'e}es (En vrac - 5/9)}
 	\begin{itemize}
 		\item \textbf{Personnalisez les messages !}
 		\item En soi, faire des messages g{\'e}n{\'e}rique est, peut-{\^e}tre, une bonne id{\'e}e ; 
@@ -384,7 +630,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Autres id{\'e}es (En vrac - 6/8)}
+	\frametitle{Autres id{\'e}es (En vrac - 6/9)}
 	\begin{columns}[T]
 	\begin{column}[T]{5cm}
 		\includegraphics[width=5cm]{img/1673900833331.jpeg}~\\
@@ -406,7 +652,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Autres id{\'e}es (En vrac - 7/8)}
+	\frametitle{Autres id{\'e}es (En vrac - 7/9)}
 	\begin{columns}[T]
 	\begin{column}[T]{5cm}
 		\includegraphics[width=5cm]{img/1687203978939.jpeg}~\\
@@ -432,7 +678,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Autres id{\'e}es (En vrac - 8/8)}
+	\frametitle{Autres id{\'e}es (En vrac - 8/9)}
 	\begin{itemize}
 		\item Int{\'e}ressez-vous {\`a} la culture des personn{\'e}es cibl{\'e}es ! 
 		\item \c{C}a ne vous dit rien ? Heureusement, il y a \emph{Wikipedia}, \emph{WikiHow}, \emph{Wookiepedia}...
@@ -446,6 +692,25 @@
 	%% 		Am{\'e}lioration continue ? Culture ?~\newline
 	%% 		\#RH \#PopCulture '\#digital' ...
 	%% \end{itemize} 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Autres id{\'e}es (En vrac - 9/9)}
+	\begin{columns}[T]
+	\begin{column}[T]{5cm}
+		\includegraphics[width=4.15cm]{img/491521482-43a99eca-5204-4995-920f-dd18c0dcd2f0.jpg}~\\
+	\end{column}
+	\begin{column}[T]{7cm}
+		\begin{itemize}
+			\item Comprendre cet affichage, {\'e}vident pour beaucoup de d{\'e}veloppeurs !
+			\item Qu'est-ce que vous comprenez ?
+			\item Git / GitHub / GitLab ? "Demandez, Cherchez, Comprenez !"
+			\item "Outil de versioning, code source, texte brut..." : outil et usages !
+			\item R{\'e}f{\'e}rences autres : culturelles, sociales, fonctionnement humain... ? 
+			\item ...
+		\end{itemize}%% ~\\
+	\end{column}
+	\end{columns}
 \end{frame}
 
 %% \def\sectionPartBibliographie{Bibliographie / Mediagraphie}

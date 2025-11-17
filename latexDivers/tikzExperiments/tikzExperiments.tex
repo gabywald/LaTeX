@@ -130,6 +130,62 @@
 	\end{tikzpicture}
 }
 
+
+%% YELLOW NOTES !!
+\newlength{\yellownotewidth}
+\setlength{\yellownotewidth}{2.5cm}
+\newlength{\yellownoteheight}
+\setlength{\yellownoteheight}{2.5cm}
+%   -   -   -   -   -   -   -   -   -   -   -   -
+% Yellow note...
+%   -   -   -   -   -   -   -   -   -   -   -   -
+\newcommand{\yellownote}[1]{
+\marginpar{
+    \vspace{-0.5\yellownoteheight}
+        \begin{center}
+        \begin{tikzpicture}
+            \draw[white,fill=gray!25,opacity=0.75,shift={(-0.125,-0.125)}] 
+                (0,0) rectangle (\yellownotewidth,\yellownoteheight);
+            \draw[fill=yellow!35] (0,0) rectangle (\yellownotewidth,\yellownoteheight);
+            \draw[opacity=0.45,fill=gray!50] (0.7\yellownotewidth,0) -- 
+                (0.9\yellownotewidth,0.45) -- (\yellownotewidth,0.4) -- cycle;
+            \node[blue,below] at (0.5\yellownotewidth,\yellownoteheight) {
+                \begin{minipage}{\yellownotewidth}
+                    \scriptsize\sf#1
+                \end{minipage}
+            };
+        \end{tikzpicture}
+        \end{center}
+        \vspace{0.5\yellownoteheight}
+    }
+}
+
+%   -   -   -   -   -   -   -   -   -   -   -   -
+% Resizeable - Yellow note...
+%   -   -   -   -   -   -   -   -   -   -   -   -
+\newcommand{\resizeableyellownote}[3]{
+\setlength{\yellownotewidth}{#1cm}
+\setlength{\yellownoteheight}{#2cm}
+\marginpar{
+    \vspace{-0.5\yellownoteheight}
+        \begin{center}
+        \begin{tikzpicture}
+            \draw[white,fill=gray!25,opacity=0.75,shift={(-0.125,-0.125)}] 
+                (0,0) rectangle (\yellownotewidth,\yellownoteheight);
+            \draw[fill=yellow!35] (0,0) rectangle (\yellownotewidth,\yellownoteheight);
+            \draw[opacity=0.45,fill=gray!50] (0.7\yellownotewidth,0) -- 
+                (0.9\yellownotewidth,0.45) -- (\yellownotewidth,0.4) -- cycle;
+            \node[blue,below] at (0.5\yellownotewidth,\yellownoteheight) {
+                \begin{minipage}{\yellownotewidth-1em}
+                    \scriptsize\sf#3
+                \end{minipage}
+            };
+        \end{tikzpicture}
+        \end{center}
+        \vspace{0.5\yellownoteheight}
+    }
+}
+
 %============================= Corps =================================
 \begin{document}
 
@@ -307,6 +363,39 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 \end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
 	\DataEngineerLOGOtikzBASEwithargs{0.75}{0.5}
 \end{minipage} ~\\
+
+~\vfill~\\
+
+\begin{minipage}[ht]{0.45\textwidth}
+	%% https://texample.net/yin-and-yang/
+	\begin{tikzpicture}
+		% color one half of a unit circle
+		\begin{scope}
+			\clip (0,0) circle (1cm);
+			\fill[black] (0cm,1cm) rectangle (-1cm, -1cm);
+		\end{scope}
+		% fill heads
+		\fill[black] (0,0.5) circle (0.5cm);
+		\fill[white] (0,-0.5) circle (0.5cm);
+		% fill eyes
+		\fill[white] (0,0.5) circle (0.1cm);
+		\fill[black] (0,-0.5) circle (0.1cm);
+		% outer line
+		\draw (0,0) circle (1cm);
+	\end{tikzpicture}
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	%% https://texample.net/glider/
+	% Glider, a hacker emblem (http://www.catb.org/hacker-emblem/)
+	% Author: Alex Hirzel
+	% License: Public Domain
+	\begin{tikzpicture}[thick]
+		\draw (0,0) grid (3,3);
+		\foreach \c in {(0,0), (1,0), (2,0), (2,1), (1,2)}
+		    \fill \c + (0.5,0.5) circle (0.42);
+	\end{tikzpicture}
+\end{minipage} ~\\
+
+\yellownote{Message into a yellow note. We just want to see how it  will look. }
 
 \clearpage
 
@@ -512,7 +601,6 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 	\end{tikzpicture}~\\
 \end{minipage} ~\\ 
 
-
 %% https://tex.stackexchange.com/questions/45848/rotate-node-text-and-use-relative-positioning-in-tikz
 %% \begin{tikzpicture}
 %%   \node [draw] (first) {1};
@@ -542,6 +630,37 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 %%       (second0.center) to [bend right=45] (second_rotated_center);
 %%   \end{scope}
 %% \end{tikzpicture}~\\
+
+~\vfill~\\
+
+\begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (6,6);
+		%% \draw (0,0) ..controls +(0,2) and +(0,2).. (3,0); % arc 1
+		\draw [very thick, blue   ] (1.50,3.00) ..controls +(0, 2) and +(0, 2).. (4.50,3.00);
+		\draw [very thick, red    ] (1.50,3.00) ..controls +(0,-2) and +(0,-2).. (4.50,3.00);
+		\draw [very thick, green  ] (1.50,3.00) ..controls +(0, 2) and +(0,-2).. (4.50,3.00);
+		\draw [very thick, magenta] (2.00,4.00) ..controls +(0, 2) and +(0,-2).. (4.00,2.00);
+		\draw [very thick, yellow ] (3.00,4.50) ..controls +(0, 2) and +(0,-2).. (3.00,1.50);
+		\draw [very thick, yellow ] (1.50,3.00) ..controls +(0,-2) and +(0, 2).. (4.50,3.00);
+		\draw [very thick, cyan   ] (4.00,4.00) ..controls +(0, 2) and +(0,-2).. (2.00,2.00);
+		\draw [very thick, gray, fill=white] (3.00,3.00) circle (0.75);
+		\draw [very thick, white, fill=gray] (3.00,3.00) circle (0.25);
+	\end{tikzpicture}~\\
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\begin{tikzpicture}[opacity=0.85]
+		\draw [very thin, gray] (0,0) grid (3,3);
+		\draw [very thick, blue   ] (-1.50, 0.00) ..controls +(0, 2) and +(0, 2).. ( 1.50, 0.00);
+		\draw [very thick, red    ] (-1.50, 0.00) ..controls +(0,-2) and +(0,-2).. ( 1.50, 0.00);
+		\draw [very thick, green  ] (-1.50, 0.00) ..controls +(0, 2) and +(0,-2).. ( 1.50, 0.00);
+		\draw [very thick, magenta] (-1.00, 1.00) ..controls +(0, 2) and +(0,-2).. ( 1.00,-1.00);
+		\draw [very thick, yellow ] ( 0.00, 1.50) ..controls +(0, 2) and +(0,-2).. ( 0.00,-1.50);
+		\draw [very thick, yellow ] (-1.50, 0.00) ..controls +(0,-2) and +(0, 2).. ( 1.50, 0.00);
+		\draw [very thick, cyan   ] ( 1.00, 1.00) ..controls +(0, 2) and +(0,-2).. (-1.00,-1.00);
+		\draw [very thick, gray, fill=white] (0.00,0.00) circle (0.75);
+		\draw [very thick, white, fill=gray] (0.00,0.00) circle (0.25);
+	\end{tikzpicture}~\\
+\end{minipage} ~\\ 
 
 \clearpage
 
