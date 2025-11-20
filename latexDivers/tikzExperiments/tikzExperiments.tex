@@ -681,7 +681,7 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 	\end{tikzpicture}
 	~\\
 
-~\\ %% \begin{minipage}[ht]{0.45\textwidth}
+	~\\
 	%% https://tex.stackexchange.com/questions/345978/drawing-a-regular-hexagon
 	\begin{tikzpicture}
 	  [thick,decoration =
@@ -711,7 +711,7 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 	    }
 	    \node[inner sep=2pt,circle,draw,fill,label={\p:\l}] at (\x:\R) {};
 	\end{tikzpicture}
-~\\ %% \end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	~\\
 	%% https://tex.stackexchange.com/questions/345978/drawing-a-regular-hexagon
 	\begin{tikzpicture}
 	   \newdimen\R
@@ -728,7 +728,7 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 	     }
 	     \node[inner sep=1pt,circle,draw,fill,label={\p:\l}] at (\x:\R) {};
 	\end{tikzpicture}
-~\\ %% \end{minipage} 
+	~\\
 
 \clearpage
 
@@ -754,7 +754,45 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 	}}
 	\draw[blue,very thick](0,0)\hexapavage;
 	\end{scope}
-\end{tikzpicture} 
+\end{tikzpicture}
 
+\clearpage
+
+	\setlength\parindent{0pt}
+
+	%% Not TIKZ but anyway !! (tricks with fbox and minipage !)~\\
+
+	% https://www.jeux-de-cartes-personnalises.fr/comment-créer-un-jeu-de-cartes/format-des-cartes/ => Gabarits à télécharger (selon jeux de cartes)
+	% Jeux de cartes personnalisés
+	% Format des cartes
+	% Voici les formats des jeux de cartes les plus courants.
+	% Vous pouvez télécharger les gabarits des quatre formats de cartes principaux: Français, Bridge, Poker et Tarot.
+	% A l'aide de ces gabarits, vous pouvez concevoir le fichier PDF de votre jeu.
+	% Format Français	Dimensions: 54 x 85 mm
+	% Format Bridge	Dimensions: 58 x 89 mm
+	% Format Poker	Dimensions: 63 x 89 mm
+	% Format Tarot	Dimensions: 60 x 113 mm
+	%% Format carte de visite : 85x55 mm ; 85mmx55mm
+	%% \fbox{\begin{minipage}[t][55mm][t]{85mm}
+	\fbox{\begin{minipage}[t][54mm][t]{85mm}
+		FRENCH FORMAT CONTENT % 
+	\end{minipage} }~\\~\\
+	\fbox{\begin{minipage}[t][58mm][t]{89mm}
+		Bridge FORMAT CONTENT % 
+	\end{minipage} }~\\~\\
+	\fbox{\begin{minipage}[t][63mm][t]{89mm}
+		POKER FORMAT CONTENT % 
+	\end{minipage} }~\\~\\
+	
+	\yellownote{ Not TIKZ but anyway !! (tricks with fbox and minipage !) }
+	
+	\fbox{\begin{minipage}[t][60mm][t]{113mm}
+		TAROT FORMAT CONTENT HORIZONTAL % 
+	\end{minipage} }~\\~\\
+	\fbox{\begin{minipage}[t][113mm][t]{60mm}
+		TAROT FORMAT CONTENT VERTICAL % 
+	\end{minipage} }~\\~\\
+	
+	
 
 \end{document}
