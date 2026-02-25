@@ -186,6 +186,224 @@
     }
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HEX CHARACTERISTICS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\hexWithTrayTORIGHT{
+	%% \draw [very thin, gray] (0,0) grid (5,5);
+	\def\rot{-60} %% rotate=30,  
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=2.0cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {};
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=1.8cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {};
+	\draw[thick, black] (1.0,0.0) -- (5.0,0.0) ;
+}
+
+\def\hexWithTrayTOLEFT{
+	%% \draw [very thin, gray] (0,0) grid (5,5);
+	\def\rot{-60} %% rotate=30,  
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=2.0cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {};
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=1.8cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {};
+	\draw[thick, black] (-1.0,0.0) -- (-5.0,0.0) ;
+}
+
+\def\hexWithTrayTORIGHTnamed{
+	%% \draw [very thin, gray] (0,0) grid (5,5);
+	\def\rot{-60} %% rotate=30,  
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=2.0cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {};
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=1.8cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {};
+	\node (NAME) at (2.0,0.25) {NAMED} (NAME) ;
+	\draw[thick, black] (1.0,0.0) -- (5.0,0.0) ;
+}
+
+\def\hexWithTrayTOLEFTnamed{
+	%% \draw [very thin, gray] (0,0) grid (5,5);
+	\def\rot{-60} %% rotate=30,  
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=2.0cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {};
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=1.8cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {};
+	\node (NAME) at (-2.0,0.25) {NAMED};
+	\draw[thick, black] (-1.0,0.0) -- (-5.0,0.0) (NAME) ;
+}
+
+\def\sixHEX{
+	\begin{center}
+		\begin{tikzpicture}
+			%% \draw [very thin, gray] (00,00) grid (15,10);
+			\begin{scope}[shift={(-0.80, -0.00)}] %% rotate=180,
+				\hexWithTrayTOLEFT
+			\end{scope}
+			\begin{scope}[shift={( 0.80, -1.00)}] %% rotate=000,
+				\hexWithTrayTORIGHT
+			\end{scope}
+			\begin{scope}[shift={(-0.80, -2.00)}]
+				\hexWithTrayTOLEFT
+			\end{scope}
+			\begin{scope}[shift={( 0.80, -3.00)}]
+				\hexWithTrayTORIGHT
+			\end{scope}
+			\begin{scope}[shift={(-0.80, -4.00)}]
+				\hexWithTrayTOLEFT
+			\end{scope}
+			\begin{scope}[shift={( 0.80, -5.00)}]
+				\hexWithTrayTORIGHT
+			\end{scope}
+		\end{tikzpicture}
+	\end{center}
+}
+
+\def\forHEX{
+	\begin{center}
+		\begin{tikzpicture}
+			%% \draw [very thin, gray] (00,00) grid (15,10);
+			\begin{scope}[shift={(-0.80, 0.00)}] %% rotate=180,
+				\hexWithTrayTOLEFT
+			\end{scope}
+			\begin{scope}[shift={( 0.80, -1.00)}] %% rotate=000,
+				\hexWithTrayTORIGHT
+			\end{scope}
+			\begin{scope}[shift={(-0.80, -2.00)}]
+				\hexWithTrayTOLEFT
+			\end{scope}
+			\begin{scope}[shift={( 0.80, -3.00)}]
+				\hexWithTrayTORIGHT
+			\end{scope}
+		\end{tikzpicture}
+	\end{center}
+}
+
+\def\sixHEXalternate{
+	\begin{center}
+		\begin{tikzpicture}
+			%% \draw [very thin, gray] (00,00) grid (15,10);
+			\foreach \x/\y/\z in {-0.80/-0.00/\hexWithTrayTOLEFT, 0.80/-1.00/\hexWithTrayTORIGHT,-0.80/-2.00/\hexWithTrayTOLEFT, 0.80/-3.00/\hexWithTrayTORIGHT,-0.80/-4.00/\hexWithTrayTOLEFT, 0.80/-5.00/\hexWithTrayTORIGHT} 
+				{ \begin{scope}[shift={(\x, \y)}] \z \end{scope} }
+		\end{tikzpicture}
+	\end{center}
+}
+
+\def\forHEXalternate{
+	\begin{center}
+		\begin{tikzpicture}
+			%% \draw [very thin, gray] (00,00) grid (15,10);
+			\foreach \x/\y/\z in {-0.80/-0.00/\hexWithTrayTOLEFT, 0.80/-1.00/\hexWithTrayTORIGHT,-0.80/-2.00/\hexWithTrayTOLEFT, 0.80/-3.00/\hexWithTrayTORIGHT} 
+				{ \begin{scope}[shift={(\x, \y)}] \z \end{scope} }
+		\end{tikzpicture}
+	\end{center}
+}
+
+\def\forHEXalternateNAMED{
+	\begin{center}
+		\begin{tikzpicture}
+			%% \draw [very thin, gray] (00,00) grid (15,10);
+			\foreach \x/\y/\z in {-0.80/-0.00/\hexWithTrayTOLEFTnamed, 0.80/-1.00/\hexWithTrayTORIGHTnamed,-0.80/-2.00/\hexWithTrayTOLEFTnamed, 0.80/-3.00/\hexWithTrayTORIGHTnamed} 
+				{ \begin{scope}[shift={(\x, \y)}] \z \end{scope} }
+		\end{tikzpicture}
+	\end{center}
+}
+
+\newcommand\hexWithTrayTORIGHTvaluedANDnamed[2]{
+	%% \draw [very thin, gray] (0,0) grid (5,5);
+	\def\rot{-60} %% rotate=30,  
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=2.0cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {};
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=1.8cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {#2};
+	\node (NAME) at (2.0,0.25) {#1};
+	\draw[thick, black] (1.0,0.0) -- (2.5,0.0) ;
+}
+
+\newcommand\hexWithTrayTOLEFTvaluedANDnamed[2]{
+	%% \draw [very thin, gray] (0,0) grid (5,5);
+	\def\rot{-60} %% rotate=30,  
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=2.0cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {};
+	\node[thick, regular polygon, regular polygon sides=6, shape aspect=0.5, minimum width=1.8cm, minimum height=1cm, draw, shape border rotate=\rot] (reg) {#2};
+	\node (NAME) at (-2.0,0.25) {#1};
+	\draw[thick, black] (-1.0,0.0) -- (-2.5,0.0) (NAME) ;
+}
+
+\newcommand{\threeHEXalternateNAMEDparams}[6]{
+	\begin{center}
+		\begin{tikzpicture}
+			%% \draw [very thin, gray] (00,00) grid (15,10);
+			\foreach \x/\y/\z in {-0.80/-0.00/\hexWithTrayTOLEFTvaluedANDnamed{#1}{#2}, 0.80/-1.00/\hexWithTrayTORIGHTvaluedANDnamed{#3}{#4},-0.80/-2.00/\hexWithTrayTOLEFTvaluedANDnamed{#5}{#6}} 
+				{ \begin{scope}[shift={(\x, \y)}] \z \end{scope} }
+		\end{tikzpicture}
+	\end{center}
+}
+
+\newcommand{\forHEXalternateNAMEDparams}[8]{
+	\begin{center}
+		\begin{tikzpicture}
+			%% \draw [very thin, gray] (00,00) grid (15,10);
+			\foreach \x/\y/\z in {-0.80/-0.00/\hexWithTrayTOLEFTvaluedANDnamed{#1}{#2}, 0.80/-1.00/\hexWithTrayTORIGHTvaluedANDnamed{#3}{#4},-0.80/-2.00/\hexWithTrayTOLEFTvaluedANDnamed{#5}{#6}, 0.80/-3.00/\hexWithTrayTORIGHTvaluedANDnamed{#7}{#8}} 
+				{ \begin{scope}[shift={(\x, \y)}] \z \end{scope} }
+		\end{tikzpicture}
+	\end{center}
+}
+
+%% https://texfaq.org/FAQ-moren9 : more than 9 arguments !! ??
+%% https://tex.stackexchange.com/questions/2132/how-to-define-a-command-that-takes-more-than-9-arguments
+%% https://davidcarlisle.github.io/uk-tex-faq/FAQ-moren9.html
+%% %% %% \fiveHEXalternateNAMEDparams{TECH}{+4}{SHARP}{+3}{COOL}{+1}{CHA}{+2}{LEAD}{+0}
+%% %% %% \fiveHEXalternateNAMEDparams{SYNTH}{+4}{STYLE}{+3}{ESPRIT}{+3}{CHAIR}{+1}{PRO}{+2}
+\def\fiveHEXalternateNAMEDparams#1#2#3#4{
+	\def\HEXaNAMEE{#1}%
+	\def\HEXaVALUE{#2}%
+	\def\HEXbNAMEE{#3}%
+	\def\HEXbVALUE{#4}%
+	\fiveHEXalternateNAMEDparamscontinued
+}
+\def\fiveHEXalternateNAMEDparamscontinued#1#2#3#4#5#6{
+	\def\HEXdNAMEE{#1}%
+	\def\HEXdVALUE{#2}%
+	\def\HEXeNAMEE{#3}%
+	\def\HEXeVALUE{#4}%
+	\def\HEXfNAMEE{#5}%
+	\def\HEXfVALUE{#6}%
+	\begin{center}
+		\begin{tikzpicture}
+			\draw [very thin, gray] (-6,-6) grid (05,01);
+			\foreach \x/\y/\z in {-0.80/-0.00/\hexWithTrayTOLEFTvaluedANDnamed{\HEXaNAMEE}{\HEXaVALUE}, 0.80/-1.00/\hexWithTrayTORIGHTvaluedANDnamed{\HEXbNAMEE}{\HEXbVALUE},-0.80/-2.00/\hexWithTrayTOLEFTvaluedANDnamed{\HEXdNAMEE}{\HEXdVALUE}, 0.80/-3.00/\hexWithTrayTORIGHTvaluedANDnamed{\HEXeNAMEE}{\HEXeVALUE},-0.80/-4.00/\hexWithTrayTOLEFTvaluedANDnamed{\HEXfNAMEE}{\HEXfVALUE}} 
+				{ \begin{scope}[shift={(\x, \y)}] \z \end{scope} }
+		\end{tikzpicture}
+	\end{center}
+}
+
+%% %% %% \sixHEXalternateNAMEDparams{SYNTH}{+4}{STYLE}{+3}{ESPRIT}{+3}{CHAIR}{+1}{PRO}{+2}{CRAN}{+0}
+\def\sixHEXalternateNAMEDparams#1#2#3#4#5#6{
+	\def\HEXaNAMEE{#1}%
+	\def\HEXaVALUE{#2}%
+	\def\HEXbNAMEE{#3}%
+	\def\HEXbVALUE{#4}%
+	\def\HEXcNAMEE{#5}%
+	\def\HEXcVALUE{#6}%
+	\sixHEXalternateNAMEDparamscontinued
+}
+\def\sixHEXalternateNAMEDparamscontinued#1#2#3#4#5#6{
+	\def\HEXdNAMEE{#1}%
+	\def\HEXdVALUE{#2}%
+	\def\HEXeNAMEE{#3}%
+	\def\HEXeVALUE{#4}%
+	\def\HEXfNAMEE{#5}%
+	\def\HEXfVALUE{#6}%
+	\begin{center}
+		\begin{tikzpicture}
+			\draw [very thin, gray] (-6,-6) grid (05,01);
+			\foreach \x/\y/\z in {-0.80/-0.00/\hexWithTrayTOLEFTvaluedANDnamed{\HEXaNAMEE}{\HEXaVALUE}, 0.80/-1.00/\hexWithTrayTORIGHTvaluedANDnamed{\HEXbNAMEE}{\HEXbVALUE},-0.80/-2.00/\hexWithTrayTOLEFTvaluedANDnamed{\HEXcNAMEE}{\HEXcVALUE}, 0.80/-3.00/\hexWithTrayTORIGHTvaluedANDnamed{\HEXdNAMEE}{\HEXdVALUE},-0.80/-4.00/\hexWithTrayTOLEFTvaluedANDnamed{\HEXeNAMEE}{\HEXeVALUE}, 0.80/-5.00/\hexWithTrayTORIGHTvaluedANDnamed{\HEXfNAMEE}{\HEXfVALUE}} 
+				{ \begin{scope}[shift={(\x, \y)}] \z \end{scope} }
+		\end{tikzpicture}
+	\end{center}
+}
+
+\usepackage{fancybox} %% boxes
+
+\def\compteArebours{
+	\begin{tabular}[h]{ r r r r r r }
+			15h		&	18h		&	21h		&	22h		&	23h		&	24h 	\\
+		\shadowbox{ \begin{minipage}[ht]{0.15\textwidth} ~ \end{minipage} } &	
+			\shadowbox{ \begin{minipage}[ht]{0.15\textwidth} ~ \end{minipage} } &
+			\shadowbox{ \begin{minipage}[ht]{0.15\textwidth} ~ \end{minipage} } & 
+			\shadowbox{ \begin{minipage}[ht]{0.05\textwidth} ~ \end{minipage} } & 
+			\shadowbox{ \begin{minipage}[ht]{0.05\textwidth} ~ \end{minipage} } & 
+			\shadowbox{ \begin{minipage}[ht]{0.05\textwidth} ~ \end{minipage} } \\ 
+	\end{tabular}
+}
+
 %============================= Corps =================================
 \begin{document}
 
@@ -793,6 +1011,72 @@ protein/.style={ellipse, draw=white, minimum width=1cm, minimum height=1cm}]
 		TAROT FORMAT CONTENT VERTICAL % 
 	\end{minipage} }~\\~\\
 	
+\clearpage
+
+
+\compteArebours~\\
+
+\hrule~\\
+
+\begin{tabular}[ht]{ p{0.48\textwidth}|p{0.48\textwidth} }
+	\begin{minipage}[ht]{0.15\textwidth}
+		\compteArebours
+	\end{minipage}
+	&	
+	\begin{minipage}[ht]{0.15\textwidth}
+		\compteArebours
+	\end{minipage}
+	\\
+\end{tabular}~\\
+
+\hrule~\\
+
+\clearpage
+
+	\sixHEXalternate
+
+\hrule~\\
+
+	\forHEXalternate
+		
+\clearpage
+
+\hrule~\\
+
+	\sixHEX
+
+\hrule~\\
+
+	\forHEX
+
+\hrule~\\
+
+\clearpage
+
+	\forHEXalternateNAMED
 	
+	\hrule~\\
+	
+	\threeHEXalternateNAMEDparams{TECH}{+4}{SHARP}{+3}{COOL}{+1}
+	
+	\hrule~\\
+	
+	\forHEXalternateNAMEDparams{SYNTH}{+4}{STYLE}{+3}{ESPRIT}{+3}{CHAIR}{+1}
+	
+	\hrule~\\
+
+...
+
+\clearpage
+
+	\fiveHEXalternateNAMEDparams{TECH}{+4}{SHARP}{+3}{COOL}{+1}{CHA}{+2}{LEAD}{+0}
+
+	\fiveHEXalternateNAMEDparams{SYNTH}{+4}{STYLE}{+3}{ESPRIT}{+3}{CHAIR}{+1}{PRO}{+2}
+	
+	\sixHEXalternateNAMEDparams{SYNTH}{+4}{STYLE}{+3}{ESPRIT}{+3}{CHAIR}{+1}{PRO}{+2}{CRAN}{+0}
+	
+...
+
+\clearpage
 
 \end{document}
