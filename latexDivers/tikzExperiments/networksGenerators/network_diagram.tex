@@ -1,0 +1,82 @@
+\documentclass[a4paper, landscape]{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows, positioning}
+
+\def\StylesTikzSetNetwork{
+  \tikzset{
+    server/.style={rectangle, draw=black, fill=blue!20, text width=5em, text centered, rounded corners, minimum height=2em},
+    terminal/.style={rectangle, draw=black, fill=green!20, text width=5em, text centered, rounded corners, minimum height=2em},
+    router/.style={diamond, draw=black, fill=red!20, text width=5em, text centered, minimum height=2em},
+    firewall/.style={ellipse, draw=black, fill=yellow!20, text width=5em, text centered, minimum height=2em},
+    ai/.style={circle, draw=black, fill=purple!20, text width=5em, text centered, minimum height=2em},
+    communication/.style={trapezium, draw=black, fill=cyan!20, text width=5em, text centered, minimum height=2em},
+    datacenter/.style={regular polygon, regular polygon sides=6, draw=black, fill=orange!20, text width=5em, text centered, minimum height=2em},
+    iot/.style={rectangle, draw=black, fill=teal!20, text width=5em, text centered, minimum height=2em},
+    storage/.style={cylinder, draw=black, fill=brown!20, text width=5em, text centered, shape aspect=0.2, minimum height=2em, shape border rotate=90},
+    control/.style={star, draw=black, fill=magenta!20, text width=5em, text centered, minimum height=2em},
+    mainframe/.style={rectangle, draw=black, fill=gray!20, text width=5em, text centered, minimum height=4em},
+    security/.style={ellipse, draw=black, fill=black!20, text=white, text width=5em, text centered, minimum height=2em},
+    virtualization/.style={rectangle, draw=black, fill=lime!20, text width=5em, text centered, minimum height=2em},
+    vpn/.style={rectangle, draw=black, fill=pink!20, text width=5em, text centered, minimum height=2em},
+    line/.style={draw, -latex'}
+  }
+}
+
+\begin{document}
+
+\begin{tikzpicture}[node distance=2cm, auto]
+
+    % Styles
+	\StylesTikzSetNetwork
+
+    % Nodes
+
+    \node [iot] (Node0) at (5.0,0.0) {Iot 1 (Medium)};
+    \node [control] (Node1) at (3.1174490092936677,3.909157412340149) {Control 2 (High)};
+    \node [router] (Node2) at (-1.1126046697815717,4.874639560909118) {Router 3 (High)};
+    \node [ai] (Node3) at (-4.504844339512095,2.169418695587791) {Ai 4 (Medium)};
+    \node [storage] (Node4) at (-4.504844339512096,-2.16941869558779) {Storage 5 (Medium)};
+    \node [mainframe] (Node5) at (-1.112604669781573,-4.874639560909118) {Mainframe 6 (High)};
+    \node [iot] (Node6) at (3.117449009293667,-3.9091574123401496) {Iot 7 (Medium)};
+
+    % Connections
+    \path [line] (Node0) -- (Node2);
+    \path [line] (Node0) -- (Node6);
+    \path [line] (Node1) -- (Node4);
+    \path [line] (Node2) -- (Node6);
+    \path [line] (Node3) -- (Node4);
+    \path [line] (Node4) -- (Node5);
+    \path [line] (Node4) -- (Node6);
+    \path [line] (Node5) -- (Node6);
+\end{tikzpicture}
+
+\vspace{1cm}
+% Légende
+\begin{center}
+\begin{tikzpicture}
+    % Styles
+	\StylesTikzSetNetwork
+	% Utilisation
+    \matrix [draw, column sep=1cm, row sep=0.5cm] {
+        \node [server, label=right:Serveur] {{}}; &
+        \node [terminal, label=right:Terminal] {{}}; &
+        \node [router, label=right:Routeur] {{}}; &
+        \node [firewall, label=right:Pare-feu] {{}}; \\
+        \node [ai, label=right:IA] {{}}; &
+        \node [communication, label=right:Noeud de Communication] {{}}; &
+        \node [datacenter, label=right:Data Center] {{}}; &
+        \node [iot, label=right:Dispositif IoT] {{}}; \\
+        \node [storage, label=right:Noeud de Stockage] {{}}; &
+        \node [control, label=right:Noeud de Contrôle] {{}}; &
+        \node [mainframe, label=right:Mainframe] {{}}; &
+        \node [security, label=right:Noeud de Sécurité] {{}}; \\
+        \node [virtualization, label=right:Noeud de Virtualisation] {{}}; &
+        \node [vpn, label=right:Noeud VPN] {{}}; &
+        \node {{}}; &
+        \node {{}}; \\
+    };
+\end{tikzpicture}
+\end{center}
+
+\end{document}
+    
