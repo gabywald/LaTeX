@@ -2,79 +2,267 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes, arrows, positioning}
 
-\def\StylesTikzSetNetwork{
-  \tikzset{
-    server/.style={rectangle, draw=black, fill=blue!20, text width=5em, text centered, rounded corners, minimum height=2em},
-    terminal/.style={rectangle, draw=black, fill=green!20, text width=5em, text centered, rounded corners, minimum height=2em},
-    router/.style={diamond, draw=black, fill=red!20, text width=5em, text centered, minimum height=2em},
-    firewall/.style={ellipse, draw=black, fill=yellow!20, text width=5em, text centered, minimum height=2em},
-    ai/.style={circle, draw=black, fill=purple!20, text width=5em, text centered, minimum height=2em},
-    communication/.style={trapezium, draw=black, fill=cyan!20, text width=5em, text centered, minimum height=2em},
-    datacenter/.style={regular polygon, regular polygon sides=6, draw=black, fill=orange!20, text width=5em, text centered, minimum height=2em},
-    iot/.style={rectangle, draw=black, fill=teal!20, text width=5em, text centered, minimum height=2em},
-    storage/.style={cylinder, draw=black, fill=brown!20, text width=5em, text centered, shape aspect=0.2, minimum height=2em, shape border rotate=90},
-    control/.style={star, draw=black, fill=magenta!20, text width=5em, text centered, minimum height=2em},
-    mainframe/.style={rectangle, draw=black, fill=gray!20, text width=5em, text centered, minimum height=4em},
-    security/.style={ellipse, draw=black, fill=black!20, text=white, text width=5em, text centered, minimum height=2em},
-    virtualization/.style={rectangle, draw=black, fill=lime!20, text width=5em, text centered, minimum height=2em},
-    vpn/.style={rectangle, draw=black, fill=pink!20, text width=5em, text centered, minimum height=2em},
-    line/.style={draw, -latex'}
-  }
+% Définition des styles avec logos intégrés
+\newcommand{\networkstyles}{
+    \tikzset{
+        server/.style={
+            %% rectangle, draw=black, fill=blue!20, 
+            text width=4em, text centered, rounded corners, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[blue!50!white] (-0.7,0.5) rectangle (0.7,-0.5);
+                        \filldraw[blue!50!white] (-0.5,0.7) rectangle (0.5,-0.7);
+                        \filldraw[blue!50!white] (-0.3,0.9) rectangle (0.3,-0.9);
+                    \end{tikzpicture}
+                };
+            }
+        },
+        terminal/.style={
+            %% rectangle, draw=black, fill=green!20, 
+            text width=4em, text centered, rounded corners, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[green!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
+                        \filldraw[green!50!white] (-0.4,0.4) rectangle (0.4,-0.4);
+                        \filldraw[black!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
+                    \end{tikzpicture}
+                };
+            }
+        },
+        router/.style={
+            %% diamond, draw=black, fill=red!20, 
+			text width=4em, text centered, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[red!50!white] (0,0) circle (0.6cm);
+                        \filldraw[red!50!white] (-0.6,0) -- (0,0.6) -- (0.6,0) -- (0,-0.6) -- cycle;
+                    \end{tikzpicture}
+                };
+            }
+        },
+        firewall/.style={
+            %% ellipse, draw=black, fill=yellow!20, 
+			text width=4em, text centered, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[yellow!50!white] (0,0) ellipse (0.8cm and 0.5cm);
+                        \filldraw[black!50!white] (-0.6,0) -- (-0.4,0.3) -- (0.4,0.3) -- (0.6,0) -- (0.4,-0.3) -- (-0.4,-0.3) -- cycle;
+                    \end{tikzpicture}
+                };
+            }
+        },
+        ai/.style={
+            %% circle, draw=black, fill=purple!20, 
+			text width=4em, text centered, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[purple!50!white] (0,0) circle (0.6cm);
+                        \filldraw[purple!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
+                        \filldraw[white] (-0.2,0.2) circle (0.1cm);
+                        \filldraw[white] (0.2,0.2) circle (0.1cm);
+                    \end{tikzpicture}
+                };
+            }
+        },
+        communication/.style={
+            %% trapezium, draw=black, fill=cyan!20, 
+			text width=4em, text centered, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[cyan!50!white] (0,0) circle (0.6cm);
+                        \filldraw[cyan!50!white] (-0.6,0) -- (0,0.6) -- (0.6,0) -- (0,-0.6) -- cycle;
+                        \filldraw[cyan!50!white] (-0.6,0) -- (0,-0.6);
+                        \filldraw[cyan!50!white] (0,0.6) -- (0.6,0);
+                    \end{tikzpicture}
+                };
+            }
+        },
+        datacenter/.style={
+            %% regular polygon, regular polygon sides=6, draw=black, fill=orange!20, 
+			text width=4em, text centered, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[orange!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
+                        \filldraw[orange!50!white] (-0.5,0.5) rectangle (0.5,-0.5);
+                        \filldraw[orange!50!white] (-0.4,0.4) rectangle (0.4,-0.4);
+                        \filldraw[orange!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
+                    \end{tikzpicture}
+                };
+            }
+        },
+        iot/.style={
+            %% rectangle, draw=black, fill=teal!20, 
+			text width=4em, text centered, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[teal!50!white] (0,0) circle (0.6cm);
+                        \filldraw[teal!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
+                        \filldraw[teal!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
+                        \draw[teal!50!white, line width=0.1cm] (0,0.6) -- (0,1);
+                    \end{tikzpicture}
+                };
+            }
+        },
+        storage/.style={
+            %% cylinder, draw=black, fill=brown!20, 
+			text width=4em, text centered, shape aspect=0.2, minimum height=2em, shape border rotate=90,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[brown!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
+                        \filldraw[brown!50!white] (-0.5,0.5) rectangle (0.5,-0.5);
+                        \filldraw[brown!50!white] (-0.4,0.4) rectangle (0.4,-0.4);
+                    \end{tikzpicture}
+                };
+            }
+        },
+        control/.style={
+            %% star, draw=black, fill=magenta!20, 
+			text width=4em, text centered, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[magenta!50!white] (0,0) circle (0.6cm);
+                        \filldraw[magenta!50!white] (-0.5,0.5) -- (0.5,0.5) -- (0.5,-0.5) -- (-0.5,-0.5) -- cycle;
+                        \filldraw[magenta!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
+                    \end{tikzpicture}
+                };
+            }
+        },
+        mainframe/.style={
+            %% rectangle, draw=black, fill=gray!20, 
+			text width=4em, text centered, minimum height=3em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[gray!50!white] (-0.7,0.7) rectangle (0.7,-0.7);
+                        \filldraw[gray!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
+                        \filldraw[gray!50!white] (-0.5,0.5) rectangle (0.5,-0.5);
+                    \end{tikzpicture}
+                };
+            }
+        },
+        security/.style={
+            %% ellipse, draw=black, fill=black!20, text=white, 
+			text width=4em, text centered, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[black!50!white] (0,0) ellipse (0.8cm and 0.5cm);
+                        \filldraw[black!50!white] (-0.6,0) -- (-0.4,0.3) -- (0.4,0.3) -- (0.6,0) -- (0.4,-0.3) -- (-0.4,-0.3) -- cycle;
+                    \end{tikzpicture}
+                };
+            }
+        },
+        virtualization/.style={
+            %% rectangle, draw=black, fill=lime!20, 
+			text width=4em, text centered, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[lime!50!white] (-0.7,0.5) rectangle (0.7,-0.5);
+                        \filldraw[lime!50!white] (-0.5,0.7) rectangle (0.5,-0.7);
+                    \end{tikzpicture}
+                };
+            }
+        },
+        vpn/.style={
+            %% rectangle, draw=black, fill=pink!20, 
+			text width=4em, text centered, minimum height=2em,
+            path picture={
+                \node at (path picture bounding box.center) {
+                    \begin{tikzpicture}[scale=0.75]
+                        \filldraw[pink!50!white] (-0.7,0.5) rectangle (0.7,-0.5);
+                        \filldraw[pink!50!white] (-0.5,0.7) rectangle (0.5,-0.7);
+                    \end{tikzpicture}
+                };
+            }
+        },
+        line/.style={draw, -latex'}
+    }
 }
+
+\usepackage{geometry}
+\geometry{a4paper, margin=0.5in}
 
 \begin{document}
 
+
 \begin{tikzpicture}[node distance=2cm, auto]
+    \networkstyles % Utilisation des styles définis
 
-    % Styles
-	\StylesTikzSetNetwork
-
-    % Nodes
-
-    \node [iot] (Node0) at (5.0,0.0) {Iot 1 (Medium)};
-    \node [control] (Node1) at (3.1174490092936677,3.909157412340149) {Control 2 (High)};
-    \node [router] (Node2) at (-1.1126046697815717,4.874639560909118) {Router 3 (High)};
-    \node [ai] (Node3) at (-4.504844339512095,2.169418695587791) {Ai 4 (Medium)};
-    \node [storage] (Node4) at (-4.504844339512096,-2.16941869558779) {Storage 5 (Medium)};
-    \node [mainframe] (Node5) at (-1.112604669781573,-4.874639560909118) {Mainframe 6 (High)};
-    \node [iot] (Node6) at (3.117449009293667,-3.9091574123401496) {Iot 7 (Medium)};
+    % Nodes in matrix layout
+    \matrix [column sep=1cm, row sep=1cm] {
+        \node[ai] (Node0) {Ai 1 (Medium)}; & \node[control] (Node1) {Control 2 (Low)}; & \node[router] (Node2) {Router 3 (Low)}; & \node[ai] (Node3) {Ai 4 (High)}; \\
+        \node[storage] (Node4) {Storage 5 (Medium)}; & \node[virtualization] (Node5) {Virtualization 6 (Medium)}; & \node[server] (Node6) {Server 7 (Medium)}; & \node[ai] (Node7) {Ai 8 (Medium)}; \\
+        \node[security] (Node8) {Security 9 (Medium)}; & \node[datacenter] (Node9) {Datacenter 10 (Low)}; & \node[router] (Node10) {Router 11 (High)}; & \node[security] (Node11) {Security 12 (High)}; \\
+        \node[terminal] (Node12) {Terminal 13 (Medium)}; & \node[ai] (Node13) {Ai 14 (High)}; & \node{}; & \node{}; \\
+    };
 
     % Connections
-    \path [line] (Node0) -- (Node2);
-    \path [line] (Node0) -- (Node6);
-    \path [line] (Node1) -- (Node4);
-    \path [line] (Node2) -- (Node6);
-    \path [line] (Node3) -- (Node4);
-    \path [line] (Node4) -- (Node5);
-    \path [line] (Node4) -- (Node6);
-    \path [line] (Node5) -- (Node6);
+
+	\path [line] (Node0) -- (Node4);
+	\path [line] (Node0) -- (Node6);
+	\path [line] (Node0) -- (Node9);
+	\path [line] (Node0) -- (Node11);
+	\path [line] (Node1) -- (Node3);
+	\path [line] (Node1) -- (Node10);
+	\path [line] (Node1) -- (Node11);
+	\path [line] (Node2) -- (Node3);
+	\path [line] (Node2) -- (Node8);
+	\path [line] (Node2) -- (Node11);
+	\path [line] (Node2) -- (Node12);
+	\path [line] (Node3) -- (Node8);
+	\path [line] (Node4) -- (Node7);
+	\path [line] (Node4) -- (Node8);
+	\path [line] (Node4) -- (Node13);
+	\path [line] (Node5) -- (Node9);
+	\path [line] (Node5) -- (Node12);
+	\path [line] (Node7) -- (Node12);
+	\path [line] (Node8) -- (Node9);
+	\path [line] (Node8) -- (Node12);
+	\path [line] (Node8) -- (Node13);
+	\path [line] (Node9) -- (Node10);
+	\path [line] (Node9) -- (Node12);
+	\path [line] (Node10) -- (Node11);
+	\path [line] (Node10) -- (Node13);
 \end{tikzpicture}
 
-\vspace{1cm}
+%% \vspace{1cm}
+
+\vfill~\\
+
 % Légende
 \begin{center}
 \begin{tikzpicture}
-    % Styles
-	\StylesTikzSetNetwork
-	% Utilisation
+    \networkstyles % Utilisation des styles définis
+	\begin{scope}[scale=0.35]
     \matrix [draw, column sep=1cm, row sep=0.5cm] {
-        \node [server, label=right:Serveur] {{}}; &
-        \node [terminal, label=right:Terminal] {{}}; &
-        \node [router, label=right:Routeur] {{}}; &
-        \node [firewall, label=right:Pare-feu] {{}}; \\
-        \node [ai, label=right:IA] {{}}; &
-        \node [communication, label=right:Noeud de Communication] {{}}; &
-        \node [datacenter, label=right:Data Center] {{}}; &
-        \node [iot, label=right:Dispositif IoT] {{}}; \\
-        \node [storage, label=right:Noeud de Stockage] {{}}; &
-        \node [control, label=right:Noeud de Contrôle] {{}}; &
-        \node [mainframe, label=right:Mainframe] {{}}; &
-        \node [security, label=right:Noeud de Sécurité] {{}}; \\
-        \node [virtualization, label=right:Noeud de Virtualisation] {{}}; &
-        \node [vpn, label=right:Noeud VPN] {{}}; &
-        \node {{}}; &
-        \node {{}}; \\
+        \node [server, label=right:Serveur] {}; &
+        \node [terminal, label=right:Terminal] {}; &
+        \node [router, label=right:Routeur] {}; \\
+        \node [firewall, label=right:Pare-feu] {}; &
+        \node [ai, label=right:IA] {}; &
+        \node [communication, label=right:Nœud de Communication] {}; \\
+        \node [datacenter, label=right:Data Center] {}; &
+        \node [iot, label=right:Dispositif IoT] {}; &
+        \node [storage, label=right:Nœud de Stockage] {}; \\
+        \node [control, label=right:Nœud de Contrôle] {}; &
+        \node [mainframe, label=right:Mainframe] {}; &
+        \node [security, label=right:Nœud de Sécurité] {}; \\
+        \node [virtualization, label=right:Nœud de Virtualisation] {}; &
+        \node [vpn, label=right:Nœud VPN] {}; &
+        \node {}; \\
     };
+    \end{scope}
 \end{tikzpicture}
 \end{center}
 
