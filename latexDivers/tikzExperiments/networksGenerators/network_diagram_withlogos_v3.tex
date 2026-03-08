@@ -4,6 +4,8 @@
 \usepackage{geometry}
 \geometry{a4paper, margin=0.5in}
 
+%% pdflatex network_diagram_withlogos_v3.tex && rm *.aux *.log
+
 % Définition des styles avec logos intégrés
 \newcommand{\networkstyles}{
 	\tikzset{
@@ -268,65 +270,66 @@
 
 \begin{document}
 
-
 \begin{tikzpicture}[node distance=2cm, auto]
-    \networkstyles % Utilisation des styles définis
 
-    % Nodes in matrix layout
-    \matrix [column sep=1cm, row sep=1cm] {
-        \node[router] (Node0) {Router 1 (Medium)}; & \node[iot] (Node1) {Iot 2 (High)}; & \node[control] (Node2) {Control 3 (High)}; & \node[control] (Node3) {Control 4 (High)}; \\
-        \node[firewall] (Node4) {Firewall 5 (High)}; & \node[datacenter] (Node5) {Datacenter 6 (High)}; & \node[storage] (Node6) {Storage 7 (Medium)}; & \node[router] (Node7) {Router 8 (High)}; \\
-        \node[storage] (Node8) {Storage 9 (Low)}; & \node[iot] (Node9) {Iot 10 (Medium)}; & \node[security] (Node10) {Security 11 (High)}; & \node[ai] (Node11) {Ai 12 (Low)}; \\
-    };
+	% Styles
+	\networkstyles
 
-    % Connections
+	% Nodes
+	\node[server] (Server1) {Server1} ;
+	\node[terminal] [right=of Server1] (Terminal1) {Terminal1} ;
+	\node[router] [below=of Server1] (Router1) {Router1} ;
+	\node[firewall] [right=of Router1] (Firewall1) {Firewall1} ;
+	\node[server] [below=of Router1] (Server2) {Server2} ;
+	\node[terminal] [right=of Server2] (Terminal2) {Terminal2} ;
+	\node[router] [below=of Terminal2] (Router2) {Router2} ;
+	\node[firewall] [left=of Router2] (Firewall2) {Firewall2} ;
+	\node[server] [left=of Firewall2] (Server3) {Server3} ;
+	\node[terminal] [above=of Server3] (Terminal3) {Terminal3} ;
+	\node[ai] [left=of Router1] (AI00) {} ;
+	\node[mainframe] [above=of AI00] (MF00) {} ;
+	%% \node[ai] [left=of Router1] (AI00) {AI00} ;
+	%% \node[mainframe] [above=of AI00] (MF00) {MF00} ;
 
-	\path [line] (Node0) -- (Node4);
-	\path [line] (Node0) -- (Node6);
-	\path [line] (Node0) -- (Node8);
-	\path [line] (Node1) -- (Node9);
-	\path [line] (Node2) -- (Node3);
-	\path [line] (Node2) -- (Node8);
-	\path [line] (Node3) -- (Node5);
-	\path [line] (Node3) -- (Node10);
-	\path [line] (Node4) -- (Node5);
-	\path [line] (Node4) -- (Node7);
-	\path [line] (Node4) -- (Node8);
-	\path [line] (Node4) -- (Node11);
-	\path [line] (Node6) -- (Node7);
-	\path [line] (Node6) -- (Node11);
-	\path [line] (Node7) -- (Node9);
+	% Connections
+	\path [draw, -latex'] (Server1) -- (Terminal1);
+	\path [draw, -latex'] (Server1) -- (Router1);
+	\path [draw, -latex'] (Router1) -- (Firewall1);
+	\path [draw, -latex'] (Firewall1) -- (Terminal2);
+	\path [draw, -latex'] (Router1) -- (Server2);
+	\path [draw, -latex'] (Server2) -- (Terminal2);
+	\path [draw, -latex'] (Router2) -- (Firewall2);
+	\path [draw, -latex'] (Firewall2) -- (Server3);
+	\path [draw, -latex'] (Server3) -- (Terminal3);
+	\path [draw, -latex'] (Terminal3) -- (Server1);
+	\path [draw, -latex'] (AI00) -- (MF00);
+	\path [draw, -latex'] (MF00) -- (AI00);
+
 \end{tikzpicture}
 
-%% \vspace{1cm}
-
-\vfill~\\
-
-% Légende
 \begin{center}
-\begin{tikzpicture}
-    \networkstyles % Utilisation des styles définis
-	\begin{scope}[scale=0.35]
-    \matrix [draw, column sep=1cm, row sep=0.5cm] {
-        \node [server, label=right:Serveur] {}; &
-        \node [terminal, label=right:Terminal] {}; &
-        \node [router, label=right:Routeur] {}; \\
-        \node [firewall, label=right:Pare-feu] {}; &
-        \node [ai, label=right:IA] {}; &
-        \node [communication, label=right:Nœud de Communication] {}; \\
-        \node [datacenter, label=right:Data Center] {}; &
-        \node [iot, label=right:Dispositif IoT] {}; &
-        \node [storage, label=right:Nœud de Stockage] {}; \\
-        \node [control, label=right:Nœud de Contrôle] {}; &
-        \node [mainframe, label=right:Mainframe] {}; &
-        \node [security, label=right:Nœud de Sécurité] {}; \\
-        \node [virtualization, label=right:Nœud de Virtualisation] {}; &
-        \node [vpn, label=right:Nœud VPN] {}; &
-        \node {}; \\
-    };
-    \end{scope}
-\end{tikzpicture}
+	\begin{tikzpicture}
+		\networkstyles % Utilisation des styles définis
+		\begin{scope}[scale=0.35]
+		\matrix [draw, column sep=1cm, row sep=0.5cm] {
+			\node [server, label=right:Serveur] {}; &
+			\node [terminal, label=right:Terminal] {}; &
+			\node [router, label=right:Routeur] {}; \\
+			\node [firewall, label=right:Pare-feu] {}; &
+			\node [ai, label=right:IA] {}; &
+			\node [communication, label=right:Nœud de Communication] {}; \\
+			\node [datacenter, label=right:Data Center] {}; &
+			\node [iot, label=right:Dispositif IoT] {}; &
+			\node [storage, label=right:Nœud de Stockage] {}; \\
+			\node [control, label=right:Nœud de Contrôle] {}; &
+			\node [mainframe, label=right:Mainframe] {}; &
+			\node [security, label=right:Nœud de Sécurité] {}; \\
+			\node [virtualization, label=right:Nœud de Virtualisation] {}; &
+			\node [vpn, label=right:Nœud VPN] {}; &
+			\node {}; \\
+		};
+		\end{scope}
+	\end{tikzpicture}
 \end{center}
 
 \end{document}
-    

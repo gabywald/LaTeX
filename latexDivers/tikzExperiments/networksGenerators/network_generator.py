@@ -4,7 +4,7 @@
 Description: Random <Network Generator Diagram
 Author: Gabriel Chandesris 
 Date Created: March 5, 2026
-Date Modified: March 5, 2026
+Date Modified: March 8, 2026
 Version: 1.0.0
 Python Version: 3.8.10
 License: GPL
@@ -36,197 +36,270 @@ def generate_latex(nodes, layout="circular"):
     latex_code = r"""\documentclass[a4paper, landscape]{article}
 \usepackage{tikz}
 \usetikzlibrary{shapes, arrows, positioning}
+\usepackage{geometry}
+\geometry{a4paper, margin=0.5in}
 
 % Définition des styles avec logos intégrés
 \newcommand{\networkstyles}{
-    \tikzset{
-        server/.style={
-            %% rectangle, draw=black, fill=blue!20, 
-            text width=4em, text centered, rounded corners, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[blue!50!white] (-0.7,0.5) rectangle (0.7,-0.5);
-                        \filldraw[blue!50!white] (-0.5,0.7) rectangle (0.5,-0.7);
-                        \filldraw[blue!50!white] (-0.3,0.9) rectangle (0.3,-0.9);
-                    \end{tikzpicture}
-                };
-            }
-        },
-        terminal/.style={
-            %% rectangle, draw=black, fill=green!20, 
-            text width=4em, text centered, rounded corners, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[green!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
-                        \filldraw[green!50!white] (-0.4,0.4) rectangle (0.4,-0.4);
-                        \filldraw[black!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
-                    \end{tikzpicture}
-                };
-            }
-        },
-        router/.style={
-            %% diamond, draw=black, fill=red!20, 
+	\tikzset{
+		server/.style={
+			%% rectangle, draw=black, fill=blue!20, 
+			text width=4em, text centered, rounded corners, minimum height=2em,
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[blue!30!black] (0,0) circle (1cm);
+						% Symbole serveur
+						\filldraw[blue!50!white] (-0.7,0.5) rectangle (0.7,-0.5);
+						\filldraw[blue!50!white] (-0.5,0.7) rectangle (0.5,-0.7);
+						\filldraw[blue!50!white] (-0.3,0.9) rectangle (0.3,-0.9);
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny SERVER};
+					\end{tikzpicture}
+				};
+			}
+		},
+		terminal/.style={
+			%% rectangle, draw=black, fill=green!20, 
+			text width=4em, text centered, rounded corners, minimum height=2em,
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[green!30!black] (0,0) circle (1cm);
+						% Symbole terminal
+						\filldraw[green!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
+						\filldraw[green!50!white] (-0.4,0.4) rectangle (0.4,-0.4);
+						% Écran
+						\filldraw[black!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny TERMINAL};
+					\end{tikzpicture}
+				};
+			}
+		},
+		router/.style={
+			%% diamond, draw=black, fill=red!20, 
 			text width=4em, text centered, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[red!50!white] (0,0) circle (0.6cm);
-                        \filldraw[red!50!white] (-0.6,0) -- (0,0.6) -- (0.6,0) -- (0,-0.6) -- cycle;
-                    \end{tikzpicture}
-                };
-            }
-        },
-        firewall/.style={
-            %% ellipse, draw=black, fill=yellow!20, 
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[red!30!black] (0,0) circle (1cm);
+						% Symbole routeur
+						\filldraw[red!50!white] (0,0) circle (0.6cm);
+						\filldraw[red!50!white] (-0.6,0) -- (0,0.6) -- (0.6,0) -- (0,-0.6) -- cycle;
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny ROUTER};
+					\end{tikzpicture}
+				};
+			}
+		},
+		firewall/.style={
+			%% ellipse, draw=black, fill=yellow!20, 
 			text width=4em, text centered, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[yellow!50!white] (0,0) ellipse (0.8cm and 0.5cm);
-                        \filldraw[black!50!white] (-0.6,0) -- (-0.4,0.3) -- (0.4,0.3) -- (0.6,0) -- (0.4,-0.3) -- (-0.4,-0.3) -- cycle;
-                    \end{tikzpicture}
-                };
-            }
-        },
-        ai/.style={
-            %% circle, draw=black, fill=purple!20, 
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[yellow!30!black] (0,0) circle (1cm);
+						% Symbole pare-feu
+						\filldraw[yellow!50!white] (0,0) ellipse (0.8cm and 0.5cm);
+						\filldraw[black!50!white] (-0.6,0) -- (-0.4,0.3) -- (0.4,0.3) -- (0.6,0) -- (0.4,-0.3) -- (-0.4,-0.3) -- cycle;
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny FIREWALL};
+					\end{tikzpicture}
+				};
+			}
+		},
+		ai/.style={
+			%% circle, draw=black, fill=purple!20, 
 			text width=4em, text centered, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[purple!50!white] (0,0) circle (0.6cm);
-                        \filldraw[purple!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
-                        \filldraw[white] (-0.2,0.2) circle (0.1cm);
-                        \filldraw[white] (0.2,0.2) circle (0.1cm);
-                    \end{tikzpicture}
-                };
-            }
-        },
-        communication/.style={
-            %% trapezium, draw=black, fill=cyan!20, 
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[purple!30!black] (0,0) circle (1cm);
+						% Symbole IA
+						\filldraw[purple!50!white] (0,0) circle (0.6cm);
+						\filldraw[purple!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
+						\filldraw[purple!50!white] (-0.3,0.3) -- (0.3,0.3) -- (0.3,-0.3) -- (-0.3,-0.3) -- cycle;
+						% Yeux de l'IA
+						\filldraw[white] (-0.2,0.2) circle (0.1cm);
+						\filldraw[white] (0.2,0.2) circle (0.1cm);
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny AI};
+					\end{tikzpicture}
+				};
+			}
+		},
+		communication/.style={
+			%% trapezium, draw=black, fill=cyan!20, 
 			text width=4em, text centered, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[cyan!50!white] (0,0) circle (0.6cm);
-                        \filldraw[cyan!50!white] (-0.6,0) -- (0,0.6) -- (0.6,0) -- (0,-0.6) -- cycle;
-                        \filldraw[cyan!50!white] (-0.6,0) -- (0,-0.6);
-                        \filldraw[cyan!50!white] (0,0.6) -- (0.6,0);
-                    \end{tikzpicture}
-                };
-            }
-        },
-        datacenter/.style={
-            %% regular polygon, regular polygon sides=6, draw=black, fill=orange!20, 
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[cyan!30!black] (0,0) circle (1cm);
+						% Symbole nœud de communication
+						\filldraw[cyan!50!white] (0,0) circle (0.6cm);
+						\filldraw[cyan!50!white] (-0.6,0) -- (0,0.6) -- (0.6,0) -- (0,-0.6) -- cycle;
+						\filldraw[cyan!50!white] (-0.6,0) -- (0,-0.6);
+						\filldraw[cyan!50!white] (0,0.6) -- (0.6,0);
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny COMM};
+					\end{tikzpicture}
+				};
+			}
+		},
+		datacenter/.style={
+			%% regular polygon, regular polygon sides=6, draw=black, fill=orange!20, 
 			text width=4em, text centered, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[orange!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
-                        \filldraw[orange!50!white] (-0.5,0.5) rectangle (0.5,-0.5);
-                        \filldraw[orange!50!white] (-0.4,0.4) rectangle (0.4,-0.4);
-                        \filldraw[orange!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
-                    \end{tikzpicture}
-                };
-            }
-        },
-        iot/.style={
-            %% rectangle, draw=black, fill=teal!20, 
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[orange!30!black] (0,0) circle (1cm);
+						% Symbole data center
+						\filldraw[orange!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
+						\filldraw[orange!50!white] (-0.5,0.5) rectangle (0.5,-0.5);
+						\filldraw[orange!50!white] (-0.4,0.4) rectangle (0.4,-0.4);
+						\filldraw[orange!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny DATA CENTER};
+					\end{tikzpicture}
+				};
+			}
+		},
+		iot/.style={
+			%% rectangle, draw=black, fill=teal!20, 
 			text width=4em, text centered, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[teal!50!white] (0,0) circle (0.6cm);
-                        \filldraw[teal!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
-                        \filldraw[teal!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
-                        \draw[teal!50!white, line width=0.1cm] (0,0.6) -- (0,1);
-                    \end{tikzpicture}
-                };
-            }
-        },
-        storage/.style={
-            %% cylinder, draw=black, fill=brown!20, 
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[teal!30!black] (0,0) circle (1cm);
+						% Symbole IoT
+						\filldraw[teal!50!white] (0,0) circle (0.6cm);
+						\filldraw[teal!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
+						\filldraw[teal!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
+						% Antenne
+						\draw[teal!50!white, line width=0.1cm] (0,0.6) -- (0,1);
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny IoT};
+					\end{tikzpicture}
+				};
+			}
+		},
+		storage/.style={
+			%% cylinder, draw=black, fill=brown!20, 
 			text width=4em, text centered, shape aspect=0.2, minimum height=2em, shape border rotate=90,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[brown!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
-                        \filldraw[brown!50!white] (-0.5,0.5) rectangle (0.5,-0.5);
-                        \filldraw[brown!50!white] (-0.4,0.4) rectangle (0.4,-0.4);
-                    \end{tikzpicture}
-                };
-            }
-        },
-        control/.style={
-            %% star, draw=black, fill=magenta!20, 
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[brown!30!black] (0,0) circle (1cm);
+						% Symbole stockage
+						\filldraw[brown!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
+						\filldraw[brown!50!white] (-0.5,0.5) rectangle (0.5,-0.3);
+						\filldraw[brown!50!white] (-0.4,0.4) rectangle (0.4,-0.2);
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny STORAGE};
+					\end{tikzpicture}
+				};
+			}
+		},
+		control/.style={
+			%% star, draw=black, fill=magenta!20, 
 			text width=4em, text centered, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[magenta!50!white] (0,0) circle (0.6cm);
-                        \filldraw[magenta!50!white] (-0.5,0.5) -- (0.5,0.5) -- (0.5,-0.5) -- (-0.5,-0.5) -- cycle;
-                        \filldraw[magenta!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
-                    \end{tikzpicture}
-                };
-            }
-        },
-        mainframe/.style={
-            %% rectangle, draw=black, fill=gray!20, 
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[magenta!30!black] (0,0) circle (1cm);
+						% Symbole contrôle
+						\filldraw[magenta!50!white] (0,0) circle (0.6cm);
+						\filldraw[magenta!50!white] (-0.5,0.5) -- (0.5,0.5) -- (0.5,-0.5) -- (-0.5,-0.5) -- cycle;
+						\filldraw[magenta!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny CONTROL};
+					\end{tikzpicture}
+				};
+			}
+		},
+		mainframe/.style={
+			%% rectangle, draw=black, fill=gray!20, 
 			text width=4em, text centered, minimum height=3em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[gray!50!white] (-0.7,0.7) rectangle (0.7,-0.7);
-                        \filldraw[gray!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
-                        \filldraw[gray!50!white] (-0.5,0.5) rectangle (0.5,-0.5);
-                    \end{tikzpicture}
-                };
-            }
-        },
-        security/.style={
-            %% ellipse, draw=black, fill=black!20, text=white, 
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[magenta!30!black] (0,0) circle (1cm);
+						% Symbole mainframe
+						\filldraw[gray!50!white] (-0.7,0.7) rectangle (0.7,-0.7);
+						\filldraw[gray!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
+						\filldraw[gray!50!white] (-0.5,0.5) rectangle (0.5,-0.5);
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny MAINFRAME};
+					\end{tikzpicture}
+				};
+			}
+		},
+		security/.style={
+			%% ellipse, draw=black, fill=black!20, text=white, 
 			text width=4em, text centered, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[black!50!white] (0,0) ellipse (0.8cm and 0.5cm);
-                        \filldraw[black!50!white] (-0.6,0) -- (-0.4,0.3) -- (0.4,0.3) -- (0.6,0) -- (0.4,-0.3) -- (-0.4,-0.3) -- cycle;
-                    \end{tikzpicture}
-                };
-            }
-        },
-        virtualization/.style={
-            %% rectangle, draw=black, fill=lime!20, 
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[magenta!30!black] (0,0) circle (1cm);
+						% Symbole security
+						\filldraw[black!50!white] (0,0) ellipse (0.8cm and 0.5cm);
+						\filldraw[black!50!white] (-0.6,0) -- (-0.4,0.3) -- (0.4,0.3) -- (0.6,0) -- (0.4,-0.3) -- (-0.4,-0.3) -- cycle;
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny SECURITY};
+					\end{tikzpicture}
+				};
+			}
+		},
+		virtualization/.style={
+			%% rectangle, draw=black, fill=lime!20, 
 			text width=4em, text centered, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[lime!50!white] (-0.7,0.5) rectangle (0.7,-0.5);
-                        \filldraw[lime!50!white] (-0.5,0.7) rectangle (0.5,-0.7);
-                    \end{tikzpicture}
-                };
-            }
-        },
-        vpn/.style={
-            %% rectangle, draw=black, fill=pink!20, 
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[magenta!30!black] (0,0) circle (1cm);
+						% Symbole vistualization
+						\filldraw[lime!50!white] (-0.7,0.5) rectangle (0.7,-0.5);
+						\filldraw[lime!50!white] (-0.5,0.7) rectangle (0.5,-0.7);
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny VIRTUAL};
+					\end{tikzpicture}
+				};
+			}
+		},
+		vpn/.style={
+			%% rectangle, draw=black, fill=pink!20, 
 			text width=4em, text centered, minimum height=2em,
-            path picture={
-                \node at (path picture bounding box.center) {
-                    \begin{tikzpicture}[scale=0.75]
-                        \filldraw[pink!50!white] (-0.7,0.5) rectangle (0.7,-0.5);
-                        \filldraw[pink!50!white] (-0.5,0.7) rectangle (0.5,-0.7);
-                    \end{tikzpicture}
-                };
-            }
-        },
-        line/.style={draw, -latex'}
-    }
+			path picture={
+				\node at (path picture bounding box.center) {
+					\begin{tikzpicture}[scale=0.20]
+						% Fond du logo
+						\filldraw[magenta!30!black] (0,0) circle (1cm);
+						% Symbole VPN
+						\filldraw[pink!50!white] (-0.7,0.5) rectangle (0.7,-0.5);
+						\filldraw[pink!50!white] (-0.5,0.7) rectangle (0.5,-0.7);
+						% Texte
+						\node[black, font=\bfseries] at (0,-1.1) {\tiny VPN};
+					\end{tikzpicture}
+				};
+			}
+		},
+		line/.style={draw, -latex'}
+	}
 }
-
-\usepackage{geometry}
-\geometry{a4paper, margin=0.5in}
 
 \begin{document}
 
