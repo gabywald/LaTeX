@@ -1,0 +1,185 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows, positioning}
+
+%% pdflatex network_diagram_withlogos.tex && rm *.aux *.log
+
+% Inclure les commandes des logos ici
+
+% Logo Serveur
+\newcommand{\TIKZnodeSERVER}{
+    \begin{tikzpicture}[scale=0.5]
+        % Fond du logo
+        \filldraw[blue!30!black] (0,0) circle (1cm);
+        % Symbole serveur
+        \filldraw[blue!50!white] (-0.7,0.5) rectangle (0.7,-0.5);
+        \filldraw[blue!50!white] (-0.5,0.7) rectangle (0.5,-0.7);
+        \filldraw[blue!50!white] (-0.3,0.9) rectangle (0.3,-0.9);
+        % Texte
+        \node[black, font=\bfseries] at (0,-1.1) {\tiny SERVER};
+    \end{tikzpicture}
+}
+
+% Logo Terminal
+\newcommand{\TIKZnodeTERMINAL}{
+    \begin{tikzpicture}[scale=0.5]
+        % Fond du logo
+        \filldraw[green!30!black] (0,0) circle (1cm);
+        % Symbole terminal
+        \filldraw[green!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
+        \filldraw[green!50!white] (-0.4,0.4) rectangle (0.4,-0.4);
+        % Écran
+        \filldraw[black!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
+        % Texte
+        \node[black, font=\bfseries] at (0,-1.1) {\tiny TERMINAL};
+    \end{tikzpicture}
+}
+
+% Logo Routeur
+\newcommand{\TIKZnodeROUTER}{
+    \begin{tikzpicture}[scale=0.5]
+        % Fond du logo
+        \filldraw[red!30!black] (0,0) circle (1cm);
+        % Symbole routeur
+        \filldraw[red!50!white] (0,0) circle (0.6cm);
+        \filldraw[red!50!white] (-0.6,0) -- (0,0.6) -- (0.6,0) -- (0,-0.6) -- cycle;
+        % Texte
+        \node[black, font=\bfseries] at (0,-1.1) {\tiny ROUTER};
+    \end{tikzpicture}
+}
+
+% Logo Pare-feu
+\newcommand{\TIKZnodeFIREWALL}{
+    \begin{tikzpicture}[scale=0.5]
+        % Fond du logo
+        \filldraw[yellow!30!black] (0,0) circle (1cm);
+        % Symbole pare-feu
+        \filldraw[yellow!50!white] (0,0) ellipse (0.8cm and 0.5cm);
+        \filldraw[black!50!white] (-0.6,0) -- (-0.4,0.3) -- (0.4,0.3) -- (0.6,0) -- (0.4,-0.3) -- (-0.4,-0.3) -- cycle;
+        % Texte
+        \node[black, font=\bfseries] at (0,-1.1) {\tiny FIREWALL};
+    \end{tikzpicture}
+}
+
+% Logo IA
+\newcommand{\TIKZnodeAI}{
+    \begin{tikzpicture}[scale=0.5]
+        % Fond du logo
+        \filldraw[purple!30!black] (0,0) circle (1cm);
+        % Symbole IA
+        \filldraw[purple!50!white] (0,0) circle (0.6cm);
+        \filldraw[purple!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
+        \filldraw[purple!50!white] (-0.3,0.3) -- (0.3,0.3) -- (0.3,-0.3) -- (-0.3,-0.3) -- cycle;
+        % Yeux de l'IA
+        \filldraw[white] (-0.2,0.2) circle (0.1cm);
+        \filldraw[white] (0.2,0.2) circle (0.1cm);
+        % Texte
+        \node[black, font=\bfseries] at (0,-1.1) {\tiny AI};
+    \end{tikzpicture}
+}
+
+% Logo Nœud de Communication
+\newcommand{\TIKZnodeCOMM}{
+    \begin{tikzpicture}[scale=0.5]
+        % Fond du logo
+        \filldraw[cyan!30!black] (0,0) circle (1cm);
+        % Symbole nœud de communication
+        \filldraw[cyan!50!white] (0,0) circle (0.6cm);
+        \filldraw[cyan!50!white] (-0.6,0) -- (0,0.6) -- (0.6,0) -- (0,-0.6) -- cycle;
+        \filldraw[cyan!50!white] (-0.6,0) -- (0,-0.6);
+        \filldraw[cyan!50!white] (0,0.6) -- (0.6,0);
+        % Texte
+        \node[black, font=\bfseries] at (0,-1.1) {\tiny COMM};
+    \end{tikzpicture}
+}
+
+% Logo Data Center
+\newcommand{\TIKZnodeDATACENTER}{
+    \begin{tikzpicture}[scale=0.5]
+        % Fond du logo
+        \filldraw[orange!30!black] (0,0) circle (1cm);
+        % Symbole data center
+        \filldraw[orange!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
+        \filldraw[orange!50!white] (-0.5,0.5) rectangle (0.5,-0.5);
+        \filldraw[orange!50!white] (-0.4,0.4) rectangle (0.4,-0.4);
+        \filldraw[orange!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
+        % Texte
+        \node[black, font=\bfseries] at (0,-1.1) {\tiny DATA CENTER};
+    \end{tikzpicture}
+}
+
+% Logo Dispositif IoT
+\newcommand{\TIKZnodeIOT}{
+    \begin{tikzpicture}[scale=0.5]
+        % Fond du logo
+        \filldraw[teal!30!black] (0,0) circle (1cm);
+        % Symbole IoT
+        \filldraw[teal!50!white] (0,0) circle (0.6cm);
+        \filldraw[teal!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
+        \filldraw[teal!50!white] (-0.3,0.3) rectangle (0.3,-0.3);
+        % Antenne
+        \draw[teal!50!white, line width=0.1cm] (0,0.6) -- (0,1);
+        % Texte
+        \node[black, font=\bfseries] at (0,-1.1) {\tiny IoT};
+    \end{tikzpicture}
+}
+
+% Logo Nœud de Stockage
+\newcommand{\TIKZnodeSTORAGE}{
+    \begin{tikzpicture}[scale=0.5]
+        % Fond du logo
+        \filldraw[brown!30!black] (0,0) circle (1cm);
+        % Symbole stockage
+        \filldraw[brown!50!white] (-0.6,0.6) rectangle (0.6,-0.6);
+        \filldraw[brown!50!white] (-0.5,0.5) rectangle (0.5,-0.3);
+        \filldraw[brown!50!white] (-0.4,0.4) rectangle (0.4,-0.2);
+        % Texte
+        \node[black, font=\bfseries] at (0,-1.1) {\tiny STORAGE};
+    \end{tikzpicture}
+}
+
+% Logo Nœud de Contrôle
+\newcommand{\TIKZnodeCONTROL}{
+    \begin{tikzpicture}[scale=0.5]
+        % Fond du logo
+        \filldraw[magenta!30!black] (0,0) circle (1cm);
+        % Symbole contrôle
+        \filldraw[magenta!50!white] (0,0) circle (0.6cm);
+        \filldraw[magenta!50!white] (-0.5,0.5) -- (0.5,0.5) -- (0.5,-0.5) -- (-0.5,-0.5) -- cycle;
+        \filldraw[magenta!50!white] (-0.4,0.4) -- (0.4,0.4) -- (0.4,-0.4) -- (-0.4,-0.4) -- cycle;
+        % Texte
+        \node[black, font=\bfseries] at (0,-1.1) {\tiny CONTROL};
+    \end{tikzpicture}
+}
+
+\begin{document}
+
+\begin{tikzpicture}[node distance=2cm, auto]
+
+    % Nodes
+    \node (Server1) {\TIKZnodeSERVER};
+    \node [right=of Server1] (Terminal1) {\TIKZnodeTERMINAL};
+    \node [below=of Server1] (Router1) {\TIKZnodeROUTER};
+    \node [right=of Router1] (Firewall1) {\TIKZnodeFIREWALL};
+    \node [below=of Router1] (Server2) {\TIKZnodeSERVER};
+    \node [right=of Server2] (Terminal2) {\TIKZnodeTERMINAL};
+    \node [below=of Terminal2] (Router2) {\TIKZnodeROUTER};
+    \node [left=of Router2] (Firewall2) {\TIKZnodeFIREWALL};
+    \node [left=of Firewall2] (Server3) {\TIKZnodeSERVER};
+    \node [above=of Server3] (Terminal3) {\TIKZnodeTERMINAL};
+
+    % Connections
+    \path [draw, -latex'] (Server1) -- (Terminal1);
+    \path [draw, -latex'] (Server1) -- (Router1);
+    \path [draw, -latex'] (Router1) -- (Firewall1);
+    \path [draw, -latex'] (Firewall1) -- (Terminal2);
+    \path [draw, -latex'] (Router1) -- (Server2);
+    \path [draw, -latex'] (Server2) -- (Terminal2);
+    \path [draw, -latex'] (Router2) -- (Firewall2);
+    \path [draw, -latex'] (Firewall2) -- (Server3);
+    \path [draw, -latex'] (Server3) -- (Terminal3);
+    \path [draw, -latex'] (Terminal3) -- (Server1);
+
+\end{tikzpicture}
+
+\end{document}

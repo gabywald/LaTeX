@@ -1,0 +1,41 @@
+Type,Sous-Type,Description,Logo
+Serveur,Serveur Principal,Stocke les données critiques de la corporation,Rectangle avec couches imbriquées
+Serveur,Serveur de Sauvegarde,Stocke les sauvegardes et les archives,Rectangle avec couches imbriquées et icône de sauvegarde
+Serveur,Serveur de Fichiers,Gère les fichiers et les partages,Rectangle avec dossiers
+Terminal,Terminal Utilisateur,Utilisé par les employés pour accéder aux données,Rectangle avec écran
+Terminal,Terminal Public,Terminal accessible au public,Rectangle avec écran et icône de public
+Terminal,Terminal Portable,Appareil portable pour l'accès mobile,Rectangle avec écran et icône de portabilité
+Routeur,Routeur Principal,Achemine les données entre les différents sous-réseaux,Cercle avec lignes diagonales
+Routeur,Routeur de Bordure,Routeur situé à la frontière du réseau,Cercle avec lignes diagonales et bordure
+Routeur,Routeur Sans Fil,Routeur pour les connexions sans fil,Cercle avec lignes diagonales et icône sans fil
+Pare-feu,Pare-feu Matériel,Filtre le trafic entrant et sortant pour protéger le réseau,Cadenas
+Pare-feu,Pare-feu Logiciel,Logiciel de filtrage installé sur un serveur ou un terminal,Cadenas stylisé
+Pare-feu,Système de Détection d'Intrusion (IDS),Surveille le réseau pour détecter les intrusions,Cadenas avec icône de surveillance
+IA,IA de Sécurité,Surveille et protège le réseau,Cercle avec yeux
+IA,Assistant Virtuel,Aide les utilisateurs avec des tâches spécifiques,Cercle avec yeux et icône d'assistant
+IA,Système Expert,Gère des tâches complexes et prend des décisions autonomes,Cercle avec yeux et icône d'expert
+Nœud de Communication,Nœud de Commutation,Gère les communications entre différents appareils ou réseaux,Cercle avec lignes diagonales
+Nœud de Communication,Relais de Communication,Relais pour les communications longue distance,Cercle avec lignes diagonales et icône de relais
+Nœud de Communication,Passerelle,Connecte différents réseaux ou sous-réseaux,Cercle avec lignes diagonales et icône de passerelle
+Data Center,Data Center Corporatif,Héberge les serveurs et les systèmes de stockage,Rectangles imbriqués
+Data Center,Data Center Cloud,Héberge les services cloud,Rectangles imbriqués avec icône de cloud
+Data Center,Data Center de Sauvegarde,Stocke les sauvegardes et les archives,Rectangles imbriqués avec icône de sauvegarde
+Dispositif IoT,Caméra de Surveillance,Caméra connectée pour la surveillance,Rectangle avec antenne et icône de caméra
+Dispositif IoT,Capteur Environnemental,Capteur pour surveiller l'environnement,Rectangle avec antenne et icône de capteur
+Dispositif IoT,Appareil Domestique Connecté,Appareil domestique connecté au réseau,Rectangle avec antenne et icône de maison
+Nœud de Stockage,Nœud de Stockage Principal,Stocke les données principales,Rectangles imbriqués
+Nœud de Stockage,Nœud de Stockage de Sauvegarde,Stocke les sauvegardes et les archives,Rectangles imbriqués avec icône de sauvegarde
+Nœud de Stockage,Nœud de Stockage Temporaire,Stocke temporairement les données,Rectangles imbriqués avec icône de temporaire
+Nœud de Contrôle,Contrôleur de Domaine,Gère les domaines et les utilisateurs,Cercles et carrés concentriques
+Nœud de Contrôle,Nœud Maître,Supervise et contrôle d'autres nœuds,Cercles et carrés concentriques avec icône de maître
+Nœud de Contrôle,Système de Gestion Centralisée,Gère et contrôle le réseau de manière centralisée,Cercles et carrés concentriques avec icône de gestion
+Mainframe,Mainframe Corporatif,Ordinateur central puissant pour des tâches critiques,Grand rectangle avec couches imbriquées
+Mainframe,Supercalculateur,Calculateur puissant pour des tâches complexes,Grand rectangle avec couches imbriquées et icône de supercalculateur
+Nœud de Sécurité,Nœud de Surveillance,Surveille le réseau pour détecter les intrusions,Cadenas avec icône de surveillance
+Nœud de Sécurité,Système de Détection d'Intrusion (IDS),Détecte les intrusions et les attaques,Cadenas avec icône de surveillance
+Nœud de Sécurité,Honeypot,Nœud leurre pour attirer et piéger les attaquants,Cadenas avec icône de leurre
+Nœud de Virtualisation,Serveur de Virtualisation,Héberge des machines virtuelles,Rectangle avec couches imbriquées et icône de virtualisation
+Nœud de Virtualisation,Hyperviseur,Gère les machines virtuelles,Rectangle avec couches imbriquées et icône d'hyperviseur
+Nœud de Virtualisation,Cloud Privé,Héberge les services cloud privés,Rectangle avec couches imbriquées et icône de cloud
+Nœud de Réseau Privé Virtuel (VPN),Serveur VPN,Gère les connexions sécurisées et chiffrées,Rectangle avec couches imbriquées et icône de VPN
+Nœud de Réseau Privé Virtuel (VPN),Passerelle VPN,Connecte les réseaux via un VPN,Rectangle avec couches imbriquées et icône de passerelle VPN

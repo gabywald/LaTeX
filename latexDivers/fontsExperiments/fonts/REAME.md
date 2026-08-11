@@ -7,6 +7,8 @@ Here is a list of interesting fonts for TTRPG ("TableTop Role-Platying Games", o
   * cthulhuian
   * cyberpunk_is_not_dead
   * orbitronio
+  * orbitron
+  * rajdhani
   * tron
   * Computerfont
   * Park Lane

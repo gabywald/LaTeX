@@ -1,0 +1,12 @@
+20220316 (depuis tests précédents 20220225-27)
+Notes pour création classe ('.cls') LaTeX : 
+ - mieux vaut privilégier la trame dans un fichier '.tex' example de base
+ - éléments de complétion via commandes dans le '.cls'
+ - commandes : pas plus de 9 arguments (#1 à #9)
+ - génération de plusieurs documents (ou documents en chaine) : 
+ 	* commande '\include{nomfichier}', correspondant à 'nomfichier.tex' (header, footer / bottom)
+ 	* génération par script externe (perl, python...)
+ - intérêt de la classe '.cls' : alléger documents '.tex' générés
+ 	* définition de la classe et autres éléments intéressants pour le / les documents ensuite... 
+ 	* contient références packages nécessaires => "RequirePackage"
+ 	* commandes pré-établies => "newcommand"
